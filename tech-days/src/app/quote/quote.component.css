@@ -11,17 +11,89 @@
     width: 50%;
     height: 30%;
     margin-top: 170px;
-    margin-left: 420px;
+    margin-left: 300px;
     margin-right: 250px;
     /* width: 60%; */
     padding: 10px;
     color: #fff;
-    /* background-color: #fff; */
+    /* background-color: rgb(2, 2, 2); */
 }
 
 .homeowner{
     color: #fff;
     font-size: 42px;
-    margin: auto;
     padding: 10px;
+    margin-left: 40px;
+    margin-top: 2px;
+    font-family: Verdana;
+}
+
+.zip{
+    color: #fff;
+    padding: 1px;
+    font-family: Verdana;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.textQuote{
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 150px;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 18px;
+    background-color: #3f65a4;
+    text-align: center;
+    border-radius: 1px;
+    border-color: #fff;
+}
+
+.startQuote{
+    height: 48px;
+    width: 160px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #fff;
+    background-color: #fa6119;
+    margin-top: 19px;
+    margin-left: 12px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.row{
+    align-items: center;
+    display: flex;
+}
+
+.row1{
+    margin-top: 30px;
+    margin-left: 180px;
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+.row2{
+    margin-top: 20px;
+    height: 40px;
+}
+
+.textEnter{
+    color: #fff;
+    font-family: Verdana;
+    font-size: 18px;
+    background-color: #3f65a4;
+    text-align: center;
+    border-radius: 1px;
+    border-color: #fff;
+    margin-left: 180px;
+}
+
+::placeholder{
+    text-align: center;
+    color: #aeb9d1;
+    padding: 8px;
 }
