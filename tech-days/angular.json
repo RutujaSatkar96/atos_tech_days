@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tech-days"
+    }
+  },
+  "defaultProject": "tech-days",
+  "cli": {
+    "analytics": "840631ae-4b03-4dc2-b213-1ae16e33d7b6"
+  }
 }

@@ -1,0 +1,66 @@
+{
+    "basicinfo": {
+      "yearbuilt": 2020,
+      "purchasedate": "05/2020",
+      "noofstories": 2,
+      "squarefootage": 1000,
+      "singlefamily": "Yes",
+      "burglarsalarm": "Installed",
+      "firesprinklers": "Installed",
+      "primaryresidence": "Yes",
+      "firealarm": "Installed",
+      "emergencybackupgenerator": "Installed",
+      "firehydrant": "Yes"
+    },
+    "exterior": {
+      "buildingmaterial": "Solid Brick",
+      "roofshape": "Flat",
+      "roofmaterial": "Asphalt",
+      "roofage": 2,
+      "typeofgarage": "1 Car attached",
+      "swimmingpool": "No",
+      "porch": "No",
+      "deck": "No"
+    },
+    "interior": {
+      "foundationtype": "Closed Basement",
+      "bathquality": "Builder’s Grade",
+      "kitchencountertops": "Builder’s Grade",
+      "kitchenquality": "Wood",
+      "fireplace": "Yes, 2"
+    },
+    "customerinfo": {
+      "name": "Mark Wells",
+      "effectivedate": "08/08/2020",
+      "address": "30, Bell Avenue, Bell, CA, 90201",
+      "phone": "123-456-7890",
+      "homebuiltin": 2020,
+      "area": "1000 sqft",
+      "email": "mark.wells@gmail.com",
+      "dateofbirth": "08-16-1965",
+      "pastpropertyclaimsorlosses": "No",
+      "maritalstatus": "Married with Children",
+      "runningbusinessfromhome": "No",
+      "smokerstatus": "No Smokers",
+      "criminalconvictions": "No"
+    },
+    "coverages": {
+      "dwellingprotection": "$218,560 - cost =$879",
+      "otherstructures": "$22K (10% of dwelling)",
+      "propertyagainst": "Standard/Extended Incidents",
+      "propertyprotection": "$131K (60% of dwelling)",
+      "additionallivingexpenses": "$22K (10% of dwelling)",
+      "familyliabilityprotection": "$100K per occurrence"
+    },
+    "discountsandsurcharges": {
+      "newconstructiondiscount": "$ 260"
+    },
+    "deductibles": {
+      "allperilsdeductible": "$2.5K per occurrence",
+      "windstormorhail": "$3K"
+    },
+    "totalpremium": "$ 960 annual",
+    "extrapremium": "$ 100 annual",
+    "finalpremium": "$ 1060 annual",
+    "statusid": 2
+  }
