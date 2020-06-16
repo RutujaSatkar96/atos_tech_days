@@ -63,3 +63,15 @@
     z-index: 1;
     padding: .5rem 1.25rem;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 38px;
+    color: #dadada;
+    text-align: center;
+    font-family: Verdana;
+    font-weight: 13px;
+ }

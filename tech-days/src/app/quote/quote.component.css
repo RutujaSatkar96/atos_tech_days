@@ -47,7 +47,7 @@
     font-size: 18px;
     background-color: #3f65a4;
     text-align: center;
-    border-radius: 1px;
+    border-radius: 5px;
     border-color: #fff;
 }
 
@@ -58,6 +58,7 @@
     font-weight: bold;
     color: #fff;
     background-color: #fa6119;
+    border-radius: 5px;
     margin-top: 19px;
     margin-left: 12px;
     text-align: center;
