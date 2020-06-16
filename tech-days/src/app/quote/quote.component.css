@@ -1,11 +1,27 @@
 .mainDiv{
-    background-color: coral;
-    height: 100vh;
+    background-image: url("/assets/bg_img.png");   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.center{
+    /* background-size: 50px 50px; */
+    width: 50%;
+    height: 30%;
+    margin-top: 170px;
+    margin-left: 420px;
+    margin-right: 250px;
+    /* width: 60%; */
+    padding: 10px;
+    color: #fff;
+    /* background-color: #fff; */
 }
 
 .homeowner{
     color: #fff;
-    padding: 60px;
-    text-align: center;
-    font-size: 40px;
+    font-size: 42px;
+    margin: auto;
+    padding: 10px;
 }
