@@ -1,0 +1,11 @@
+.mainDiv{
+    background-color: coral;
+    height: 100vh;
+}
+
+.homeowner{
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+    font-size: 40px;
+}
