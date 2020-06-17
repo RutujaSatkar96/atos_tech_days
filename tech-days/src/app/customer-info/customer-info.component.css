@@ -1,0 +1,210 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+
+  .mat-tab-label .mat-tab-label-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.main{
+    margin-top: 10px;
+}
+
+.row1{
+  margin-top: 40px;
+  margin-left: 30px;
+}
+.row2{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+  
+.firstNameInput{
+  width: 170px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+}
+
+.firstNameLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+}
+
+.lastLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 120px;
+}
+.dobLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 90px;
+}
+
+.lastNameInput{
+  width: 170px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+  margin-left: 20px;
+}
+
+select{
+  width: 130px;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 6px;
+}
+
+.ageInput{
+  width: 90px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+  margin-left: 20px;
+}
+
+.dateInput{
+  width: 130px;
+  height: 36px;
+  margin-left: 30px;
+  border-radius: 6px;
+
+}
+
+.row3{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.maritalInput{
+  width: 200px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+}
+
+.emailLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 60px;
+}
+.occupationLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 140px;
+}
+
+.ocuupation select{
+  height: 36px;
+  width: 170px;
+}
+
+.row4{
+  margin-top: 20px;
+}
+
+.row5{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.questionLabel{
+  font-family: Verdana;
+  font-weight: 16px;
+  color: #333333;
+}
+.row6{
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.row7{
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.streetInput{
+  width: 170px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+}
+
+.unitInput{
+  width: 90px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+  margin-left: 20px;
+}
+
+.unitLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 93px;
+}
+
+.row8{
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.questionLabels{
+  font-family: Verdana;
+  font-weight: 16px;
+  color: #333333;
+}
+
+.labelMargin{
+  margin-left: 270px;
+}
+.labelCriminal{
+  margin-left: 320px;
+}
+.labelHome{
+  margin-left: 220px;
+
+}
+.row9{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.selectIssue{
+  margin-left: 340px;
+}

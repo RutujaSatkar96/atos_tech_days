@@ -1,0 +1,150 @@
+<div class="main">
+
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Customer Info">
+
+                <div>
+                        <div class="row1">
+                                <label class="firstNameLabel">First Name</label>
+                                <!-- <input placeholder="first"> -->
+                                <label class="lastLabel">Last Name</label>
+                                <label class="lastLabel">Gender</label>
+                                <label class="lastLabel">Age</label>
+                                <label class="dobLabel">Date of birth</label>
+                        </div>
+                        <div class="row2">
+                                <input class="firstNameInput" placeholder="First Name">
+                                <input class="lastNameInput" placeholder="Last Name">
+
+                                <select name="gender" id="gender">
+                                        <option class="genderOptions" value="male">Male</option>
+                                        <option value="female">Female</option>
+                                </select>
+
+                                <input class="ageInput" placeholder="Age">
+                                
+                                <input class="dateInput" matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                <mat-datepicker #picker></mat-datepicker>
+                                <button mat-raised-button (click)="picker.open()">Open</button>
+                        
+                        </div>
+
+                        <div class="row3">
+                                <label class="firstNameLabel">Marital Status</label>
+                                <label class="occupationLabel">Occupation</label>
+                                <label class="emailLabel">Email Address</label>
+                        </div>
+
+                        <div class="row3">
+                                <input class="maritalInput" placeholder="Marital Status">
+
+                                <select class="ocuupation" name="gender" id="gender">
+                                        <option class="genderOptions" value="male">Business</option>
+                                        <option value="female">Job</option>
+                                </select>
+
+                                <input class="lastNameInput" placeholder="Email Address">
+                        </div>
+
+                        <div class="row4">
+                                <hr style="width:95%;margin-left:30px;margin-top: 1px; color: #333333;background-color: #333333;">
+                        </div>
+
+                        <div class="row5">
+                                <label class="questionLabel">What is the address of home you want to insure?</label>
+                        </div>
+
+                        <div class="row6">
+                                <label class="firstNameLabel">Street Address</label>
+                                <label class="unitLabel">Unit Number</label>
+                                <label class="emailLabel">City</label>
+                                <label class="unitLabel">State</label>
+                                <label class="unitLabel">Zip Code</label>
+                        </div>
+
+                        <div class="row7">
+                                <input class="streetInput" placeholder="Street Address">
+                                <input class="unitInput" placeholder="Unit Input">
+
+                                <select class="ocuupation" name="gender" id="gender">
+                                        <option class="genderOptions" value="male">Bella</option>
+                                        <option value="female">xyz</option>
+                                        <option value="female">abc</option>
+                                </select>
+
+                                <input class="unitInput" placeholder="State">
+                                <input class="unitInput" placeholder="Zip Code">
+                        </div>
+
+                        <div class="row8">
+                                <label class="questionLabels"> Desired coverage start date</label>
+                                <label class="questionLabels labelMargin"> Do you currently have property isuue?</label>
+                        </div>
+
+                        <div class="row9">
+                                <!-- <input class="dateInput" matInput [matDatepicker]="picker" placeholder="Choose a date">
+                                <mat-datepicker #picker></mat-datepicker>
+                                <button mat-raised-button (click)="picker.open()">Open</button> -->
+                
+                                <select class="ocuupation selectIssue" name="gender" id="gender">
+                                        <option class="genderOptions" value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+
+                        </div>
+
+                        <div class="row8">
+                                <label class="questionLabels"> Do you or a family member</label> 
+                                <label class="questionLabels labelMargin"> Have you or any of your family members </label><br/>
+                                <label class="questionLabels"> business from home?</label>
+                                <label class="questionLabels labelMargin labelCriminal">ever had criminal conviction?</label>
+                        </div>
+
+                        <div class="row9">
+                                
+                                <select class="ocuupation" name="gender" id="gender">
+                                        <option class="genderOptions" value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+
+                                <select class="ocuupation selectIssue" name="gender" id="gender">
+                                        <option class="genderOptions" value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                        </div>
+
+                        <div class="row8">
+                                <label class="questionLabels"> Does anyone in your home smoke?</label> 
+                                <label class="questionLabels labelMargin labelHome"> Do you have any pets at home? </label><br/>
+                        </div>
+
+                        <div class="row9">
+                                <select class="ocuupation" name="gender" id="gender">
+                                        <option class="genderOptions" value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+
+                                <select class="ocuupation selectIssue" name="gender" id="gender">
+                                        <option class="genderOptions" value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                </select>
+                        </div>
+                </div>
+
+
+        </mat-tab>
+
+
+        <mat-tab label="Property Info">Content 2
+
+fdgfdg
+        </mat-tab>
+
+
+        <mat-tab label="Review">Content 3
+gdfgfgg
+
+        </mat-tab>
+    </mat-tab-group>
+
+</div>
