@@ -12,6 +12,7 @@
 .main{
     margin-top: 10px;
     overflow: hidden !important;
+    width: 100%;
 }
 
 .row1{
@@ -211,6 +212,10 @@ select{
 }
 
 .firstTab{
+  overflow: auto;
+}
+
+.secondTab{
   overflow: auto;
 }
 
