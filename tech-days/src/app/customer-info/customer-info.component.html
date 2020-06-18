@@ -6,7 +6,7 @@
 
     <mat-tab-group  mat-align-tabs="center">
         <mat-tab label="Customer Info">
-
+                
                 <div class="firstTab">
                         <div class="row1">
                                 <label class="firstNameLabel">First Name</label>
@@ -90,7 +90,7 @@
                                 <mat-datepicker #picker1></mat-datepicker>
                                 <button mat-raised-button (click)="picker1.open()">Open</button>
                 
-                                <select class="ocuupation selectIssue" name="gender" id="gender">
+                                <select class="ocuupation propertyIssue" name="gender" id="gender">
                                         <option class="genderOptions" value="yes">Yes</option>
                                         <option value="no">No</option>
                                 </select>
@@ -174,9 +174,122 @@
         </mat-tab>
 
 
-        <mat-tab label="Property Info">Content 2
+        <mat-tab label="Property Info">
+                
+                <div class="row5">
+                        <label class="questionLabel">What year was the home built?</label>
+                        <label class="questionLabel labelMargin">Number of peple living in the household</label>
+                </div>
 
-fdgfdg
+                <div class="row7">
+                        <input class="streetInput" placeholder="Year">
+                        <input class="streetInput labelCriminal" placeholder="Number of people">
+                </div>
+
+                <div class="row5">
+                        <label class="questionLabel">Purchase date of home</label>
+                        <label class="questionLabel labelCriminal ">Approximate living area</label>
+                </div>
+
+                <div class="row7">
+                        <input class="streetInput" placeholder="Date">
+                        <input class="streetInput labelCriminal" placeholder="Living area">
+                </div>
+
+                <div class="row5">
+                        <label class="questionLabel">Exterior type</label>
+                        <label class="questionLabel labelRoof ">Roof shape</label>
+                </div>
+
+                <div class="row9">
+                        <select class="ocuupation" name="gender" id="gender">
+                                <option class="genderOptions" value="yes">Brick stone</option>
+                                <option value="no">No</option>
+                        </select>
+
+                        <select class="ocuupation selectIssue" name="gender" id="gender">
+                                <option class="genderOptions" value="yes">Flat</option>
+                                <option value="no">No</option>
+                        </select>
+                </div>
+
+                <div class="row5">
+                        <label class="questionLabel">Have you had any property insurance claims </label>
+                        <label class="questionLabel labelSwimming ">Is there a swimming pool on the premises?</label><br/>
+                        <label>or losses in the past 7 years?</label>
+                </div>
+
+                <div class="row7">
+                        <input class="streetInput" placeholder="yes/no">
+                        <input class="streetInput labelCriminal" placeholder="yes/no">
+                </div>
+
+                <div class="row5">
+                        <label class="questionLabel">Is there a swimming pool on the premises?</label>
+                        <label class="questionLabel labelSwimming ">What material is the kitchen countertops made of?</label><br/>
+                </div>
+
+                <div class="row7">
+                        <input class="streetInput" placeholder="yes/no">
+
+                        <select class="ocuupation selectIssue" name="gender" id="gender">
+                                <option class="genderOptions" value="yes">Wood</option>
+                                <option value="no">No</option>
+                        </select>
+                </div>
+
+                <div class="row5">
+                        <label class="questionLabel">Is your home within 1,000 feet of a fire hydrant?</label>
+                        <label class="questionLabel labelSwimming ">Type of Foundation</label><br/>
+                </div>
+
+                <div class="row7">
+                        <input class="streetInput" placeholder="yes/no">
+
+                        <select class="ocuupation selectIssue" name="gender" id="gender">
+                                <option class="genderOptions" value="yes">Closed basement</option>
+                                <option value="no">No</option>
+                        </select>
+                </div>
+
+
+                <div class="row5">
+                        <label class="questionLabel">Building Material</label>
+                        <label class="questionLabel labelRoof ">Type of garage</label>
+                </div>
+
+                <div class="row9">
+                        <select class="ocuupation" name="gender" id="gender">
+                                <option class="genderOptions" value="yes">Solid Brick</option>
+                                <option value="no">No</option>
+                        </select>
+
+                        <select class="ocuupation selectIssue" name="gender" id="gender">
+                                <option class="genderOptions" value="yes">Car attached</option>
+                                <option value="no">No</option>
+                        </select>
+                </div>
+
+                <div class="row5">
+                        <label class="questionLabel">No. of Stories</label>
+                        <label class="questionLabel labelRoof ">Select the protective devices installed in your home?</label>
+                </div>
+
+                <div class="row7">
+                        <select class="ocuupation " name="gender" id="gender">
+                                <option class="genderOptions" value="yes">1</option>
+                                <option value="no">2</option>
+                                <option value="no">3</option>
+                        </select>
+                        <mat-checkbox class="labelRoof">A burglar alarm that sounds in your home​</mat-checkbox>
+                        <mat-checkbox class="labelRoof">A for alarm that reports to a fire station</mat-checkbox>
+                        <mat-checkbox class="labelRoof">Multiple fire sprinklers throughout the home</mat-checkbox>
+                        <mat-checkbox class="labelRoof">An emergency backup generator</mat-checkbox>
+                        <mat-checkbox class="labelRoof">A home automation system</mat-checkbox>
+                        <mat-checkbox class="labelRoof">None of the above​</mat-checkbox>
+                </div>
+
+
         </mat-tab>
 
 

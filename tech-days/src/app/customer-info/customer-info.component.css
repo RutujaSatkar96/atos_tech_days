@@ -233,6 +233,11 @@ select{
   color: #000 !important;
 }
 
+.mat-tab-label .mat-tab-label-content{
+  font-family: Verdana !important;
+  font-weight: 20px !important;
+  color: #000 !important;
+}
 .smokerInput{
   width: 90px;
   height: 36px;
@@ -269,4 +274,19 @@ select{
 }
 .reasonInput{
   margin-left: 80px;
+}
+.labelSwimming{
+  margin-left: 100px;
+}
+
+.mat-tab-body-content {
+  height: 90vh !important;
+}
+
+.propertyIssue{
+  margin-left: 280px;
+}
+
+.labelRoof{
+  margin-left: 400px;
 }
