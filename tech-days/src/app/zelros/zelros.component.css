@@ -1,0 +1,119 @@
+.rightDiv{
+    float:right; 
+    background:#fff; 
+    width:302px; 
+    height:100%; 
+}
+.logo{
+    margin-left: 20px;
+}
+
+.shape1{
+    height: 44px;
+    width: 281px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.nameLabel{
+    color: 	#eb5b28;
+}
+
+.shape2{
+    width: 281px;
+    height: 84px;
+    background-color: #e6e6e6;
+    margin-top: 12px;
+    border-radius: 15px;
+}
+
+.helloLabel{
+    margin-top: 30px;
+    /* margin-left: 15px; */
+    font-family: Verdana;
+    color: #000;
+    padding: 12px;
+    font-weight: 20px;
+}
+.row1{
+    /* margin-left: 15px; */
+    margin-top: 13px;
+    padding: 12px;
+}
+
+.quoteLabel{
+    font-weight: bold;
+}
+
+.row2{
+    width: 302px;
+    height: 114px;
+    margin-top: 20px;
+    background-color:#fff;
+}
+
+.scoreValue{
+    color: 	#eb5b28;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.scoreLabel{
+    margin-top: 30px;
+    /* margin-left: 15px; */
+    font-family: Verdana;
+    color: #000;
+    font-weight: 2px;
+    text-size-adjust: 2px;
+}
+
+.v1{
+    height: 80px;
+    border-left: 2px solid #cecece;
+    margin-left: 150px;
+}
+
+.labelAccuracy{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 16px;
+    font-family: Verdana;
+}
+.labelCustomer{
+    padding: center;
+    font-family: Verdana;
+    margin-top: 20px;
+}
+.row3{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.skipLabel{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.row4{
+    margin-top: 12px;
+    height: 52px;
+    width: 281px;
+    background-color: #fff;
+    padding: 16px;
+    border: groove;
+}
+
+.textLast{
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+.margin{
+    margin-left: 20px;
+}
+
+.div1{
+
+    float: left;
+}
