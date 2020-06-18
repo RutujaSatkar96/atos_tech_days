@@ -1,1 +1,17 @@
-<p>HI</p>
+<div class="accordian-container">
+    <div class="cust-accordian" *ngFor="let accordian of accordianData let i=index let last=last let first=first"
+        [ngClass]="(accordian.collapse==true)?'accordian-opened':'accordian-closed'">
+        <div class="cus-parent" (click)="onAccodianClick(accordian,i)">
+              <span><img class="md-avatar" src='assets/{{accordian.icon}}.png' width="23px" height="23px" style="font-size:22px;margin-top:8px;padding-right:8px;"></span>{{accordian.label}}<span
+                style="float: right;padding-left: 10px;text-align: center;" ><i
+                    [ngClass]="(accordian.collapse==true)?'fa fa-chevron-up':''"></i></span></div>
+        <ng-container *ngIf='accordian.collapse'>
+            <div class="child-container">
+                <div class="cust-child" *ngFor="let items of accordian.children">
+                    <span class="dot"></span>
+                    <span><u>{{items.value}}</u></span>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
