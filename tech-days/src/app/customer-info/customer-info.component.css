@@ -11,6 +11,7 @@
 
 .main{
     margin-top: 10px;
+    overflow: hidden !important;
 }
 
 .row1{
@@ -207,4 +208,65 @@ select{
 
 .selectIssue{
   margin-left: 340px;
+}
+
+.firstTab{
+  overflow: auto;
+}
+
+.mat-tab-group{
+  overflow: hidden !important;
+}
+
+.mat-tab .mat-tab-label .mat-tab-label-content{
+  overflow: hidden !important;
+}
+
+.mat-tab-label {
+  font-family: Verdana !important;
+  font-weight: 20px !important;
+  color: #000 !important;
+}
+.mat-tab-labels, .mat-tab-label, .mat-tab-link{
+  font-family: Verdana !important;
+  font-weight: 20px !important;
+  color: #000 !important;
+}
+
+.smokerInput{
+  width: 90px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+  margin-left: 20px;
+}
+.labelPet{
+  margin-left: 320px;
+}
+.petInput{
+  margin-left: 370px;
+}
+
+.labelBreed{
+  margin-left: 70px;
+}
+
+.breedInput{
+  margin-left: 28px;
+}
+
+.yearInput{
+  margin-left: 240px;
+
+}
+
+.labelReason{
+  margin-left: 50px;
+}
+.reasonInput{
+  margin-left: 80px;
 }
