@@ -3,6 +3,8 @@
 </div> -->
 
 <div class="main">
+<div class="details">
+
 
     <mat-tab-group  mat-align-tabs="center" style="overflow: hidden;">
         <mat-tab label="Customer Info">
@@ -180,6 +182,8 @@
                 <div class="row5">
                         <label class="questionLabel">What year was the home built?</label>
                         <label class="questionLabel labelMargin">Number of peple living in the household</label>
+
+                        <button style="margin-left: 20px;" (click) = "navigateToUnderwriter()">Navigate to underwriting screen</button>
                 </div>
 
                 <div class="row7">
@@ -289,15 +293,79 @@
                         <mat-checkbox class="labelRoof">A home automation system</mat-checkbox>
                         <mat-checkbox class="labelRoof">None of the above​</mat-checkbox>
                 </div>
+
+
         </div>
 
         </mat-tab>
 
 
-        <mat-tab label="Review">Content 3
-         gdfgfgg
+        <mat-tab label="Summary of Coverages">
+
+                <div class="basicinfo">
+                        <label class="detail_one">Coverages</label>
+                      </div>
+                      <div class="detailsrow1">
+                      <label class="emercency">Dwelling Protection:</label>
+                      <label class="emercency">Protect Personal Property Against: </label>
+                      <label class="emercency">Additional Living expenses:</label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_two">{{workQuote.coverages.dwellingprotection}}</label>
+                      <select class="whole_selct" id="#">
+                        <option selected="selected" value="one">{{workQuote.coverages.propertyprotection}}</option>
+                        </select>
+                      <label class="addtional_one_value">{{workQuote.coverages.additionallivingexpenses}}</label>
+                      </div>
+                      <div class="detailsrow1" style="margin-top: 5px;">
+                      <label class="emercency">Other Structures:</label>
+                      <label class="emercency">Personal Property Protection:</label>
+                      <label class="emercency">Family Liability Protection:</label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_one_value">{{workQuote.coverages.otherstructures}}</label>
+                      <label class="whole_two">{{workQuote.coverages.propertyprotection}}</label>
+                      <label class="whole_two two">{{workQuote.coverages.familyliabilityprotection}}</label>
+                      </div>
+                      
+                      <div class="basicinfo">
+                        <label class="detail_one">Discounts & Surcharges</label>
+                      </div>
+                      <div class="detailsrow1">
+                      <label class="emercency">New Construction Discount:</label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_two">{{workQuote.discountsandsurcharges.newconstructiondiscount}}</label>
+                      </div>
+                      <div class="basicinfo">
+                        <label class="detail_one">Deductibles</label>
+                      </div>
+                      <div class="detailsrow1">
+                      <label class="emercency">All Perils deductible:</label>
+                      <label class="emercency">Windstorm/Hail Deductible: </label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_one_value">{{workQuote.deductibles.allperilsdeductible}}</label>
+                      <label class="whole_one_value">{{workQuote.deductibles.windstormorhail}}</label>
+                      
+                        </div>
+                       
+                        <div class="detailsrow1" style="margin-top: 20px;">
+                        <label class="emercency">FINAL PREMIUM:</label>
+                        </div>
+                        
+                        <div class="detailsrow1">
+                        <label class="whole_two">{{workQuote.finalpremium}}</label>
+                        </div>
+                        <br>
+                        <br>
+                      
 
         </mat-tab>
     </mat-tab-group>
-
+</div>
 </div>
