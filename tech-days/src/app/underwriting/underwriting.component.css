@@ -15,7 +15,7 @@
     display: flex;
 }
 .detail_one{
-    width:  336px;
+    width:  330px;
     font-family: verdana;
     font-weight: 600;
     font-size: 13px;
@@ -23,21 +23,21 @@
 }
 
 .detail_two{
-    min-width: 251px;
+    min-width: 254px;
     font-family: verdana;
     font-weight: 600;
     margin-left: 8px;
     font-size: 13px;
 }
 .detail_one_value{
-    min-width:336px;
+    min-width:330px;
     font-family: verdana;
     font-size: 16px;
     margin-left: 8px;
 }
 
 .detail_two_value{
-    min-width:251px;
+    min-width:240px;
     font-family: verdana;
     font-size: 16px;
 }
@@ -69,11 +69,17 @@
     font-size: 13px;
 }
 .emercency{
-    width:  336px;
+    width:  330px;
     font-family: verdana;
     font-weight: 600;
     font-size: 13px;
     margin-left: 8px;
+}
+.backup{
+    width:  230px;
+    font-family: verdana;
+    font-weight: 600;
+    font-size: 13px;
 }
 .whole_one_value{
     min-width:336px;
@@ -100,7 +106,7 @@
 }
 .button_colour {
     height: 60px;
-    width: 250px;
+    width: 245px;
     font-family: Verdana;
     font-weight: bold;
     color: #fcdccf;

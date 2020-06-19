@@ -1,16 +1,5 @@
 .box {
-    display: flex;
-  }
-
-.rightDiv{
-  width: 20%;
-  background-color: #c8c8c8;
-  float: right;
-  z-index: 10;  
-  position: absolute;  
-   right: 0;  
-   top: 0;
-  height: 76px;
+  display: flex;
 }
 
 .v1{
@@ -26,7 +15,7 @@
     height: 76px;
     color: #ffffff;
     overflow: hidden;
-    width: 80%;
+    width: 96%;
   }
   
   .logo{
