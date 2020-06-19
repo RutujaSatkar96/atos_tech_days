@@ -182,8 +182,6 @@
                 <div class="row5">
                         <label class="questionLabel">What year was the home built?</label>
                         <label class="questionLabel labelMargin">Number of peple living in the household</label>
-
-                        <button style="margin-left: 20px;" (click) = "navigateToUnderwriter()">Navigate to underwriting screen</button>
                 </div>
 
                 <div class="row7">
@@ -212,7 +210,7 @@
                                 <option value="no">No</option>
                         </select>
 
-                        <select class="ocuupation selectIssue" name="gender" id="gender">
+                        <select class="ocuupation selectIssue margin" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Flat</option>
                                 <option value="no">No</option>
                         </select>
@@ -220,7 +218,7 @@
 
                 <div class="row5">
                         <label class="questionLabel">Have you had any property insurance claims </label>
-                        <label class="questionLabel labelSwimming ">Is there a swimming pool on the premises?</label><br/>
+                        <label class="questionLabel labelSwimming">Is there a swimming pool on the premises?</label><br/>
                         <label>or losses in the past 7 years?</label>
                 </div>
 
@@ -231,7 +229,7 @@
 
                 <div class="row5">
                         <label class="questionLabel">Is there a swimming pool on the premises?</label>
-                        <label class="questionLabel labelSwimming ">What material is the kitchen countertops made of?</label><br/>
+                        <label class="questionLabel labelSwimming labelSwimming">What material is the kitchen countertops made of?</label><br/>
                 </div>
 
                 <div class="row7">
@@ -297,10 +295,17 @@
 
         </div>
 
+        <div>
+                <button class="button" (click) = "navigateToUnderwriter()">Request Quote</button>
+                <div>All coverages and discounts are subject to terms, conditions, availability, and qualifications.</div>
+                <div>This is a brief description of coverages; this is not a contract. </div>
+                <div> Please contact a local agent or call 151-200-300 for more information.</div>
+                
+        </div>
         </mat-tab>
 
 
-        <mat-tab label="Summary of Coverages">
+        <!-- <mat-tab label="Summary of Coverages">
 
                 <div class="basicinfo">
                         <label class="detail_one">Coverages</label>
@@ -365,7 +370,7 @@
                         <br>
                       
 
-        </mat-tab>
+        </mat-tab> -->
     </mat-tab-group>
 </div>
 </div>
