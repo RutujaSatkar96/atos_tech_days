@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { WorkQuote } from '../shared/models/work-quote.model';
 import {HttpClient} from '@angular/common/http'
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-underwriting',
   templateUrl: './underwriting.component.html',
@@ -13,7 +15,13 @@ export class UnderwritingComponent implements OnInit {
   title = 'HttpRequest';
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
-  constructor(private http:HttpClient){
+  show: boolean = false;
+  constructor(private http:HttpClient,private _router: Router){
+
+    let role = localStorage.getItem("typeId");
+    if(role=="2"){
+      this.show=true;
+    }
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
       console.log(data)
@@ -24,5 +32,9 @@ export class UnderwritingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  navigateDaashboard(){
+    this._router.navigate(['app-dasboard']);
+}
 
 }

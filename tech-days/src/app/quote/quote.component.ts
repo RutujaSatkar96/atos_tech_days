@@ -14,7 +14,7 @@ export class QuoteComponent implements OnInit {
   }
 
   navigateToCustomerInfo(){
-      this._router.navigate(['app-customer-info']);
+      this._router.navigate(['app-recents']);
   }
 
 }

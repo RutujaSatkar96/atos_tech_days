@@ -44,7 +44,7 @@
 .address_phone{
     height: 54px;
     background: #e8e8e8;
-    margin-top: 4px;
+    padding-top: 8px;
 }
 .basicinfo{
     min-width: 251px;

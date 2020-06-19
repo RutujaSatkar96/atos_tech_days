@@ -45,7 +45,17 @@ export class SidebarComponent implements OnInit {
    {
      label:"Reports",
      collapse:false,
-     icon:"reports_icn"
+     icon:"reports_icn",
+     children:[
+      {
+       value:"Property Inspection Report",
+       icon:"fa fa-cubes"
+      },
+      {
+       value:"Swimming Pool Invoice",
+       icon:"fa fa-eyedropper"
+      }
+     ]
    },
    {
      label:"View Documents",

@@ -11,6 +11,7 @@ export class CustomerInfoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    localStorage.setItem("typeId","1");
   }
 
    

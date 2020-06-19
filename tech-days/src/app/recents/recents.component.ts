@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    localStorage.setItem("typeId","1");
+   }
 
   ngOnInit(): void {
   }

@@ -28,7 +28,20 @@ const routes: Routes = [
      { path: 'viewdocuments', component: ViewDocumentsComponent},
      { path: 'viewzelrossummary', component: ViewZelrosSummaryComponent},
      { path: 'surveys', component: SurveysComponent},
-     { path: 'recents', component: RecentsComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'app-recents', component: RecentsComponent},
+     { path: '**', component: UnderwritingComponent}
+   ] },
+   { path: 'app-recents', component: RecentsComponent,
+   children:[
+     { path: '', component: UnderwritingComponent},
+     { path: 'underwriting', component: UnderwritingComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'submissions', component: SubmissionsComponent},
+     { path: 'reports', component: ReportsComponent},
+     { path: 'viewdocuments', component: ViewDocumentsComponent},
+     { path: 'viewzelrossummary', component: ViewZelrosSummaryComponent},
+     { path: 'surveys', component: SurveysComponent},
      { path: '**', component: UnderwritingComponent}
    ] },
    { path: 'underwriting', component: UnderwritingComponent,children:[
