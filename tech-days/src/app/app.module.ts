@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CustomerSummaryComponent } from './customer-summary/customer-summary.component';
 import { ZelrosComponent } from './zelros/zelros.component';
 import { RecentsComponent } from './recents/recents.component';
+import { DialogComponent } from './dialog/dialog.component';
 
 imports: [
     BrowserModule
@@ -29,7 +30,11 @@ imports: [
     UnderwritingComponent,
     CustomerSummaryComponent,
     ZelrosComponent,
-    RecentsComponent
+    RecentsComponent,
+    DialogComponent
+  ],
+  entryComponents: [
+    DialogComponent
   ],
   imports: [
     BrowserModule,

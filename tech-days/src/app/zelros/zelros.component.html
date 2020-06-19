@@ -23,7 +23,8 @@
                 <label class="labelCustomer">Customer</label><br/>
                 <label class="labelCustomer">seriousness score</label>
                </div>
-               <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png">
+               <!-- <button (click) = "openDialog()">open</button> -->
+               <img (click) ="openDialog()" style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png">
            </div>
             <div class="v1">
                 
@@ -32,7 +33,7 @@
                     <label class="labelAccuracy">Accuracy of </label><br/>
                     <label class="labelAccuracy">coverage</label>
                 </div>
-                <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png">
+                <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png" (click) ="document.getElementById('id01').style.display='block'"">
 
             </div>
             
@@ -78,5 +79,16 @@
             <label class="textLast margin">without asking additional documents.</label>
         </div>
     </div>
+
+
+    <!-- <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <p>Some text. Some text. Some text.</p>
+            <p>Some text. Some text. Some text.</p>
+          </div>
+        </div>
+    </div> -->
 
 </div>
