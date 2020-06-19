@@ -34,7 +34,7 @@ export class UnderwritingComponent implements OnInit {
   }
 
   navigateDaashboard(){
-    this._router.navigate(['app-dasboard']);
+    this._router.navigate(['/app-dasboard']);
 }
 
 }
