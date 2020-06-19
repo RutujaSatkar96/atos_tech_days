@@ -1,0 +1,96 @@
+.main{
+    width: 830px;
+    height: 100%;
+    margin: 8px;
+    background: #ffffff;
+}
+.details{
+    height: 101px;
+    background: #f2f2f2;
+    opacity: 50%;
+}
+.detailsrow1{
+    display: flex;
+}
+.detailsrow2{
+    display: flex;
+}
+.detail_one{
+    width:  336px;
+    font-family: verdana;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.detail_two{
+    min-width: 251px;
+    font-family: verdana;
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 13px;
+}
+.detail_one_value{
+    min-width:336px;
+    font-family: verdana;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.detail_two_value{
+    min-width:251px;
+    font-family: verdana;
+    font-size: 16px;
+}
+.address_phone{
+    height: 54px;
+    background: #e8e8e8;
+    margin-top: 4px;
+}
+.basicinfo{
+    min-width: 251px;
+    font-family: verdana;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.whole_one{
+    width:  207px;
+    font-family: verdana;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.whole_two{
+    min-width: 207px;
+    font-family: verdana;
+    margin-left: 8px;
+    font-size: 13px;
+}
+.emercency{
+    width:  336px;
+    font-family: verdana;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.whole_one_value{
+    min-width:336px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.whole_selct{
+    min-width:200px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 100px;
+}
+.addtional_one_value{
+    min-width:336px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 55px;
+}

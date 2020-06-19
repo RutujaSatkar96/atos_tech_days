@@ -11,6 +11,7 @@ import { ViewZelrosSummaryComponent } from './view-zelros-summary/view-zelros-su
 import { SurveysComponent } from './surveys/surveys.component';
 import { RecentsComponent } from './recents/recents.component';
 import { CustomerInfoComponent } from './customer-info/customer-info.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 const routes: Routes = [
@@ -30,7 +31,10 @@ const routes: Routes = [
      { path: 'recents', component: RecentsComponent},
      { path: '**', component: UnderwritingComponent}
    ] },
+   { path: 'underwriting', component: UnderwritingComponent,children:[
+    { path: '', component: SidebarComponent}]},
    { path: '**', component: QuoteComponent }
+ 
 ];
 
 @NgModule({

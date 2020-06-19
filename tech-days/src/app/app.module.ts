@@ -9,6 +9,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CustomerInfoComponent } from './customer-info/customer-info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UnderwritingComponent } from './underwriting/underwriting.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     QuoteComponent,
     DashboardComponent,
     SidebarComponent,
-    CustomerInfoComponent
+    CustomerInfoComponent,
+    UnderwritingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
