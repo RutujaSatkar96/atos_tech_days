@@ -31,7 +31,7 @@
                                 
                                 <input class="dateInput" matInput [matDatepicker]="picker" placeholder="Choose a date">
                                 <mat-datepicker #picker></mat-datepicker>
-                                <button mat-raised-button (click)="picker.open()">Open</button>
+                                <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                         
                         </div>
 
@@ -74,8 +74,6 @@
 
                                 <select class="ocuupation" name="gender" id="gender">
                                         <option class="genderOptions" value="male">Bella</option>
-                                        <option value="female">xyz</option>
-                                        <option value="female">abc</option>
                                 </select>
 
                                 <input class="unitInput" placeholder="State">
@@ -90,7 +88,7 @@
                         <div class="row9">
                                 <input class="dateInput" matInput [matDatepicker]="picker1" placeholder="Choose a date">
                                 <mat-datepicker #picker1></mat-datepicker>
-                                <button mat-raised-button (click)="picker1.open()">Open</button>
+                                <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                 
                                 <select class="ocuupation propertyIssue" name="gender" id="gender">
                                         <option class="genderOptions" value="yes">Yes</option>
@@ -160,7 +158,7 @@
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> Name of insurer</label> 
+                                <label class="questionLabels"> Name of Insurer</label> 
                                 <label class="questionLabels labelMargin labelHome"> Cancellation year </label>
                                 <label class="questionLabels labelReason"> Cancellation reason </label>
                         </div>
@@ -207,12 +205,10 @@
                 <div class="row9">
                         <select class="ocuupation" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Brick stone</option>
-                                <option value="no">No</option>
                         </select>
 
                         <select class="ocuupation selectIssue margin" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Flat</option>
-                                <option value="no">No</option>
                         </select>
                 </div>
 
@@ -237,7 +233,6 @@
 
                         <select class="ocuupation selectIssue" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Wood</option>
-                                <option value="no">No</option>
                         </select>
                 </div>
 
@@ -251,7 +246,6 @@
 
                         <select class="ocuupation selectIssue" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Closed basement</option>
-                                <option value="no">No</option>
                         </select>
                 </div>
 
@@ -264,12 +258,10 @@
                 <div class="row9">
                         <select class="ocuupation" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Solid Brick</option>
-                                <option value="no">No</option>
                         </select>
 
                         <select class="ocuupation selectIssue" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Car attached</option>
-                                <option value="no">No</option>
                         </select>
                 </div>
 
