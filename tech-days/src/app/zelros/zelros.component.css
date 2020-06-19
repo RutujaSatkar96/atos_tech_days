@@ -1,7 +1,8 @@
 .rightDiv{
-    background:#fff; 
+    /* background:#c8c8c8;  */
     width:302px; 
     height:100%; 
+    padding: 16px;
 }
 .logo{
     margin-left: 20px;

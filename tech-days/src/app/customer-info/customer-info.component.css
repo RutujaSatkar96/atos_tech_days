@@ -289,7 +289,13 @@ select{
 .labelSwimming{
   margin-left: 170px;
 }
+.labelFoundation{
+  margin-left: 130px;
+}
 
+.labelFoundation1{
+  margin-left: 80px;
+}
 .mat-tab-body-content {
   height: 90vh !important;
 }
@@ -299,7 +305,7 @@ select{
 }
 
 .labelRoof{
-  margin-left: 400px;
+  margin-left: 380px;
 }
 
 .detailsrow1{
@@ -401,4 +407,70 @@ select{
   margin-right: 100px;
   height: 50px;
   width: 160px;
+}
+
+.optionsInput{
+  margin-left: 50px;
+}
+
+
+.header{
+  z-index: 1;
+  padding: .5rem 1.25rem;
+  background-color: #0066a1;
+  position: sticky;
+  top: 0;
+  height: 76px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.logo{
+  height: 32px;
+  width: 176px;
+  margin-top: 14px;
+}
+
+.logoutIcon{
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+}
+
+.logout{
+  float: right;
+  fill: #000;
+  height: 76px;
+  width: 79px;
+}
+
+.helpIcon{
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+  margin-right: 26px;
+}
+
+.notificationIcon{
+  float: right;
+  height: 30px;
+  width: 24px;
+  margin-top: 15px;
+  margin-right: 26px;
+}
+
+.userIcon{
+  float: right;
+  height: 45px;
+  width: 45px;
+  margin-top: 15px;
+  margin-right: 26px;
+}
+
+.welcome{
+  float: right;
+  margin-top: 15px;
+  margin-right: 14px;
 }
