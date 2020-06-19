@@ -11,6 +11,7 @@ import { CustomerInfoComponent } from './customer-info/customer-info.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UnderwritingComponent } from './underwriting/underwriting.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomerSummaryComponent } from './customer-summary/customer-summary.component';
 import { ZelrosComponent } from './zelros/zelros.component';
 import { RecentsComponent } from './recents/recents.component';
 
@@ -26,6 +27,7 @@ imports: [
     SidebarComponent,
     CustomerInfoComponent,
     UnderwritingComponent,
+    CustomerSummaryComponent,
     ZelrosComponent,
     RecentsComponent
   ],

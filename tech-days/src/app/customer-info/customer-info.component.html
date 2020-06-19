@@ -3,6 +3,8 @@
 </div> -->
 
 <div class="main">
+<div class="details">
+
 
     <mat-tab-group  mat-align-tabs="center" style="overflow: hidden;">
         <mat-tab label="Customer Info">
@@ -208,7 +210,7 @@
                                 <option value="no">No</option>
                         </select>
 
-                        <select class="ocuupation selectIssue" name="gender" id="gender">
+                        <select class="ocuupation selectIssue margin" name="gender" id="gender">
                                 <option class="genderOptions" value="yes">Flat</option>
                                 <option value="no">No</option>
                         </select>
@@ -216,7 +218,7 @@
 
                 <div class="row5">
                         <label class="questionLabel">Have you had any property insurance claims </label>
-                        <label class="questionLabel labelSwimming ">Is there a swimming pool on the premises?</label><br/>
+                        <label class="questionLabel labelSwimming">Is there a swimming pool on the premises?</label><br/>
                         <label>or losses in the past 7 years?</label>
                 </div>
 
@@ -227,7 +229,7 @@
 
                 <div class="row5">
                         <label class="questionLabel">Is there a swimming pool on the premises?</label>
-                        <label class="questionLabel labelSwimming ">What material is the kitchen countertops made of?</label><br/>
+                        <label class="questionLabel labelSwimming labelSwimming">What material is the kitchen countertops made of?</label><br/>
                 </div>
 
                 <div class="row7">
@@ -289,15 +291,86 @@
                         <mat-checkbox class="labelRoof">A home automation system</mat-checkbox>
                         <mat-checkbox class="labelRoof">None of the above​</mat-checkbox>
                 </div>
+
+
         </div>
 
+        <div>
+                <button class="button" (click) = "navigateToUnderwriter()">Request Quote</button>
+                <div>All coverages and discounts are subject to terms, conditions, availability, and qualifications.</div>
+                <div>This is a brief description of coverages; this is not a contract. </div>
+                <div> Please contact a local agent or call 151-200-300 for more information.</div>
+                
+        </div>
         </mat-tab>
 
 
-        <mat-tab label="Review">Content 3
-         gdfgfgg
+        <!-- <mat-tab label="Summary of Coverages">
 
-        </mat-tab>
+                <div class="basicinfo">
+                        <label class="detail_one">Coverages</label>
+                      </div>
+                      <div class="detailsrow1">
+                      <label class="emercency">Dwelling Protection:</label>
+                      <label class="emercency">Protect Personal Property Against: </label>
+                      <label class="emercency">Additional Living expenses:</label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_two">{{workQuote.coverages.dwellingprotection}}</label>
+                      <select class="whole_selct" id="#">
+                        <option selected="selected" value="one">{{workQuote.coverages.propertyprotection}}</option>
+                        </select>
+                      <label class="addtional_one_value">{{workQuote.coverages.additionallivingexpenses}}</label>
+                      </div>
+                      <div class="detailsrow1" style="margin-top: 5px;">
+                      <label class="emercency">Other Structures:</label>
+                      <label class="emercency">Personal Property Protection:</label>
+                      <label class="emercency">Family Liability Protection:</label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_one_value">{{workQuote.coverages.otherstructures}}</label>
+                      <label class="whole_two">{{workQuote.coverages.propertyprotection}}</label>
+                      <label class="whole_two two">{{workQuote.coverages.familyliabilityprotection}}</label>
+                      </div>
+                      
+                      <div class="basicinfo">
+                        <label class="detail_one">Discounts & Surcharges</label>
+                      </div>
+                      <div class="detailsrow1">
+                      <label class="emercency">New Construction Discount:</label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_two">{{workQuote.discountsandsurcharges.newconstructiondiscount}}</label>
+                      </div>
+                      <div class="basicinfo">
+                        <label class="detail_one">Deductibles</label>
+                      </div>
+                      <div class="detailsrow1">
+                      <label class="emercency">All Perils deductible:</label>
+                      <label class="emercency">Windstorm/Hail Deductible: </label>
+                      </div>
+                      
+                      <div class="detailsrow1">
+                      <label class="whole_one_value">{{workQuote.deductibles.allperilsdeductible}}</label>
+                      <label class="whole_one_value">{{workQuote.deductibles.windstormorhail}}</label>
+                      
+                        </div>
+                       
+                        <div class="detailsrow1" style="margin-top: 20px;">
+                        <label class="emercency">FINAL PREMIUM:</label>
+                        </div>
+                        
+                        <div class="detailsrow1">
+                        <label class="whole_two">{{workQuote.finalpremium}}</label>
+                        </div>
+                        <br>
+                        <br>
+                      
+
+        </mat-tab> -->
     </mat-tab-group>
-
+</div>
 </div>
