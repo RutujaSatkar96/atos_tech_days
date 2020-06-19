@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UnderwritingComponent } from './underwriting/underwriting.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomerSummaryComponent } from './customer-summary/customer-summary.component';
+import { ZelrosComponent } from './zelros/zelros.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CustomerSummaryComponent } from './customer-summary/customer-summary.co
     SidebarComponent,
     CustomerInfoComponent,
     UnderwritingComponent,
-    CustomerSummaryComponent
+    CustomerSummaryComponent,
+    ZelrosComponent
   ],
   imports: [
     BrowserModule,

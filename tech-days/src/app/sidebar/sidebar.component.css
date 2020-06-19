@@ -2,6 +2,7 @@
 {
     width: 213px;
     color:white;
+    overflow: hidden;
     
 }
 .child-container

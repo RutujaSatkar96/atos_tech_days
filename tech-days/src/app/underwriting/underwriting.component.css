@@ -5,9 +5,8 @@
     background: #ffffff;
 }
 .details{
-    height: 101px;
+    height: 131px;
     background: #f2f2f2;
-    opacity: 50%;
 }
 .detailsrow1{
     display: flex;
@@ -93,4 +92,23 @@
     font-family: verdana;
     font-size: 13px;
     margin-left: 55px;
+}
+.form-group {
+    display: flex;
+    float:inherit;
+    background: #ffffff;
+}
+.button_colour {
+    height: 60px;
+    width: 250px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #fcdccf;
+    background-color: #fa6119;
+    border-radius: 5px;
+    margin-top: 19px;
+    margin-left: 12px;
+    text-align: center;
+    font-size: 13px;
+
 }
