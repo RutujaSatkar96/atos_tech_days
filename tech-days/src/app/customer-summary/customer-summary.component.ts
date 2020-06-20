@@ -26,7 +26,7 @@ export class CustomerSummaryComponent implements OnInit {
   }
 
   navigateToUnderwriter(){
-    this._router.navigate(['app-recents']);
+    this._router.navigate(['app-agent-review']);
   }
 
   ngOnInit(): void {

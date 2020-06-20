@@ -15,6 +15,9 @@ import { CustomerSummaryComponent } from './customer-summary/customer-summary.co
 import { ZelrosComponent } from './zelros/zelros.component';
 import { RecentsComponent } from './recents/recents.component';
 import { DialogComponent } from './dialog/dialog.component';
+import { ComplexQuoteComponent } from './complex-quote/complex-quote.component';
+import { AgentReviewComponent } from './agent-review/agent-review.component';
+import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
 
 imports: [
     BrowserModule
@@ -31,7 +34,10 @@ imports: [
     CustomerSummaryComponent,
     ZelrosComponent,
     RecentsComponent,
-    DialogComponent
+    DialogComponent,
+    ComplexQuoteComponent,
+    AgentReviewComponent,
+    StandardQuoteComponent
   ],
   entryComponents: [
     DialogComponent

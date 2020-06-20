@@ -34,7 +34,24 @@ export class UnderwritingComponent implements OnInit {
   }
 
   navigateDaashboard(){
-    this._router.navigate(['/app-dasboard']);
+    this._router.navigate(['/app-standard-quote']);
+}
+emailRequest(){
+  this._router.navigate(['/app-complex-quote']);
+}
+bindRequest(){
+
 }
 
+rejectRequest(){
+
+}
+
+propertyRequest(){
+
+}
+
+finalRequest(){
+  
+}
 }

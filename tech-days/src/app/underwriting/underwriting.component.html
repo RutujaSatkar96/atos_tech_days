@@ -227,9 +227,9 @@
   <div *ngIf="show; else notShow">
     <div class="form-group">
       <div>
-          <button id="button1id" name="button1id" class="button_colour" ng-click="emailRequest()">Email for additional documents</button>
-          <button id="button2id" name="button2id" class="button_colour" ng-click="propertyRequest()" >Request Property Inspection</button>
-          <button id="button3id" name="button3id" class="button_colour" ng-click="finalRequest()">Prepare Final Offer</button>
+          <button id="button1id" name="button1id" class="button_colour" (click)="emailRequest()">Email for additional documents</button>
+          <button id="button2id" name="button2id" class="button_colour" (click)="propertyRequest()" >Request Property Inspection</button>
+          <button id="button3id" name="button3id" class="button_colour" (click)="finalRequest()">Prepare Final Offer</button>
   
         </div>
   </div>
@@ -238,9 +238,9 @@
   <ng-template #notShow>
     <div class="form-group">
       <div>
-          <button id="button1id" name="button1id" class="button_colour" ng-click="navigateDaashboard()">Request to  Bind</button>
-          <button id="button2id" name="button2id" class="button_colour" ng-click="rejectRequest()">Reject Quote</button>
-          <button id="button3id" name="button3id" class="button_colour" ng-click="bindRequest()">Contact Prospect</button>
+          <button id="button1id" name="button1id" class="button_colour" (click)="navigateDaashboard()">Request to  Bind</button>
+          <button id="button2id" name="button2id" class="button_colour" (click)="rejectRequest()">Reject Quote</button>
+          <button id="button3id" name="button3id" class="button_colour" (click)="bindRequest()">Contact Prospect</button>
   
         </div>
   </div>

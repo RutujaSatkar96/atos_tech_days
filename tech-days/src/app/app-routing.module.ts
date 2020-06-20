@@ -13,6 +13,9 @@ import { RecentsComponent } from './recents/recents.component';
 import { CustomerInfoComponent } from './customer-info/customer-info.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CustomerSummaryComponent } from './customer-summary/customer-summary.component';
+import { ComplexQuoteComponent } from './complex-quote/complex-quote.component';
+import { AgentReviewComponent } from './agent-review/agent-review.component';
+import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
 
 
 const routes: Routes = [
@@ -34,6 +37,48 @@ const routes: Routes = [
      { path: 'app-recents', component: RecentsComponent},
      { path: '**', component: UnderwritingComponent}
    ] },
+
+   { path: 'app-standard-quote', component: StandardQuoteComponent,
+   children:[
+     { path: '', component: UnderwritingComponent},
+     { path: 'underwriting', component: UnderwritingComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'submissions', component: SubmissionsComponent},
+     { path: 'reports', component: ReportsComponent},
+     { path: 'viewdocuments', component: ViewDocumentsComponent},
+     { path: 'viewzelrossummary', component: ViewZelrosSummaryComponent},
+     { path: 'surveys', component: SurveysComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'app-recents', component: RecentsComponent},
+     { path: '**', component: UnderwritingComponent}
+   ] },
+   { path: 'app-complex-quote', component: ComplexQuoteComponent,
+   children:[
+     { path: '', component: UnderwritingComponent},
+     { path: 'underwriting', component: UnderwritingComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'submissions', component: SubmissionsComponent},
+     { path: 'reports', component: ReportsComponent},
+     { path: 'viewdocuments', component: ViewDocumentsComponent},
+     { path: 'viewzelrossummary', component: ViewZelrosSummaryComponent},
+     { path: 'surveys', component: SurveysComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'app-recents', component: RecentsComponent},
+     { path: '**', component: UnderwritingComponent}
+   ] },
+   { path: 'app-agent-review', component: AgentReviewComponent,
+   children:[
+     { path: '', component: UnderwritingComponent},
+     { path: 'underwriting', component: UnderwritingComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'submissions', component: SubmissionsComponent},
+     { path: 'reports', component: ReportsComponent},
+     { path: 'viewdocuments', component: ViewDocumentsComponent},
+     { path: 'viewzelrossummary', component: ViewZelrosSummaryComponent},
+     { path: 'surveys', component: SurveysComponent},
+     { path: '**', component: UnderwritingComponent}
+   ] },
+
    { path: 'app-recents', component: RecentsComponent,
    children:[
      { path: '', component: UnderwritingComponent},
