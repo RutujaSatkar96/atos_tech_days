@@ -18,6 +18,8 @@ import { DialogComponent } from './dialog/dialog.component';
 import { ComplexQuoteComponent } from './complex-quote/complex-quote.component';
 import { AgentReviewComponent } from './agent-review/agent-review.component';
 import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
+import { Dialog1Component } from './dialog1/dialog1.component';
+import { Dialog2Component } from './dialog2/dialog2.component';
 
 imports: [
     BrowserModule
@@ -37,7 +39,9 @@ imports: [
     DialogComponent,
     ComplexQuoteComponent,
     AgentReviewComponent,
-    StandardQuoteComponent
+    StandardQuoteComponent,
+    Dialog1Component,
+    Dialog2Component
   ],
   entryComponents: [
     DialogComponent

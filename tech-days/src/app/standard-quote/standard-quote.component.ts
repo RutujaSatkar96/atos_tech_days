@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
+import { Dialog1Component } from '../dialog1/dialog1.component';
 
 @Component({
   selector: 'app-standard-quote',
@@ -17,6 +18,6 @@ export class StandardQuoteComponent implements OnInit {
   ngOnInit(): void {
   }
   openDialog() {
-    this.dialog.open(DialogComponent)
+    this.dialog.open(Dialog1Component)
 }
 }
