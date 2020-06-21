@@ -23,9 +23,11 @@ import { Dialog2Component } from './dialog2/dialog2.component';
 import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
 import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
 import { Dialog3Component } from './dialog3/dialog3.component';
+import { FormsModule } from '@angular/forms';
 
 imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ]
 
 @NgModule({

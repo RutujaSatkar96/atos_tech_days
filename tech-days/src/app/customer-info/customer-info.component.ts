@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { WorkQuote } from '../shared/models/work-quote.model';
 import {HttpClient} from '@angular/common/http'
 
-
 @Component({
   selector: 'app-customer-info',
   templateUrl: './customer-info.component.html',
@@ -25,6 +24,21 @@ export class CustomerInfoComponent implements OnInit {
 
   workQuote:WorkQuote;
 
+   private firstname: string;
+   private lastname: string;
+   private effectivedate:string;
+   private address: string;
+   private phone:string;
+   private homebuiltin:number;
+   private area:string;
+   private email:string;
+   private dateofbirth:string;
+   private pastpropertyclaimsorlosses:string;
+   private maritalstatus:string;
+   private runningbusinessfromhome:number;
+   private smokerstatus :string;
+   private criminalconvictions:string;
+
   title = 'HttpRequest';
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
@@ -35,5 +49,5 @@ export class CustomerInfoComponent implements OnInit {
       this.workQuote = <WorkQuote>(data);
     });
     
-  }
+  }  
 }
