@@ -1,5 +1,4 @@
 {
-"zelros": {
 "name":"Rachel",
 "validsize":4,
 "valid":[{
@@ -28,5 +27,4 @@
 "suggestion":"I suggest to not to forward the quote for further processing.",
 "isaddtional":false,
 "additional":[]
-}
 }

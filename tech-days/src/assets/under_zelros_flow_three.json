@@ -1,6 +1,6 @@
 {
-    "zelros": {
-      "name": "Rachel",
+  
+     
       "validsize": 4,
       "valid": [
         {
@@ -38,5 +38,5 @@
           "requirement": "Fire sprinklers to be installed"
         }
       ]
-    }
-  }
+}
+  

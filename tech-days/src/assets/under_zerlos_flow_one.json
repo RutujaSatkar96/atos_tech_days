@@ -1,5 +1,5 @@
 {
-    "zelros": {
+  
       "name": "Rachel",
       "validsize": 4,
       "valid": [
@@ -31,5 +31,5 @@
       "suggestion": "I suggest to accept the proposal without asking additional documents.",
       "isaddtional": false,
       "additional": []
-    }
+    
   }
