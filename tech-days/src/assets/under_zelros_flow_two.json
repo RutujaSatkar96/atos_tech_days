@@ -1,0 +1,35 @@
+{
+    "zelros": {
+      "name": "Rachel",
+      "validsize": 4,
+      "valid": [
+        {
+          "scoreid": 2,
+          "value": "93%",
+          "scoremessage": "Customer Seriousness Score",
+          "dialog": 1
+        },
+        {
+          "scoreid": 2,
+          "value": "95",
+          "scoremessage": "Accuracy of coverage",
+          "dialog": 2
+        },
+        {
+          "scoreid": 2,
+          "value": "33%",
+          "scoremessage": "Likelihood of standard acceptance",
+          "dialog": 2
+        },
+        {
+          "scoreid": 2,
+          "value": "67%",
+          "scoremessage": "Claims Risk Score",
+          "dialog": 1
+        }
+      ],
+      "suggestion": "I suggest to call for property Inspection",
+      "isaddtional": true,
+      "additional": []
+    }
+  }

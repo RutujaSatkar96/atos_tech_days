@@ -1,0 +1,32 @@
+{
+"zelros": {
+"name":"Rachel",
+"validsize":4,
+"valid":[{
+ "scoreid":2,
+ "value":"20%",
+ "scoremessage":"Customer Seriousness Score",
+ "dialog":1
+ 
+},{
+ "scoreid":1,
+ "value":"",
+ "scoremessage":"Investing time may not be relevant",
+ "dialog":1
+},{
+ "scoreid":2,
+ "value":"93%",
+ "scoremessage":"Likelihood of standard acceptance",
+ "dialog":2
+},{
+ 
+ "scoreid":0,
+ "value":"93%",
+ "scoremessage":"Likelihood of standard acceptance",
+ "dialog":1
+}],
+"suggestion":"I suggest to not to forward the quote for further processing.",
+"isaddtional":false,
+"additional":[]
+}
+}
