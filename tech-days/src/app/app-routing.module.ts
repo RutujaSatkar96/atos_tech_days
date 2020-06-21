@@ -16,6 +16,9 @@ import { CustomerSummaryComponent } from './customer-summary/customer-summary.co
 import { ComplexQuoteComponent } from './complex-quote/complex-quote.component';
 import { AgentReviewComponent } from './agent-review/agent-review.component';
 import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
+import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
+import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
+
 
 
 const routes: Routes = [
@@ -23,9 +26,11 @@ const routes: Routes = [
   { path: 'app-quote', component: QuoteComponent },
   {path: 'app-customer-info', component: CustomerInfoComponent},
   {path : 'app-customer-summary' , component: CustomerSummaryComponent},
+  {path : 'app-customer-summary-edit' , component: SummaryEditComponent},
   { path: 'dashboard', component: DashboardComponent,
    children:[
-     { path: '', component: UnderwritingComponent},
+     { path: '', component: UnderwritingeditComponent},
+     { path: 'edit-underwriting', component: UnderwritingeditComponent},
      { path: 'underwriting', component: UnderwritingComponent},
      { path: 'zelros', component: ZelrosComponent},
      { path: 'submissions', component: SubmissionsComponent},
@@ -35,7 +40,7 @@ const routes: Routes = [
      { path: 'surveys', component: SurveysComponent},
      { path: 'zelros', component: ZelrosComponent},
      { path: 'app-recents', component: RecentsComponent},
-     { path: '**', component: UnderwritingComponent}
+     { path: '**', component: UnderwritingeditComponent}
    ] },
 
    { path: 'app-standard-quote', component: StandardQuoteComponent,

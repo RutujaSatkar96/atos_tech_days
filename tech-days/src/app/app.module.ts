@@ -21,7 +21,7 @@ import { StandardQuoteComponent } from './standard-quote/standard-quote.componen
 import { Dialog1Component } from './dialog1/dialog1.component';
 import { Dialog2Component } from './dialog2/dialog2.component';
 import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
-import { SummaryEditComponent } from './summary-edit/summary-edit.component';
+import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
 
 imports: [
     BrowserModule

@@ -1,1 +1,255 @@
-<p>underwritingedit works!</p>
+<div class="main">
+    <div class="details">
+  
+  
+      <div class="detailsrow1">
+        <label class="detail_one">Name:</label>
+        <label class="detail_two">Quote No:</label>
+        <label class="detail_two">Home Built in:</label>
+      </div>
+  
+      <div class="detailsrow1">
+        <label class="detail_one_value">{{workQuote.customerinfo.name}}</label>
+        <label class="detail_two_value">{{quoteNo}}</label>
+        <label class="detail_two_value">{{workQuote.customerinfo.homebuiltin}}</label>
+      </div>
+  
+      <div class="detailsrow1" >
+        <label class="detail_one">DOB:</label>
+        <label class="detail_two">Efective Date:</label>
+        <label class="detail_two">Area:</label>
+      </div>
+  
+      <div class="detailsrow1">
+        <label class="detail_one_value">{{workQuote.customerinfo.dateofbirth}}</label>
+        <label class="detail_two_value">{{workQuote.customerinfo.effectivedate}}</label>
+        <label class="detail_two_value">{{workQuote.customerinfo.area}}</label>
+      </div>
+  
+      <div class="address_phone" >
+        <div class="detailsrow1">
+          <label class="detail_one">Address:</label>
+          <label class="detail_two">Phone:</label>
+          <label class="detail_two">Email</label>
+        </div>
+  
+        <div class="detailsrow1">
+          <label class="detail_one_value">{{workQuote.customerinfo.address}}</label>
+          <label class="detail_two_value">{{workQuote.customerinfo.phone}}</label>
+          <label class="detail_two_value">{{workQuote.customerinfo.email}}</label>
+        </div>
+      </div>
+    </div>
+      <div class="basicinfo">
+        <label class="detail_one">Basic Info</label>
+    </div>
+    <div class="detailsrow1">
+      <label class="whole_one">Year Built:</label>
+      <label class="whole_one">Purchase Date:</label>
+      <label class="whole_one">Burger Alarm:</label>
+      <label class="whole_one">No of stories:</label>
+    </div>
+  
+    <div class="detailsrow1">
+      <label class="whole_two">{{workQuote.basicinfo.yearbuilt}}</label>
+      <label class="whole_two">{{workQuote.basicinfo.purchasedate}}</label>
+      <label class="whole_two">{{workQuote.basicinfo.burglarsalarm}}</label>
+      <label class="whole_two">{{workQuote.basicinfo.noofstories}}</label>
+    </div>
+    <div class="detailsrow1" style="margin-top: 5px;">
+      <label class="whole_one">Square Footage:</label>
+      <label class="whole_one">No of stories:</label>
+      <label class="whole_one">Fire Spring Killers:</label>
+      <label class="whole_one">Single family:</label>
+    </div>
+  
+    <div class="detailsrow1">
+      <label class="whole_two">{{workQuote.basicinfo.squarefootage}}</label>
+      <label class="whole_two">{{workQuote.basicinfo.noofstories}}</label>
+      <label class="whole_two">{{workQuote.basicinfo.firesprinklers}}</label>
+      <label class="whole_two">{{workQuote.basicinfo.singlefamily}}</label>
+    </div>
+    <div class="detailsrow1" style="margin-top: 5px;">
+      <label class="whole_one">Fire Alarm:</label>
+      <label class="backup">Emergency Backup generator:</label>
+      <label class="emercency" style="size: 16px;">Home within 1,000 feet of a fire hydrant?</label>
+    </div>
+  
+    <div class="detailsrow1">
+      <label class="whole_two">{{workQuote.basicinfo.firealarm}}</label>
+      <label class="whole_one_value">{{workQuote.basicinfo.emergencybackupgenerator}}</label>
+      <label class="whole_one_value">{{workQuote.basicinfo.firehydrant}}</label>
+    </div>
+  
+    <div class="basicinfo">
+      <label class="detail_one">Exterior</label>
+  </div>
+  <div class="detailsrow1">
+    <label class="whole_one">Building Material:</label>
+    <label class="whole_one">Type of garage:</label>
+    <label class="whole_one">Roof Shape:</label>
+    <label class="whole_one">swimming pool:</label>
+  </div>
+  
+  <div class="detailsrow1">
+    <label class="whole_two">{{workQuote.exterior.buildingmaterial}}</label>
+    <label class="whole_two">{{workQuote.exterior.typeofgarage}}</label>
+    <label class="whole_two">{{workQuote.exterior.roofshape}}</label>
+    <label class="whole_two">{{workQuote.exterior.swimmingpool}}</label>
+  </div>
+  <div class="detailsrow1" style="margin-top: 5px;">
+    <label class="whole_one">Roof Material:</label>
+    <label class="whole_one">Porch:</label>
+    <label class="whole_one">Roof Age:</label>
+    <label class="whole_one">Deck:</label>
+  </div>
+  
+  <div class="detailsrow1">
+    <label class="whole_two">{{workQuote.exterior.roofmaterial}}</label>
+    <label class="whole_two">{{workQuote.exterior.porch}}</label>
+    <label class="whole_two">{{workQuote.exterior.roofage}}</label>
+    <label class="whole_two">{{workQuote.exterior.deck}}</label>
+  </div>
+  
+  <div class="basicinfo">
+    <label class="detail_one">Interior </label>
+  </div>
+  <div class="detailsrow1">
+  <label class="whole_one">Foundation Type:</label>
+  <label class="whole_one"> Bath Quality:</label>
+  <label class="whole_one">Fire Place:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_two">{{workQuote.interior.foundationtype}}</label>
+  <label class="whole_two">{{workQuote.interior.bathquality}}</label>
+  <label class="whole_two">{{workQuote.interior.fireplace}}</label>
+  </div>
+  <div class="detailsrow1" style="margin-top: 5px;">
+  <label class="whole_one"> Kitchen Quality:</label>
+  <label class="whole_one"> Kitchen countertops:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_two">{{workQuote.interior.kitchenquality}}</label>
+  <label class="whole_two">{{workQuote.interior.kitchencountertops}}</label>
+  </div>
+  <div class="basicinfo">
+    <label class="detail_one">Customer Info </label>
+  </div>
+  <div class="detailsrow1">
+  <label class="whole_one">Age:</label>
+  <label class="whole_one">Smoker status:</label>
+  <label class="emercency">Past property claims or losses:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_two">43</label>
+  <label class="whole_two">{{workQuote.customerinfo.smokerstatus}}</label>
+  <label class="whole_one_value">{{workQuote.customerinfo.pastpropertyclaimsorlosses}}</label>
+  </div>
+  <div class="detailsrow1" style="margin-top: 5px;">
+  <label class="whole_one">Marital Status:</label>
+  <label class="whole_one">Criminal Convictions:</label>
+  <label class="emercency">Running business from home:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_two">{{workQuote.customerinfo.maritalstatus}}</label>
+  <label class="whole_two">{{workQuote.customerinfo.criminalconvictions}}</label>
+  <label class="whole_one_value">{{workQuote.customerinfo.runningbusinessfromhome}}</label>
+  </div>
+  
+  
+  <!-- deleted -->
+  <div class="basicinfo">
+    <label class="detail_one">Coverages</label>
+  </div>
+  <div class="detailsrow1">
+  <label class="emercency">Dwelling Protection:</label>
+  <label class="emercency">Protect Personal Property Against: </label>
+  <label class="emercency">Additional Living expenses:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_two">{{workQuote.coverages.dwellingprotection}}</label>
+  <select class="whole_selct" id="#">
+    <option selected="selected" value="one">{{workQuote.coverages.propertyprotection}}</option>
+    </select>
+  <label class="addtional_one_value">{{workQuote.coverages.additionallivingexpenses}}</label>
+  </div>
+  <div class="detailsrow1" style="margin-top: 5px;">
+  <label class="emercency">Other Structures:</label>
+  <label class="emercency">Personal Property Protection:</label>
+  <label class="emercency">Family Liability Protection:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_one_value">{{workQuote.coverages.otherstructures}}</label>
+  <label class="whole_two">{{workQuote.coverages.propertyprotection}}</label>
+  <label class="whole_two">{{workQuote.coverages.familyliabilityprotection}}</label>
+  </div>
+  
+  <div class="basicinfo">
+    <label class="detail_one">Discounts & Surcharges</label>
+  </div>
+  <div class="detailsrow1">
+  <label class="emercency">New Construction Discount:</label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_two">{{workQuote.discountsandsurcharges.newconstructiondiscount}}</label>
+  </div>
+  <div class="basicinfo">
+    <label class="detail_one">Deductibles</label>
+  </div>
+  <div class="detailsrow1">
+  <label class="emercency">All Perils deductible:</label>
+  <label class="emercency">Windstorm/Hail Deductible: </label>
+  </div>
+  
+  <div class="detailsrow1">
+  <label class="whole_one_value">{{workQuote.deductibles.allperilsdeductible}}</label>
+  <label class="whole_one_value">{{workQuote.deductibles.windstormorhail}}</label>
+  
+    </div>
+   
+    <div class="detailsrow1" style="margin-top: 20px;">
+    <label class="emercency">FINAL PREMIUM:</label>
+    </div>
+    
+    <div class="detailsrow1">
+    <label class="whole_two">{{workQuote.finalpremium}}</label>
+    </div>
+    <br>
+    
+  
+    <div *ngIf="show; else notShow">
+      <div class="form-group">
+        <div>
+            <button id="button1id" name="button1id" class="button_colour" (click)="emailRequest()">Email for additional documents</button>
+            <button id="button2id" name="button2id" class="button_colour" (click)="propertyRequest()" >Request Property Inspection</button>
+            <button id="button3id" name="button3id" class="button_colour" (click)="finalRequest()">Prepare Final Offer</button>
+    
+          </div>
+    </div>
+    </div>
+    
+    <ng-template #notShow>
+      <div class="form-group">
+        <div>
+            <button id="button1id" name="button1id" class="button_colour" (click)="navigateDaashboard()">Request to  Bind</button>
+            <button id="button2id" name="button2id" class="button_colour" (click)="rejectRequest()">Reject Quote</button>
+            <button id="button3id" name="button3id" class="button_colour" (click)="bindRequest()">Contact Prospect</button>
+    
+          </div>
+    </div>
+    </ng-template>
+  
+    
+  
+    <br>
+    <br>
+  
+  
+  </div>

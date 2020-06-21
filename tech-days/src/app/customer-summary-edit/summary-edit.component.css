@@ -5,8 +5,9 @@
     background: #ffffff;
 }
 .details{
-    height: 131px;
+    height: 101px;
     background: #f2f2f2;
+    opacity: 50%;
 }
 .detailsrow1{
     display: flex;
@@ -15,7 +16,7 @@
     display: flex;
 }
 .detail_one{
-    width:  330px;
+    width:  336px;
     font-family: verdana;
     font-weight: 600;
     font-size: 13px;
@@ -23,28 +24,28 @@
 }
 
 .detail_two{
-    min-width: 254px;
+    min-width: 251px;
     font-family: verdana;
     font-weight: 600;
     margin-left: 8px;
     font-size: 13px;
 }
 .detail_one_value{
-    min-width:330px;
+    min-width:336px;
     font-family: verdana;
     font-size: 16px;
     margin-left: 8px;
 }
 
 .detail_two_value{
-    min-width:240px;
+    min-width:251px;
     font-family: verdana;
     font-size: 16px;
 }
 .address_phone{
     height: 54px;
     background: #e8e8e8;
-    padding-top: 8px;
+    margin-top: 4px;
 }
 .basicinfo{
     min-width: 251px;
@@ -69,17 +70,11 @@
     font-size: 13px;
 }
 .emercency{
-    width:  330px;
+    width:  336px;
     font-family: verdana;
     font-weight: 600;
     font-size: 13px;
     margin-left: 8px;
-}
-.backup{
-    width:  230px;
-    font-family: verdana;
-    font-weight: 600;
-    font-size: 13px;
 }
 .whole_one_value{
     min-width:336px;
@@ -91,30 +86,81 @@
     min-width:200px;
     font-family: verdana;
     font-size: 13px;
-    margin-left: 100px;
+    margin-left: 140px;
 }
 .addtional_one_value{
     min-width:336px;
     font-family: verdana;
     font-size: 13px;
-    margin-left: 55px;
+    margin-left: 140px;
 }
-.form-group {
-    display: flex;
-    float:inherit;
-    background: #ffffff;
-}
-.button_colour {
-    height: 60px;
-    width: 245px;
-    font-family: Verdana;
-    font-weight: bold;
-    color: #fcdccf;
-    background-color: #fa6119;
-    border-radius: 5px;
-    margin-top: 19px;
-    margin-left: 12px;
-    text-align: center;
-    font-size: 13px;
 
+.two{
+    margin-left: 140px;
 }
+
+.quoteButton{
+    color:  #0066a1;;
+}
+
+.header{
+    z-index: 1;
+    padding: .5rem 1.25rem;
+    background-color: #0066a1;
+    position: sticky;
+    top: 0;
+    height: 76px;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .logo{
+    height: 32px;
+    width: 176px;
+    margin-top: 14px;
+  }
+  
+  .logoutIcon{
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+  }
+  
+  .logout{
+    float: right;
+    fill: #000;
+    height: 76px;
+    width: 79px;
+  }
+  
+  .helpIcon{
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-right: 26px;
+  }
+  
+  .notificationIcon{
+    float: right;
+    height: 30px;
+    width: 24px;
+    margin-top: 15px;
+    margin-right: 26px;
+  }
+  
+  .userIcon{
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-top: 15px;
+    margin-right: 26px;
+  }
+  
+  .welcome{
+    float: right;
+    margin-top: 15px;
+    margin-right: 14px;
+  }
+  
