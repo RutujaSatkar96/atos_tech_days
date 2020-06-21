@@ -20,8 +20,7 @@
   </div>
   <div class="box">
     <div><app-sidebar></app-sidebar></div>
-   <!-- <div><app-underwriting></app-underwriting></div>  --> 
-   <div><app-underwritingedit></app-underwritingedit></div>
+    <div><app-underwriting></app-underwriting></div>
     
     
   </div>
@@ -44,7 +43,7 @@
   
           <div class="row1">
               <label class="helloLabel">Hello</label>
-              <label class="nameLabel">Rachel</label>
+              <label class="nameLabel">{{zelrosResponse.name}}</label>
               <label>,</label><br/>
   
               <label class="label2">I have analysed quote for you</label><br/>
@@ -53,7 +52,7 @@
   
           <div class="row2">
              <div class="div1">
-                 <label class="scoreValue">20%</label><br/>
+                 <label class="scoreValue">{{zelrosResponse.valid[0].value}}</label><br/>
                  <div style="margin-top: 20px; margin-left: 20px;"> 
                   <label class="labelCustomer">Customer</label><br/>
                   <label class="labelCustomer">seriousness score</label>
@@ -80,7 +79,7 @@
   
            <div class="row2">
               <div class="div1">
-                  <label class="scoreValue">93%</label><br/>
+                  <label class="scoreValue">{{zelrosResponse.valid[2].value}}</label><br/>
                   <div style="margin-top: 20px; margin-left: 20px;">
                   <label class="labelCustomer">Likelihood of</label><br/>
                   <label class="labelCustomer">standard</label><br/>
