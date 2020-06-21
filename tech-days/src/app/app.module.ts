@@ -20,6 +20,8 @@ import { AgentReviewComponent } from './agent-review/agent-review.component';
 import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
 import { Dialog1Component } from './dialog1/dialog1.component';
 import { Dialog2Component } from './dialog2/dialog2.component';
+import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
+import { SummaryEditComponent } from './summary-edit/summary-edit.component';
 
 imports: [
     BrowserModule
@@ -41,7 +43,9 @@ imports: [
     AgentReviewComponent,
     StandardQuoteComponent,
     Dialog1Component,
-    Dialog2Component
+    Dialog2Component,
+    UnderwritingeditComponent,
+    SummaryEditComponent
   ],
   entryComponents: [
     DialogComponent
