@@ -87,11 +87,30 @@
     font-size: 13px;
     margin-left: 8px;
 }
-.whole_selct{
-    min-width:200px;
+.whole_edit_one{
+    width: 200px;
     font-family: verdana;
     font-size: 13px;
-    margin-left: 100px;
+    margin-left: 71px;
+}
+.whole_edit_three{
+    width: 200px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 77px;
+}
+.whole_edit_two{
+    width: 200px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.whole_selct{
+    width: 207px;
+    font-family: verdana;
+    margin-right: 50px;
+    font-size: 13px;
+    margin-left: 80px;
 }
 .addtional_one_value{
     min-width:336px;

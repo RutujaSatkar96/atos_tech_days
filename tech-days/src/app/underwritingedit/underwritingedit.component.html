@@ -163,7 +163,7 @@
   
   <!-- deleted -->
   <div class="basicinfo">
-    <label class="detail_one">Coverages</label>
+    <label class="detail_one">Summary Coverages</label>
   </div>
   <div class="detailsrow1">
   <label class="emercency">Dwelling Protection:</label>
@@ -172,11 +172,11 @@
   </div>
   
   <div class="detailsrow1">
-  <label class="whole_two">{{workQuote.coverages.dwellingprotection}}</label>
-  <select class="whole_selct" id="#">
-    <option selected="selected" value="one">{{workQuote.coverages.propertyprotection}}</option>
-    </select>
-  <label class="addtional_one_value">{{workQuote.coverages.additionallivingexpenses}}</label>
+  <input class="whole_edit_two" value = {{workQuote.coverages.dwellingprotection}}>
+  <select class="whole_edit_one" id="#">
+    <option selected="selected" style="margin-right: 8px;" value="one">{{workQuote.coverages.propertyprotection}}</option>
+    </select> 
+  <input class="whole_edit_three" value = {{workQuote.coverages.additionallivingexpenses}}>
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="emercency">Other Structures:</label>
@@ -185,9 +185,9 @@
   </div>
   
   <div class="detailsrow1">
-  <label class="whole_one_value">{{workQuote.coverages.otherstructures}}</label>
-  <label class="whole_two">{{workQuote.coverages.propertyprotection}}</label>
-  <label class="whole_two">{{workQuote.coverages.familyliabilityprotection}}</label>
+  <input class="whole_edit_two" value = {{workQuote.coverages.otherstructures}}>
+  <input class="whole_edit_one"  value = {{workQuote.coverages.propertyprotection}}>
+  <input class="whole_edit_one" value = {{workQuote.coverages.familyliabilityprotection}}>
   </div>
   
   <div class="basicinfo">
@@ -198,7 +198,7 @@
   </div>
   
   <div class="detailsrow1">
-  <label class="whole_two">{{workQuote.discountsandsurcharges.newconstructiondiscount}}</label>
+  <input class="whole_two" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
   </div>
   <div class="basicinfo">
     <label class="detail_one">Deductibles</label>
@@ -209,20 +209,21 @@
   </div>
   
   <div class="detailsrow1">
-  <label class="whole_one_value">{{workQuote.deductibles.allperilsdeductible}}</label>
-  <label class="whole_one_value">{{workQuote.deductibles.windstormorhail}}</label>
+  <input class="whole_edit_two" value={{workQuote.deductibles.allperilsdeductible}}>
+  <input class="whole_edit_one" value={{workQuote.deductibles.windstormorhail}}>
   
     </div>
-   
-    <div class="detailsrow1" style="margin-top: 20px;">
+    <br>
+    <br>
+    <div class="detailsrow1" >
     <label class="emercency">FINAL PREMIUM:</label>
     </div>
     
     <div class="detailsrow1">
-    <label class="whole_two">{{workQuote.finalpremium}}</label>
+    <input class="whole_two" value = {{workQuote.finalpremium}}>
     </div>
     <br>
-    
+  
   
     <div *ngIf="show; else notShow">
       <div class="form-group">
