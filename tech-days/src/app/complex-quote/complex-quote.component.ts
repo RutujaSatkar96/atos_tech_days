@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
 import { Dialog2Component } from '../dialog2/dialog2.component';
+import { Dialog3Component } from '../dialog3/dialog3.component';
 
 @Component({
   selector: 'app-complex-quote',
@@ -19,5 +20,9 @@ export class ComplexQuoteComponent implements OnInit {
   }
   openDialog() {
     this.dialog.open(Dialog2Component)
+}
+
+openDialog3() {
+  this.dialog.open(Dialog3Component)
 }
 }

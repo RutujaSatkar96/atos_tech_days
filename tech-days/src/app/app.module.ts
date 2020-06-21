@@ -22,6 +22,7 @@ import { Dialog1Component } from './dialog1/dialog1.component';
 import { Dialog2Component } from './dialog2/dialog2.component';
 import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
 import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
+import { Dialog3Component } from './dialog3/dialog3.component';
 
 imports: [
     BrowserModule
@@ -45,7 +46,8 @@ imports: [
     Dialog1Component,
     Dialog2Component,
     UnderwritingeditComponent,
-    SummaryEditComponent
+    SummaryEditComponent,
+    Dialog3Component
   ],
   entryComponents: [
     DialogComponent

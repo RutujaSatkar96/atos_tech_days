@@ -27,6 +27,7 @@ const routes: Routes = [
   {path: 'app-customer-info', component: CustomerInfoComponent},
   {path : 'app-customer-summary' , component: CustomerSummaryComponent},
   {path : 'app-customer-summary-edit' , component: SummaryEditComponent},
+  {path: 'app-underwritingedit', component: UnderwritingeditComponent},
   { path: 'dashboard', component: DashboardComponent,
    children:[
      { path: '', component: UnderwritingeditComponent},
