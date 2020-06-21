@@ -19,7 +19,7 @@ export class CustomerInfoComponent implements OnInit {
   }
 
   navigateToUnderwriter(){
-      this._router.navigate(['app-customer-summary']);
+      this._router.navigate(['app-customer-summary-edit']);
   }
 
 
