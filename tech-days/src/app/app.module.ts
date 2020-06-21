@@ -24,6 +24,7 @@ import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.c
 import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
 import { Dialog3Component } from './dialog3/dialog3.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 imports: [
     BrowserModule,
@@ -59,7 +60,9 @@ imports: [
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

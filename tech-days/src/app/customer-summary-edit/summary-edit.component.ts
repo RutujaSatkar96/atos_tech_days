@@ -19,8 +19,8 @@ export class SummaryEditComponent implements OnInit {
   constructor(private http:HttpClient, private _router: Router){
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
-      console.log(data)
-      this.workQuote = <WorkQuote>(data);
+     // console.log(data)
+    //  this.workQuote = <WorkQuote>(data);
     });
     
   }

@@ -12,4 +12,22 @@ export class CustomerInfo{
     runningbusinessfromhome:number;
     smokerstatus :string;
     criminalconvictions:string;
+    street:string;
+    unit:string;
+    city:string;
+    zip:string;
+    state:string;
+    coveragestartdate:string;
+    currentlyproissues:string;
+    firstname: string;
+    lastname: string;
+    gender:string;
+    ocuupation:string;
+    age:string;
+    businessfromhome:string;
+    petsathome:string;
+    nameofinsurer:string;
+    cancelationyear:string;
+    cancelpolicy:string;
+    cancelationreason:string;
 }
