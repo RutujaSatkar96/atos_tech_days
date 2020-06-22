@@ -20,7 +20,7 @@ export class SummaryEditComponent implements OnInit {
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
      // console.log(data)
-    //  this.workQuote = <WorkQuote>(data);
+      this.workQuote = <WorkQuote>(data);
     });
     
   }

@@ -46,10 +46,10 @@
     },
     "coverages": {
       "dwellingprotection": "$218,560 - cost =$879",
-      "otherstructures": "$22K (10% of dwelling)",
+      "otherstructures": "$22K",
       "propertyagainst": "Standard/Extended Incidents",
-      "propertyprotection": "$131K (60% of dwelling)",
-      "additionallivingexpenses": "$22K (10% of dwelling)",
+      "propertyprotection": "$131K ",
+      "additionallivingexpenses": "$22K ",
       "familyliabilityprotection": "$100K per occurrence"
     },
     "discountsandsurcharges": {
