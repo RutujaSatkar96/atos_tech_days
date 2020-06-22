@@ -134,10 +134,11 @@
 }
 
 .label2{
-    font-size: 12px;
+    font-size: 10px;
     font-family: Verdana;
     color: #000;
     margin-left: 13px;
+    font-weight: bold;
 }
 .quoteLabel{
     font-weight: bold;
@@ -147,7 +148,7 @@
 .row2{
     width: 235px;
     height: 134px;
-    margin-top: 20px;
+    margin-top: 1px;
     background-color:#fff;
 }
 
@@ -169,7 +170,7 @@
 .v2{
     height: 120px;
     border-left: 2px solid #cecece;
-    margin-left: 130px;
+    margin-left: 120px;
 }
 
 .labelAccuracy{
