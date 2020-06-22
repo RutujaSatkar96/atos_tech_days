@@ -193,12 +193,12 @@
         <div class="secondTab">
                 <div class="row5">
                         <label class="questionLabel">What year was the home built?</label>
-                        <label class="questionLabel labelMargin">Number of peple living in the household</label>
+                        <label class="questionLabel labelMargin">Number of people living in the household</label>
                 </div>
 
                 <div class="row7">
                         <input class="streetInput" placeholder="Year" [(ngModel)] = "basicinfo.yearbuilt">
-                        <input class="streetInput labelCriminal" placeholder="Number of people" [(ngModel)] = "basicinfo.yearbuilt">
+                        <input class="streetInput labelCriminal" placeholder="Number of people" >
                 </div>
 
                 <div class="row5">
@@ -208,7 +208,7 @@
 
                 <div class="row7">
                         <input class="streetInput" placeholder="Date" [(ngModel)] = "basicinfo.purchasedate">
-                        <input class="streetInput labelCriminal" placeholder="Living area">
+                        <input class="streetInput labelCriminal" placeholder="Living area" [(ngModel)] = "customerinfo.area">
                 </div>
 
                 <div class="row5">
@@ -217,12 +217,12 @@
                 </div>
 
                 <div class="row9">
-                        <select class="ocuupation" name="exterior" id="exterior">
+                        <select class="ocuupation" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
                                 <option class="exteriorOptions" value="yes">Brick stone</option>
                         </select>
 
-                        <select class="ocuupation selectIssue margin" name="gender" id="gender">
-                                <option class="genderOptions" value="yes">Flat</option>
+                        <select class="ocuupation selectIssue margin" name="roof" id="roof" [(ngModel)] = "exterior.roofshape">
+                                <option class="roofOptions" value="yes">Flat</option>
                         </select>
                 </div>
 
@@ -233,19 +233,19 @@
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="yes/no">
-                        <input class="streetInput labelCriminal" placeholder="yes/no">
+                        <input class="streetInput" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool">
+                        <input class="streetInput labelCriminal" placeholder="yes/no" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
                 </div>
 
                 <div class="row5">
-                        <label class="questionLabel">Is there a swimming pool on the premises?</label>
+                        <label class="questionLabel">Primary Residence?</label>
                         <label class="questionLabel labelkitchen">What material is the kitchen countertops made of?</label><br/>
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="yes/no">
+                        <input class="streetInput" placeholder="yes/no" [(ngModel)] = "basicinfo.primaryresidence">
 
-                        <select class="ocuupation selectIssuetwo" name="kitchen" id="kitchen">
+                        <select class="ocuupation selectIssuetwo" name="kitchen" id="kitchen" [(ngModel)] = "interior.kitchencountertops">
                                 <option class="kitchenOptions optionsInput" value="yes">Wood</option>
                         </select>
                 </div>
@@ -256,9 +256,9 @@
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="yes/no">
+                        <input class="streetInput" placeholder="yes/no" [(ngModel)] = "interior.fireplace">
 
-                        <select class="ocuupation selectIssuetwo" name="foundation" id="foundation">
+                        <select class="ocuupation selectIssuetwo" name="foundation" id="foundation" [(ngModel)] = "interior.foundationtype">
                                 <option class="foundationOptions labelFoundation1" value="yes">Closed basement</option>
                         </select>
                 </div>
@@ -270,11 +270,11 @@
                 </div>
 
                 <div class="row9">
-                        <select class="ocuupation" name="building" id="building">
+                        <select class="ocuupation" name="building" id="building" [(ngModel)] = "exterior.buildingmaterial">
                                 <option class="buildingOptions" value="yes">Solid Brick</option>
                         </select>
 
-                        <select class="ocuupation selectIssuethree" name="garage" id="garage">
+                        <select class="ocuupation selectIssuethree" name="garage" id="garage" [(ngModel)] = "exterior.typeofgarage">
                                 <option class="garageOptions" value="yes">Car attached</option>
                         </select>
                 </div>

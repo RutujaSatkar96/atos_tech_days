@@ -27,6 +27,10 @@ export class CustomerInfoComponent implements OnInit {
                               this.customerinfo.state+' '+this.customerinfo.zip;
 
     this.workQuote.customerinfo= this.customerinfo;
+    this.workQuote.basicinfo= this.basicinfo;
+    this.workQuote.exterior= this.exterior;
+    this.workQuote.interior= this.interior;
+
       console.log(this.workQuote)
       this._router.navigate(['app-customer-summary-edit']);
 
@@ -55,12 +59,7 @@ export class CustomerInfoComponent implements OnInit {
     response.toPromise().then(data => {
       
       this.workQuote = <WorkQuote>(data);
-      this.customerinfo = this.workQuote.customerinfo;
-      this.exterior = this.workQuote.exterior;
-      this.interior = this.workQuote.interior;
-      this.basicinfo = this.workQuote.basicinfo;
-
-
+     
     });
     
   }  

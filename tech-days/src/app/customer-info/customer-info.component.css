@@ -132,6 +132,11 @@ select{
   height: 36px;
   width: 170px;
 }
+.ocuupationmaterial select{
+  height: 36px;
+  width: 170px;
+  margin-left: 150px;
+}
 
 .row4{
   margin-top: 20px;
@@ -304,7 +309,7 @@ select{
   margin-left: 170px;
 }
 .labelkitchen{
-  margin-left: 182px;
+  margin-left: 350px;
 }
 .labelFoundation{
   margin-left: 142px;
