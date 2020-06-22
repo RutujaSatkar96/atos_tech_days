@@ -63,4 +63,8 @@ export class CustomerInfoComponent implements OnInit {
     });
     
   }  
+
+  navigateToPropertyInfo(){
+    this._router.navigate(['/app-property-info']);
+  }
 }

@@ -25,6 +25,7 @@ import { SummaryEditComponent } from './customer-summary-edit/summary-edit.compo
 import { Dialog3Component } from './dialog3/dialog3.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PropertyInfoComponent } from './property-info/property-info.component';
 
 imports: [
     BrowserModule,
@@ -50,7 +51,8 @@ imports: [
     Dialog2Component,
     UnderwritingeditComponent,
     SummaryEditComponent,
-    Dialog3Component
+    Dialog3Component,
+    PropertyInfoComponent
   ],
   entryComponents: [
     DialogComponent

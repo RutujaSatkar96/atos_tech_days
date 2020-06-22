@@ -18,6 +18,7 @@ import { AgentReviewComponent } from './agent-review/agent-review.component';
 import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
 import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
 import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
+import { PropertyInfoComponent } from './property-info/property-info.component';
 
 
 
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path : 'app-customer-summary' , component: CustomerSummaryComponent},
   {path : 'app-customer-summary-edit' , component: SummaryEditComponent},
   {path: 'app-underwritingedit', component: UnderwritingeditComponent},
+  {path: 'app-property-info', component: PropertyInfoComponent},
   { path: 'dashboard', component: DashboardComponent,
    children:[
      { path: '', component: UnderwritingeditComponent},

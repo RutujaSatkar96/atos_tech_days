@@ -21,12 +21,11 @@
 
 
     <mat-tab-group  mat-align-tabs="center" style="overflow: hidden;">
-        <mat-tab label="Customer Info">
+        <!-- <mat-tab label="Customer Info">
                 
                 <div class="firstTab" style="overflow:auto;">
                         <div class="row1">
                                 <label class="firstNameLabel" >First Name</label>
-                                <!-- <input placeholder="first"> -->
                                 <label class="lastLabel">Last Name</label>
                                 <label class="lastLabel">Gender</label>
                                 <label class="lastLabel">Age</label>
@@ -181,16 +180,16 @@
                                 <input class="streetInput smokerInput" placeholder="Insurer" [(ngModel)] = "customerinfo.nameofinsurer">
                                 <input class="unitInput yearInput" placeholder="Year" [(ngModel)] = "customerinfo.cancelationyear">
                                 <input class="streetInput reasonInput" placeholder="Reason" [(ngModel)] = "customerinfo.cancelationreason">
-                                <button class="requestbutton" (click)="navigateToPropertyInfo()">Property Info</button>
+                                <button (click)="navigateToPropertyInfo()">Property Info</button>
 
                         </div>
                 </div>
 
 
-        </mat-tab>
+        </mat-tab> -->
 
 
-        <!-- <mat-tab label="Property Info">
+        <mat-tab label="Property Info">
                 
         <div class="secondTab">
                 <div class="row5">
@@ -316,7 +315,7 @@
                 <button class="requestbutton" (click) = "navigateToUnderwriter()">Request Quote</button>
 
         </div>
-        </mat-tab> -->
+        </mat-tab>
 
 
         <!-- <mat-tab label="Summary of Coverages">
