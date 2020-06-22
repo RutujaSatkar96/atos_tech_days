@@ -54,6 +54,7 @@ export class CustomerInfoComponent implements OnInit {
 
   workQuoteurl = "http://localhost:8080/customerInfo"
   url = "/assets/underwriting.json"
+
   constructor(private http:HttpClient, private _router: Router){
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
@@ -65,6 +66,17 @@ export class CustomerInfoComponent implements OnInit {
   }  
 
   navigateToPropertyInfo(){
-    this._router.navigate(['/app-property-info']);
+    if(this.customerinfo.firstname == undefined || this.customerinfo.lastname == undefined || this.customerinfo.street == undefined || this.customerinfo.unit == undefined){
+      alert('Please enter all fields.')
+    }
+    else{
+      this._router.navigate(['/app-property-info']);
+
+    }
+  }
+
+  show(){
+    alert('info'+ this.customerinfo.firstname+this.customerinfo.lastname+this.customerinfo.street+this.customerinfo.unit+this.customerinfo.city+this.customerinfo.state);
+
   }
 }
