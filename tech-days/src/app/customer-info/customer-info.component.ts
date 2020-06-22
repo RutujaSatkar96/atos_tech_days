@@ -70,7 +70,7 @@ export class CustomerInfoComponent implements OnInit {
       alert('Please enter all fields.')
     }
     else{
-      this._router.navigate(['/app-property-info']);
+      //this._router.navigate(['/app-property-info']);
 
     }
   }
