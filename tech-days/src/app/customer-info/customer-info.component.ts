@@ -58,6 +58,8 @@ export class CustomerInfoComponent implements OnInit {
       this.customerinfo = this.workQuote.customerinfo;
       this.exterior = this.workQuote.exterior;
       this.interior = this.workQuote.interior;
+      this.basicinfo = this.workQuote.basicinfo;
+
 
     });
     

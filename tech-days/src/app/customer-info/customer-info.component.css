@@ -157,6 +157,12 @@ select{
   margin-left: 30px;
 }
 
+.checkbox{
+  margin-top: 10px;
+  margin-left: 55px;
+  display: flex;
+}
+
 .streetInput{
   width: 170px;
   height: 36px;
@@ -215,6 +221,14 @@ select{
 
 .selectIssue{
   margin-left: 340px;
+}
+
+.selectIssuetwo{
+  margin-left: 320px;
+}
+
+.selectIssuethree{
+  margin-left: 360px;
 }
 
 .firstTab{
@@ -289,8 +303,14 @@ select{
 .labelSwimming{
   margin-left: 170px;
 }
+.labelkitchen{
+  margin-left: 182px;
+}
 .labelFoundation{
-  margin-left: 130px;
+  margin-left: 142px;
+}
+.labelFoundationthree{
+  margin-left: 370px;
 }
 
 .labelFoundation1{
@@ -304,8 +324,21 @@ select{
   margin-left: 280px;
 }
 
+.labelRoofTwo{
+  margin-left: 500px;
+}
 .labelRoof{
   margin-left: 380px;
+}
+.labelRoofselect{
+  margin-left: 395px;
+}
+.labelexterier{
+  margin-left: 393px;
+}
+
+.addedshape{
+  margin-left: 30px;
 }
 
 .detailsrow1{
@@ -407,6 +440,13 @@ select{
   margin-right: 100px;
   height: 50px;
   width: 160px;
+}
+
+.requestbutton{
+  margin-left: 150px;
+  height: 50px;
+  width: 160px;
+  vertical-align: middle;
 }
 
 .optionsInput{

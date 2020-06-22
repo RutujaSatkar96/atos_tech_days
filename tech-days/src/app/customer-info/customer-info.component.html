@@ -165,8 +165,8 @@
                         </div>
 
                         <div class="row9">
-                                <select class="ocuupation" name="gender" id="gender" [(ngModel)] = "customerinfo.cancelpolicy">
-                                        <option class="genderOptions" value="yes">Yes</option>
+                                <select class="ocuupation" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "customerinfo.cancelpolicy">
+                                        <option class="cancelpolicyOptions" value="yes">Yes</option>
                                         <option value="no">No</option>
                                 </select>
                         </div>
@@ -197,8 +197,8 @@
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="Year">
-                        <input class="streetInput labelCriminal" placeholder="Number of people">
+                        <input class="streetInput" placeholder="Year" [(ngModel)] = "basicinfo.yearbuilt">
+                        <input class="streetInput labelCriminal" placeholder="Number of people" [(ngModel)] = "basicinfo.yearbuilt">
                 </div>
 
                 <div class="row5">
@@ -207,18 +207,18 @@
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="Date">
+                        <input class="streetInput" placeholder="Date" [(ngModel)] = "basicinfo.purchasedate">
                         <input class="streetInput labelCriminal" placeholder="Living area">
                 </div>
 
                 <div class="row5">
                         <label class="questionLabel">Exterior type</label>
-                        <label class="questionLabel labelRoof ">Roof shape</label>
+                        <label class="questionLabel labelexterier">Roof shape</label>
                 </div>
 
                 <div class="row9">
-                        <select class="ocuupation" name="gender" id="gender">
-                                <option class="genderOptions" value="yes">Brick stone</option>
+                        <select class="ocuupation" name="exterior" id="exterior">
+                                <option class="exteriorOptions" value="yes">Brick stone</option>
                         </select>
 
                         <select class="ocuupation selectIssue margin" name="gender" id="gender">
@@ -239,14 +239,14 @@
 
                 <div class="row5">
                         <label class="questionLabel">Is there a swimming pool on the premises?</label>
-                        <label class="questionLabel labelSwimming labelSwimming">What material is the kitchen countertops made of?</label><br/>
+                        <label class="questionLabel labelkitchen">What material is the kitchen countertops made of?</label><br/>
                 </div>
 
                 <div class="row7">
                         <input class="streetInput" placeholder="yes/no">
 
-                        <select class="ocuupation selectIssue" name="gender" id="gender">
-                                <option class="genderOptions optionsInput" value="yes">Wood</option>
+                        <select class="ocuupation selectIssuetwo" name="kitchen" id="kitchen">
+                                <option class="kitchenOptions optionsInput" value="yes">Wood</option>
                         </select>
                 </div>
 
@@ -258,55 +258,61 @@
                 <div class="row7">
                         <input class="streetInput" placeholder="yes/no">
 
-                        <select class="ocuupation selectIssue" name="gender" id="gender">
-                                <option class="genderOptions labelFoundation1" value="yes">Closed basement</option>
+                        <select class="ocuupation selectIssuetwo" name="foundation" id="foundation">
+                                <option class="foundationOptions labelFoundation1" value="yes">Closed basement</option>
                         </select>
                 </div>
 
 
                 <div class="row5">
                         <label class="questionLabel">Building Material</label>
-                        <label class="questionLabel labelRoof ">Type of garage</label>
+                        <label class="questionLabel  labelFoundationthree">Type of garage</label>
                 </div>
 
                 <div class="row9">
-                        <select class="ocuupation" name="gender" id="gender">
-                                <option class="genderOptions" value="yes">Solid Brick</option>
+                        <select class="ocuupation" name="building" id="building">
+                                <option class="buildingOptions" value="yes">Solid Brick</option>
                         </select>
 
-                        <select class="ocuupation selectIssue" name="gender" id="gender">
-                                <option class="genderOptions" value="yes">Car attached</option>
+                        <select class="ocuupation selectIssuethree" name="garage" id="garage">
+                                <option class="garageOptions" value="yes">Car attached</option>
                         </select>
                 </div>
 
                 <div class="row5">
                         <label class="questionLabel">No. of Stories</label>
-                        <label class="questionLabel labelRoof">Select the protective devices installed in your home?</label>
+                        <label class="questionLabel labelRoofselect">Select the protective devices installed in your home?</label>
                 </div>
 
-                <div class="row7">
-                        <select class="ocuupation " name="gender" id="gender">
-                                <option class="genderOptions" value="yes">1</option>
+                <div class="checkbox">
+                        <select class="ocuupation " name="noofstories" id="noofstories" [(ngModel)] = "basicinfo.noofstories">
+                                <option class="noofstoriesOptions" value="yes">1</option>
                                 <option value="no">2</option>
                                 <option value="no">3</option>
                         </select>
+                        <div style="margin-left: 20px;">
                         <mat-checkbox class="labelRoof">A burglar alarm that sounds in your home​</mat-checkbox>
-                        <mat-checkbox class="labelRoof">A for alarm that reports to a fire station</mat-checkbox>
+                        <mat-checkbox class="labelRoof ">A for alarm that reports to a fire station</mat-checkbox>
                         <mat-checkbox class="labelRoof">Multiple fire sprinklers throughout the home</mat-checkbox>
                         <mat-checkbox class="labelRoof">An emergency backup generator</mat-checkbox>
                         <mat-checkbox class="labelRoof">A home automation system</mat-checkbox>
+                        <br>
                         <mat-checkbox class="labelRoof">None of the above​</mat-checkbox>
+                </div>
                 </div>
 
 
         </div>
+<br>
+<br>
+        <div class="detailsrow1">
+                <div>
+                <div style="margin-left: 30px;">All coverages and discounts are subject to terms, conditions, availability, and qualifications.</div>
+                <div style="margin-left: 30px;">This is a brief description of coverages; this is not a contract. </div>
+                <div style="margin-left: 30px;"> Please contact a local agent or call 151-200-300 for more information.</div>
+        </div>
+                <button class="requestbutton" (click) = "navigateToUnderwriter()">Request Quote</button>
 
-        <div>
-                <button class="button" (click) = "navigateToUnderwriter()">Request Quote</button>
-                <div>All coverages and discounts are subject to terms, conditions, availability, and qualifications.</div>
-                <div>This is a brief description of coverages; this is not a contract. </div>
-                <div> Please contact a local agent or call 151-200-300 for more information.</div>
-                
         </div>
         </mat-tab>
 
