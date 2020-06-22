@@ -36,6 +36,7 @@
       "phone": "123-456-7890",
       "homebuiltin": 2020,
       "area": "1000 sqft",
+      "age": "31",
       "email": "mark.wells@gmail.com",
       "dateofbirth": "08-16-1965",
       "pastpropertyclaimsorlosses": "No",
@@ -45,18 +46,18 @@
       "criminalconvictions": "No"
     },
     "coverages": {
-      "dwellingprotection": "$218,560 - cost =$879",
+      "dwellingprotection": "$879",
       "otherstructures": "$22K",
       "propertyagainst": "Standard/Extended Incidents",
       "propertyprotection": "$131K ",
       "additionallivingexpenses": "$22K ",
-      "familyliabilityprotection": "$100K per occurrence"
+      "familyliabilityprotection": "$100K"
     },
     "discountsandsurcharges": {
       "newconstructiondiscount": "$ 260"
     },
     "deductibles": {
-      "allperilsdeductible": "$2.5K per occurrence",
+      "allperilsdeductible": "$2.5K",
       "windstormorhail": "$3K"
     },
     "totalpremium": "$ 960 annual",

@@ -11,6 +11,7 @@
 }
 .detailsrow1{
     display: flex;
+    margin-top: 4px;
 }
 .detailsrow2{
     display: flex;

@@ -40,6 +40,7 @@
       </div>
     </div>
   </div>
+  <br>
     <div class="basicinfo">
       <label class="detail_one">Basic Info</label>
   </div>
@@ -144,7 +145,7 @@
 </div>
 
 <div class="detailsrow1">
-<label class="whole_two">43</label>
+<label class="whole_two">{{workQuote.customerinfo.age}}</label>
 <label class="whole_two">{{workQuote.customerinfo.smokerstatus}}</label>
 <label class="whole_one_value">{{workQuote.customerinfo.pastpropertyclaimsorlosses}}</label>
 </div>
@@ -163,7 +164,7 @@
 
 <!-- deleted -->
 <div class="basicinfo">
-  <label class="detail_one">Coverages</label>
+  <label class="detail_one">Summary Coverages</label>
 </div>
 <div class="detailsrow1">
 <label class="emercency">Dwelling Protection:</label>
@@ -171,12 +172,11 @@
 <label class="emercency">Additional Living expenses:</label>
 </div>
 
-<div class="detailsrow1">
-<label class="whole_two">{{workQuote.coverages.dwellingprotection}}</label>
-<select class="whole_selct" id="#">
-  <option selected="selected" value="one">{{workQuote.coverages.propertyprotection}}</option>
-  </select>
-<label class="addtional_one_value">{{workQuote.coverages.additionallivingexpenses}}</label>
+<div style="margin-top: 4px;">
+<input class="whole_split_four_one" value = {{workQuote.coverages.dwellingprotection}}>
+<input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.propertyprotection}}>
+
+<input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.additionallivingexpenses}}>
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
 <label class="emercency">Other Structures:</label>
@@ -184,10 +184,10 @@
 <label class="emercency">Family Liability Protection:</label>
 </div>
 
-<div class="detailsrow1">
-<label class="whole_one_value">{{workQuote.coverages.otherstructures}}</label>
-<label class="whole_two">{{workQuote.coverages.propertyprotection}}</label>
-<label class="whole_two">{{workQuote.coverages.familyliabilityprotection}}</label>
+<div style="margin-top: 4px;">
+<input class="whole_split_four_one"  value = {{workQuote.coverages.otherstructures}}>
+<input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.propertyprotection}}>
+<input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.familyliabilityprotection}}>
 </div>
 
 <div class="basicinfo">
@@ -197,32 +197,34 @@
 <label class="emercency">New Construction Discount:</label>
 </div>
 
-<div class="detailsrow1">
-<label class="whole_two">{{workQuote.discountsandsurcharges.newconstructiondiscount}}</label>
+<div style="margin-top: 4px;">
+  <input class="whole_split_four_one" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
 </div>
 <div class="basicinfo">
   <label class="detail_one">Deductibles</label>
 </div>
-<div class="detailsrow1">
+<div >
 <label class="emercency">All Perils deductible:</label>
-<label class="emercency">Windstorm/Hail Deductible: </label>
+<label class="windstorm">Windstorm/Hail Deductible: </label>
+
 </div>
 
-<div class="detailsrow1">
-<label class="whole_one_value">{{workQuote.deductibles.allperilsdeductible}}</label>
-<label class="whole_one_value">{{workQuote.deductibles.windstormorhail}}</label>
+<div style="margin-top: 4px;">
+  <input class="whole_split_four_one" value={{workQuote.deductibles.allperilsdeductible}}>
+  <input class="whole_split_four_one" style="margin-left: 75px;" value={{workQuote.deductibles.windstormorhail}}>
 
   </div>
- 
-  <div class="detailsrow1" style="margin-top: 20px;">
+  <br>
+  <br>
+  <div class="detailsrow1" >
   <label class="emercency">FINAL PREMIUM:</label>
   </div>
   
-  <div class="detailsrow1">
-  <label class="whole_two">{{workQuote.finalpremium}}</label>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value = {{workQuote.finalpremium}}>
   </div>
   <br>
-  
+
 
   <div *ngIf="show; else notShow">
     <div class="form-group">

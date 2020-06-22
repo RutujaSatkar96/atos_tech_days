@@ -9,9 +9,9 @@
       </div>
   
       <div class="detailsrow1">
-        <label class="detail_one_value">{{workQuote.customerinfo.name}}</label>
+        <input class="whole_split_three_one" value = {{workQuote.customerinfo.name}}>
         <label class="detail_two_value">{{quoteNo}}</label>
-        <label class="detail_two_value">{{workQuote.customerinfo.homebuiltin}}</label>
+        <input class="whole_split_date_two" style="margin-left: 15px;"  value = {{workQuote.customerinfo.homebuiltin}}>
       </div>
   
       <div class="detailsrow1" >
@@ -21,9 +21,9 @@
       </div>
   
       <div class="detailsrow1">
-        <label class="detail_one_value">{{workQuote.customerinfo.dateofbirth}}</label>
-        <label class="detail_two_value">{{workQuote.customerinfo.effectivedate}}</label>
-        <label class="detail_two_value">{{workQuote.customerinfo.area}}</label>
+        <input class="whole_split_date_one" value ={{workQuote.customerinfo.dateofbirth}}>
+        <input class="whole_split_date_two" value ={{workQuote.customerinfo.effectivedate}}>
+        <input class="whole_split_date_two" value ={{workQuote.customerinfo.area}}>
       </div>
   
       <div class="address_phone" >
@@ -33,13 +33,14 @@
           <label class="detail_two">Email</label>
         </div>
   
-        <div class="detailsrow1">
-          <label class="detail_one_value">{{workQuote.customerinfo.address}}</label>
-          <label class="detail_two_value">{{workQuote.customerinfo.phone}}</label>
-          <label class="detail_two_value">{{workQuote.customerinfo.email}}</label>
+        <div >
+          <input class="whole_edit_address" style="margin-top: 2px;" value ={{workQuote.customerinfo.address}}>
+          <input class="whole_edit_addresstwo" style="margin-top: 2px;" value ={{workQuote.customerinfo.phone}}>
+          <input class="whole_split_email" value ={{workQuote.customerinfo.email}}>
         </div>
       </div>
     </div>
+    <br>
       <div class="basicinfo">
         <label class="detail_one">Basic Info</label>
     </div>
@@ -50,11 +51,11 @@
       <label class="whole_one">No of stories:</label>
     </div>
   
-    <div class="detailsrow1">
-      <label class="whole_two">{{workQuote.basicinfo.yearbuilt}}</label>
-      <label class="whole_two">{{workQuote.basicinfo.purchasedate}}</label>
-      <label class="whole_two">{{workQuote.basicinfo.burglarsalarm}}</label>
-      <label class="whole_two">{{workQuote.basicinfo.noofstories}}</label>
+    <div style="margin-top: 3px;">
+      <input class="whole_split_four_one" value ={{workQuote.basicinfo.yearbuilt}}>
+      <input class="whole_split_four_two" value ={{workQuote.basicinfo.purchasedate}}>
+      <input class="whole_split_four_three" value ={{workQuote.basicinfo.burglarsalarm}}>
+      <input class="whole_split_four_four" value ={{workQuote.basicinfo.noofstories}}>
     </div>
     <div class="detailsrow1" style="margin-top: 5px;">
       <label class="whole_one">Square Footage:</label>
@@ -63,22 +64,22 @@
       <label class="whole_one">Single family:</label>
     </div>
   
-    <div class="detailsrow1">
-      <label class="whole_two">{{workQuote.basicinfo.squarefootage}}</label>
-      <label class="whole_two">{{workQuote.basicinfo.noofstories}}</label>
-      <label class="whole_two">{{workQuote.basicinfo.firesprinklers}}</label>
-      <label class="whole_two">{{workQuote.basicinfo.singlefamily}}</label>
+    <div style="margin-top: 3px;">
+      <input class="whole_split_four_one" value = {{workQuote.basicinfo.squarefootage}}>
+      <input class="whole_split_four_two" value = {{workQuote.basicinfo.noofstories}}>
+      <input class="whole_split_four_three" value = {{workQuote.basicinfo.firesprinklers}}>
+      <input class="whole_split_four_four" value = {{workQuote.basicinfo.singlefamily}}>
     </div>
-    <div class="detailsrow1" style="margin-top: 5px;">
+    <div class="detailsrow1" style="margin-top: 10px;">
       <label class="whole_one">Fire Alarm:</label>
       <label class="backup">Emergency Backup generator:</label>
       <label class="emercency" style="size: 16px;">Home within 1,000 feet of a fire hydrant?</label>
     </div>
   
-    <div class="detailsrow1">
-      <label class="whole_two">{{workQuote.basicinfo.firealarm}}</label>
-      <label class="whole_one_value">{{workQuote.basicinfo.emergencybackupgenerator}}</label>
-      <label class="whole_one_value">{{workQuote.basicinfo.firehydrant}}</label>
+    <div style="margin-top: 4px;">
+      <input class="whole_split_four_one" value = {{workQuote.basicinfo.firealarm}}>
+      <input class="whole_split_four_two" value = {{workQuote.basicinfo.emergencybackupgenerator}}>
+      <input class="whole_split_four_five" value = {{workQuote.basicinfo.firehydrant}}>
     </div>
   
     <div class="basicinfo">
@@ -91,11 +92,11 @@
     <label class="whole_one">swimming pool:</label>
   </div>
   
-  <div class="detailsrow1">
-    <label class="whole_two">{{workQuote.exterior.buildingmaterial}}</label>
-    <label class="whole_two">{{workQuote.exterior.typeofgarage}}</label>
-    <label class="whole_two">{{workQuote.exterior.roofshape}}</label>
-    <label class="whole_two">{{workQuote.exterior.swimmingpool}}</label>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value = {{workQuote.exterior.buildingmaterial}}>
+    <input class="whole_split_four_two" value = {{workQuote.exterior.typeofgarage}}>
+    <input class="whole_split_four_three" value = {{workQuote.exterior.roofshape}}>
+    <input class="whole_split_four_four" value = {{workQuote.exterior.swimmingpool}}>
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
     <label class="whole_one">Roof Material:</label>
@@ -104,11 +105,11 @@
     <label class="whole_one">Deck:</label>
   </div>
   
-  <div class="detailsrow1">
-    <label class="whole_two">{{workQuote.exterior.roofmaterial}}</label>
-    <label class="whole_two">{{workQuote.exterior.porch}}</label>
-    <label class="whole_two">{{workQuote.exterior.roofage}}</label>
-    <label class="whole_two">{{workQuote.exterior.deck}}</label>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value = {{workQuote.exterior.roofmaterial}}>
+    <input class="whole_split_four_two" value = {{workQuote.exterior.porch}}>
+    <input class="whole_split_four_three" value = {{workQuote.exterior.roofage}}>
+    <input class="whole_split_four_four" value = {{workQuote.exterior.deck}}>
   </div>
   
   <div class="basicinfo">
@@ -120,19 +121,19 @@
   <label class="whole_one">Fire Place:</label>
   </div>
   
-  <div class="detailsrow1">
-  <label class="whole_two">{{workQuote.interior.foundationtype}}</label>
-  <label class="whole_two">{{workQuote.interior.bathquality}}</label>
-  <label class="whole_two">{{workQuote.interior.fireplace}}</label>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value = {{workQuote.interior.foundationtype}}>
+    <input class="whole_split_four_two" style="margin-left: 10px;" value = {{workQuote.interior.bathquality}}>
+    <input class="whole_split_four_three" value = {{workQuote.interior.fireplace}}>
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="whole_one"> Kitchen Quality:</label>
   <label class="whole_one"> Kitchen countertops:</label>
   </div>
   
-  <div class="detailsrow1">
-  <label class="whole_two">{{workQuote.interior.kitchenquality}}</label>
-  <label class="whole_two">{{workQuote.interior.kitchencountertops}}</label>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value = {{workQuote.interior.kitchenquality}}>
+    <input class="whole_split_four_two" style="margin-left: 10px;" value = {{workQuote.interior.kitchencountertops}}>
   </div>
   <div class="basicinfo">
     <label class="detail_one">Customer Info </label>
@@ -143,10 +144,10 @@
   <label class="emercency">Past property claims or losses:</label>
   </div>
   
-  <div class="detailsrow1">
-  <label class="whole_two">43</label>
-  <label class="whole_two">{{workQuote.customerinfo.smokerstatus}}</label>
-  <label class="whole_one_value">{{workQuote.customerinfo.pastpropertyclaimsorlosses}}</label>
+  <div style="margin-top: 4px;">
+  <input class="whole_split_four_one" value= {{workQuote.customerinfo.age}}>
+  <input class="whole_split_four_one" value = {{workQuote.customerinfo.smokerstatus}}>
+  <input class="whole_split_four_one" value = {{workQuote.customerinfo.pastpropertyclaimsorlosses}}>
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="whole_one">Marital Status:</label>
@@ -154,10 +155,10 @@
   <label class="emercency">Running business from home:</label>
   </div>
   
-  <div class="detailsrow1">
-  <label class="whole_two">{{workQuote.customerinfo.maritalstatus}}</label>
-  <label class="whole_two">{{workQuote.customerinfo.criminalconvictions}}</label>
-  <label class="whole_one_value">{{workQuote.customerinfo.runningbusinessfromhome}}</label>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value= {{workQuote.customerinfo.maritalstatus}}>
+    <input class="whole_split_four_one" value= {{workQuote.customerinfo.criminalconvictions}}>
+    <input class="whole_split_four_one" value= {{workQuote.customerinfo.runningbusinessfromhome}}>
   </div>
   
   
@@ -171,12 +172,11 @@
   <label class="emercency">Additional Living expenses:</label>
   </div>
   
-  <div class="detailsrow1">
-  <input class="whole_edit_two" value = {{workQuote.coverages.dwellingprotection}}>
-  <select class="whole_edit_one" id="#">
-    <option selected="selected" style="margin-right: 8px;" value="one">{{workQuote.coverages.propertyprotection}}</option>
-    </select> 
-  <input class="whole_edit_three" value = {{workQuote.coverages.additionallivingexpenses}}>
+  <div style="margin-top: 4px;">
+  <input class="whole_split_four_one" value = {{workQuote.coverages.dwellingprotection}}>
+  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.propertyprotection}}>
+  
+  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.additionallivingexpenses}}>
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="emercency">Other Structures:</label>
@@ -184,10 +184,10 @@
   <label class="emercency">Family Liability Protection:</label>
   </div>
   
-  <div class="detailsrow1">
-  <input class="whole_edit_two" value = {{workQuote.coverages.otherstructures}}>
-  <input class="whole_edit_one"  value = {{workQuote.coverages.propertyprotection}}>
-  <input class="whole_edit_one" value = {{workQuote.coverages.familyliabilityprotection}}>
+  <div style="margin-top: 4px;">
+  <input class="whole_split_four_one"  value = {{workQuote.coverages.otherstructures}}>
+  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.propertyprotection}}>
+  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.familyliabilityprotection}}>
   </div>
   
   <div class="basicinfo">
@@ -197,20 +197,21 @@
   <label class="emercency">New Construction Discount:</label>
   </div>
   
-  <div class="detailsrow1">
-  <input class="whole_two" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
   </div>
   <div class="basicinfo">
     <label class="detail_one">Deductibles</label>
   </div>
-  <div class="detailsrow1">
+  <div >
   <label class="emercency">All Perils deductible:</label>
-  <label class="emercency">Windstorm/Hail Deductible: </label>
+  <label class="windstorm">Windstorm/Hail Deductible: </label>
+
   </div>
   
-  <div class="detailsrow1">
-  <input class="whole_edit_two" value={{workQuote.deductibles.allperilsdeductible}}>
-  <input class="whole_edit_one" value={{workQuote.deductibles.windstormorhail}}>
+  <div style="margin-top: 4px;">
+    <input class="whole_split_four_one" value={{workQuote.deductibles.allperilsdeductible}}>
+    <input class="whole_split_four_one" style="margin-left: 75px;" value={{workQuote.deductibles.windstormorhail}}>
   
     </div>
     <br>
@@ -219,8 +220,8 @@
     <label class="emercency">FINAL PREMIUM:</label>
     </div>
     
-    <div class="detailsrow1">
-    <input class="whole_two" value = {{workQuote.finalpremium}}>
+    <div style="margin-top: 4px;">
+      <input class="whole_split_four_one" value = {{workQuote.finalpremium}}>
     </div>
     <br>
   

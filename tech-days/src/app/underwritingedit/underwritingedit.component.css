@@ -10,10 +10,12 @@
 }
 .detailsrow1{
     display: flex;
+    margin-top: 4px;
 }
 .detailsrow2{
     display: flex;
 }
+
 .detail_one{
     width:  330px;
     font-family: verdana;
@@ -69,11 +71,18 @@
     font-size: 13px;
 }
 .emercency{
-    width:  330px;
+    width:  336px;
     font-family: verdana;
     font-weight: 600;
     font-size: 13px;
     margin-left: 8px;
+}
+.windstorm{
+    width:  336px;
+    font-family: verdana;
+    font-weight: 600;
+    font-size: 13px;
+    margin-left: 130px;
 }
 .backup{
     width:  230px;
@@ -97,13 +106,92 @@
     width: 200px;
     font-family: verdana;
     font-size: 13px;
-    margin-left: 77px;
+    margin-left: 70px;
 }
 .whole_edit_two{
     width: 200px;
     font-family: verdana;
     font-size: 13px;
     margin-left: 8px;
+}
+.whole_edit_address{
+    width: 250px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 40px;
+}
+.whole_edit_addresstwo{
+    width: 145px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 101px;
+}
+
+.whole_split_four_one{
+    width: 125px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 75px;
+}
+.whole_split_four_two{
+    width: 125px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-right: 75px;
+}
+.whole_split_four_three{
+    width: 125px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-right: 75px;
+}
+.whole_split_four_five{
+    width: 100px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 50px;
+}
+.whole_split_four_four{
+    width: 125px;
+    font-family: verdana;
+    font-size: 13px;
+}
+.whole_split_three_one{
+    width: 200px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 128px;
+}
+.whole_split_three_two{
+    width: 200px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-right: 60px;
+}
+.whole_split_date_one{
+    width: 150px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-right: 150px;
+}
+.whole_split_date_two{
+    width: 150px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-right: 103px;
+}
+.whole_split_email{
+    width: 160px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-right: 3px;
+    margin-left: 8px;
+    margin-top: 2px;
 }
 .whole_selct{
     width: 207px;
@@ -124,7 +212,7 @@
     background: #ffffff;
 }
 .button_colour {
-    height: 60px;
+    height: 55px;
     width: 245px;
     font-family: Verdana;
     font-weight: bold;
