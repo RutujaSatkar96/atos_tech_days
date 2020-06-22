@@ -133,10 +133,11 @@
   }
   
   .label2{
-      font-size: 12px;
+      font-size: 10px;
       font-family: Verdana;
       color: #000;
       margin-left: 13px;
+      font-weight: bold;
   }
   .quoteLabel{
       font-weight: bold;
@@ -146,7 +147,7 @@
   .row2{
       width: 235px;
       height: 134px;
-      margin-top: 20px;
+      margin-top: 10px;
       background-color:#fff;
   }
   
@@ -154,7 +155,7 @@
       color: 	#eb5b28;
       padding: 30px;
       font-size: 20px;
-  }
+      }
   
   .scoreLabel{
       margin-top: 30px;
