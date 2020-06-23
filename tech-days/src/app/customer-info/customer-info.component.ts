@@ -34,12 +34,7 @@ export class CustomerInfoComponent implements OnInit {
       console.log(this.workQuote)
       this._router.navigate(['app-customer-summary-edit']);
 
-      //  let response = this.http.post(this.workQuoteurl,this.workQuote);
-      // response.toPromise().then(data => {
-      //   console.log(data)
-      //   this.workQuote = <WorkQuote>(data);
-      //   this._router.navigate(['app-customer-summary-edit']);
-      // });
+    
   }
 
 
