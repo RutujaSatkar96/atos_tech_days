@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ViewEncapsulation } from '@angular/compiler/src/core';
 import { Router } from '@angular/router';
 import { WorkQuote } from '../shared/models/work-quote.model';
-import {HttpClient} from '@angular/common/http'
+import {HttpClient, HttpClientModule} from '@angular/common/http'
 import { CustomerInfo } from '../shared/models/customerinfo.model';
 import { BasicInfo } from '../shared/models/basic-info.model';
 import { Exterior } from '../shared/models/exterior.model';
 import { Interior } from '../shared/models/interior.model';
+import { RestApiService } from "../shared/rest-api.service";
 
 @Component({
   selector: 'app-customer-info',
@@ -32,13 +33,23 @@ export class CustomerInfoComponent implements OnInit {
     this.workQuote.interior= this.interior;
 
       console.log(this.workQuote)
-      this._router.navigate(['app-customer-summary-edit']);
+     // this._router.navigate(['app-customer-summary-edit']);
+
+      this.restApi.createQuote(this.workQuote).subscribe((data: {}) => {
+        console.log(data)
+        this.workQuote = <WorkQuote>(data);
+        if(this.workQuote.quoteno != null){
+        this._router.navigate(['app-customer-summary-edit']);
+        }else{
+          alert('Please enter the all fields.')
+        }
+      })
 
     
   }
 
 
-  workQuote=new WorkQuote();
+  workQuote = new WorkQuote();
   customerinfo=new CustomerInfo();
   basicinfo=new BasicInfo();
   exterior=new Exterior();
@@ -47,14 +58,13 @@ export class CustomerInfoComponent implements OnInit {
    title = 'HttpRequest';
   quoteNo = "H458131342";
 
-  workQuoteurl = "http://localhost:8080/customerInfo"
   url = "/assets/underwriting.json"
 
-  constructor(private http:HttpClient, private _router: Router){
+  constructor(public restApi: RestApiService, private http:HttpClient, private _router: Router){
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
       
-      this.workQuote = <WorkQuote>(data);
+    //  this.workQuote = <WorkQuote>(data);
      
     });
     

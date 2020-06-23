@@ -25,6 +25,8 @@ import { SummaryEditComponent } from './customer-summary-edit/summary-edit.compo
 import { Dialog3Component } from './dialog3/dialog3.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 imports: [
     BrowserModule,
