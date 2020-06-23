@@ -2,9 +2,10 @@
 
 </div> -->
 <div class="header" style="overflow: hidden;"> 
-        <img class="logo" src="../assets/logo.png">
+        <!-- <img class="logo" src="../assets/logo.png"> -->
+        <div class="company">  ABC Insurance Company </div>
     
-        <div class="logout">
+        <!-- <div class="logout">
             <img class="logoutIcon" src="../assets/logout_icn.png">
         </div>
     
@@ -13,9 +14,9 @@
             <img class="userIcon" src="../assets/user_img.png">
             <p class="welcome"> Welcome <br/>
                 Mr. Mark Wells
-            </p>
+            </p> -->
       
-    </div>
+</div>
 <div class="main">
 <div class="details">
 
@@ -88,7 +89,7 @@
                                 <input class="unitInput" placeholder="Unit Input" [(ngModel)] = "customerinfo.unit">
 
                                 <select class="ocuupation" name="city" id="city"  [(ngModel)] = "customerinfo.city">
-                                        <option class="cityOptions" value="male">Bella</option>
+                                        <option class="cityOptions" value="bella">Bella</option>
                                 </select>
 
                                 <input class="unitInput" placeholder="State"  [(ngModel)] = "customerinfo.state">
@@ -115,7 +116,7 @@
                         <div class="row8">
                                 <label class="questionLabels"> Do you or a family member</label> 
                                 <label class="questionLabels labelMargin"> Have you or any of your family members </label><br/>
-                                <label class="questionLabels"> business from home?</label>
+                                <label class="questionLabels">run business from home?</label>
                                 <label class="questionLabels labelMargin labelCriminal">ever had criminal conviction?</label>
                         </div>
 
@@ -157,7 +158,12 @@
 
                         <div class="row9">
                                 <input class="streetInput smokerInput" placeholder="Smokers">
-                                <input class="streetInput petInput" placeholder="Pet">
+                                <!-- <input class="streetInput petInput" placeholder="Pet"> -->
+                                <select class="ocuupation selectIssue" name="gender" id="gender"> 
+                                        <option class="genderOptions" value="dog">Dog</option>
+                                        <option value="cat">Cat</option>
+                                        <option value="other">Other</option>
+                                </select>
                                 <input class="streetInput breedInput" placeholder="Number of breeds">
                         </div>
 
@@ -226,11 +232,11 @@
 
                 <div class="row9">
                         <select class="ocuupation" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
-                                <option class="exteriorOptions" value="yes">Brick stone</option>
+                                <option class="exteriorOptions" value="brick stone">Brick stone</option>
                         </select>
 
                         <select class="ocuupation selectIssue margin" name="roof" id="roof" [(ngModel)] = "exterior.roofshape">
-                                <option class="roofOptions" value="yes">Flat</option>
+                                <option class="roofOptions" value="flat">Flat</option>
                         </select>
                 </div>
 
@@ -241,8 +247,16 @@
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool">
-                        <input class="streetInput labelCriminal" placeholder="yes/no" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
+                        <!-- <input class="streetInput" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool"> -->
+                        <select class="ocuupation" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
+                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                                <option value="no">No</option>
+                        </select>
+                        <!-- <input class="streetInput labelCriminal" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool"> -->
+                        <select class="streetInput labelCriminal" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "exterior.swimmingpool">
+                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                                <option value="no">No</option>
+                        </select>
                 </div>
 
                 <div class="row5">
@@ -251,23 +265,29 @@
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="yes/no" [(ngModel)] = "basicinfo.primaryresidence">
-
+                        <!-- <input class="streetInput" placeholder="yes/no" [(ngModel)] = "basicinfo.primaryresidence"> -->
+                        <select class="ocuupation" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "basicinfo.primaryresidence">
+                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                                <option value="no">No</option>
+                        </select>
                         <select class="ocuupation selectIssuetwo" name="kitchen" id="kitchen" [(ngModel)] = "interior.kitchencountertops">
-                                <option class="kitchenOptions optionsInput" value="yes">Wood</option>
+                                <option class="kitchenOptions optionsInput" value="wood">Wood</option>
                         </select>
                 </div>
 
                 <div class="row5">
                         <label class="questionLabel">Is your home within 1,000 feet of a fire hydrant?</label>
-                        <label class="questionLabel  labelFoundation">Type of Foundation</label><br/>
+                        <label class="questionLabel labelFoundation">Type of Foundation</label><br/>
                 </div>
 
                 <div class="row7">
-                        <input class="streetInput" placeholder="yes/no" [(ngModel)] = "interior.fireplace">
-
+                        <!-- <input class="streetInput" placeholder="yes/no" [(ngModel)] = "interior.fireplace"> -->
+                        <select class="streetInput" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "interior.fireplace">
+                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                                <option value="no">No</option>
+                        </select>
                         <select class="ocuupation selectIssuetwo" name="foundation" id="foundation" [(ngModel)] = "interior.foundationtype">
-                                <option class="foundationOptions labelFoundation1" value="yes">Closed basement</option>
+                                <option class="foundationOptions labelFoundation1" value="closed basement">Closed basement</option>
                         </select>
                 </div>
 
@@ -279,11 +299,11 @@
 
                 <div class="row9">
                         <select class="ocuupation" name="building" id="building" [(ngModel)] = "exterior.buildingmaterial">
-                                <option class="buildingOptions" value="yes">Solid Brick</option>
+                                <option class="buildingOptions" value="solid brick">Solid Brick</option>
                         </select>
 
                         <select class="ocuupation selectIssuethree" name="garage" id="garage" [(ngModel)] = "exterior.typeofgarage">
-                                <option class="garageOptions" value="yes">Car attached</option>
+                                <option class="garageOptions" value="car attached">Car attached</option>
                         </select>
                 </div>
 
@@ -294,9 +314,9 @@
 
                 <div class="checkbox">
                         <select class="ocuupation " name="noofstories" id="noofstories" [(ngModel)] = "basicinfo.noofstories">
-                                <option class="noofstoriesOptions" value="yes">1</option>
-                                <option value="no">2</option>
-                                <option value="no">3</option>
+                                <option class="noofstoriesOptions" value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
                         </select>
                         <div style="margin-left: 20px;">
                         <mat-checkbox class="labelRoof">A burglar alarm that sounds in your home​</mat-checkbox>
@@ -319,7 +339,7 @@
                 <div style="margin-left: 30px;">This is a brief description of coverages; this is not a contract. </div>
                 <div style="margin-left: 30px;"> Please contact a local agent or call 151-200-300 for more information.</div>
         </div>
-                <button class="requestbutton" (click) = "navigateToUnderwriter()">Request Quote</button>
+                <button class="requestbutton" (click) = "navigateToUnderwriter()">Generate Quote</button>
 
         </div>
         </mat-tab> 

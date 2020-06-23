@@ -213,7 +213,7 @@ select{
   margin-left: 270px;
 }
 .labelCriminal{
-  margin-left: 320px;
+  margin-left: 290px;
 }
 .labelHome{
   margin-left: 220px;
@@ -474,6 +474,12 @@ select{
   height: 32px;
   width: 176px;
   margin-top: 17px;
+}
+
+.company{
+  margin-top: 30px;
+  float: left;
+  font-size: 20px;
 }
 
 .logoutIcon{
