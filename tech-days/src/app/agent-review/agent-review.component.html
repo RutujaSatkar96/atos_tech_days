@@ -34,7 +34,7 @@
 <!-- Zelros component -->
     <div class="rightDiv">
 
-      <div style="background-color: #fff; height: 700px; width: 220px;padding: 16px;">
+      <div style="background-color: #fff; height: 580px; width: 220px;padding: 16px;">
   
       
   
@@ -55,18 +55,20 @@
   
           <div class="row2">
              <div class="div1">
-                 <label class="scoreValue">{{zelrosResponse.valid[0].value}}</label><br/>
-                 <div style="margin-top: 20px; margin-left: 20px;"> 
+                 <div style="margin-top: 30px; font-weight: bold;">
+                    <label class="scoreValue">{{zelrosResponse.valid[0].value}}</label><br/>
+                 </div>
+                 <div style="margin-top: 5px; margin-left: 5px;"> 
                   <label class="labelCustomer">Customer</label><br/>
                   <label class="labelCustomer">seriousness score</label>
                  </div>
-                 <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:100px;"><img src="/assets/pluse_icn.png" ></button>
+                 <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:90px;"><img src="/assets/pluse_icn.png" ></button>
                  <!-- <img (click) ="openDialog()" style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png"> -->
              </div>
               <div class="v2">
                   
                   <!-- <label class="scoreValue">95%</label> <br/> -->
-                  <div style="margin-top: 20px;">
+                  <div style="margin-top: 20px; padding: 10px;">
                       <label class="labelAccuracy">Investing time</label><br/>
                       <label class="labelAccuracy">may not be</label><br/>
                       <label class="labelAccuracy">relevent</label>
@@ -78,17 +80,19 @@
               </div>
               
           </div>
-           <hr style="margin-top: 20px;">
+           <hr style="margin-top: 1px;">
   
            <div class="row2">
               <div class="div1">
-                  <label class="scoreValue">{{zelrosResponse.valid[2].value}}</label><br/>
-                  <div style="margin-top: 20px; margin-left: 20px;">
+                  <div style="margin-top: 10px; font-weight: bold;">
+                    <label class="scoreValue">{{zelrosResponse.valid[2].value}}</label>
+                  </div>
+                  <div style="margin-top: 5px; margin-left: 5px;">
                   <label class="labelCustomer">Likelihood of</label><br/>
                   <label class="labelCustomer">standard</label><br/>
                   <label class="labelCustomer">acceptance</label>
                   </div>
-                  <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:100px;"><img src="/assets/pluse_icn.png" ></button>
+                  <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:90px;"><img src="/assets/pluse_icn.png" ></button>
   
                   <!-- <img style="margin-left:100px;" src="/assets/pluse_icn.png"> -->
   
@@ -112,7 +116,7 @@
               </div>
               
           </div>
-          <hr style="margin-top: 20px;"> 
+          <hr style="margin-top: 1px;"> 
   
           <!-- <div class="row3">
               <label class="skipLabel">You can skip the onsite inspection.</label>
