@@ -22,6 +22,8 @@ export class UnderwritingComponent implements OnInit {
     if(role=="2"){
       this.show=true;
     }
+
+   
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
       console.log(data)

@@ -21,4 +21,5 @@ export class WorkQuote {
   extrapremium:string;
   finalpremium:string;
   statusid:number;
+  QuoteNo:string;
 }
