@@ -67,12 +67,17 @@
                     <div style="margin-top: 30px; font-weight: bold; padding: 16px;">
                         <label class="scoreValue">{{zelrosResponse.valid[1].value}}</label> <br/>
                     </div>
-                    <div style="margin-top: 1px;">
+                    <div *ngIf ="show" style="margin-top: 1px;">
                         <label class="labelAccuracy">Accuracy of</label><br/>
                         <label class="labelAccuracy">coverage</label><br/>
                         <!-- <label class="labelAccuracy">relevent</label> -->
                     </div>
-                    <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
+                    <div *ngIf = "!show" style="margin-top: 1px;">
+                        <label class="labelAccuracy">It is worth</label><br/>
+                        <label class="labelAccuracy">investing.</label><br/>
+                        <!-- <label class="labelAccuracy">relevent</label> -->
+                    </div>
+                    <button *ngIf ="show" (click) = "openDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
     
                     <!-- <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png" > -->
     

@@ -15,7 +15,7 @@ export class StandardQuoteComponent implements OnInit {
   id: number;
   zelrosResponse: ZelrosResponse;
   quoteNo = "H458131342";
-  url = "/assets/under_zelros_flow_two.json";
+  url = "/assets/under_zerlos_flow_one.json";
   
   constructor(private route: ActivatedRoute,public dialog: MatDialog, private http:HttpClient) { 
     localStorage.setItem("typeId","2");

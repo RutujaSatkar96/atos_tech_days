@@ -18,8 +18,8 @@ export class ComplexQuoteComponent implements OnInit {
   zelrosResponse: ZelrosResponse;
   quoteNo = "H458131342";
   
-  url = "/assets/under_zelros_flow_two.json";
-  url1 = "/assets/under_zelros_flow_three.json";
+  url1 = "/assets/under_zelros_flow_two.json";
+  url2 = "/assets/under_zelros_flow_three.json";
   urlId : number =1;
 
   show: boolean =true;
@@ -28,7 +28,7 @@ export class ComplexQuoteComponent implements OnInit {
     localStorage.setItem("typeId","2");
 
     if(this.urlId == 1){
-      let response = this.http.get(this.url);
+      let response = this.http.get(this.url1);
       response.toPromise().then(data => {
       console.log(data)
       this.zelrosResponse = <ZelrosResponse>(data);
@@ -36,7 +36,7 @@ export class ComplexQuoteComponent implements OnInit {
     });
     }
     else if(this.urlId == 2){
-      let response = this.http.get(this.url1);
+      let response = this.http.get(this.url2);
       response.toPromise().then(data => {
       console.log(data)
       this.zelrosResponse = <ZelrosResponse>(data);
