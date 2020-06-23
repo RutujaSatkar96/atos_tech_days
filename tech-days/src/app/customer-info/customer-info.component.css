@@ -1,7 +1,8 @@
 .mat-tab-group {
     margin-bottom: 48px;
   }
-
+ 
+  
   .mat-tab-label .mat-tab-label-content {
     display: inline-flex;
     justify-content: center;
@@ -19,10 +20,11 @@
   height: 100%;
   /* background: #f2f2f2; */
   opacity: 90%;
+  width: 100%;
 }
 
 .row1{
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 30px;
 }
 .row2{
@@ -39,27 +41,35 @@
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
+  margin-left: 50px;
+  border: 1px solid rgba(0, 0, 0, .5);
+
 }
 
 .firstNameLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
+  margin-left: 50px;
 }
 
 .lastLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 120px;
+  margin-left: 180px;
 }
 .dobLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 90px;
+  margin-left: 120px;
 }
-
+.genderOptions{
+  height: 36px;
+  width: 130px;
+  margin-left: 75px;
+}
 .lastNameInput{
   width: 170px;
   height: 36px;
@@ -69,7 +79,8 @@
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
-  margin-left: 20px;
+  margin-left: 80px;
+  border: 1px solid rgba(0, 0, 0, .5);
 }
 
 select{
@@ -88,19 +99,22 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
-  margin-left: 20px;
+  margin-left: 100px;
+  border: 1px solid rgba(0, 0, 0, .5);
+
 }
 
 .dateInput{
   width: 130px;
   height: 36px;
-  margin-left: 30px;
+  margin-left: 50px;
   border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, .5);
 
 }
 
 .row3{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 30px;
 }
 
@@ -113,24 +127,35 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
+  border: 1px solid rgba(0, 0, 0, .5);
+  margin-left: 50px;
 }
 
 .emailLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 60px;
+  margin-left: 180px;
 }
 .occupationLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 140px;
+  margin-left: 160px;
 }
 
 .ocuupation select{
   height: 36px;
   width: 170px;
+  margin-left: 30px;
+}
+
+.new{
+  margin-left: 50px;
+}
+
+.new1{
+  margin-left: 130px;
 }
 .ocuupationmaterial select{
   height: 36px;
@@ -143,7 +168,7 @@ select{
 }
 
 .row5{
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 30px;
 }
 
@@ -151,9 +176,10 @@ select{
   font-family: Verdana;
   font-weight: 16px;
   color: #333333;
+  margin-left: 50px;
 }
 .row6{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 30px;
 }
 
@@ -177,6 +203,8 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
+  border: 1px solid rgba(0, 0, 0, .5);
+margin-left: 50px;
 }
 
 .unitInput{
@@ -188,19 +216,21 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
-  margin-left: 20px;
+  margin-left: 110px;
+  border: 1px solid rgba(0, 0, 0, .5);
+
 }
 
 .unitLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 93px;
+  margin-left: 180px;
 }
 
 .row8{
-  margin-top: 30px;
-  margin-left: 30px;
+  margin-top: 10px;
+  margin-left: 80px;
 }
 
 .questionLabels{
@@ -210,22 +240,22 @@ select{
 }
 
 .labelMargin{
-  margin-left: 270px;
+  margin-left: 310px;
 }
 .labelCriminal{
-  margin-left: 320px;
+  margin-left: 330px;
 }
 .labelHome{
-  margin-left: 220px;
+  margin-left: 260px;
 
 }
 .row9{
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .selectIssue{
-  margin-left: 340px;
+  margin-left: 380px;
 }
 
 .selectIssuetwo{
@@ -239,7 +269,9 @@ select{
 .firstTab{
   overflow: auto;
 }
-
+.new3{
+  margin-left: 420px;
+}
 .secondTab{
   overflow: auto;
 }
@@ -277,10 +309,10 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 .labelPet{
-  margin-left: 320px;
+  margin-left: 360px;
 }
 .petInput{
   margin-left: 370px;
@@ -291,19 +323,21 @@ select{
 }
 
 .breedInput{
-  margin-left: 28px;
+  margin-left: 60px;
 }
 
 .yearInput{
-  margin-left: 240px;
+  margin-left: 430px;
 
 }
-
+.new4{
+  margin-left: 400px;
+}
 .labelReason{
-  margin-left: 50px;
+  margin-left: 70px;
 }
 .reasonInput{
-  margin-left: 80px;
+  margin-left: 90px;
 }
 .labelSwimming{
   margin-left: 170px;
@@ -326,7 +360,7 @@ select{
 }
 
 .propertyIssue{
-  margin-left: 280px;
+  margin-left: 340px;
 }
 
 .labelRoofTwo{
@@ -474,6 +508,12 @@ select{
   height: 32px;
   width: 176px;
   margin-top: 17px;
+}
+
+.company{
+  margin-top: 30px;
+  float: left;
+  font-size: 20px;
 }
 
 .logoutIcon{
