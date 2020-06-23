@@ -67,6 +67,8 @@ export class CustomerInfoComponent implements OnInit {
     else{
       //this._router.navigate(['/app-property-info']);
 
+      (<HTMLElement>document.querySelectorAll('.mat-tab-label')[1]).click();
+
     }
   }
 
