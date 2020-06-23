@@ -92,9 +92,9 @@
       color: 	#eb5b28;
       margin-top: 30px;
       /* margin-left: 15px; */
-      font-family: Verdana;
-      font-weight: bold;
-      font-size: 15px;
+      font-family: Roboto;
+      font-weight: medium;
+      font-size: 18px;
   }
 
   .nameLabel2{
@@ -117,12 +117,22 @@
   .helloLabel{
       margin-top: 30px;
       /* margin-left: 15px; */
-      font-family: Verdana;
+      font-family: Roboto;
       color: #000;
-      padding: 12px;
-      font-weight: bold;
-      font-size: 15px;
+      padding: 8px;
+      font-weight: medium;
+      font-size: 18px;
   }
+
+  .helloLabel1{
+    margin-top: 30px;
+    /* margin-left: 15px; */
+    font-family: Roboto;
+    color: #000;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
   .row1{
       /* margin-left: 15px; */
       margin-top: 13px;
@@ -131,10 +141,10 @@
   
   .label2{
       font-size: 10px;
-      font-family: Verdana;
+      font-family: Roboto;
       color: #000;
-      margin-left: 13px;
-      font-weight: bold;
+      margin-left: 8px;
+      font-weight: medium;
   }
   .quoteLabel{
       font-weight: bold;
