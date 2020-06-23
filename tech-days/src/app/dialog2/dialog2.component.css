@@ -1,12 +1,16 @@
 .main{
-    /* background-color: #e8e8e8; */
+    background-color: #e8e8e8;
 }
 
 .in{
     background-color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+.in1{
+    margin-top: 30px;
+}
 .labels{
     font-family: Verdana;
     font-size: 15px;
@@ -42,7 +46,7 @@
 }
 
 .row2{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .rating{
