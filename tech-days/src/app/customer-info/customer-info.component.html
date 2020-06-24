@@ -221,7 +221,7 @@
                         <label class="questionLabel">What year was the </label>
                         <label class="questionLabel labelDate">Purchase date of </label>
                         <label class="questionLabel labelPeople">Number of people</label>
-                        <label class="questionLabel labelPeople">NO. of stories</label><br/>
+                        <label class="questionLabel labelPeople">Number of stories</label><br/>
                         <label class="questionLabel">home built?</label>
                         <label class="questionLabel labelHome">the home</label>
                         <label class="questionLabel labelHouse">living in the household</label>
@@ -233,31 +233,50 @@
                         <mat-datepicker #picker2></mat-datepicker>
                         <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                         <input  class="unitInput " placeholder="People" >
-                        <input class="unitInput labelStories" placeholder="Stories" >
+                        <!-- <input class="unitInput labelStories" placeholder="Stories" > -->
+                        <select class="unitInput labelStories" name="stories" id="stories" [(ngModel)] = "exterior.buildingmaterial">
+                                <option class="storiesOptions" value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="2">3</option>
+
+                        </select>
 
                 </div>
 
                 <div class="row5">
                         <label class="questionLabel">Type of foundation</label>
-                        <label class="questionLabel labelDate">Building material</label>
-                        <label class="questionLabel labelPeople2">Exterior type</label>
-                        <label class="questionLabel labelPeople3">Roof shape</label>
+                        <!-- <label class="questionLabel labelDate">Building material</label> -->
+                        <label class="questionLabel labelDate">Exterior wall type</label>
+                        <label class="questionLabel labelPeople2">Roof style</label>
                 </div>
 
                 <div class="row7">
                         <!-- <input class="streetInput" placeholder="Date" [(ngModel)] = "basicinfo.purchasedate">
                         <input class="streetInput labelCriminal" placeholder="Living area" [(ngModel)] = "customerinfo.area"> -->
-                        <select class="ocuupation new" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
-                                <option class="exteriorOptions" value="brick stone">Closed basement</option>
+                        <select class="ocuupation new" name="foundation" id="foundation" [(ngModel)] = "exterior.buildingmaterial">
+                                <option class="foundationOptions" value="basement">Basement</option>
+                                <option class="foundationOptions" value="slab at grade">Slab at Grade</option>
+                                <option class="foundationOptions" value="crawl space">Crawl Space</option>
+                                <option class="foundationOptions" value="piers">Piers</option>
+                                <option class="foundationOptions" value="with basement">Hillside with Basement</option>
+                                <option class="foundationOptions" value="without basement">Hillside without Basement</option>
                         </select>
-                        <select class="ocuupation labelBuilding" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
-                                <option class="exteriorOptions" value="brick stone">Solod brick</option>
+                        <!-- <select class="ocuupation labelBuilding" name="building" id="building" [(ngModel)] = "exterior.buildingmaterial">
+                                <option class="buildingOptions" value="solid brick">Solid brick</option>
+                        </select> -->
+                        <select class="ocuupation labelBuilding" name="walltype" id="walltype" [(ngModel)] = "exterior.buildingmaterial">
+                                <option class="walltypeOptions" value="brick stone">Brick Frame</option>
+                                <option class="walltypeOptions" value="brick stone">Stucco Block</option>
+                                <option class="walltypeOptions" value="brick stone">Stucco Frame</option>
+                                <option class="walltypeOptions" value="brick stone">Wood Sliding</option>
+
                         </select>
-                        <select class="ocuupation labelPeople" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
-                                <option class="exteriorOptions" value="brick stone">Brick stone</option>
-                        </select>
-                        <select class="ocuupation labelPeople" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
-                                <option class="exteriorOptions" value="brick stone">Flat</option>
+                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.buildingmaterial">
+                                <option class="roofstyleOptions" value="hip">Hip</option>
+                                <option class="roofstyleOptions" value="gable">Gable</option>
+                                <option class="roofstyleOptions" value="flat">Flat</option>
+                                <option class="roofstyleOptions" value="other">Other</option>
+
                         </select>
 
                 </div>
@@ -266,7 +285,7 @@
                         <label class="questionLabel">Approximate living area</label>
                         <label class="questionLabel labelPeople2">Type of garrage</label>
                         <label class="questionLabel labelPeople2">Primary residance</label>
-
+                        <label class="questionLabel labelPeople2">What is the roof made of?</label>
                 </div>
 
                 <div class="row9">
@@ -282,6 +301,16 @@
                         <select class="ocuupation labelPeople" name="primaryresidance" id="primaryresidance" [(ngModel)] = "exterior.roofshape">
                                 <option class="primaryresidanceOptions" value="yes">Yes</option>
                                 <option class="primaryresidanceOptions" value="no">No</option>
+
+                        </select>
+                        <!-- <input class="firstNameInput labelPeople" placeholder="Roof made of" [(ngModel)] = "customerinfo.firstname"> -->
+                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.buildingmaterial">
+                                <option class="roofstyleOptions" value="asphalt">Asphalt</option>
+                                <option class="roofstyleOptions" value="wood">Wood</option>
+                                <option class="roofstyleOptions" value="tile">Tile</option>
+                                <option class="roofstyleOptions" value="metal">Metal</option>
+                                <option class="roofstyleOptions" value="slate">Slate</option>
+                                <option class="roofstyleOptions" value="other">Other</option>
 
                         </select>
                 </div>
