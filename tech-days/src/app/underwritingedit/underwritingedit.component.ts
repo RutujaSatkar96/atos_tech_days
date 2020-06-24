@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { WorkQuote } from '../shared/models/work-quote.model';
 import {HttpClient} from '@angular/common/http'
 import { Router } from '@angular/router';
+import { RestApiService } from "../shared/rest-api.service";
+import { pipe } from 'rxjs';
+
 
 @Component({
   selector: 'app-underwritingedit',
@@ -15,18 +18,16 @@ export class UnderwritingeditComponent implements OnInit {
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
   show: boolean = false;
-  constructor(private http:HttpClient,private _router: Router){
+  constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService){
 
     let role = localStorage.getItem("typeId");
     if(role=="2"){
       this.show=true;
     }
-    let response = this.http.get(this.url);
-    response.toPromise().then(data => {
+    this.restApi.getQuote("1","H124052941").subscribe((data: {}) => {
       console.log(data)
-      this.workQuote = <WorkQuote>(data);
-    });
-    
+     this.workQuote =<WorkQuote> data;
+   })
   }
 
   ngOnInit(): void {

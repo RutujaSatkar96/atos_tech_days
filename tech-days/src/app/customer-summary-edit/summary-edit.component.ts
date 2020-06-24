@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { WorkQuote } from '../shared/models/work-quote.model';
 import {HttpClient} from '@angular/common/http'
 import { Router } from '@angular/router';
+import { RestApiService } from "../shared/rest-api.service";
 
 @Component({
   selector: 'app-summary-edit',
@@ -15,21 +16,46 @@ export class SummaryEditComponent implements OnInit {
 
   title = 'HttpRequest';
   quoteNo = "H458131342";
-  url = "/assets/underwriting.json"
-  constructor(private http:HttpClient, private _router: Router){
-    let response = this.http.get(this.url);
-    response.toPromise().then(data => {
-     // console.log(data)
-      this.workQuote = <WorkQuote>(data);
-    });
-    
+  url = "http://localhost:8080/getQuoteDetails?type=1&quoteNo=H124052941"
+  constructor(private http:HttpClient, private _router: Router,public restApi: RestApiService){
+  
+    this.quoteNo=localStorage.getItem("quoteno");
+    // let response = this.http.get(this.url);
+    // response.toPromise().then(data => {
+    //   console.log(data)
+    //   this.workQuote = <WorkQuote>(data);
+    // });
+
+    this.restApi.getQuote("1","H124052941").subscribe((data: {}) => {
+      console.log(data)
+     this.workQuote =<WorkQuote> data;
+   })
+  }
+
+
+  // Get Quote
+  loadQuote() {
+    return this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
+      this.workQuote =<WorkQuote> data;
+    })
   }
 
   navigateToUnderwriter(){
-    this._router.navigate(['app-agent-review']);
+    
+    this.restApi.updateQuote(this.workQuote).subscribe((data: {}) => {
+      console.log(data)
+     let quote = <WorkQuote>data;
+      if(quote.quoteno != null){
+        this._router.navigate(['app-agent-review']);
+
+      }else{
+        alert('Please enter the all fields.')
+      }
+    })
   }
 
   ngOnInit(): void {
+     
   }
 }
 

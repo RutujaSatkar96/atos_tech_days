@@ -9,9 +9,9 @@
       </div>
   
       <div class="detailsrow1">
-        <input class="whole_split_three_one" value = {{workQuote.customerinfo.name}}>
+        <input class="whole_split_three_one" [(ngModel)] = "workQuote.customerinfo.name">
         <label class="detail_two_value">{{quoteNo}}</label>
-        <input class="whole_split_date_two" style="margin-left: 15px;"  value = {{workQuote.customerinfo.homebuiltin}}>
+        <input class="whole_split_date_two" style="margin-left: 15px;" [(ngModel)] = "workQuote.customerinfo.homebuiltin">
       </div>
   
       <div class="detailsrow1" >
@@ -21,9 +21,9 @@
       </div>
   
       <div class="detailsrow1">
-        <input class="whole_split_date_one" value ={{workQuote.customerinfo.dateofbirth}}>
-        <input class="whole_split_date_two" value ={{workQuote.customerinfo.effectivedate}}>
-        <input class="whole_split_date_two" value ={{workQuote.customerinfo.area}}>
+        <input class="whole_split_date_one" [(ngModel)] = "workQuote.customerinfo.dateofbirth">
+        <input class="whole_split_date_two" [(ngModel)] = "workQuote.customerinfo.effectivedate">
+        <input class="whole_split_date_two" [(ngModel)] = "workQuote.customerinfo.area">
       </div>
   
       <div class="address_phone" >
@@ -34,9 +34,9 @@
         </div>
   
         <div >
-          <input class="whole_edit_address" style="margin-top: 2px;" value ={{workQuote.customerinfo.address}}>
-          <input class="whole_edit_addresstwo" style="margin-top: 2px;" value ={{workQuote.customerinfo.phone}}>
-          <input class="whole_split_email" value ={{workQuote.customerinfo.email}}>
+          <input class="whole_edit_address" style="margin-top: 2px;" [(ngModel)] = "workQuote.customerinfo.address">
+          <input class="whole_edit_addresstwo" style="margin-top: 2px;" [(ngModel)] = "workQuote.customerinfo.phone">
+          <input class="whole_split_email"[(ngModel)] = "workQuote.customerinfo.email">
         </div>
       </div>
     </div>
@@ -52,10 +52,10 @@
     </div>
   
     <div style="margin-top: 3px;">
-      <input class="whole_split_four_one" value ={{workQuote.basicinfo.yearbuilt}}>
-      <input class="whole_split_four_two" value ={{workQuote.basicinfo.purchasedate}}>
-      <input class="whole_split_four_three" value ={{workQuote.basicinfo.burglarsalarm}}>
-      <input class="whole_split_four_four" value ={{workQuote.basicinfo.noofstories}}>
+      <input class="whole_split_four_one" [(ngModel)] = "workQuote.basicinfo.yearbuilt">
+      <input class="whole_split_four_two"   [(ngModel)] = "workQuote.basicinfo.purchasedate">
+      <input class="whole_split_four_three" [(ngModel)] = "workQuote.basicinfo.burglarsalarm">
+      <input class="whole_split_four_four" [(ngModel)] = "workQuote.basicinfo.noofstories">
     </div>
     <div class="detailsrow1" style="margin-top: 5px;">
       <label class="whole_one">Square Footage:</label>
@@ -65,10 +65,10 @@
     </div>
   
     <div style="margin-top: 3px;">
-      <input class="whole_split_four_one" value = {{workQuote.basicinfo.squarefootage}}>
-      <input class="whole_split_four_two" value = {{workQuote.basicinfo.noofstories}}>
-      <input class="whole_split_four_three" value = {{workQuote.basicinfo.firesprinklers}}>
-      <input class="whole_split_four_four" value = {{workQuote.basicinfo.singlefamily}}>
+      <input class="whole_split_four_one" [(ngModel)] = "workQuote.basicinfo.squarefootage">
+      <input class="whole_split_four_two" [(ngModel)] = "workQuote.basicinfo.noofstories">
+      <input class="whole_split_four_three" [(ngModel)] = "workQuote.basicinfo.firesprinklers">
+      <input class="whole_split_four_four" [(ngModel)] = "workQuote.basicinfo.singlefamily">
     </div>
     <div class="detailsrow1" style="margin-top: 10px;">
       <label class="whole_one">Fire Alarm:</label>
@@ -77,9 +77,9 @@
     </div>
   
     <div style="margin-top: 4px;">
-      <input class="whole_split_four_one" value = {{workQuote.basicinfo.firealarm}}>
-      <input class="whole_split_four_two" value = {{workQuote.basicinfo.emergencybackupgenerator}}>
-      <input class="whole_split_four_five" value = {{workQuote.basicinfo.firehydrant}}>
+      <input class="whole_split_four_one" [(ngModel)] = "workQuote.basicinfo.firealarm">
+      <input class="whole_split_four_two" [(ngModel)] = "workQuote.basicinfo.emergencybackupgenerator">
+      <input class="whole_split_four_five" [(ngModel)] = "workQuote.basicinfo.firehydrant">
     </div>
   
     <div class="basicinfo">
@@ -93,10 +93,10 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value = {{workQuote.exterior.buildingmaterial}}>
-    <input class="whole_split_four_two" value = {{workQuote.exterior.typeofgarage}}>
-    <input class="whole_split_four_three" value = {{workQuote.exterior.roofshape}}>
-    <input class="whole_split_four_four" value = {{workQuote.exterior.swimmingpool}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.exterior.buildingmaterial">
+    <input class="whole_split_four_two" [(ngModel)] = "workQuote.exterior.typeofgarage">
+    <input class="whole_split_four_three" [(ngModel)] = "workQuote.exterior.roofshape">
+    <input class="whole_split_four_four" [(ngModel)] = "workQuote.exterior.swimmingpool">
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
     <label class="whole_one">Roof Material:</label>
@@ -106,10 +106,10 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value = {{workQuote.exterior.roofmaterial}}>
-    <input class="whole_split_four_two" value = {{workQuote.exterior.porch}}>
-    <input class="whole_split_four_three" value = {{workQuote.exterior.roofage}}>
-    <input class="whole_split_four_four" value = {{workQuote.exterior.deck}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.exterior.roofmaterial">
+    <input class="whole_split_four_two" [(ngModel)] = "workQuote.exterior.porch">
+    <input class="whole_split_four_three" [(ngModel)] = "workQuote.exterior.roofage">
+    <input class="whole_split_four_four" [(ngModel)] = "workQuote.exterior.deck">
   </div>
   
   <div class="basicinfo">
@@ -122,9 +122,9 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value = {{workQuote.interior.foundationtype}}>
-    <input class="whole_split_four_two" style="margin-left: 10px;" value = {{workQuote.interior.bathquality}}>
-    <input class="whole_split_four_three" value = {{workQuote.interior.fireplace}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.interior.foundationtype">
+    <input class="whole_split_four_two" style="margin-left: 10px;" [(ngModel)] = "workQuote.interior.bathquality">
+    <input class="whole_split_four_three" [(ngModel)] = "workQuote.interior.fireplace">
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="whole_one"> Kitchen Quality:</label>
@@ -132,8 +132,8 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value = {{workQuote.interior.kitchenquality}}>
-    <input class="whole_split_four_two" style="margin-left: 10px;" value = {{workQuote.interior.kitchencountertops}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.interior.kitchenquality">
+    <input class="whole_split_four_two" style="margin-left: 10px;" [(ngModel)] = "workQuote.interior.kitchencountertops">
   </div>
   <div class="basicinfo">
     <label class="detail_one">Customer Info </label>
@@ -145,9 +145,9 @@
   </div>
   
   <div style="margin-top: 4px;">
-  <input class="whole_split_four_one" value= {{workQuote.customerinfo.age}}>
-  <input class="whole_split_four_one" value = {{workQuote.customerinfo.smokerstatus}}>
-  <input class="whole_split_four_one" value = {{workQuote.customerinfo.pastpropertyclaimsorlosses}}>
+  <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.age">
+  <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.smokerstatus">
+  <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.pastpropertyclaimsorlosses">
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="whole_one">Marital Status:</label>
@@ -156,9 +156,9 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value= {{workQuote.customerinfo.maritalstatus}}>
-    <input class="whole_split_four_one" value= {{workQuote.customerinfo.criminalconvictions}}>
-    <input class="whole_split_four_one" value= {{workQuote.customerinfo.runningbusinessfromhome}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.maritalstatus">
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.criminalconvictions">
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.runningbusinessfromhome">
   </div>
   
   
@@ -173,10 +173,10 @@
   </div>
   
   <div style="margin-top: 4px;">
-  <input class="whole_split_four_one" value = {{workQuote.coverages.dwellingprotection}}>
-  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.propertyagainst}}>
+  <input class="whole_split_four_one" [(ngModel)] = "workQuote.coverages.dwellingprotection">
+  <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.propertyagainst">
   
-  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.additionallivingexpenses}}>
+  <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.additionallivingexpenses">
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="emercency">Other Structures:</label>
@@ -185,9 +185,9 @@
   </div>
   
   <div style="margin-top: 4px;">
-  <input class="whole_split_four_one"  value = {{workQuote.coverages.otherstructures}}>
-  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.propertyprotection}}>
-  <input class="whole_split_four_one" style="margin-left: 68px;" value = {{workQuote.coverages.familyliabilityprotection}}>
+  <input class="whole_split_four_one"  [(ngModel)] = "workQuote.coverages.otherstructures">
+  <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.propertyprotection">
+  <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.familyliabilityprotection">
   </div>
   
   <div class="basicinfo">
@@ -198,7 +198,7 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.discountsandsurcharges.newconstructiondiscount">
   </div>
   <div class="basicinfo">
     <label class="detail_one">Deductibles</label>
@@ -210,8 +210,8 @@
   </div>
   
   <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" value={{workQuote.deductibles.allperilsdeductible}}>
-    <input class="whole_split_four_one" style="margin-left: 75px;" value={{workQuote.deductibles.windstormorhail}}>
+    <input class="whole_split_four_one" [(ngModel)] = "workQuote.deductibles.allperilsdeductible">
+    <input class="whole_split_four_one" style="margin-left: 75px;" [(ngModel)] = "workQuote.deductibles.windstormorhail">
   
     </div>
     <br>
@@ -221,7 +221,7 @@
     </div>
     
     <div style="margin-top: 4px;">
-      <input class="whole_split_four_one" value = {{workQuote.finalpremium}}>
+      <input class="whole_split_four_one" [(ngModel)] = "workQuote.finalpremium">
     </div>
     <br>
   
