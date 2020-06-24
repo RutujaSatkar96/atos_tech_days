@@ -26,10 +26,10 @@
     </div>
     
     <div class="detailsrow1">
-    <input class="whole_two" value = {{workQuote.coverages.dwellingprotection}}>
-    <input class="whole_edit_one" value = {{workQuote.coverages.propertyagainst}}>
-    <input class="whole_edit_one" value = {{workQuote.coverages.additionallivingexpenses}}>
-    <input class="whole_edit_one" value = {{workQuote.coverages.otherstructures}}>
+    <input type="text" class="whole_two" value = {{workQuote.coverages.dwellingprotection}}>
+    <input type="text" class="whole_edit_one" value = {{workQuote.coverages.propertyagainst}}>
+    <input type="text" class="whole_edit_one" value = {{workQuote.coverages.additionallivingexpenses}}>
+    <input type="text" class="whole_edit_one" value = {{workQuote.coverages.otherstructures}}>
     </div>
     <br>
 
@@ -42,9 +42,9 @@
     
     <div class="detailsrow1">
     
-    <input class="new"  value = {{workQuote.coverages.propertyprotection}}>
-    <input class="whole_edit_one new1" value = {{workQuote.coverages.familyliabilityprotection}}>
-    <input class="whole_edit_one" value = {{workQuote.coverages.familyliabilityprotection}}>
+    <input type="text" class="new"  value = {{workQuote.coverages.propertyprotection}}>
+    <input type="text" class="whole_edit_one new1" value = {{workQuote.coverages.familyliabilityprotection}}>
+    <input type="text" class="whole_edit_one" value = {{workQuote.coverages.familyliabilityprotection}}>
 
     </div>
     <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
@@ -57,7 +57,7 @@
     </div>
 
     <div class="detailsrow1">
-    <input class="whole_two" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
+    <input type="text" class="whole_two" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
     </div>
 
     <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
@@ -71,8 +71,8 @@
     </div>
     
     <div class="detailsrow1">
-    <input class="whole_two" value={{workQuote.deductibles.allperilsdeductible}}>
-    <input class="whole_edit_one" value={{workQuote.deductibles.windstormorhail}}>
+    <input type="text" class="whole_two" value={{workQuote.deductibles.allperilsdeductible}}>
+    <input type="text" class="whole_edit_one" value={{workQuote.deductibles.windstormorhail}}>
     
       </div>
       <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
@@ -83,8 +83,8 @@
         </div>
         
         <div class="detailsrow1">
-        <input class="whole_two" >
-        <input class="whole_edit_one" >
+        <input type="text" class="whole_two" >
+        <input type="text" class="whole_edit_one" >
         
           </div>
           <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
@@ -98,6 +98,6 @@
       <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
       <br>
       <div class="detailsrow1" style="margin-top: 20px;margin-left: 200px;">
-        <button class="quoteButton" (click) = "navigateToUnderwriter()"> SAVE AND EMAIL QUOTE</button>
-        <button class="quoteButton" (click) = "navigateToUnderwriter()"> PRINT</button>
+        <button class="buttons" (click) = "navigateToUnderwriter()"> SAVE AND EMAIL QUOTE</button>
+        <button class="buttons" (click) = "navigateToUnderwriter()"> PRINT</button>
         </div>
