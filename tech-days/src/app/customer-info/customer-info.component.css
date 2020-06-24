@@ -52,7 +52,11 @@
   color: #000;
   margin-left: 50px;
 }
-
+.mandatory{
+  font-family: Verdana;
+font-size: 10px;
+  color: #000;
+}
 .lastLabel{
   font-family: Verdana;
   font-weight: 14px;
@@ -635,4 +639,8 @@ margin-left: 50px;
 .labelBuilding{
   margin-left: 200px;
 
+}
+
+.year2{
+  margin-left: 280px;
 }

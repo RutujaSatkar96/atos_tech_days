@@ -35,11 +35,11 @@
                                 <!-- <button (click)="show()">show data</button> -->
                         </div>
                         <div class="row2">
-                                <input class="firstNameInput" placeholder="First Name" [(ngModel)] = "customerinfo.firstname">
-                                <input class="lastNameInput" placeholder="Last Name" [(ngModel)] = "customerinfo.lastname">
+                                <input class="firstNameInput" type="text" placeholder="First Name" [(ngModel)] = "customerinfo.firstname">
+                                <input class="lastNameInput" type="text" placeholder="Last Name" [(ngModel)] = "customerinfo.lastname">
 
                                 <select class="genderOptions" name="gender" id="gender" [(ngModel)] = "customerinfo.gender">
-                                        <option  value="male">Male</option>
+                                        <option class="genderOptions" value="male">Male</option>
                                         <option value="female">Female</option>
                                 </select>
 
@@ -55,17 +55,28 @@
                                 <label class="firstNameLabel">Marital Status</label>
                                 <label class="occupationLabel">Occupation</label>
                                 <label class="emailLabel">Email Address</label>
+                                <label class="emailLabel">Telephone number</label>
+
                         </div>
 
                         <div class="row3">
-                              <input class="maritalInput" placeholder="Marital Status" [(ngModel)] = "customerinfo.maritalstatus">
+                              <!-- <input class="maritalInput" placeholder="Marital Status" [(ngModel)] = "customerinfo.maritalstatus"> -->
+                              <select class="ocuupation new" name="maritalStatus" id="maritalStatus" [(ngModel)] = "customerinfo.maritalstatus">
+                                <option class="ocuupationOptions" value="married">Married</option>
+                                <option value="single">Singel</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="living with partner">Living with domestic partner</option>
 
-                                <select class="ocuupation new" name="ocuupation" id="ocuupation" [(ngModel)] = "customerinfo.ocuupation">
+                        </select>
+                                <select class="ocuupation new1" name="ocuupation" id="ocuupation" [(ngModel)] = "customerinfo.ocuupation">
                                         <option class="ocuupationOptions" value="business">Business</option>
                                         <option value="job">Job</option>
+                                        <option value="other">Other</option>
                                 </select>
 
                                 <input class="lastNameInput new1" type="email" placeholder="Email Address" [(ngModel)] = "customerinfo.email"> 
+                                <input class="lastNameInput addedshape2" type="number" placeholder="Telephone number" [(ngModel)] = "customerinfo.email"> 
+
                         </div>
 
                         <div class="row4">
@@ -85,20 +96,21 @@
                         </div>
 
                         <div class="row7">
-                                <input class="streetInput" placeholder="Street Address" [(ngModel)] = "customerinfo.street">
-                                <input class="unitInput" placeholder="Unit Input" [(ngModel)] = "customerinfo.unit">
+                                <input class="streetInput" type="text" placeholder="Street Address" [(ngModel)] = "customerinfo.street">
+                                <input class="unitInput" type="text" placeholder="Unit Input" [(ngModel)] = "customerinfo.unit">
 
-                                <select class="ocuupation new1" name="city" id="city"  [(ngModel)] = "customerinfo.city">
+                                <select class="ocuupation new1"  name="city" id="city"  [(ngModel)] = "customerinfo.city">
                                         <option class="cityOptions" value="bella">Bella</option>
                                 </select>
 
-                                <input class="unitInput" placeholder="State"  [(ngModel)] = "customerinfo.state">
-                                <input class="unitInput" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
+                                <input class="unitInput" type="text" placeholder="State"  [(ngModel)] = "customerinfo.state">
+                                <input class="unitInput" type="text" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> Desired coverage start date</label>
-                                <label class="questionLabels labelMargin"> Do you currently have property isuue?</label>
+                                <label class="questionLabels"> Desired coverage start date </label>
+                                <label class="questionLabels labelMargin"> Do you currently have property insurance?</label><br/>
+                                <label class="mandatory">(*Cannot be backdated by more than 30 days)</label>
                         </div>
 
                         <div class="row9">
@@ -122,13 +134,13 @@
 
                         <div class="row9">
                                 
-                                <select class="ocuupation new" name="gender" id="gender" [(ngModel)] = "customerinfo.businessfromhome">
-                                        <option class="genderOptions" value="yes">Yes</option>
+                                <select class="ocuupation new" name="businessfromhome" id="businessfromhome" [(ngModel)] = "customerinfo.businessfromhome">
+                                        <option class="businessfromhomeOptions" value="yes">Yes</option>
                                         <option value="no">No</option>
                                 </select>
 
-                                <select class="ocuupation selectIssue" name="gender" id="gender" [(ngModel)] = "customerinfo.criminalconvictions">
-                                        <option class="genderOptions" value="yes">Yes</option>
+                                <select class="ocuupation selectIssue" name="criminalconvictions" id="criminalconvictions" [(ngModel)] = "customerinfo.criminalconvictions">
+                                        <option class="criminalconvictionsOptions" value="yes">Yes</option>
                                         <option value="no">No</option>
                                 </select>
                         </div>
@@ -139,13 +151,13 @@
                         </div>
 
                         <div class="row9">
-                                <select class="ocuupation new" name="gender" id="gender" [(ngModel)] = "customerinfo.smokerstatus">
-                                        <option class="genderOptions" value="yes">Yes</option>
+                                <select class="ocuupation new" name="smokerstatus" id="smokerstatus" [(ngModel)] = "customerinfo.smokerstatus">
+                                        <option class="smokerstatusOptions" value="yes">Yes</option>
                                         <option value="no">No</option>
                                 </select>
 
-                                <select class="ocuupation selectIssue" name="gender" id="gender" [(ngModel)] = "customerinfo.petsathome"> 
-                                        <option class="genderOptions" value="yes">Yes</option>
+                                <select class="ocuupation selectIssue" name="petsathome" id="petsathome" [(ngModel)] = "customerinfo.petsathome"> 
+                                        <option class="petsathomeOptions" value="yes">Yes</option>
                                         <option value="no">No</option>
                                 </select>
                         </div>
@@ -153,18 +165,18 @@
                         <div class="row8">
                                 <label class="questionLabels"> How many smokers?</label> 
                                 <label class="questionLabels labelPet"> What kind of pet? </label>
-                                <label class="questionLabels labelBreed"> How many breeds? </label>
+                                <label class="questionLabels labelBreed"> How many & breeds? </label>
                         </div>
 
                         <div class="row9">
                                 <input class="streetInput smokerInput" placeholder="Smokers">
                                 <!-- <input class="streetInput petInput" placeholder="Pet"> -->
-                                <select class="ocuupation selectIssue new3" name="gender" id="gender"> 
-                                        <option class="genderOptions" value="dog">Dog</option>
+                                <select class="ocuupation selectIssue new3" name="kindofpet" id="kindofpet"> 
+                                        <option class="kindofpetOptions" value="dog">Dog</option>
                                         <option value="cat">Cat</option>
                                         <option value="other">Other</option>
                                 </select>
-                                <input class="streetInput breedInput" placeholder="Number of breeds">
+                                <input class="streetInput breedInput" placeholder="e.g 2, Labrador">
                         </div>
 
                         <div class="row8">
@@ -186,7 +198,7 @@
 
                         <div class="row9">
                                 <input class="streetInput smokerInput" placeholder="Insurer" [(ngModel)] = "customerinfo.nameofinsurer">
-                                <input class="unitInput yearInput" placeholder="Year" [(ngModel)] = "customerinfo.cancelationyear">
+                                <input class="unitInput year2" placeholder="Year" [(ngModel)] = "customerinfo.cancelationyear">
                                 <input class="streetInput reasonInput" placeholder="Reason" [(ngModel)] = "customerinfo.cancelationreason">
 
                         </div>
