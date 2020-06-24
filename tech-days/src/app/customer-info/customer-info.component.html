@@ -228,11 +228,11 @@
                 </div>
 
                 <div class="row7">
-                        <input class="yearInput1" placeholder="Year" [(ngModel)] = "basicinfo.yearbuilt">
+                        <input class="yearInput1" type="text" placeholder="Year" [(ngModel)] = "basicinfo.yearbuilt">
                         <input class="dateInput date1" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "customerinfo.coveragestartdate">
                         <mat-datepicker #picker2></mat-datepicker>
                         <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
-                        <input class="unitInput " placeholder="People" >
+                        <input  class="unitInput " placeholder="People" >
                         <input class="unitInput labelStories" placeholder="Stories" >
 
                 </div>
@@ -265,6 +265,8 @@
                 <div class="row5">
                         <label class="questionLabel">Approximate living area</label>
                         <label class="questionLabel labelPeople2">Type of garrage</label>
+                        <label class="questionLabel labelPeople2">Primary residance</label>
+
                 </div>
 
                 <div class="row9">
@@ -275,6 +277,12 @@
 
                         <select class="ocuupation labelPeople" name="roof" id="roof" [(ngModel)] = "exterior.roofshape">
                                 <option class="roofOptions" value="flat">One car attached</option>
+                        </select>
+
+                        <select class="ocuupation labelPeople" name="primaryresidance" id="primaryresidance" [(ngModel)] = "exterior.roofshape">
+                                <option class="primaryresidanceOptions" value="yes">Yes</option>
+                                <option class="primaryresidanceOptions" value="no">No</option>
+
                         </select>
                 </div>
 
@@ -399,7 +407,7 @@
                 <div style="margin-left: 30px;">This is a brief description of coverages; this is not a contract.Please contact a local agent or call 151-200-300 for more information. </div>
                 <div style="margin-left: 30px;"> </div>
         </div>
-                <button class="requestbutton" (click) = "navigateToUnderwriter()">REQUEST QUOTE</button>
+                <button class="requestbutton" (click) = "navigateToUnderwriter()">GENERATE QUOTE</button>
 
         </div>
         </mat-tab> 
