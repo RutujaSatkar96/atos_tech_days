@@ -52,7 +52,11 @@
   color: #000;
   margin-left: 50px;
 }
-
+.mandatory{
+  font-family: Verdana;
+font-size: 10px;
+  color: #000;
+}
 .lastLabel{
   font-family: Verdana;
   font-weight: 14px;
@@ -173,9 +177,13 @@ select{
 }
 
 .questionLabel{
-  font-family: Verdana;
+  /* font-family: Verdana;
   font-weight: 16px;
   color: #333333;
+  margin-left: 50px; */
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
   margin-left: 50px;
 }
 .row6{
@@ -220,7 +228,18 @@ margin-left: 50px;
   border: 1px solid rgba(0, 0, 0, .5);
 
 }
-
+.yearInput1{
+  width: 90px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+  margin-left: 50px;
+  border: 1px solid rgba(0, 0, 0, .5);
+}
 .unitLabel{
   font-family: Verdana;
   font-weight: 14px;
@@ -379,7 +398,12 @@ margin-left: 50px;
 .addedshape{
   margin-left: 30px;
 }
-
+.addedshape1{
+  margin-left: 85px;
+}
+.addedshape2{
+  margin-left: 100px;
+}
 .detailsrow1{
   display: flex;
 }
@@ -483,9 +507,14 @@ margin-left: 50px;
 
 .requestbutton{
   margin-left: 150px;
-  height: 50px;
+  height: 40px;
   width: 160px;
   vertical-align: middle;
+  background-color: #eb5b28;
+  color: #fff;
+  border-radius: 6px;
+  font-family: Verdana;
+  font-weight: 20px;
 }
 
 .optionsInput{
@@ -564,4 +593,54 @@ margin-left: 50px;
   height: 50px;
   width: 160px;
   vertical-align: middle;
+}
+
+.labelDate{
+  margin-left: 200px;
+}
+.labelStories{
+  margin-left: 180px;
+}
+.labelHome{
+  margin-left: 255px;
+}
+
+.labelPeople{
+  margin-left: 150px;
+}
+.swimmingLabel{
+  margin-left: 130px;
+}
+.homeLabel{
+  margin-left: 100px;
+
+}
+.hadLabel{
+  margin-left: 90px;
+}
+.labelPeople2{
+  margin-left: 160px;
+}
+
+.labelPeople3{
+  margin-left: 180px;
+
+}
+.labelPeople1{
+  margin-left: 512px;
+}
+.labelHouse{
+  margin-left: 205px;
+}
+
+.date1{
+  margin-left: 240px;
+}
+.labelBuilding{
+  margin-left: 200px;
+
+}
+
+.year2{
+  margin-left: 280px;
 }
