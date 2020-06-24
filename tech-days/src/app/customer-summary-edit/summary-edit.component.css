@@ -12,6 +12,8 @@
 .detailsrow1{
     display: flex;
     margin-top: 4px;
+    margin-left: 40px;
+    font-weight: medium;
 }
 .detailsrow2{
     display: flex;
@@ -50,11 +52,8 @@
 }
 .basicinfo{
     min-width: 251px;
-    font-family: verdana;
-    font-weight: 600;
-    font-size: 15px;
     margin-top: 20px;
-    margin-bottom: 14px;
+    /* margin-left: 5px; */
 }
 .whole_one{
     width:  207px;
@@ -73,9 +72,18 @@
 .whole_edit_one{
     width: 207px;
     font-family: verdana;
-    margin-left: 8px;
     font-size: 13px;
-    margin-left: 130px;
+    margin-left: 95px;
+}
+
+.new{
+    width: 207px;
+    font-family: verdana;
+    font-size: 13px;
+    margin-left: 10px;
+}
+.new1{
+    margin-left: 90px;
 }
 .whole_edit_two{
     width: 207px;
@@ -88,9 +96,20 @@
 .emercency{
     width:  336px;
     font-family: verdana;
-    font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 8px;
+}
+.emercency2{
+    width:  336px;
+    font-family: verdana;
+    font-size: 16px;
+    margin-left: 8px;
+}
+.emercency1{
+    width:  336px;
+    font-family: verdana;
+    font-size: 12px;
+    margin-left: -28px;
 }
 .whole_one_value{
     min-width:336px;
@@ -179,4 +198,13 @@
     float: right;
     margin-top: 15px;
     margin-right: 14px;
+}
+
+.titleHead{
+  font-family: Verdana;
+  font-weight: 30px;
+  color: #000;
+  margin-left: 50px;
+  margin-top: 30px;
+  font-size: 16px;
 }

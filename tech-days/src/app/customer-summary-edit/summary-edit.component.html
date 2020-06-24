@@ -15,49 +15,59 @@
   </div>
   
   
-  <div class="basicinfo">
-      <label class="detail_one">Summary Coverages</label>
+  <div>
+      <div class="titleHead">Summary of Coverages</div>
     </div>
     <div class="detailsrow1">
     <label class="emercency">Dwelling Protection:</label>
     <label class="emercency">Protect Personal Property Against: </label>
     <label class="emercency">Additional Living expenses:</label>
+    <label class="emercency">Other Structures:</label>
     </div>
     
     <div class="detailsrow1">
     <input class="whole_two" value = {{workQuote.coverages.dwellingprotection}}>
     <input class="whole_edit_one" value = {{workQuote.coverages.propertyagainst}}>
     <input class="whole_edit_one" value = {{workQuote.coverages.additionallivingexpenses}}>
+    <input class="whole_edit_one" value = {{workQuote.coverages.otherstructures}}>
     </div>
     <br>
+
     <div class="detailsrow1" style="margin-top: 5px;">
-    <label class="emercency">Other Structures:</label>
     <label class="emercency">Personal Property Protection:</label>
-    <label class="emercency">Family Liability Protection:</label>
+    <label class="emercency1 ">Personal Liability Protection:</label>
+    <label class="emercency1">Medical payment to others:</label>
     </div>
+    
     
     <div class="detailsrow1">
-    <input class="whole_two" value = {{workQuote.coverages.otherstructures}}>
-    <input class="whole_edit_one"  value = {{workQuote.coverages.propertyprotection}}>
-    <input class="whole_edit_one" value = {{workQuote.coverages.familyliabilityprotection}}>
-    </div>
     
+    <input class="new"  value = {{workQuote.coverages.propertyprotection}}>
+    <input class="whole_edit_one new1" value = {{workQuote.coverages.familyliabilityprotection}}>
+    <input class="whole_edit_one" value = {{workQuote.coverages.familyliabilityprotection}}>
+
+    </div>
+    <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
+
     <div class="basicinfo">
-      <label class="detail_one">Discounts & Surcharges</label>
+      <label class="titleHead">Total Area Discounts & Surcharges</label>
     </div>
     <div class="detailsrow1">
     <label class="emercency">New Construction Discount:</label>
     </div>
-    
+
     <div class="detailsrow1">
     <input class="whole_two" value = {{workQuote.discountsandsurcharges.newconstructiondiscount}}>
     </div>
+
+    <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
+
     <div class="basicinfo">
-      <label class="detail_one">Deductibles</label>
+      <label class="titleHead">Deductibles</label>
     </div>
     <div class="detailsrow1">
     <label class="emercency">All Perils deductible:</label>
-    <label class="emercency">Windstorm/Hail Deductible: </label>
+    <label class="emercency1">Windstorm/Hail Deductible: </label>
     </div>
     
     <div class="detailsrow1">
@@ -65,16 +75,27 @@
     <input class="whole_edit_one" value={{workQuote.deductibles.windstormorhail}}>
     
       </div>
-      <br>
-      <br>
-      <div class="detailsrow1" >
-      <label class="emercency">ESTIMATED PREMIUM:</label>
+      <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
+
+      <div class="detailsrow1">
+        <label class="emercency">Year of construction:</label>
+        <label class="emercency1">Address: </label>
+        </div>
+        
+        <div class="detailsrow1">
+        <input class="whole_two" >
+        <input class="whole_edit_one" >
+        
+          </div>
+          <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
+          <div class="detailsrow1" >
+      <label class="emercency2">ESTIMATED PREMIUM:</label>
       </div>
       
       <div class="detailsrow1">
       <input class="whole_two" value = {{workQuote.finalpremium}}>
       </div>
-      <br>
+      <hr style="margin-top: 20px; width: 95%; height: 1px; background-color: #e6e6e6;">
       <br>
       <div class="detailsrow1" style="margin-top: 20px;margin-left: 200px;">
         <button class="quoteButton" (click) = "navigateToUnderwriter()"> SAVE AND EMAIL QUOTE</button>
