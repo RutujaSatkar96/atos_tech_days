@@ -90,6 +90,7 @@ export class CustomerInfoComponent implements OnInit {
         console.log(data)
         this.workQuote = <WorkQuote>(data);
         if(this.workQuote.quoteno != null){
+          localStorage.setItem("quoteno",this.workQuote.quoteno)
         this._router.navigate(['app-customer-summary-edit']);
         }else{
           alert('Please enter the all fields.')
@@ -102,15 +103,11 @@ export class CustomerInfoComponent implements OnInit {
 
   
   navigateToPropertyInfo(){
-    if(this.customerinfo.firstname == undefined || this.customerinfo.lastname == undefined || this.customerinfo.street == undefined || this.customerinfo.unit == undefined){
-      alert('Please enter all fields.')
-    }
-    else{
-      //this._router.navigate(['/app-property-info']);
+   
 
       (<HTMLElement>document.querySelectorAll('.mat-tab-label')[1]).click();
 
-    }
+    
   }
 
   navigateToCustomerInfo(){

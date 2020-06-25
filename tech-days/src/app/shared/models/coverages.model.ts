@@ -5,4 +5,5 @@ export class Coverages{
     propertyprotection:string;
     additionallivingexpenses:string;
     familyliabilityprotection:string;
+    medicalpayment :string;
 }
