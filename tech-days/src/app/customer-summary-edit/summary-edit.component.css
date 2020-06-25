@@ -218,11 +218,13 @@
 .buttons{
     margin-left: 150px;
     height: 40px;
-    width: 160px;
+    width: 250px;
     vertical-align: middle;
     background-color: #eb5b28;
     color: #fff;
     border-radius: 6px;
     font-family: Verdana;
-    font-weight: 20px;
+    font-weight: medium;
+    font-size: 14px;
+    border: none;
   }
