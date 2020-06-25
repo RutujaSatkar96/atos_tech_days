@@ -20,24 +20,12 @@ export class SummaryEditComponent implements OnInit {
   constructor(private http:HttpClient, private _router: Router,public restApi: RestApiService){
   
     this.quoteNo=localStorage.getItem("quoteno");
-    // let response = this.http.get(this.url);
-    // response.toPromise().then(data => {
-    //   console.log(data)
-    //   this.workQuote = <WorkQuote>(data);
-    // });
-
-    this.restApi.getQuote("1","H124052941").subscribe((data: {}) => {
+   
+    this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
       console.log(data)
      this.workQuote =<WorkQuote> data;
+     this.workQuote.quoteno = this.quoteNo;
    })
-  }
-
-
-  // Get Quote
-  loadQuote() {
-    return this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
-      this.workQuote =<WorkQuote> data;
-    })
   }
 
   navigateToUnderwriter(){

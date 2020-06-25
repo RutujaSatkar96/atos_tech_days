@@ -21,11 +21,12 @@
 <div class="details">
 
 
-    <mat-tab-group   mat-align-tabs="center" style="overflow: hidden;" >
+    <mat-tab-group   mat-align-tabs="center" style="overflow: hidden;" (selectedTabChange)="tabClick($event)">
         <mat-tab label="Customer Info">
                 
                 <div class="firstTab" style="overflow:auto;">
-                        <div class="row1">
+                        <div>
+                                        <div class="row1">
                                 <label class="firstNameLabel" >First Name</label>
                                 <!-- <input placeholder="first"> -->
                                 <label class="lastLabel">Last Name</label>
@@ -35,22 +36,23 @@
                                 <!-- <button (click)="show()">show data</button> -->
                         </div>
                         <div class="row2">
-                                <input class="firstNameInput" type="text" placeholder="First Name" [(ngModel)] = "customerinfo.firstname">
-                                <input class="lastNameInput" type="text" placeholder="Last Name" [(ngModel)] = "customerinfo.lastname">
+                                <input class="form-control firstNameInput" type="text" placeholder="First Name" [(ngModel)] = "customerinfo.firstname"  required >
+                               
+                                <input class="form-control lastNameInput" type="text" placeholder="Last Name" [(ngModel)] = "customerinfo.lastname"   required>
 
+                        
                                 <select class="genderOptions" name="gender" id="gender" [(ngModel)] = "customerinfo.gender">
                                         <option class="genderOptions" value="male">Male</option>
                                         <option value="female">Female</option>
                                 </select>
 
-                                <input class="ageInput" placeholder="Age" [(ngModel)] = "customerinfo.age" >
+                                <input class="ageInput" placeholder="Age" type="number" [(ngModel)] = "customerinfo.age" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="3" >
                                 
                                 <input class="dateInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "customerinfo.dateofbirth">
                                 <mat-datepicker #picker></mat-datepicker>
                                 <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                         
                         </div>
-
                         <div class="row3">
                                 <label class="firstNameLabel">Marital Status</label>
                                 <label class="occupationLabel">Occupation</label>
@@ -75,7 +77,7 @@
                                 </select>
 
                                 <input class="lastNameInput new1" type="email" placeholder="Email Address" [(ngModel)] = "customerinfo.email"> 
-                                <input class="lastNameInput addedshape2" type="number" placeholder="Telephone number" [(ngModel)] = "customerinfo.email"> 
+                                <input class="lastNameInput addedshape2"  placeholder="Telephone number" [(ngModel)] = "customerinfo.phone" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="14" > 
 
                         </div>
 
@@ -90,7 +92,7 @@
                         <div class="row6">
                                 <label class="firstNameLabel">Street Address</label>
                                 <label class="unitLabel">Unit Number</label>
-                                <label class="emailLabel">City</label>
+                                <label class="cityLabel">City</label>
                                 <label class="unitLabel">State</label>
                                 <label class="unitLabel">Zip Code</label>
                         </div>
@@ -99,9 +101,8 @@
                                 <input class="streetInput" type="text" placeholder="Street Address" [(ngModel)] = "customerinfo.street">
                                 <input class="unitInput" type="text" placeholder="Unit Input" [(ngModel)] = "customerinfo.unit">
 
-                                <select class="ocuupation new1"  name="city" id="city"  [(ngModel)] = "customerinfo.city">
-                                        <option class="cityOptions" value="bella">Bella</option>
-                                </select>
+                        
+                                <input class="cityInput" type="text" placeholder="city"  [(ngModel)] = "customerinfo.city">
 
                                 <input class="unitInput" type="text" placeholder="State"  [(ngModel)] = "customerinfo.state">
                                 <input class="unitInput" type="text" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
@@ -114,7 +115,7 @@
                         </div>
 
                         <div class="row9">
-                                <input class="dateInput" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "customerinfo.coveragestartdate">
+                                <input class="dateInput" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "customerinfo.effectiveDate">
                                 <mat-datepicker #picker1></mat-datepicker>
                                 <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                 
@@ -205,9 +206,11 @@
                         <br>
                         <br>
                         <div>
-                                <button class="requestbutton" style="margin-left: 500px;" (click)="navigateToPropertyInfo()">Property Info</button>
+                                <button class="requestbutton" style="margin-left: 500px;" (click)="navigateToPropertyInfo()">NEXT</button>
 
                         </div>
+                </div>
+                
                 </div>
 
 
@@ -221,7 +224,7 @@
                         <label class="questionLabel">What year was the </label>
                         <label class="questionLabel labelDate">Purchase date of </label>
                         <label class="questionLabel labelPeople">Number of people</label>
-                        <label class="questionLabel labelPeople">Number of stories</label><br/>
+                        <label class="questionLabel labelPeople">Number of storeys</label><br/>
                         <label class="questionLabel">home built?</label>
                         <label class="questionLabel labelHome">the home</label>
                         <label class="questionLabel labelHouse">living in the household</label>
@@ -229,12 +232,12 @@
 
                 <div class="row7">
                         <input class="yearInput1" type="text" placeholder="Year" [(ngModel)] = "basicinfo.yearbuilt">
-                        <input class="dateInput date1" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "customerinfo.coveragestartdate">
+                        <input class="dateInput date1" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "basicinfo.purchasedate">
                         <mat-datepicker #picker2></mat-datepicker>
                         <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                         <input  class="unitInput " placeholder="People" >
                         <!-- <input class="unitInput labelStories" placeholder="Stories" > -->
-                        <select class="unitInput labelStories" name="stories" id="stories" [(ngModel)] = "exterior.buildingmaterial">
+                        <select class="unitInput labelStories" name="stories" id="stories" [(ngModel)] = "basicinfo.noofstories">
                                 <option class="storiesOptions" value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="2">3</option>
@@ -253,29 +256,29 @@
                 <div class="row7">
                         <!-- <input class="streetInput" placeholder="Date" [(ngModel)] = "basicinfo.purchasedate">
                         <input class="streetInput labelCriminal" placeholder="Living area" [(ngModel)] = "customerinfo.area"> -->
-                        <select class="ocuupation new" name="foundation" id="foundation" [(ngModel)] = "exterior.buildingmaterial">
+                        <select class="ocuupation new" name="foundation" id="foundation" [(ngModel)] = "interior.foundationtype">
                                 <option class="foundationOptions" value="basement">Basement</option>
-                                <option class="foundationOptions" value="slab at grade">Slab at Grade</option>
-                                <option class="foundationOptions" value="crawl space">Crawl Space</option>
-                                <option class="foundationOptions" value="piers">Piers</option>
-                                <option class="foundationOptions" value="with basement">Hillside with Basement</option>
-                                <option class="foundationOptions" value="without basement">Hillside without Basement</option>
+                                <option  value="slab at grade">Slab at Grade</option>
+                                <option  value="crawl space">Crawl Space</option>
+                                <option  value="piers">Piers</option>
+                                <option  value="with basement">Hillside with Basement</option>
+                                <option  value="without basement">Hillside without Basement</option>
                         </select>
                         <!-- <select class="ocuupation labelBuilding" name="building" id="building" [(ngModel)] = "exterior.buildingmaterial">
                                 <option class="buildingOptions" value="solid brick">Solid brick</option>
                         </select> -->
-                        <select class="ocuupation labelBuilding" name="walltype" id="walltype" [(ngModel)] = "exterior.buildingmaterial">
+                        <select class="ocuupation labelBuilding" name="walltype" id="walltype" [(ngModel)] = "exterior.buildingmaterial" >
                                 <option class="walltypeOptions" value="brick stone">Brick Frame</option>
-                                <option class="walltypeOptions" value="brick stone">Stucco Block</option>
+                                <option  value="brick stone">Stucco Block</option>
                                 <option class="walltypeOptions" value="brick stone">Stucco Frame</option>
                                 <option class="walltypeOptions" value="brick stone">Wood Sliding</option>
 
                         </select>
-                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.buildingmaterial">
+                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.roofshape">
                                 <option class="roofstyleOptions" value="hip">Hip</option>
-                                <option class="roofstyleOptions" value="gable">Gable</option>
-                                <option class="roofstyleOptions" value="flat">Flat</option>
-                                <option class="roofstyleOptions" value="other">Other</option>
+                                <option value="gable">Gable</option>
+                                <option  value="flat">Flat</option>
+                                <option  value="other">Other</option>
 
                         </select>
 
@@ -283,7 +286,7 @@
 
                 <div class="row5">
                         <label class="questionLabel">Approximate living area</label>
-                        <label class="questionLabel labelPeople2">Type of garrage</label>
+                        <label class="questionLabel labelPeople2">Type of garage</label>
                         <label class="questionLabel labelPeople2">Primary residance</label>
                         <label class="questionLabel labelPeople2">What is the roof made of?</label>
                 </div>
@@ -292,19 +295,19 @@
                         <!-- <select class="ocuupation" name="exterior" id="exterior" [(ngModel)] = "exterior.buildingmaterial">
                                 <option class="exteriorOptions" value="brick stone">Brick stone</option>
                         </select> -->
-                        <input class="firstNameInput" placeholder="Living area" [(ngModel)] = "customerinfo.firstname">
+                        <input class="firstNameInput" placeholder="Living area" [(ngModel)] = "customerinfo.area">
 
-                        <select class="ocuupation labelPeople" name="roof" id="roof" [(ngModel)] = "exterior.roofshape">
+                        <select class="ocuupation labelPeople" name="roof" id="roof" [(ngModel)] = "exterior.typeofgarage">
                                 <option class="roofOptions" value="flat">One car attached</option>
                         </select>
 
-                        <select class="ocuupation labelPeople" name="primaryresidance" id="primaryresidance" [(ngModel)] = "exterior.roofshape">
+                        <select class="ocuupation labelPeople" name="primaryresidance" id="primaryresidance" [(ngModel)] = "basicinfo.primaryresidence">
                                 <option class="primaryresidanceOptions" value="yes">Yes</option>
                                 <option class="primaryresidanceOptions" value="no">No</option>
 
                         </select>
                         <!-- <input class="firstNameInput labelPeople" placeholder="Roof made of" [(ngModel)] = "customerinfo.firstname"> -->
-                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.buildingmaterial">
+                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.roofmaterial">
                                 <option class="roofstyleOptions" value="asphalt">Asphalt</option>
                                 <option class="roofstyleOptions" value="wood">Wood</option>
                                 <option class="roofstyleOptions" value="tile">Tile</option>
@@ -331,21 +334,21 @@
 
                 <div class="row7">
                         <!-- <input class="streetInput" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool"> -->
-                        <select class="ocuupation new" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
-                                <option class="cancelpolicyOptions" value="yes">Wood</option>
+                        <select class="ocuupation new" name="kitchen" id="kitchen" [(ngModel)] = "interior.kitchencountertops">
+                                <option class="kitchenOptions" value="yes">Wood</option>
                                 <option value="no">No</option>
                         </select>
-                        <select class="ocuupation labelBuilding" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "customerinfo.cancelpolicy">
-                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                        <select class="ocuupation labelBuilding" name="swimming" id="swimming" [(ngModel)] = "exterior.swimmingpool">
+                                <option class="swimmingOptions" value="yes">Yes</option>
                                 <option value="no">No</option>
                         </select>
                         <!-- <input class="streetInput labelCriminal" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool"> -->
-                        <select class="ocuupation labelPeople" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "exterior.swimmingpool">
-                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                        <select class="ocuupation labelPeople" name="within" id="within" [(ngModel)] = "basicinfo.firehydrant">
+                                <option class="withinOptions" value="yes">Yes</option>
                                 <option value="no">No</option>
                         </select>
-                        <select class="ocuupation labelPeople" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "exterior.swimmingpool">
-                                <option class="cancelpolicyOptions" value="yes">Yes</option>
+                        <select class="ocuupation labelPeople" name="anyproperty" id="anyproperty" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
+                                <option class="anypropertyOptions" value="yes">Yes</option>
                                 <option value="no">No</option>
                         </select>
                         
@@ -433,9 +436,11 @@
         <div class="detailsrow1">
                 <div>
                 <div style="margin-left: 30px;">All coverages and discounts are subject to terms, conditions, availability, and qualifications.</div>
-                <div style="margin-left: 30px;">This is a brief description of coverages; this is not a contract.Please contact a local agent or call 151-200-300 for more information. </div>
-                <div style="margin-left: 30px;"> </div>
+                <div style="margin-left: 30px;">This is a brief description of coverages; this is not a contract. </div>
+                <div style="margin-left: 30px;">Please contact a local agent or call 151-200-300 for more information. </div>
         </div>
+        <button class="requestbutton" (click) = "navigateToCustomerInfo()">BACK</button>
+
                 <button class="requestbutton" (click) = "navigateToUnderwriter()">GENERATE QUOTE</button>
 
         </div>

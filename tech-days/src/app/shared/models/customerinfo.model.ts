@@ -1,6 +1,6 @@
 export class CustomerInfo{
     name: string;
-    effectivedate:string;
+    effectiveDate:string;
     address: string;
     phone:string;
     homebuiltin:number;

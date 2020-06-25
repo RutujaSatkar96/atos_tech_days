@@ -16,13 +16,13 @@
 
     <div class="detailsrow1" >
       <label class="detail_one">DOB:</label>
-      <label class="detail_two">Efective Date:</label>
+      <label class="detail_two">Desired coverage start date:</label>
       <label class="detail_two">Area:</label>
     </div>
 
     <div class="detailsrow1">
       <label class="detail_one_value">{{workQuote.customerinfo.dateofbirth | date:'MM/dd/yyyy'}}</label>
-      <label class="detail_two_value">{{workQuote.customerinfo.effectivedate | date:'MM/dd/yyyy'}}</label>
+      <label class="detail_two_value">{{workQuote.customerinfo.effectiveDate | date:'MM/dd/yyyy'}}</label>
       <label class="detail_two_value">{{workQuote.customerinfo.area}}</label>
     </div>
 
@@ -86,10 +86,10 @@
     <label class="detail_one">Exterior</label>
 </div>
 <div class="detailsrow1">
-  <label class="whole_one">Building Material:</label>
-  <label class="whole_one">Type of garage:</label>
-  <label class="whole_one">Roof Shape:</label>
-  <label class="whole_one">swimming pool:</label>
+  <label class="whole_one">Exterior wall type:</label>
+    <label class="whole_one">Type of garage:</label>
+    <label class="whole_one">Roof style:</label>
+    <label class="whole_one">swimming pool:</label>
 </div>
 
 <div class="detailsrow1">
@@ -99,7 +99,7 @@
   <label class="whole_two">{{workQuote.exterior.swimmingpool}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
-  <label class="whole_one">Roof Material:</label>
+  <label class="whole_one">Roof made of:</label>
   <label class="whole_one">Porch:</label>
   <label class="whole_one">Roof Age:</label>
   <label class="whole_one">Deck:</label>

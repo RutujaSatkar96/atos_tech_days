@@ -22,4 +22,6 @@ export class WorkQuote {
   finalpremium:string;
   statusid:number;
   quoteno:string;
+  type:string;
+  successmsg:string;
 }

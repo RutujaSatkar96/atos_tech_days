@@ -15,16 +15,17 @@ export class UnderwritingeditComponent implements OnInit {
   workQuote:WorkQuote;
 
   title = 'HttpRequest';
-  quoteNo = "H458131342";
+  quoteNo = "";
   url = "/assets/underwriting.json"
   show: boolean = false;
   constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService){
 
     let role = localStorage.getItem("typeId");
+    this.quoteNo=localStorage.getItem("quoteno");
     if(role=="2"){
       this.show=true;
     }
-    this.restApi.getQuote("1","H124052941").subscribe((data: {}) => {
+    this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
       console.log(data)
      this.workQuote =<WorkQuote> data;
    })

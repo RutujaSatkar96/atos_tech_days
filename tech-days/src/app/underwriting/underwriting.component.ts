@@ -27,7 +27,7 @@ export class UnderwritingComponent implements OnInit {
 
     this.quoteNo=localStorage.getItem("quoteno");
    
-    this.restApi.getQuote("1","H124052941").subscribe((data: {}) => {
+    this.restApi.getQuote("2",this.quoteNo).subscribe((data: {}) => {
       console.log(data)
      this.workQuote =<WorkQuote> data;
    })

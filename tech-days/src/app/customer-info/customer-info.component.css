@@ -214,7 +214,18 @@ select{
   border: 1px solid rgba(0, 0, 0, .5);
 margin-left: 50px;
 }
-
+.cityInput{
+  width: 90px;
+  height: 36px;
+  border-radius: 6px;
+  /* opacity: 10%; */
+  color: #333333;
+  fill: #fff;
+  font-family: Verdana;
+  font-weight: 14px;
+  border: 1px solid rgba(0, 0, 0, .5);
+margin-left: 125px;
+}
 .unitInput{
   width: 90px;
   height: 36px;
@@ -245,6 +256,12 @@ margin-left: 50px;
   font-weight: 14px;
   color: #000;
   margin-left: 180px;
+}
+.cityLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 135px;
 }
 
 .row8{

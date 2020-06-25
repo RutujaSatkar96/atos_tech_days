@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ViewEncapsulation } from '@angular/compiler/src/core';
 import { Router } from '@angular/router';
 import { WorkQuote } from '../shared/models/work-quote.model';
 import {HttpClient, HttpClientModule} from '@angular/common/http'
@@ -8,6 +7,7 @@ import { BasicInfo } from '../shared/models/basic-info.model';
 import { Exterior } from '../shared/models/exterior.model';
 import { Interior } from '../shared/models/interior.model';
 import { RestApiService } from "../shared/rest-api.service";
+import { FormBuilder, FormGroup, Validators, ValidatorFn, FormControl, ValidationErrors } from '@angular/forms';
 
 @Component({
   selector: 'app-customer-info',
@@ -18,8 +18,59 @@ export class CustomerInfoComponent implements OnInit {
 
   // constructor(private _router: Router) { }
 
+  customerForm: FormGroup;
+
+  workQuote = new WorkQuote();
+  customerinfo=new CustomerInfo();
+  basicinfo=new BasicInfo();
+  exterior=new Exterior();
+  interior=new Interior();
+
+   title = 'HttpRequest';
+  quoteNo = "H458131342";
+
+  url = "/assets/underwriting.json"
+
+  constructor(private fb: FormBuilder,public restApi: RestApiService, private http:HttpClient, private _router: Router){
+    let response = this.http.get(this.url);
+    response.toPromise().then(data => {
+      
+    //  this.workQuote = <WorkQuote>(data);
+     
+    });
+
+    this.basicinfo.yearbuilt = 2018;
+    this.customerinfo.area = "1000 sqft";
+    this.exterior.buildingmaterial = "Stucco Frame";
+    this.exterior.roofshape = "Flat";
+    this.interior.foundationtype = "Piers";
+    this.interior.foundationtype = "Piers";
+    this.basicinfo.noofstories = 2;
+
+    
+  }  
+
+
   ngOnInit(): void {
     localStorage.setItem("typeId","1");
+    this.initForm();
+  }
+
+
+  private initForm(): void {
+    this.customerForm = new FormGroup({
+      firstName: new FormControl(null,[Validators.required]),
+      lastName: new FormControl(null,[Validators.required]),
+      
+    });
+    
+
+   
+  }
+
+  tabClick(tab) {
+    console.log(tab);
+
   }
 
   navigateToUnderwriter(){
@@ -49,27 +100,7 @@ export class CustomerInfoComponent implements OnInit {
   }
 
 
-  workQuote = new WorkQuote();
-  customerinfo=new CustomerInfo();
-  basicinfo=new BasicInfo();
-  exterior=new Exterior();
-  interior=new Interior();
-
-   title = 'HttpRequest';
-  quoteNo = "H458131342";
-
-  url = "/assets/underwriting.json"
-
-  constructor(public restApi: RestApiService, private http:HttpClient, private _router: Router){
-    let response = this.http.get(this.url);
-    response.toPromise().then(data => {
-      
-    //  this.workQuote = <WorkQuote>(data);
-     
-    });
-    
-  }  
-
+  
   navigateToPropertyInfo(){
     if(this.customerinfo.firstname == undefined || this.customerinfo.lastname == undefined || this.customerinfo.street == undefined || this.customerinfo.unit == undefined){
       alert('Please enter all fields.')
@@ -80,6 +111,10 @@ export class CustomerInfoComponent implements OnInit {
       (<HTMLElement>document.querySelectorAll('.mat-tab-label')[1]).click();
 
     }
+  }
+
+  navigateToCustomerInfo(){
+    (<HTMLElement>document.querySelectorAll('.mat-tab-label')[0]).click();
   }
 
   show(){
