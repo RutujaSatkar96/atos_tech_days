@@ -3,6 +3,10 @@ import { WorkQuote } from '../shared/models/work-quote.model';
 import {HttpClient} from '@angular/common/http'
 import { Router } from '@angular/router';
 import { RestApiService } from "../shared/rest-api.service";
+import { ReportsComponent } from '../reports/reports.component';
+import { ViewZelrosSummaryComponent } from '../view-zelros-summary/view-zelros-summary.component';
+import { MatDialog } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-underwriting',
@@ -17,7 +21,7 @@ export class UnderwritingComponent implements OnInit {
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
   show: boolean = false;
-  constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService){
+  constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService,public dialog: MatDialog){
   
     
     let role = localStorage.getItem("typeId");
@@ -67,6 +71,6 @@ propertyRequest(){
 }
 
 finalRequest(){
-  
+  this.dialog.open(ReportsComponent, {position: {top: '3%', left: '0%', bottom: '3%'}})
 }
 }

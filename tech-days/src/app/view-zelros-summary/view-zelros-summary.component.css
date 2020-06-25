@@ -1,0 +1,16 @@
+.main{
+    width: 70%;
+    height:80%;
+    display: grid;
+    font-family: verdana;
+    background: #ffffff;
+    padding: 20px;
+           }
+
+ button{
+    height: 40px;
+    background-color:#CCE4F7;
+    border-radius: 5px;
+    text-align: start;
+    font-weight: bold;
+} 

@@ -1,0 +1,46 @@
+.main{
+    display: flex;
+    border: 2px solid blue;
+    width: 850px;
+    height: 500px;
+    row-gap: 20px;
+    position: fixed;
+    left: 0px;
+   }
+
+.report{
+    width: 600px;
+    height: 500px;
+    font-family: verdana;
+    text-align: center;
+    background: #ffffff;
+    margin-left: 6px;
+    } 
+
+button{
+    margin-top: 20px;
+    margin-left: 5px;
+    height: 40px;
+    width: 70%;
+    background-color: #CCE4F7;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+.zelros{
+    width: 250px;
+    height:100%;
+    padding-right: 40px;
+    background: #ffffff;
+   }
+
+.pdfView{
+    height: 430px;
+    margin: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    background: #ffffff;
+     }
+

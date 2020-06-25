@@ -27,11 +27,13 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { AgentSidebarComponent } from './agent-sidebar/agent-sidebar.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    PdfViewerModule
   ]
 
 @NgModule({
