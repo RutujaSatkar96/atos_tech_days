@@ -36,7 +36,8 @@ export class UnderwritingeditComponent implements OnInit {
 
   navigateDaashboard(){
     
-    this.workQuote.type="2";
+    //this.workQuote.type="2";
+    console.log(this.workQuote)
       this.restApi.updateQuote(this.workQuote).subscribe((data: {}) => {
         console.log(data)
        let quote = <WorkQuote>data;

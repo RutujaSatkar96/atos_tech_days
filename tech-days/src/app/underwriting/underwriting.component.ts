@@ -21,13 +21,13 @@ export class UnderwritingComponent implements OnInit {
   
     
     let role = localStorage.getItem("typeId");
-    if(role=="2"){
+    if(role=="1"){
       this.show=true;
     }
 
     this.quoteNo=localStorage.getItem("quoteno");
    
-    this.restApi.getQuote("2",this.quoteNo).subscribe((data: {}) => {
+    this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
       console.log(data)
      this.workQuote =<WorkQuote> data;
    })
@@ -40,7 +40,16 @@ export class UnderwritingComponent implements OnInit {
   }
 
   navigateDaashboard(){
-    this._router.navigate(['/app-standard-quote']);
+
+    this.restApi.updateQuote(this.workQuote).subscribe((data: {}) => {
+      console.log(data)
+     let quote = <WorkQuote>data;
+      
+     this._router.navigate(['/app-standard-quote']);
+
+    
+    })
+    
 }
 emailRequest(){
   this._router.navigate(['/app-complex-quote']);
