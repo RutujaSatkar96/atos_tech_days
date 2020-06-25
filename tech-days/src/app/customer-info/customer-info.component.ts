@@ -45,7 +45,13 @@ export class CustomerInfoComponent implements OnInit {
     this.exterior.roofshape = "Flat";
     this.interior.foundationtype = "Piers";
     this.interior.foundationtype = "Piers";
+    this.basicinfo.burglarsalarm ="Installed"
+    this.basicinfo.firesprinklers ="Installed"
+    this.basicinfo.emergencybackupgenerator ="Installed"
+    this.basicinfo.firealarm ="Installed"
+
     this.basicinfo.noofstories = 2;
+
 
     
   }  
