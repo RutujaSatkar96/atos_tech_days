@@ -93,7 +93,7 @@ export class CustomerInfoComponent implements OnInit {
           localStorage.setItem("quoteno",this.workQuote.quoteno)
         this._router.navigate(['app-customer-summary-edit']);
         }else{
-          alert('Please enter the all fields.')
+          alert('Something went to wrong please try again later.')
         }
       })
 

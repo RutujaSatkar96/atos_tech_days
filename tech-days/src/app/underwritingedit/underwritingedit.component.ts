@@ -35,7 +35,17 @@ export class UnderwritingeditComponent implements OnInit {
   }
 
   navigateDaashboard(){
-    this._router.navigate(['/app-standard-quote']);
+    
+    this.workQuote.type="2";
+      this.restApi.updateQuote(this.workQuote).subscribe((data: {}) => {
+        console.log(data)
+       let quote = <WorkQuote>data;
+        
+       this._router.navigate(['/app-standard-quote']);
+  
+      
+      })
+    
 }
 emailRequest(){
   this._router.navigate(['/app-complex-quote']);

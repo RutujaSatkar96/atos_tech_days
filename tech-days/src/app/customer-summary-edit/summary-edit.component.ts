@@ -33,12 +33,10 @@ export class SummaryEditComponent implements OnInit {
     this.restApi.updateQuote(this.workQuote).subscribe((data: {}) => {
       console.log(data)
      let quote = <WorkQuote>data;
-      if(quote.quoteno != null){
+      
         this._router.navigate(['app-agent-review']);
 
-      }else{
-        alert('Please enter the all fields.')
-      }
+    
     })
   }
 
