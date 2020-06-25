@@ -28,8 +28,8 @@ export class RestApiService {
   }  
 
   // HttpClient API get() method => Fetch Quote list
-  getQuotes(id): Observable<WorkQuote> {
-    return this.http.get<WorkQuote>(this.apiURL + '/getQuoteDetails?type='+id)
+  getQuotes(id): Observable<Array<String>> {
+    return this.http.get<Array<String>>(this.apiURL + '/getQuotes?type='+id)
     .pipe(
       retry(1),
       catchError(this.handleError)
@@ -37,8 +37,8 @@ export class RestApiService {
   }
 
   // HttpClient API get() method => Fetch Quote
-  getQuote(id,quoteNo): Observable<WorkQuote> {
-    return this.http.get<WorkQuote>(this.apiURL + '/getQuoteDetails?type='+id+'&quoteNo=' + quoteNo)
+  getQuote(id,quoteNo): Observable<string[]> {
+    return this.http.get<string[]>(this.apiURL + '/getQuoteDetails?type='+id+'&quoteNo=' + quoteNo)
     .pipe(
       retry(1),
       catchError(this.handleError)

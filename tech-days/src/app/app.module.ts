@@ -26,6 +26,7 @@ import { Dialog3Component } from './dialog3/dialog3.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { AgentSidebarComponent } from './agent-sidebar/agent-sidebar.component';
 
 
 imports: [
@@ -39,6 +40,7 @@ imports: [
     QuoteComponent,
     DashboardComponent,
     SidebarComponent,
+    AgentSidebarComponent,
     CustomerInfoComponent,
     UnderwritingComponent,
     CustomerSummaryComponent,

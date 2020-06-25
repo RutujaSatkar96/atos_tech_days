@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { RestApiService } from "../shared/rest-api.service";
 
 @Component({
-  selector: 'app-sidebar',
-  templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  selector: 'app-agent-sidebar',
+  templateUrl: './agent-sidebar.component.html',
+  styleUrls: ['./agent-sidebar.component.css']
 })
-export class SidebarComponent implements OnInit {
+export class AgentSidebarComponent implements OnInit {
 
   title = 'HttpRequest';
   quoteNo = "H458131342";
@@ -33,7 +33,7 @@ export class SidebarComponent implements OnInit {
    }
   accordianData=[
    {
-     label:"U/W DashBoard",
+     label:"Agency Dashboard",
      collapse:false,
      icon:"dashboard_icn"
    },
@@ -66,7 +66,7 @@ export class SidebarComponent implements OnInit {
      icon:"submissions_icn"
    },
    {
-     label:"Reports",
+     label:"Agency Reports",
      collapse:false,
      icon:"reports_icn",
      children:[
@@ -84,16 +84,6 @@ export class SidebarComponent implements OnInit {
      label:"View Documents",
      collapse:false,
      icon:"documents_icn"
-   },
-   {
-     label:"Zelros Summary",
-     collapse:false,
-     icon:"summary_icn"
-   },
-   {
-     label:"My Surveys",
-     collapse:false,
-     icon:"surveys_icn"
    },
    {
      label:"Recents",
@@ -114,3 +104,4 @@ export class SidebarComponent implements OnInit {
    this.accordianData[index]['collapse']=!accordianStauts;
  }
 }
+
