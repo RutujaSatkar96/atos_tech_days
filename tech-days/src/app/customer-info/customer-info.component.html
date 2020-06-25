@@ -91,21 +91,24 @@
 
                         <div class="row6">
                                 <label class="firstNameLabel">Street Address</label>
-                                <label class="unitLabel">Unit Number</label>
+                                <label class="unitLabel unit1">Unit Number</label>
+                                <label class="unitLabel unit2">Country</label>
                                 <label class="cityLabel">City</label>
-                                <label class="unitLabel">State</label>
-                                <label class="unitLabel">Zip Code</label>
+                                <label class="unitLabel unit1">State</label>
+                                <label class="unitLabel unit1">Zip Code</label>
                         </div>
 
                         <div class="row7">
                                 <input class="streetInput" type="text" placeholder="Street Address" [(ngModel)] = "customerinfo.street">
-                                <input class="unitInput" type="text" placeholder="Unit Input" [(ngModel)] = "customerinfo.unit">
+                                <input class="unitInput unit3" type="text" placeholder="Unit Input" [(ngModel)] = "customerinfo.unit">
+                                <!-- ngmodel is pending for country field -->
+                                <input class="unitInput unit4" type="text" placeholder="Country">
 
                         
                                 <input class="cityInput" type="text" placeholder="city"  [(ngModel)] = "customerinfo.city">
 
-                                <input class="unitInput" type="text" placeholder="State"  [(ngModel)] = "customerinfo.state">
-                                <input class="unitInput" type="text" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
+                                <input class="unitInput unit3" type="text" placeholder="State"  [(ngModel)] = "customerinfo.state">
+                                <input class="unitInput unit3" type="text" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
                         </div>
 
                         <div class="row8">
