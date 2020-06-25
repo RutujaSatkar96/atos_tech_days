@@ -28,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { AgentSidebarComponent } from './agent-sidebar/agent-sidebar.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-
+import { ReportsComponent } from './reports/reports.component';
+import { from } from 'rxjs';
 
 imports: [
     BrowserModule,
@@ -56,7 +57,8 @@ imports: [
     Dialog2Component,
     UnderwritingeditComponent,
     SummaryEditComponent,
-    Dialog3Component
+    Dialog3Component,
+    ReportsComponent
   ],
   entryComponents: [
     DialogComponent
