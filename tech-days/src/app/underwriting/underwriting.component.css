@@ -19,15 +19,21 @@
 .detail_one{
     width:  330px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     font-size: 13px;
     margin-left: 8px;
 }
+.basicFont{
+    font-size: 18px;
+}
 
+.dataFontSize{
+    font-size: 16px;
+}
 .detail_two{
     min-width: 254px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     margin-left: 8px;
     font-size: 13px;
 }
@@ -43,6 +49,15 @@
     font-family: verdana;
     font-size: 16px;
 }
+
+.marginQuote{
+    margin-left: -20px;
+}
+
+.margin{
+    margin-left: 20px;
+
+}
 .address_phone{
     height: 54px;
     background: #e8e8e8;
@@ -51,7 +66,7 @@
 .basicinfo{
     min-width: 251px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 14px;
@@ -59,7 +74,7 @@
 .whole_one{
     width:  207px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     font-size: 13px;
     margin-left: 8px;
 }
@@ -68,32 +83,45 @@
     min-width: 207px;
     font-family: verdana;
     margin-left: 8px;
-    font-size: 13px;
+    /* font-size: 13px; */
+}
+
+.bAlarm{
+    min-width: 207px;
+    font-family: verdana;
+    margin-left: -5px;
 }
 .emercency{
     width:  336px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     font-size: 13px;
     margin-left: 8px;
 }
 .windstorm{
     width:  336px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     font-size: 13px;
     margin-left: 130px;
 }
 .backup{
     width:  230px;
     font-family: verdana;
-    font-weight: 600;
+    font-weight: medium;
     font-size: 13px;
 }
 .whole_one_value{
     min-width:336px;
     font-family: verdana;
-    font-size: 13px;
+    /* font-size: 13px; */
+    margin-left: 8px;
+}
+
+.backup{
+    min-width:336px;
+    font-family: verdana;
+    /* font-size: 13px; */
     margin-left: 8px;
 }
 .whole_edit_one{

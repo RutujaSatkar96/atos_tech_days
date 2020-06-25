@@ -4,8 +4,8 @@
   
       <div class="detailsrow1">
         <label class="detail_one">Name:</label>
-        <label class="detail_two">Quote No:</label>
-        <label class="detail_two">Home Built in:</label>
+        <label class="detail_two marginQuote">Quote No:</label>
+        <label class="detail_two margin">Home Built in:</label>
       </div>
   
       <div class="detailsrow1">
@@ -23,14 +23,14 @@
       <div class="detailsrow1">
         <input class="whole_split_date_one" [(ngModel)] = "workQuote.customerinfo.dateofbirth">
         <input class="whole_split_date_two" [(ngModel)] = "workQuote.customerinfo.effectiveDate">
-        <input class="whole_split_date_two" [(ngModel)] = "workQuote.customerinfo.area">
+        <input class="whole_split_date_two margin" [(ngModel)] = "workQuote.customerinfo.area">
       </div>
   
       <div class="address_phone" >
         <div class="detailsrow1">
           <label class="detail_one">Address:</label>
           <label class="detail_two">Phone:</label>
-          <label class="detail_two">Email</label>
+          <label class="detail_two">Email:</label>
         </div>
   
         <div >
@@ -42,7 +42,7 @@
     </div>
     <br>
       <div class="basicinfo">
-        <label class="detail_one">Basic Info</label>
+        <label class="detail_one basicinfo1">Basic Info</label>
     </div>
     <div class="detailsrow1">
       <label class="whole_one">Year Built:</label>
@@ -79,11 +79,12 @@
     <div style="margin-top: 4px;">
       <input class="whole_split_four_one" [(ngModel)] = "workQuote.basicinfo.firealarm">
       <input class="whole_split_four_two" [(ngModel)] = "workQuote.basicinfo.emergencybackupgenerator">
-      <input class="whole_split_four_five" [(ngModel)] = "workQuote.basicinfo.firehydrant">
+      <input class="whole_split_four_five" style="margin-left: 30px;" [(ngModel)] = "workQuote.basicinfo.firehydrant">
     </div>
-  
+    <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;">
+
     <div class="basicinfo">
-      <label class="detail_one">Exterior</label>
+      <label class="detail_one basicinfo1">Exterior</label>
   </div>
   <div class="detailsrow1">
     <label class="whole_one">Exterior wall type:</label>
@@ -111,9 +112,10 @@
     <input class="whole_split_four_three" [(ngModel)] = "workQuote.exterior.roofage">
     <input class="whole_split_four_four" [(ngModel)] = "workQuote.exterior.deck">
   </div>
-  
+  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;">
+
   <div class="basicinfo">
-    <label class="detail_one">Interior </label>
+    <label class="detail_one basicinfo1">Interior </label>
   </div>
   <div class="detailsrow1">
   <label class="whole_one">Foundation Type:</label>
@@ -135,8 +137,11 @@
     <input class="whole_split_four_one" [(ngModel)] = "workQuote.interior.kitchenquality">
     <input class="whole_split_four_two" style="margin-left: 10px;" [(ngModel)] = "workQuote.interior.kitchencountertops">
   </div>
+
+  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;">
+
   <div class="basicinfo">
-    <label class="detail_one">Customer Info </label>
+    <label class="detail_one basicinfo1">Customer Info </label>
   </div>
   <div class="detailsrow1">
   <label class="whole_one">Age:</label>
@@ -160,11 +165,12 @@
     <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.criminalconvictions">
     <input class="whole_split_four_one" [(ngModel)] = "workQuote.customerinfo.runningbusinessfromhome">
   </div>
-  
+  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;">
+
   
   <!-- deleted -->
   <div class="basicinfo">
-    <label class="detail_one">Summary Coverages</label>
+    <label class="detail_one basicinfo1">Summary Coverages</label>
   </div>
   <div class="detailsrow1">
   <label class="emercency">Dwelling Protection:</label>
@@ -191,7 +197,7 @@
   </div>
   
   <div class="basicinfo">
-    <label class="detail_one">Discounts & Surcharges</label>
+    <label class="detail_one basicinfo1">Discounts & Surcharges</label>
   </div>
   <div class="detailsrow1">
   <label class="emercency">New Construction Discount:</label>
@@ -201,7 +207,7 @@
     <input class="whole_split_four_one" [(ngModel)] = "workQuote.discountsandsurcharges.newconstructiondiscount">
   </div>
   <div class="basicinfo">
-    <label class="detail_one">Deductibles</label>
+    <label class="detail_one basicinfo1">Deductibles</label>
   </div>
   <div >
   <label class="emercency">All Perils deductible:</label>

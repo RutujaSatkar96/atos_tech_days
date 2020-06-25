@@ -1,3 +1,10 @@
 .head{
     font-weight: bold;
 }
+
+.pop{
+    float: left;
+    border: none;
+    margin-top: 2px;
+
+}
