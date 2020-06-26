@@ -30,6 +30,7 @@ import { AgentSidebarComponent } from './agent-sidebar/agent-sidebar.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ReportsComponent } from './reports/reports.component';
 import { from } from 'rxjs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 imports: [
     BrowserModule,
@@ -70,7 +71,8 @@ imports: [
     AngularMaterialModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent],
