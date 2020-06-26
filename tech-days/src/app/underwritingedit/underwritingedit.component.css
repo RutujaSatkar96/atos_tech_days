@@ -5,7 +5,11 @@
     background: #ffffff;
 }
 .details{
+<<<<<<< HEAD
     height: 154px;
+=======
+    height: 141px;
+>>>>>>> f18a79585972429e136233e441a5cacfd8c862c3
     background: #f2f2f2;
 }
 .detailsrow1{
@@ -33,7 +37,7 @@
 }
 
 .marginQuote{
-    margin-left: 10px;
+    margin-left: 12px;
 }
 .detail_one_value{
     min-width:330px;
@@ -49,16 +53,25 @@
     margin-left: 100px;
 }
 .address_phone{
-    height: 54px;
+    height: 65px;
     background: #e8e8e8;
-    padding-top: 8px;
+    /* padding-top: 8px; */
 }
 .basicinfo{
     min-width: 251px;
     font-family: verdana;
     font-weight: medium;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+
+.basicInfo1{
+    min-width: 251px;
+    font-family: verdana;
+    font-weight: medium;
+    font-size: 15px;
+    margin-top: 10px;
     margin-bottom: 14px;
 }
 .whole_one{

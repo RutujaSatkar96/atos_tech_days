@@ -17,6 +17,10 @@
     overflow: hidden;
 }
 .company{
+<<<<<<< HEAD
+=======
+    margin-top: 20px;
+>>>>>>> f18a79585972429e136233e441a5cacfd8c862c3
     float: left;
     font-size: 20px;
     margin-top: 22px;
@@ -59,12 +63,16 @@
     float: right;
     height: 45px;
     width: 45px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: 26px;
 }
 
 .welcome{
     float: right;
+<<<<<<< HEAD
+=======
+    margin-top: 2px;
+>>>>>>> f18a79585972429e136233e441a5cacfd8c862c3
     margin-right: 14px;
 }
     

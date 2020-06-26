@@ -35,8 +35,8 @@
 
       <div class="detailsrow1">
         <label class="detail_one_value dataFontSize">{{workQuote.customerinfo.address}}</label>
-        <label class="detail_two_value dataFontSize">{{workQuote.customerinfo.phone}}</label>
-        <label class="detail_two_value dataFontSize">{{workQuote.customerinfo.email}}</label>
+        <label class="detail_two_value dataFontSize" style="margin-left: -25px;">{{workQuote.customerinfo.phone}}</label>
+        <label class="detail_two_value dataFontSize" style="margin-left: 25px;">{{workQuote.customerinfo.email}}</label>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
     <div class="basicinfo">
       <label class="detail_one basicFont">Basic Info</label>
   </div>
-  <div class="detailsrow1">
+  <div class="detailsrow1" style="margin-top: -10px;">
     <label class="whole_one">Year Built:</label>
     <label class="whole_one">Purchase Date:</label>
     <label class="whole_one">Burger Alarm:</label>
@@ -82,10 +82,10 @@
     <label class="whole_one_value dataFontSize">{{workQuote.basicinfo.firehydrant}}</label>
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
-  <div class="basicinfo">
+  <div class="basicInfo1">
     <label class="detail_one basicFont">Exterior</label>
 </div>
-<div class="detailsrow1">
+<div class="detailsrow1" style="margin-top: -10px;">
   <label class="whole_one">Exterior wall type:</label>
     <label class="whole_one">Type of garage:</label>
     <label class="whole_one">Roof style:</label>
@@ -113,10 +113,10 @@
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
-<div class="basicinfo">
+<div class="basicInfo1">
   <label class="detail_one basicFont">Interior </label>
 </div>
-<div class="detailsrow1">
+<div class="detailsrow1" style="margin-top: -10px;">
 <label class="whole_one">Foundation Type:</label>
 <label class="whole_one"> Bath Quality:</label>
 <label class="whole_one">Fire Place:</label>
@@ -138,10 +138,10 @@
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
-<div class="basicinfo">
+<div class="basicInfo1">
   <label class="detail_one basicFont">Customer Info </label>
 </div>
-<div class="detailsrow1">
+<div class="detailsrow1" style="margin-top: -10px;">
 <label class="whole_one">Age:</label>
 <label class="whole_one">Smoker status:</label>
 <label class="emercency">Past property claims or losses:</label>
@@ -167,10 +167,10 @@
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
 <!-- deleted -->
-<div class="basicinfo">
+<div class="basicInfo1">
   <label class="detail_one basicFont">Summary Coverages</label>
 </div>
-<div class="detailsrow1">
+<div class="detailsrow1" style="margin-top: -10px;">
 <label class="emercency">Dwelling Protection:</label>
 <label class="emercency">Protect Personal Property Against: </label>
 <label class="emercency">Additional Living expenses:</label>
@@ -195,20 +195,23 @@
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
-<div class="basicinfo">
+<div class="basicInfo1">
   <label class="detail_one basicFont">Discounts & Surcharges</label>
 </div>
-<div class="detailsrow1">
+<div class="detailsrow1" style="margin-top: -10px;">
 <label class="emercency">New Construction Discount:</label>
 </div>
 
 <div style="margin-top: 4px;">
   <input class="whole_split_four_one" [(ngModel)] = "workQuote.discountsandsurcharges.newconstructiondiscount">
 </div>
-<div class="basicinfo">
-  <label class="detail_one">Deductibles</label>
+
+<hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
+
+<div class="basicInfo1">
+  <label class="detail_one basicFont">Deductibles</label>
 </div>
-<div >
+<div  style="margin-top: -10px;">
 <label class="emercency">All Perils deductible:</label>
 <label class="windstorm">Windstorm/Hail Deductible: </label>
 

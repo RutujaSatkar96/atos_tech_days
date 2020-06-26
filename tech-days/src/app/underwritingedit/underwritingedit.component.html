@@ -5,7 +5,7 @@
       <div class="detailsrow1">
         <label class="detail_one">Name:</label>
         <label class="detail_two marginQuote">Quote No:</label>
-        <label class="detail_two margin">Home Built in:</label>
+        <label class="detail_two" style="margin-right: 15px;">Home Built in:</label>
       </div>
   
       <div class="detailsrow1">
@@ -16,21 +16,21 @@
   
       <div class="detailsrow1" style="margin-top: 5px;">
         <label class="detail_one">DOB:</label>
-        <label class="detail_two">Desired coverage start date :</label>
-        <label class="detail_two">Area:</label>
+        <label class="detail_two" style="margin-right: -3px;" >Desired coverage start date :</label>
+        <label class="detail_two" style="margin-right: 15px;">Area:</label>
       </div>
   
-      <div class="detailsrow1">
+      <div class="detailsrow1" style="margin-top: -1px;">
         <input class="whole_split_date_one" [(ngModel)] = "workQuote.customerinfo.dateofbirth">
-        <input class="whole_split_date_two" [(ngModel)] = "workQuote.customerinfo.effectiveDate">
+        <input class="whole_split_date_two"  [(ngModel)] = "workQuote.customerinfo.effectiveDate">
         <input class="whole_split_date_two margin" [(ngModel)] = "workQuote.customerinfo.area">
       </div>
   
       <div class="address_phone" >
         <div class="detailsrow1">
           <label class="detail_one">Address:</label>
-          <label class="detail_two">Phone:</label>
-          <label class="detail_two">Email:</label>
+          <label class="detail_two" style="margin-right: -3px;">Phone:</label>
+          <label class="detail_two" style="margin-right: 15px;">Email:</label>
         </div>
   
         <div >
@@ -44,11 +44,11 @@
       <div class="basicinfo">
         <label class="detail_one basicinfo1">Basic Info</label>
     </div>
-    <div class="detailsrow1">
+    <div class="detailsrow1" style="margin-top: -10px;">
       <label class="whole_one">Year Built:</label>
-      <label class="whole_one">Purchase Date:</label>
-      <label class="whole_one">Burger Alarm:</label>
-      <label class="whole_one">Number of storeys:</label>
+      <label class="whole_one" style="margin-left: -10px;">Purchase Date:</label>
+      <label class="whole_one" style="margin-left: -5px;">Burger Alarm:</label>
+      <label class="whole_one" style="margin-left: -9px;">Number of storeys:</label>
     </div>
   
     <div style="margin-top: 3px;">
@@ -59,9 +59,9 @@
     </div>
     <div class="detailsrow1" style="margin-top: 5px;">
       <label class="whole_one">Square Footage:</label>
-      <label class="whole_one">Number of people:</label>
-      <label class="whole_one">Fire Spring Killers:</label>
-      <label class="whole_one">Single family:</label>
+      <label class="whole_one" style="margin-left: -10px;">Number of people:</label>
+      <label class="whole_one" style="margin-left: -5px;">Fire Spring Killers:</label>
+      <label class="whole_one" style="margin-left: -9px;">Single family:</label>
     </div>
   
     <div style="margin-top: 3px;">
@@ -72,25 +72,25 @@
     </div>
     <div class="detailsrow1" style="margin-top: 10px;">
       <label class="whole_one">Fire Alarm:</label>
-      <label class="backup">Emergency Backup generator:</label>
+      <label class="backup" style="margin-left: -10px;">Emergency Backup generator:</label>
       <label class="emercency" style="size: 16px;">Home within 1,000 feet of a fire hydrant?</label>
     </div>
   
     <div style="margin-top: 4px;">
       <input class="whole_split_four_one" [(ngModel)] = "workQuote.basicinfo.firealarm">
       <input class="whole_split_four_two" [(ngModel)] = "workQuote.basicinfo.emergencybackupgenerator">
-      <input class="whole_split_four_five" style="margin-left: 30px;" [(ngModel)] = "workQuote.basicinfo.firehydrant">
+      <input class="whole_split_four_five" style="margin-left: 35px;" [(ngModel)] = "workQuote.basicinfo.firehydrant">
     </div>
-    <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6; margin-top: 15px;">
+    <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6; margin-top: 20px;">
 
-    <div class="basicinfo">
+    <div class="basicInfo1" >
       <label class="detail_one basicinfo1">Exterior</label>
   </div>
-  <div class="detailsrow1">
+  <div class="detailsrow1" style="margin-top: -10px;">
     <label class="whole_one">Exterior wall type:</label>
-    <label class="whole_one">Type of garage:</label>
-    <label class="whole_one">Roof style:</label>
-    <label class="whole_one">swimming pool:</label>
+    <label class="whole_one" style="margin-left: -5px;">Type of garage:</label>
+    <label class="whole_one" style="margin-left: -5px;">Roof style:</label>
+    <label class="whole_one" style="margin-left: -9px;">Swimming pool:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -100,10 +100,10 @@
     <input class="whole_split_four_four" [(ngModel)] = "workQuote.exterior.swimmingpool">
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
-    <label class="whole_one">Roof made of::</label>
-    <label class="whole_one">Porch:</label>
-    <label class="whole_one">Roof Age:</label>
-    <label class="whole_one">Deck:</label>
+    <label class="whole_one">Roof made of:</label>
+    <label class="whole_one" style="margin-left: -5px;">Porch:</label>
+    <label class="whole_one" style="margin-left: -5px;">Roof Age:</label>
+    <label class="whole_one" style="margin-left: -9px;">Deck:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -114,13 +114,13 @@
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
-  <div class="basicinfo">
+  <div class="basicInfo1">
     <label class="detail_one basicinfo1">Interior </label>
   </div>
-  <div class="detailsrow1">
+  <div class="detailsrow1" style="margin-top: -10px;">
   <label class="whole_one">Foundation Type:</label>
-  <label class="whole_one"> Bath Quality:</label>
-  <label class="whole_one">Fire Place:</label>
+  <label class="whole_one" style="margin-left: 2px;"> Bath Quality:</label>
+  <label class="whole_one" style="margin-left: -5px;">Fire Place:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -130,7 +130,7 @@
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="whole_one"> Kitchen Quality:</label>
-  <label class="whole_one"> Kitchen countertops:</label>
+  <label class="whole_one" style="margin-left: 2px;"> Kitchen countertops:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -140,13 +140,13 @@
 
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
-  <div class="basicinfo">
+  <div class="basicInfo1">
     <label class="detail_one basicinfo1">Customer Info </label>
   </div>
-  <div class="detailsrow1">
+  <div class="detailsrow1" style="margin-top: -10px;">
   <label class="whole_one">Age:</label>
-  <label class="whole_one">Smoker status:</label>
-  <label class="emercency">Past property claims or losses:</label>
+  <label class="whole_one" style="margin-left: 2px;">Smoker status:</label>
+  <label class="emercency" style="margin-left: -2px;">Past property claims or losses:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -156,8 +156,8 @@
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="whole_one">Marital Status:</label>
-  <label class="whole_one">Criminal Convictions:</label>
-  <label class="emercency">Running business from home:</label>
+  <label class="whole_one" style="margin-left: 2px;">Criminal Convictions:</label>
+  <label class="emercency" style="margin-left: -2px;">Running business from home:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -169,13 +169,13 @@
 
   
   <!-- deleted -->
-  <div class="basicinfo">
+  <div class="basicInfo1">
     <label class="detail_one basicinfo1">Summary Coverages</label>
   </div>
-  <div class="detailsrow1">
-  <label class="emercency">Dwelling Protection:</label>
-  <label class="emercency">Protect Personal Property Against: </label>
-  <label class="emercency">Additional Living expenses:</label>
+  <div class="detailsrow1" style="margin-top: -10px;">
+  <label class="emercency" >Dwelling Protection:</label>
+  <label class="emercency" style="margin-left: -5px;">Protect Personal Property Against: </label>
+  <label class="emercency" >Additional Living expenses:</label>
   </div>
   
   <div style="margin-top: 4px;">
@@ -186,7 +186,7 @@
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="emercency">Other Structures:</label>
-  <label class="emercency">Personal Property Protection:</label>
+  <label class="emercency" style="margin-left: -5px;">Personal Property Protection:</label>
   <label class="emercency">Family Liability Protection:</label>
   </div>
   
@@ -195,22 +195,26 @@
   <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.propertyprotection">
   <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.familyliabilityprotection">
   </div>
-  
-  <div class="basicinfo">
+  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6; margin-top: 20px;">
+
+  <div class="basicInfo1">
     <label class="detail_one basicinfo1">Discounts & Surcharges</label>
   </div>
-  <div class="detailsrow1">
+  <div class="detailsrow1" style="margin-top: -10px;">
   <label class="emercency">New Construction Discount:</label>
   </div>
   
   <div style="margin-top: 4px;">
     <input class="whole_split_four_one" [(ngModel)] = "workQuote.discountsandsurcharges.newconstructiondiscount">
   </div>
+
+  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
+
   <div class="basicinfo">
     <label class="detail_one basicinfo1">Deductibles</label>
   </div>
   <div >
-  <label class="emercency">All Perils deductible:</label>
+  <label class="emercency" style="margin-top: -10px;">All Perils deductible:</label>
   <label class="windstorm">Windstorm/Hail Deductible: </label>
 
   </div>

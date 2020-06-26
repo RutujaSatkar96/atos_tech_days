@@ -45,7 +45,9 @@
   border: 1px solid rgba(0, 0, 0, .5);
 
 }
-
+.form-control{
+  display: inline-block;
+}
 .firstNameLabel{
   font-family: Verdana;
   font-weight: 14px;
