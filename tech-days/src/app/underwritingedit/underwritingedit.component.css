@@ -5,12 +5,8 @@
     background: #ffffff;
 }
 .details{
-<<<<<<< HEAD
     height: 154px;
-=======
-    height: 141px;
->>>>>>> f18a79585972429e136233e441a5cacfd8c862c3
-    background: #f2f2f2;
+   background: #f2f2f2;
 }
 .detailsrow1{
     display: flex;
