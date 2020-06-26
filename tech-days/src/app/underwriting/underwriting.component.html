@@ -234,18 +234,18 @@
   <br>
 
 
-  <div *ngIf="show; else notShow">
+  <div >
     <div class="form-group">
       <div>
           <button id="button1id" name="button1id" class="button_colour" (click)="emailRequest()">Email for additional documents</button>
-          <button id="button2id" name="button2id" class="button_colour" (click)="propertyRequest()" >Request Property Inspection</button>
+          <button id="button2id" name="button2id" class="button_colour" (click)="openDialog2()" >Request Property Inspection</button>
           <button id="button3id" name="button3id" class="button_colour" (click)="finalRequest()">Prepare Final Offer</button>
   
         </div>
   </div>
   </div>
   
-  <ng-template #notShow>
+  <!-- <ng-template #notShow>
     <div class="form-group">
       <div>
           <button id="button1id" name="button1id" class="button_colour" (click)="navigateDaashboard()">Request to  Bind</button>
@@ -254,7 +254,7 @@
   
         </div>
   </div>
-  </ng-template>
+  </ng-template> -->
 
   
 

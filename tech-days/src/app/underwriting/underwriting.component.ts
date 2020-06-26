@@ -6,6 +6,8 @@ import { RestApiService } from "../shared/rest-api.service";
 import { ReportsComponent } from '../reports/reports.component';
 import { ViewZelrosSummaryComponent } from '../view-zelros-summary/view-zelros-summary.component';
 import { MatDialog } from '@angular/material/dialog';
+import { Dialog3Component } from '../dialog3/dialog3.component';
+import { Dialog2Component } from '../dialog2/dialog2.component';
 
 
 @Component({
@@ -72,5 +74,10 @@ propertyRequest(){
 
 finalRequest(){
   this.dialog.open(ReportsComponent, {position: {top: '3%', left: '0%', bottom: '3%'}})
+}
+
+
+openDialog2() {
+  this.dialog.open(Dialog2Component)
 }
 }
