@@ -46,3 +46,8 @@
         width: 100%;
         background-color: #e8e8e8;
     }
+    .close{
+        float: right;
+        margin-top: 2px;
+        border: none;
+    }
