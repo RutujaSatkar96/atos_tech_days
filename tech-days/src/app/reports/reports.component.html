@@ -1,13 +1,26 @@
-<div class="main">
-    <div class="zelros">
-        <app-view-zelros-summary></app-view-zelros-summary>
-    </div>
-    <div class="report">
-        <button>Inspection Report</button>
-        <div class="pdfView">
-            <pdf-viewer [src]="">
+<mat-dialog-content style="background-color: #e6e6e6;">
+    <div class="main">
+        <div class="row">
+            <img src="../assets//under_zelros_flow_three" style="margin: 5px;">
+            <img src="../assets//under_zelros_flow_two" style="float: right; margin: 5px;">
+        </div>
 
-            </pdf-viewer>
+        <div class="row1">
+            <div class="zelros">
+                <app-view-zelros-summary></app-view-zelros-summary>
+            </div>
+
+            <hr width="1px" size="464px" style="margin-left: 0px; margin-top: -1px; color: #e0e0e0;">
+            
+            <div class="report">
+                <button class="ins">Inspection Report</button>
+                
+                <div class="pdfView">
+                    <object class="pdfView" data="../assets/Survey Report.pdf" type="application/pdf">
+                        alt: <a href="../assets/Survey Report.pdf">hgk</a>
+                    </object>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</mat-dialog-content>
