@@ -48,37 +48,37 @@
     <label class="whole_one">Year Built:</label>
     <label class="whole_one">Purchase Date:</label>
     <label class="whole_one">Burger Alarm:</label>
-    <label class="whole_one">No of stories:</label>
+    <label class="whole_one">Number of storyes:</label>
   </div>
 
   <div class="detailsrow1">
     <label class="whole_two dataFontSize">{{workQuote.basicinfo.yearbuilt}}</label>
     <label class="whole_two dataFontSize">{{workQuote.basicinfo.purchasedate | date:'MM/dd/yyyy'}}</label>
     <label class="bAlarm dataFontSize">{{workQuote.basicinfo.burglarsalarm}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.noofstories}}</label>
+    <label class="whole_two dataFontSize" style="margin-left: -2px;">{{workQuote.basicinfo.noofstories}}</label>
   </div>
-  <div class="detailsrow1" style="margin-top: 5px;">
+  <div class="detailsrow1" style="margin-top: 10px;">
     <label class="whole_one">Square Footage:</label>
-    <label class="whole_one">No of stories:</label>
-    <label class="whole_one">Fire Spring Killers:</label>
-    <label class="whole_one">Single family:</label>
+    <!-- <label class="whole_one">No of stories:</label> -->
+    <label class="whole_one" style="margin-left: 2px;">Fire Spring Killers:</label>
+    <label class="whole_one" style="margin-left: 2px;">Single family:</label>
   </div>
 
   <div class="detailsrow1">
     <label class="whole_two dataFontSize">{{workQuote.basicinfo.squarefootage}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.noofstories}}</label>
-    <label class="bAlarm dataFontSize">{{workQuote.basicinfo.firesprinklers}}</label>
+    <!-- <label class="whole_two dataFontSize">{{workQuote.basicinfo.noofstories}}</label> -->
+    <label class="bAlarm dataFontSize" style="margin-left: 2px;">{{workQuote.basicinfo.firesprinklers}}</label>
     <label class="whole_two dataFontSize">{{workQuote.basicinfo.singlefamily}}</label>
   </div>
-  <div class="detailsrow1" style="margin-top: 5px;">
+  <div class="detailsrow1" style="margin-top: 10px;">
     <label class="whole_one">Fire Alarm:</label>
-    <label class="backup">Emergency Backup generator:</label>
-    <label class="emercency" style="size: 16px;">Home within 1,000 feet of a fire hydrant?</label>
+    <label class="backup" style="margin-left: 2px;">Emergency Backup generator:</label>
+    <label class="emercency" style="size: 16px; margin-left: -80px;">Home within 1,000 feet of a fire hydrant?</label>
   </div>
 
   <div class="detailsrow1">
     <label class="whole_two dataFontSize">{{workQuote.basicinfo.firealarm}}</label>
-    <label class="whole_one_value dataFontSize">{{workQuote.basicinfo.emergencybackupgenerator}}</label>
+    <label class="whole_one_value dataFontSize" style="margin-left: 2px;">{{workQuote.basicinfo.emergencybackupgenerator}}</label>
     <label class="whole_one_value dataFontSize">{{workQuote.basicinfo.firehydrant}}</label>
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;">
@@ -94,11 +94,11 @@
 
 <div class="detailsrow1">
   <label class="whole_two dataFontSize">{{workQuote.exterior.buildingmaterial}}</label>
-  <label class="whole_two dataFontSize">{{workQuote.exterior.typeofgarage}}</label>
-  <label class="bAlarm dataFontSize">{{workQuote.exterior.roofshape}}</label>
-  <label class="bAlarm dataFontSize">{{workQuote.exterior.swimmingpool}}</label>
+  <label class="whole_two dataFontSize" style="margin-left: 2px;">{{workQuote.exterior.typeofgarage}}</label>
+  <label class="bAlarm dataFontSize" style="margin-left: 1px;">{{workQuote.exterior.roofshape}}</label>
+  <label class="bAlarm dataFontSize" style="margin-left: 2px;">{{workQuote.exterior.swimmingpool}}</label>
 </div>
-<div class="detailsrow1" style="margin-top: 5px;">
+<div class="detailsrow1" style="margin-top: 10px;">
   <label class="whole_one">Roof made of:</label>
   <label class="whole_one">Porch:</label>
   <label class="whole_one">Roof Age:</label>
@@ -108,7 +108,7 @@
 <div class="detailsrow1">
   <label class="whole_two dataFontSize">{{workQuote.exterior.roofmaterial}}</label>
   <label class="whole_two dataFontSize">{{workQuote.exterior.porch}}</label>
-  <label class="whole_two dataFontSize">{{workQuote.exterior.roofage}}</label>
+  <label class="whole_two dataFontSize" style="margin-left: -5px;">{{workQuote.exterior.roofage}}</label>
   <label class="whole_two dataFontSize">{{workQuote.exterior.deck}}</label>
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;">
