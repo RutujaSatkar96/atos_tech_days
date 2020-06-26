@@ -72,170 +72,175 @@
 
      /* for zelros */
 
-.rightDiv{
-  background:#c8c8c8; 
-  width:250px; 
-  height:100%; 
-  padding-top: 92px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
-}
-.logo{
-  margin-left: 20px;
-}
-
-.shape1{
-  height: 44px;
-  width: 221px;
-  margin-left: 2px;
-  background-color: #fff;
-}
-
-.nameLabel{
-  color: 	#eb5b28;
-  margin-top: 30px;
-  /* margin-left: 15px; */
-  font-family: Roboto;
-      font-weight: medium;
+     .rightDiv{
+      background:#c8c8c8; 
+      height:100%; 
+      padding-top: 92px;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 16px;
+      
+  }
+  .logo{
+      margin-left: 20px;
+  }
+  
+  .shape1{
+      height: 44px;
+      width: 221px;
+      margin-left: 2px;
+      background-color: #fff;
+  }
+  
+  .nameLabel{
+      color: 	#eb5b28;
+      /* margin-left: 15px; */
+      font-family: Roboto;
       font-size: 18px;
-}
-.helloLabel1{
-  margin-top: 30px;
-  /* margin-left: 15px; */
-  font-family: Roboto;
-  color: #000;
-  padding: 8px;
-  font-weight: bold;
-  font-size: 14px;
-}
-.nameLabel2{
-color: 	#eb5b28;
-margin-top: 30px;
-/* margin-left: 15px; */
-font-family: Verdana;
-font-weight: bold;
-font-size: 10px;
-}
-
-.shape2{
-  width: 221px;
-  height: 84px;
-  background-color: #e6e6e6;
-  margin-top: 12px;
-  border-radius: 15px;
-}
-
-.helloLabel{
-  margin-top: 30px;
-  /* margin-left: 15px; */
-  font-family: Roboto;
+      margin-left: 5px;
+  }
+  
+  .nameLabel2{
+    color: 	#eb5b28;
+    margin-top: 30px;
+    /* margin-left: 15px; */
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .shape2{
+      width: 281px;
+      height: 84px;
+      background-color: #ffffff;
+      margin-top: 12px;
+      border-radius: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  .roundshape{
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    padding: 13px;
+    height: 84px;
+   
+  }
+  
+  .newhelloLabel{
+    /* margin-left: 15px; */
+    font-family: Roboto;
     color: #000;
-    padding: 8px;
     font-weight: medium;
     font-size: 18px;
-}
-.row1{
-  /* margin-left: 15px; */
-  margin-top: 13px;
-  padding: 12px;
-}
-
-.label2{
-  font-size: 10px;
-  font-family: Roboto;   
-   color: #000;
-  margin-left: 13px;
-  margin-left: 8px;
-  font-weight: medium;
-}
-.quoteLabel{
-  font-weight: bold;
+  }
   
-}
-
-.row2{
-  width: 235px;
-  height: 134px;
-  margin-top: 20px;
-  background-color:#fff;
-  margin-top: 10px;
-}
-
-.scoreValue{
-  color: 	#eb5b28;
-  padding: 30px;
-  font-size: 20px;
-}
-
-.scoreLabel{
-  margin-top: 30px;
-  /* margin-left: 15px; */
-  font-family: Verdana;
-  color: #000;
-  font-weight: 2px;
-  text-size-adjust: 2px;
-}
-
-.v2{
-  height: 120px;
-  border-left: 2px solid #cecece;
-  margin-left: 130px;
-}
-
-.labelAccuracy{
-  margin-left: 10px;
-  margin-top: 20px;
-  /* padding: 16px; */
-  font-family: Verdana;
-  font-size: 10px;
-}
-.labelCustomer{
-  padding: center;
-  font-family: Verdana;
-  margin-top: 20px;
-  font-size: 10px;
-}
-.row3{
-  margin-top: 20px;
-  margin-left: 25px;
-}
-
-.skipLabel{
-  font-family: Verdana;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.row4{
-  margin-top: 12px;
-  height: 52px;
-  width: 185px;
-  background-color: #fff;
-  padding: 12px;
-  border: groove;
-}
-.row5{
-  margin-top: 12px;
-  height: 122px;
-  width: 185px;
-  background-color: #fff;
-  padding: 12px;
-  border: groove;
-}
-.textLast{
-  font-family: Verdana;
-  font-size: 10px;
-}
-.textLast2{
-  font-family: Verdana;
-  font-size: 12px;
-}
-
-.margin{
-  margin-left: 50px;
-}
-
-.div1{
-  float: left;
-}
+  .helloLabel{
+    margin-top: 30px;
+    /* margin-left: 15px; */
+    font-family: Roboto;
+    color: #000;
+    font-weight: medium;
+    font-size: 18px;
+  }
+  
+  .helloLabel1{
+    /* margin-left: 15px; */
+    font-family: Roboto;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .row1{
+      /* margin-left: 15px; */
+      margin-top: 13px;
+      padding: 12px;
+  }
+  
+  .label2{
+      font-size: 14px;
+      font-family: Roboto;
+      color: #000;
+      font-weight: medium;
+  }
+  .quoteLabel{
+      font-weight: bold;
+      
+  }
+  
+  .row2{
+      width: 235px;
+      height: 134px;
+      margin-top: 5px;
+      background-color:#fff;
+  }
+  
+  .scoreValue{
+      color: 	#eb5b28;
+      font-size: 20px;
+      margin-left: 35px;
+      }
+  
+  .scoreLabel{
+      margin-top: 30px;
+      /* margin-left: 15px; */
+      font-family: Verdana;
+      color: #000;
+      font-weight: 2px;
+      text-size-adjust: 2px;
+  }
+  
+  .v2{
+      height: 120px;
+      border-left: 2px solid #cecece;
+      margin-left: 130px;
+  }
+  
+  .labelAccuracy{
+      /* padding: 16px; */
+      font-family: Roboto;
+      font-size: 13px;
+      margin-left: 10px;
+  }
+  .labelCustomer{
+      /* padding: center; */
+      font-family: Roboto;
+      font-size: 13px;
+  }
+  .row3{
+      margin-top: 20px;
+      margin-left: 25px;
+  }
+  
+  .skipLabel{
+      font-family: Verdana;
+      font-weight: bold;
+      font-size: 12px;
+  }
+  
+  .row4{
+      margin-top: 12px;
+      height: 52px;
+      width: 185px;
+      background-color: #fff;
+      /* padding: 12px; */
+      /* border: groove; */
+      margin-left: 30px;
+  }
+  
+  .textLast{
+      font-family: Roboto;
+      font-size: 11px;
+  }
+  .accept{
+    font-family: Roboto;
+    font-size: 11px;
+    color: 	#eb5b28;
+  }
+  
+  .margin{
+      margin-left: 8px;
+  }
+  
+  .div1{
+      float: left;
+  }

@@ -1,5 +1,5 @@
 <div class="box">
-    <div style="width: 78%;">
+    <div class="w-75">
   <div class="header" style="overflow: hidden;"> 
     <!-- <img class="logo" src="../assets/logo.png"> -->
     <div class="company">  ABC Insurance Company </div>
@@ -20,137 +20,124 @@
   
   </div>
   <div class="box">
-    <div><app-sidebar></app-sidebar></div>
-    <div><app-underwriting></app-underwriting></div>
+    <div div class="w-17"><app-sidebar></app-sidebar></div>
+    <div div class="w-58"><app-underwriting></app-underwriting></div>
    
     
   </div>
   </div>
   <div class="v1"></div>
-  <div style="width: 22%">
+  <div div class="w-25">
     <!-- <app-zelros></app-zelros> -->
 
     <!-- Zelros component -->
     <div class="rightDiv">
 
-        <div style="background-color: #fff; height: 600px; width: 220px;padding: 16px;">
+        <div style="background-color: #fff; height: 580px; width: 285px; padding: 4px;">
     
         
     
         <div class="shape1">
-            <img class="logo" style="width: 102px; height: 29px;" src="/assets/zelros_logo.png">
+            <img style="width: 102px; height: 29px;" class="logo" src="/assets/zelros_logo.png">
         </div>
     
         <div class="shape2">
     
-            <div class="row1">
-                <label class="helloLabel">Hello</label>
-                <label class="nameLabel">{{zelrosResponse.name}}</label>
-                <label>,</label><br/>
-    
-                <label class="label2">I have analysed quote for you</label><br/>
-                <label class="helloLabel1 quoteLabel">H453128111</label>
+            <div class="roundshape">
+             <div style="height:22px ; margin-left: 15px;">
+                <label class="helloLabel1">Hello </label>
+           
+                <label class="nameLabel"> {{zelrosResponse.name}}</label>
+                <label>,</label>
+              </div>  
+              <div style="height:22px ; margin-left: 15px;">  <label class="label2">I have analysed quote for you</label></div>
+              <div style="height:22px ; margin-left: 15px;">   <label class="helloLabel1 quoteLabel">H458131342</label></div>
             </div>
     
             <div class="row2">
+              <div class="div1">
+  
+                 <div style="margin-top: 30px; font-weight: bold;font-family: Roboto; font-size: 22px;">
+                     <label class="scoreValue">{{zelrosResponse.valid[0].value}}</label><br/>
+                 </div>
+  
+  
+                  <div style="margin-top: 5px; margin-left: 5px;"> 
+                   <label class="labelCustomer">Customer </label><br/>
+                   <label class="labelCustomer">seriousness score</label>
+                  </div>
+                  <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:80px; margin-bottom: 20px;"><img src="/assets/pluse_icn.png" ></button>
+                  <!-- <img (click) ="openDialog()" style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png"> -->
+              </div>
+               <div class="v2">
+  
+                 <div style="margin-top: 30px; font-weight: bold; padding: 16px;font-family: Roboto; font-size: 22px;">
+                     <label class="scoreValue">{{zelrosResponse.valid[1].value}}</label> <br/>
+                 </div>
+                 
+                   <div style="margin-top: 5px;">
+                       <label class="labelAccuracy">Accuracy of</label><br/>
+                       <label class="labelAccuracy">coverage</label><br/>
+                       <!-- <label class="labelAccuracy">relevent</label> -->
+                   </div>
+                   <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
+   
+                   <!-- <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png" > -->
+   
+               </div>
+               
+           </div>
+            <hr style="margin-top: 10px;">
+   
+            <div class="row2">
                <div class="div1">
-                <div style="margin-top: 20px; font-weight: bold;font-family: Roboto; font-size: 22px;">
-                    <label class="scoreValue">{{zelrosResponse.valid[0].value}}</label><br/>
-                </div>
-                   <div style="margin-top: 5px; margin-left: 5px;"> 
-                    <label class="labelCustomer">Customer</label><br/>
-                    <label class="labelCustomer">seriousness score</label>
+  
+                 <div style="margin-top: 10px; font-weight: bold;font-family: Roboto; font-size: 22px;">
+                     <label class="scoreValue">{{zelrosResponse.valid[2].value}}</label><br/>
+                 </div>
+                   <div style="margin-top: 5px; margin-left: 20px;">
+                   <label class="labelCustomer">Likelihood of</label><br/>
+                   <label class="labelCustomer">standard</label><br/>
+                   <label class="labelCustomer">acceptance</label>
                    </div>
                    <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:80px;"><img src="/assets/pluse_icn.png" ></button>
-                   <!-- <img (click) ="openDialog()" style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png"> -->
+   
+                   <!-- <img style="margin-left:100px;" src="/assets/pluse_icn.png"> -->
+   
                </div>
-                <div class="v2">
-                    <div style="margin-top: 30px; font-weight: bold; padding: 16px;font-family: Roboto; font-size: 22px;">
-                        <label class="scoreValue">{{zelrosResponse.valid[1].value}}</label> <br/>
-                    </div>
-                    <div *ngIf ="show" style="margin-top: 1px;">
-                        <label class="labelAccuracy">Accuracy of</label><br/>
-                        <label class="labelAccuracy">coverage</label><br/>
-                        <!-- <label class="labelAccuracy">relevent</label> -->
-                    </div>
-                    <div *ngIf = "!show" style="margin-top: 1px;">
-                        <label class="labelAccuracy">It is worth</label><br/>
-                        <label class="labelAccuracy">investing.</label><br/>
-                        <!-- <label class="labelAccuracy">relevent</label> -->
-                    </div>
-                    <button *ngIf ="show" (click) = "openDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
+               <div class="v2">
+                   <!-- <div class="div1">
+                       <label class="scoreValue">75%</label><br/>
+                       <label class="labelCustomer">Customer</label><br/>
+                       <label class="labelCustomer">seriousness score</label>
+                   </div> -->
+                   <div style="margin-top: 30px; font-weight: bold;padding: 16px;font-family: Roboto; font-size: 22px;">
+                     <label class="scoreValue">{{zelrosResponse.valid[3].value}}</label> <br/>
+                 </div>
+                   <div style="margin-top: 1px;;">
+                       <label class="labelAccuracy">Claim Risk score </label><br/>
+                       <label class="labelAccuracy"></label>
+                   </div>
+                   <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
+   
+                   <!-- <img style="margin-left:100px; margin-top: 20px;" src="/assets/pluse_icn.png"> -->
+   
+               </div>
+               
+           </div>
+           <hr style="margin-top: 20px;"> 
+   
+           <!-- <div class="row3">
+               <label class="skipLabel">You can skip the onsite inspection.</label>
+           </div> -->
+   
+           <div class="row4">
+               <label class="textLast">I suggest to </label> <label class="accept">accept </label> <label class="textLast">the proposal</label><br/>
+               <label class="textLast ">without asking additional documents.</label>
+           </div>
+       </div>
     
-                    <!-- <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png" > -->
-    
-                </div>
-                
-            </div>
-             <hr style="margin-top: 1px;">
-    
-             <div class="row2">
-                <div class="div1">
-                    <div style="margin-top: 10px; font-weight: bold;font-family: Roboto; font-size: 22px;">
-                        <label class="scoreValue">{{zelrosResponse.valid[2].value}}</label><br/>
-                    </div>
-                    <div style="margin-top: 5px; margin-left: 5px;">
-                    <label class="labelCustomer">Likelihood of</label><br/>
-                    <label class="labelCustomer">standard</label><br/>
-                    <label class="labelCustomer">acceptance</label>
-                    </div>
-                    <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:80px;"><img src="/assets/pluse_icn.png" ></button>
-    
-                    <!-- <img style="margin-left:100px;" src="/assets/pluse_icn.png"> -->
-    
-                </div>
-                <div class="v2">
-                    <!-- <div class="div1">
-                        <label class="scoreValue">75%</label><br/>
-                        <label class="labelCustomer">Customer</label><br/>
-                        <label class="labelCustomer">seriousness score</label>
-                    </div> -->
-                    <div style="margin-top: 30px; font-weight: bold;padding: 16px;font-family: Roboto; font-size: 22px;">
-                        <label class="scoreValue">{{zelrosResponse.valid[3].value}}</label> <br/>
-                    </div>
-                    <div style="margin-top: 1px;;">
-                        <label class="labelAccuracy">Claim Risk score</label><br/>
-                        <label class="labelAccuracy"></label>
-                    </div>
-                    <button (click) = "openDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
-    
-                    <!-- <img style="margin-left:100px; margin-top: 20px;" src="/assets/pluse_icn.png"> -->
-    
-                </div>
-                
-            </div>
-            <hr style="margin-top: 1px;"> 
-    
-            <!-- <div class="row3">
-                <label class="skipLabel">You can skip the onsite inspection.</label>
-            </div> -->
-    
-            <div class="row4" *ngIf ="show">
-                <label class="textLast">I suggest to </label> <label class="nameLabel2">call </label> <label class="textLast">for property</label><br/>
-                <label class="textLast2 margin">inspection.</label>
-            </div>
-
-            <div class="row5" *ngIf = "!show">
-                <label class="textLast">I suggest to accept the proposal<br/>
-                     at 10% extra premium with<br/>
-                      additional requirement of </label> 
-                <ul>
-                    <li class="textLast">Swimming pool to be fenced</li>
-                    <li class="textLast"> Fire sprinklers to be installed</li>
-                </ul>
-                
-                   
-                    <!-- <label class="nameLabel2">call </label> <label class="textLast">for property</label><br/> -->
-                <!-- <label class="textLast2 margin">inspection.</label> -->
-            </div>
-
-            <button (click) = "openDialog3()" style="background: transparent; border: none; margin-left:180px; margin-top: 10px;"><img src="/assets/pluse_icn.png" ></button>
-
-        </div>
     </div>
-  </div>
+    </div>
   </div>
   
