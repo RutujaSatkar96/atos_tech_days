@@ -26,23 +26,27 @@
 .labels1{
     font-family: Verdana;
     font-size: 13px;
-    margin-left: 65px;
+    margin-left: 85px;
     font-weight: 20px;
 }
-
+.email{
+    margin-left: 110px;
+}
 .labels3{
     font-family: Verdana;
     font-size: 13px;
-    margin-left: 15px;
+    margin-left: 35px;
     font-weight: 20px;
 }
-
+.em1{
+    margin-left: 60px;
+}
 .margin{
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 .margin1{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .row2{
@@ -53,7 +57,7 @@
     margin-left: 30px;
 }
 .rating2{
-    margin-left: 80px;
+    margin-left: 85px;
 }
 
 .mat-dialog-container{
