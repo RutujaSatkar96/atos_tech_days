@@ -117,13 +117,9 @@
                                 <label class="questionLabels labelMargin"> Do you currently have property insurance?</label><br/>
                                 <label class="mandatory">(*Cannot be backdated by more than 30 days)</label>
                         </div>
-
                         <div class="row9">
-<<<<<<< HEAD
-                                <input class="dateInput" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "workQuote.effectivedate" [min]="min" [max]="max">
-=======
-                                <input class="dateInput" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "customerinfo.effectiveDate" [min]="max" [max]="min">
->>>>>>> fdf6f9d8d062c56a64e4411543b6ddf224a03260
+                                 <input class="dateInput" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "workQuote.effectivedate" [min]="min" [max]="max">
+
                                 <mat-datepicker #picker1></mat-datepicker>
                                 <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                 
