@@ -78,6 +78,8 @@ finalRequest(){
 
 
 openDialog2() {
-  this.dialog.open(Dialog2Component)
+  this.dialog.open(Dialog2Component,{
+    width: '30%'
+  })
 }
 }
