@@ -266,7 +266,7 @@
 }
 .button_colour {
     height: 45px;
-    width: 225px;
+    /* width: 205px; */
     font-family: Verdana;
     font-weight: bold;
     color: #fcdccf;
