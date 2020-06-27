@@ -17,7 +17,9 @@ import { FormBuilder, FormGroup, Validators, ValidatorFn, FormControl, Validatio
 export class CustomerInfoComponent implements OnInit {
 
   // constructor(private _router: Router) { }
-
+  min = new Date();
+  maxDate = new Date().setDate(new Date().getDate() + 30);
+  max = new Date(this.maxDate);
   customerForm: FormGroup;
 
   workQuote = new WorkQuote();
@@ -143,5 +145,19 @@ export class CustomerInfoComponent implements OnInit {
   show(){
     alert('info'+ this.customerinfo.firstname+this.customerinfo.lastname+this.customerinfo.street+this.customerinfo.unit+this.customerinfo.city+this.customerinfo.state);
 
+  }
+
+  calculateDate(){
+    var millisecondsbtw1970 = Date.parse(this.customerinfo.dateofbirth);
+    //Date.parse(this.customerinfo.dateofbirth);
+    var millisecondbtwnow1970 = Date.now();
+    var ageInMiliSeconds = millisecondbtwnow1970 - millisecondsbtw1970;
+    var milliseconds = ageInMiliSeconds;
+    var year = 1000*60*60*24*365;
+    var years = Math.round(milliseconds/year)
+      
+    this.exterior.roofage = years;
+   
+  
   }
 }

@@ -31,6 +31,7 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ReportsComponent } from './reports/reports.component';
 import { from } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ClaimDialogComponent } from './claim-dialog/claim-dialog.component';
 
 imports: [
     BrowserModule,
@@ -59,7 +60,8 @@ imports: [
     UnderwritingeditComponent,
     SummaryEditComponent,
     Dialog3Component,
-    ReportsComponent
+    ReportsComponent,
+    ClaimDialogComponent
   ],
   entryComponents: [
     DialogComponent

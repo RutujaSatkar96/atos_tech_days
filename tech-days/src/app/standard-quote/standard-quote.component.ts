@@ -5,6 +5,7 @@ import { DialogComponent } from '../dialog/dialog.component';
 import { Dialog1Component } from '../dialog1/dialog1.component';
 import { ZelrosResponse } from '../shared/models/zelros/zelrosresponse.model';
 import { HttpClient } from '@angular/common/http';
+import { ClaimDialogComponent } from '../claim-dialog/claim-dialog.component';
 
 @Component({
   selector: 'app-standard-quote',
@@ -31,5 +32,9 @@ export class StandardQuoteComponent implements OnInit {
   }
   openDialog() {
     this.dialog.open(Dialog1Component)
+}
+
+openClaimDialog(){
+  this.dialog.open(ClaimDialogComponent);
 }
 }
