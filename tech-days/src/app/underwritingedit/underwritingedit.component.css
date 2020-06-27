@@ -21,9 +21,23 @@
     font-family: verdana;
     font-weight: medium;
     font-size: 14px;
-    margin-left: 8px;
+    margin-left: 10px;
+}
+.margintopClass{
+    margin-top: 10px;
 }
 
+.marginleftclass{
+    margin-left: 10px;
+}
+.detail_new{
+    width:  330px;
+    font-family: verdana;
+    font-weight: medium;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
 .detail_two{
     min-width: 254px;
     font-family: verdana;
@@ -46,7 +60,7 @@
     min-width:240px;
     font-family: verdana;
     font-size: 16px;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 .address_phone{
     height: 65px;
