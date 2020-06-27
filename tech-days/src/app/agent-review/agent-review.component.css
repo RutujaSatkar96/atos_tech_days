@@ -66,7 +66,8 @@
 
 .welcome{
     float: right;
-    margin-right: 14px;
+    margin-right: 20px;
+    margin-top: 13px;
 }
     
 
@@ -220,16 +221,18 @@
   .row4{
       margin-top: 12px;
       height: 52px;
-      width: 185px;
+      width: 250px;
       background-color: #fff;
       /* padding: 12px; */
       /* border: groove; */
-      margin-left: 30px;
+      /* margin-left: 5px; */
+      border: 1px solid rgba(0, 0, 0, .2);
   }
   
   .textLast{
       font-family: Roboto;
       font-size: 11px;
+      margin-left: 40px;
   }
   .accept{
     font-family: Roboto;
