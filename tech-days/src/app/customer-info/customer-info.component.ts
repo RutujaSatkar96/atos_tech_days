@@ -23,10 +23,6 @@ export class CustomerInfoComponent implements OnInit {
   customerForm: FormGroup;
 
   workQuote = new WorkQuote();
-  customerinfo=new CustomerInfo();
-  basicinfo=new BasicInfo();
-  exterior=new Exterior();
-  interior=new Interior();
 
    title = 'HttpRequest';
   quoteNo = "H458131342";
@@ -41,18 +37,17 @@ export class CustomerInfoComponent implements OnInit {
      
     });
 
-    this.basicinfo.yearbuilt = 2018;
-    this.customerinfo.area = "1000 sqft";
-    this.exterior.buildingmaterial = "Stucco Frame";
-    this.exterior.roofshape = "Flat";
-    this.interior.foundationtype = "Piers";
-    this.interior.foundationtype = "Piers";
-    this.basicinfo.burglarsalarm ="Installed"
-    this.basicinfo.firesprinklers ="Installed"
-    this.basicinfo.emergencybackupgenerator ="Installed"
-    this.basicinfo.firealarm ="Installed"
+    this.workQuote.yearbuilt = 2018;
+    this.workQuote.area = "1000 sqft";
+    //this.workQuote.exteriortype = "Stucco Frame";
+    this.workQuote.roofstyle = "Flat";
+    this.workQuote.foundationtype = "Piers";
+    // this.workQuote.al ="Installed"
+    // this.workQuote.firesprinklers ="Installed"
+    // this.workQuote.emergencybackupgenerator ="Installed"
+    // this.workQuote.firealarm ="Installed"
 
-    this.basicinfo.noofstories = 2;
+    this.workQuote.noofstories = 2;
 
 
     
@@ -82,23 +77,20 @@ export class CustomerInfoComponent implements OnInit {
   }
 
   navigateToUnderwriter(){
-    this.customerinfo.name=this.customerinfo.firstname+' '+this.customerinfo.lastname;
-    this.customerinfo.address=this.customerinfo.street+' '+this.customerinfo.unit+' '+this.customerinfo.city+' '
-                              this.customerinfo.state+' '+this.customerinfo.zip;
+    this.workQuote.name=this.workQuote.firstname+' '+this.workQuote.lastname;
+    this.workQuote.address=this.workQuote.street+' '+this.workQuote.unitnumber+' '+this.workQuote.city+' '
+                              this.workQuote.state+''+this.workQuote.country+' '+this.workQuote.zipcode;
 
-    this.workQuote.customerinfo= this.customerinfo;
-    this.workQuote.basicinfo= this.basicinfo;
-    this.workQuote.exterior= this.exterior;
-    this.workQuote.interior= this.interior;
+  
 
       console.log(this.workQuote)
      // this._router.navigate(['app-customer-summary-edit']);
 
-     if(this.basicinfo.yearbuilt == undefined || this.basicinfo.purchasedate == undefined || this.basicinfo.noofstories == undefined
-      || this.interior.foundationtype == undefined || this.exterior.buildingmaterial == undefined || this.exterior.roofshape == undefined
-      || this.customerinfo.area == undefined || this.exterior.typeofgarage == undefined || this.basicinfo.primaryresidence == undefined
-      || this.exterior.roofmaterial == undefined || this.interior.kitchencountertops == undefined || this.exterior.swimmingpool == undefined
-      || this.basicinfo.firehydrant == undefined || this.customerinfo.pastpropertyclaimsorlosses == undefined){
+     if(this.workQuote.yearbuilt == undefined || this.workQuote.purchasedate == undefined || this.workQuote.noofstories == undefined
+      || this.workQuote.foundationtype == undefined || this.workQuote.walltype== undefined || this.workQuote.roofstyle == undefined
+      || this.workQuote.area == undefined || this.workQuote.typeofgarage == undefined || this.workQuote.primaryresidence == undefined
+      || this.workQuote.roofmade == undefined || this.workQuote.kitchencountertops == undefined || this.workQuote.swimmingpool == undefined
+      || this.workQuote.firehydrant == undefined || this.workQuote.pastpropertyclaimsorlosses == undefined){
        alert('Please enter all field. All fields are mandatory')
      }
      else{
@@ -122,12 +114,12 @@ export class CustomerInfoComponent implements OnInit {
   
   navigateToPropertyInfo(){
    
-    if(this.customerinfo.firstname == undefined || this.customerinfo.lastname == undefined  
-      || this.customerinfo.street == undefined || this.customerinfo.unit == undefined || this.customerinfo.city == undefined 
-      || this.customerinfo.state == undefined || this.customerinfo.zip == undefined || this.customerinfo.effectiveDate == undefined
-      || this.customerinfo.currentlyproissues == undefined || this.customerinfo.businessfromhome == undefined || this.customerinfo.criminalconvictions == undefined
-      || this.customerinfo.smokerstatus == undefined || this.customerinfo.petsathome == undefined || this.customerinfo.cancelpolicy == undefined
-      || this.customerinfo.nameofinsurer == undefined || this.customerinfo.cancelationyear == undefined || this.customerinfo.cancelationreason == undefined){
+    if(this.workQuote.firstname == undefined || this.workQuote.lastname == undefined  
+      || this.workQuote.street == undefined || this.workQuote.unitnumber == undefined || this.workQuote.city == undefined 
+      || this.workQuote.state == undefined || this.workQuote.zipcode == undefined || this.workQuote.effectivedate == undefined
+      || this.workQuote.propertyinsurance == undefined || this.workQuote.runningbusinessfromhome == undefined || this.workQuote.criminalconvictions == undefined
+      || this.workQuote.smokerstatus == undefined || this.workQuote.pets == undefined || this.workQuote.policycancelled == undefined
+      || this.workQuote.nameofinsurer == undefined || this.workQuote.cancellationyear == undefined || this.workQuote.cancellationreason == undefined){
       alert('Please enter all field. All fields are mandatory');
     }
     else{
@@ -143,12 +135,12 @@ export class CustomerInfoComponent implements OnInit {
   }
 
   show(){
-    alert('info'+ this.customerinfo.firstname+this.customerinfo.lastname+this.customerinfo.street+this.customerinfo.unit+this.customerinfo.city+this.customerinfo.state);
+    alert('info'+ this.workQuote.firstname+this.workQuote.lastname+this.workQuote.street+this.workQuote.unitnumber+this.workQuote.city+this.workQuote.state);
 
   }
 
   calculateDate(){
-    var millisecondsbtw1970 = Date.parse(this.customerinfo.dateofbirth);
+    var millisecondsbtw1970 = Date.parse(this.workQuote.dateofbirth);
     //Date.parse(this.customerinfo.dateofbirth);
     var millisecondbtwnow1970 = Date.now();
     var ageInMiliSeconds = millisecondbtwnow1970 - millisecondsbtw1970;
@@ -156,7 +148,7 @@ export class CustomerInfoComponent implements OnInit {
     var year = 1000*60*60*24*365;
     var years = Math.round(milliseconds/year)
       
-    this.exterior.roofage = years;
+    this.workQuote.age = years;
    
   
   }

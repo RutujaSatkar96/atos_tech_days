@@ -9,9 +9,9 @@
     </div>
 
     <div class="detailsrow1">
-      <label class="detail_one_value dataFontSize">{{workQuote.customerinfo.name}}</label>
+      <label class="detail_one_value dataFontSize">{{workQuote.name}}</label>
       <label class="detail_two_value dataFontSize marginQuote">{{quoteNo}}</label>
-      <label class="detail_two_value dataFontSize margin">{{workQuote.customerinfo.homebuiltin}}</label>
+      <label class="detail_two_value dataFontSize margin">{{workQuote.homebuiltin}}</label>
     </div>
 
     <div class="detailsrow1" style="margin-top: 5px;">
@@ -21,9 +21,9 @@
     </div>
 
     <div class="detailsrow1">
-      <label class="detail_one_value dataFontSize">{{workQuote.customerinfo.dateofbirth | date:'MM/dd/yyyy'}}</label>
-      <label class="detail_two_value dataFontSize">{{workQuote.customerinfo.effectiveDate | date:'MM/dd/yyyy'}}</label>
-      <label class="detail_two_value dataFontSize">{{workQuote.customerinfo.area}}</label>
+      <label class="detail_one_value dataFontSize">{{workQuote.dateofbirth | date:'MM/dd/yyyy'}}</label>
+      <label class="detail_two_value dataFontSize">{{workQuote.effectivedate | date:'MM/dd/yyyy'}}</label>
+      <label class="detail_two_value dataFontSize">{{workQuote.area}}</label>
     </div>
 
     <div class="address_phone" >
@@ -34,9 +34,9 @@
       </div>
 
       <div class="detailsrow1">
-        <label class="detail_one_value dataFontSize">{{workQuote.customerinfo.address}}</label>
-        <label class="detail_two_value dataFontSize" style="margin-left: -25px;">{{workQuote.customerinfo.phone}}</label>
-        <label class="detail_two_value dataFontSize" style="margin-left: 25px;">{{workQuote.customerinfo.email}}</label>
+        <label class="detail_one_value dataFontSize">{{workQuote.address}}</label>
+        <label class="detail_two_value dataFontSize" style="margin-left: -25px;">{{workQuote.phone}}</label>
+        <label class="detail_two_value dataFontSize" style="margin-left: 25px;">{{workQuote.email}}</label>
       </div>
     </div>
   </div>
@@ -52,10 +52,10 @@
   </div>
 
   <div class="detailsrow1">
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.yearbuilt}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.purchasedate | date:'MM/dd/yyyy'}}</label>
-    <label class="bAlarm dataFontSize">{{workQuote.basicinfo.burglarsalarm}}</label>
-    <label class="whole_two dataFontSize" style="margin-left: -2px;">{{workQuote.basicinfo.noofstories}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.yearbuilt}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.purchasedate | date:'MM/dd/yyyy'}}</label>
+    <label class="bAlarm dataFontSize">{{workQuote.burglarsalarm}}</label>
+    <label class="whole_two dataFontSize" style="margin-left: -2px;">{{workQuote.noofstories}}</label>
   </div>
   <div class="detailsrow1" style="margin-top: 10px;">
     <label class="whole_one">Square Footage:</label>
@@ -65,10 +65,10 @@
   </div>
 
   <div class="detailsrow1">
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.squarefootage}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.noofstories}}</label>
-    <label class="bAlarm dataFontSize" style="margin-left: -5px;">{{workQuote.basicinfo.firesprinklers}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.singlefamily}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.squarefootage}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.noofstories}}</label>
+    <label class="bAlarm dataFontSize" style="margin-left: -5px;">{{workQuote.firesprinklers}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.singlefamily}}</label>
   </div>
   <div class="detailsrow1" style="margin-top: 10px;">
     <label class="whole_one">Fire Alarm:</label>
@@ -77,9 +77,9 @@
   </div>
 
   <div class="detailsrow1">
-    <label class="whole_two dataFontSize">{{workQuote.basicinfo.firealarm}}</label>
-    <label class="whole_one_value dataFontSize" style="margin-left: 2px;">{{workQuote.basicinfo.emergencybackupgenerator}}</label>
-    <label class="whole_one_value dataFontSize" style="margin-left: -85px;">{{workQuote.basicinfo.firehydrant}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.firealarm}}</label>
+    <label class="whole_one_value dataFontSize" style="margin-left: 2px;">{{workQuote.emergencybackupgenerator}}</label>
+    <label class="whole_one_value dataFontSize" style="margin-left: -85px;">{{workQuote.firehydrant}}</label>
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
   <div class="basicInfo1">
@@ -93,10 +93,10 @@
 </div>
 
 <div class="detailsrow1">
-  <label class="whole_two dataFontSize">{{workQuote.exterior.buildingmaterial}}</label>
-  <label class="whole_two dataFontSize" style="margin-left: 2px;">{{workQuote.exterior.typeofgarage}}</label>
-  <label class="bAlarm dataFontSize" style="margin-left: 1px;">{{workQuote.exterior.roofshape}}</label>
-  <label class="bAlarm dataFontSize" style="margin-left: -20px;">{{workQuote.exterior.swimmingpool}}</label>
+  <label class="whole_two dataFontSize">{{workQuote.walltype}}</label>
+  <label class="whole_two dataFontSize" style="margin-left: 2px;">{{workQuote.typeofgarage}}</label>
+  <label class="bAlarm dataFontSize" style="margin-left: 1px;">{{workQuote.roofstyle}}</label>
+  <label class="bAlarm dataFontSize" style="margin-left: -20px;">{{workQuote.swimmingpool}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 10px;">
   <label class="whole_one">Roof made of:</label>
@@ -106,10 +106,10 @@
 </div>
 
 <div class="detailsrow1">
-  <label class="whole_two dataFontSize">{{workQuote.exterior.roofmaterial}}</label>
-  <label class="whole_two dataFontSize">{{workQuote.exterior.porch}}</label>
-  <label class="whole_two dataFontSize" style="margin-left: -5px;">{{workQuote.exterior.roofage}}</label>
-  <label class="whole_two dataFontSize">{{workQuote.exterior.deck}}</label>
+  <label class="whole_two dataFontSize">{{workQuote.roofmade}}</label>
+  <label class="whole_two dataFontSize"></label>
+  <label class="whole_two dataFontSize" style="margin-left: -5px;"></label>
+  <label class="whole_two dataFontSize">{{workQuote.deck}}</label>
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
@@ -123,9 +123,9 @@
 </div>
 
 <div class="detailsrow1">
-<label class="whole_two dataFontSize">{{workQuote.interior.foundationtype}}</label>
-<label class="whole_two dataFontSize">{{workQuote.interior.bathquality}}</label>
-<label class="whole_two dataFontSize">{{workQuote.interior.fireplace}}</label>
+<label class="whole_two dataFontSize">{{workQuote.foundationtype}}</label>
+<label class="whole_two dataFontSize">{{workQuote.kitchenquality}}</label>
+<label class="whole_two dataFontSize">{{workQuote.fireplace}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
 <label class="whole_one"> Kitchen Quality:</label>
@@ -133,8 +133,8 @@
 </div>
 
 <div class="detailsrow1">
-<label class="whole_two dataFontSize">{{workQuote.interior.kitchenquality}}</label>
-<label class="whole_two dataFontSize">{{workQuote.interior.kitchencountertops}}</label>
+<label class="whole_two dataFontSize">{{workQuote.kitchenquality}}</label>
+<label class="whole_two dataFontSize">{{workQuote.kitchencountertops}}</label>
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
@@ -148,9 +148,9 @@
 </div>
 
 <div class="detailsrow1">
-<label class="whole_two dataFontSize">{{workQuote.exterior.roofage}}</label>
-<label class="whole_two dataFontSize">{{workQuote.customerinfo.smokerstatus}}</label>
-<label class="whole_one_value dataFontSize" style="margin-left: -5px;">{{workQuote.customerinfo.pastpropertyclaimsorlosses}}</label>
+<label class="whole_two dataFontSize">{{workQuote.age}}</label>
+<label class="whole_two dataFontSize">{{workQuote.smokerstatus}}</label>
+<label class="whole_one_value dataFontSize" style="margin-left: -5px;">{{workQuote.pastpropertyclaimsorlosses}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
 <label class="whole_one">Marital Status:</label>
@@ -159,9 +159,9 @@
 </div>
 
 <div class="detailsrow1">
-<label class="whole_two dataFontSize">{{workQuote.customerinfo.maritalstatus}}</label>
-<label class="whole_two dataFontSize">{{workQuote.customerinfo.criminalconvictions}}</label>
-<label class="whole_one_value dataFontSize">{{workQuote.customerinfo.runningbusinessfromhome}}</label>
+<label class="whole_two dataFontSize">{{workQuote.maritalstatus}}</label>
+<label class="whole_two dataFontSize">{{workQuote.criminalconvictions}}</label>
+<label class="whole_one_value dataFontSize">{{workQuote.runningbusinessfromhome}}</label>
 </div>
 
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
@@ -177,10 +177,10 @@
 </div>
 
 <div style="margin-top: 4px;">
-<input class="whole_split_four_one  dataFontSize" [(ngModel)] = "workQuote.coverages.dwellingprotection">
-<input class="whole_split_four_one" style="margin-left: -5px;" [(ngModel)] = "workQuote.coverages.propertyagainst">
+<input class="whole_split_four_one  dataFontSize" [(ngModel)] = "workQuote.dwellingprotection">
+<input class="whole_split_four_one" style="margin-left: -5px;" [(ngModel)] = "workQuote.propertyagainst">
 
-<input class="whole_split_four_one" style="margin-left: 88px;" [(ngModel)] = "workQuote.coverages.additionallivingexpenses">
+<input class="whole_split_four_one" style="margin-left: 88px;" [(ngModel)] = "workQuote.additionallivingexpenses">
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
 <label class="emercency_new">Other Structures:</label>
@@ -189,9 +189,9 @@
 </div>
 
 <div style="margin-top: 4px;">
-<input class="whole_split_four_one"  [(ngModel)] = "workQuote.coverages.otherstructures">
-<input class="whole_split_four_one" style="margin-left: -5px;" [(ngModel)] = "workQuote.coverages.propertyprotection">
-<input class="whole_split_four_one" style="margin-left: 88px;" [(ngModel)] = "workQuote.coverages.familyliabilityprotection">
+<input class="whole_split_four_one"  [(ngModel)] = "workQuote.otherstructures">
+<input class="whole_split_four_one" style="margin-left: -5px;" [(ngModel)] = "workQuote.propertyprotection">
+<input class="whole_split_four_one" style="margin-left: 88px;" [(ngModel)] = "workQuote.familyliabilityprotection">
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
@@ -203,7 +203,7 @@
 </div>
 
 <div style="margin-top: 4px;">
-  <input class="whole_split_four_one" [(ngModel)] = "workQuote.discountsandsurcharges.newconstructiondiscount">
+  <input class="whole_split_four_one" [(ngModel)] = "workQuote.newconstructiondiscount">
 </div>
 
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
@@ -218,8 +218,8 @@
 </div>
 
 <div style="margin-top: 4px;">
-  <input class="whole_split_four_one" [(ngModel)] = "workQuote.deductibles.allperilsdeductible">
-  <input class="whole_split_four_one" style="margin-left: 75px;" [(ngModel)] = "workQuote.deductibles.windstormorhail">
+  <input class="whole_split_four_one" [(ngModel)] = "workQuote.allperilsdeductible">
+  <input class="whole_split_four_one" style="margin-left: 75px;" [(ngModel)] = "workQuote.windstormorhail">
 
   </div>
   <br>

@@ -1,10 +1,6 @@
-// src/app/shared/models/user.model.ts
+export class CustomerInformations{
 
-
-
-
-export class WorkQuote {
-  customer_id:number;
+    customer_id:number;
 
 	age:number;
 
@@ -70,7 +66,7 @@ export class WorkQuote {
 
 	purchasedate:String;
 
-	 noofstories:number;
+	noofstories:string;
 
 	 primaryresidence:string;
 
@@ -116,24 +112,4 @@ export class WorkQuote {
 
 	 zelrossuggestion:string;
 
-  totalpremium:string;
-  finalpremium:string;
-  statusid:number;
-  successmsg:string;
-  firstname:string;
-  lastname:string;
-  street:string;
-  burglarsalarm:string;
-  fireplace:string;
-  kitchenquality:string;
-  emergencybackupgenerator:string;
-  porch:string;
-  deck:string;
-  roofage:number;
-  singlefamily:string;
-  firealarm:string;
-  gender:string;
-  firesprinklers:string;
-  squarefootage:string;
-  medicalpayment:string;
 }
