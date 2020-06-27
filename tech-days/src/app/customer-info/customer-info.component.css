@@ -63,13 +63,27 @@ font-size: 10px;
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 180px;
+  margin-left: 175px;
+}
+
+.genderLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 170px;
+}
+
+.ageLabel{
+  font-family: Verdana;
+  font-weight: 14px;
+  color: #000;
+  margin-left: 160px;
 }
 .dobLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 120px;
+  margin-left: 130px;
 }
 .genderOptions{
   height: 36px;
@@ -105,7 +119,7 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
-  margin-left: 100px;
+  margin-left: 80px;
   border: 1px solid rgba(0, 0, 0, .5);
 
 }
@@ -119,6 +133,13 @@ select{
 
 }
 
+.dobInput{
+  width: 130px;
+  height: 36px;
+  margin-left: 70px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, .5);
+}
 .row3{
   margin-top: 10px;
   margin-left: 30px;
@@ -141,13 +162,13 @@ select{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 180px;
+  margin-left: 165px;
 }
 .occupationLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 160px;
+  margin-left: 155px;
 }
 
 .ocuupation select{
@@ -161,7 +182,11 @@ select{
 }
 
 .new1{
-  margin-left: 130px;
+  margin-left: 125px;
+}
+
+.new2{
+  margin-left: 110px;
 }
 .ocuupationmaterial select{
   height: 36px;
@@ -226,7 +251,7 @@ margin-left: 50px;
   font-family: Verdana;
   font-weight: 14px;
   border: 1px solid rgba(0, 0, 0, .5);
-  margin-left: 45px;
+  margin-left: 50px;
 }
 .unitInput{
   width: 90px;
@@ -261,17 +286,25 @@ margin-left: 50px;
 }
 
 .unit1{
-  margin-left: 100px;
+  margin-left: 95px;
 }
 
 .unit2{
-  margin-left: 80px;
+  margin-left: 72px;
 }
-
+.unit5{
+  max-lines: 65px;
+}
 .unit3{
   margin-left: 30px;
 }
 
+.unit6{
+  margin-left: 35px;
+}
+.unit7{
+  margin-left: 40px;
+}
 .unit4{
   margin-left: 70px;
 }
@@ -388,7 +421,7 @@ margin-left: 50px;
   margin-left: 400px;
 }
 .labelReason{
-  margin-left: 70px;
+  margin-left: 60px;
 }
 .reasonInput{
   margin-left: 90px;
@@ -438,6 +471,10 @@ margin-left: 50px;
 }
 .addedshape2{
   margin-left: 100px;
+}
+
+.addedshape5{
+  margin-left: 95px;
 }
 .detailsrow1{
   display: flex;
@@ -642,23 +679,57 @@ margin-left: 50px;
   margin-left: 255px;
 }
 
+.labelnew1{
+  margin-left: 250px;
+}
 .labelPeople{
   margin-left: 150px;
+}
+
+.roof{
+  margin-left: 140px;
+
 }
 .swimmingLabel{
   margin-left: 130px;
 }
+
+.sLabel{
+  margin-left: 140px;
+
+}
+.sLabel1{
+  margin-left: 135px;
+}
+.residanceLabel{
+  margin-left: 135px;
+
+}
+
+.story{
+  margin-left: 145px;
+}
 .homeLabel{
-  margin-left: 100px;
+  margin-left: 86px;
 
 }
 .hadLabel{
-  margin-left: 90px;
+  margin-left: 80px;
 }
 .labelPeople2{
   margin-left: 160px;
 }
 
+.premises{
+  margin-left: 192px;
+}
+.labelGarrage{
+  margin-left: 170px;
+
+}
+.labelRoof3{
+  margin-left: 150px;
+}
 .labelPeople3{
   margin-left: 180px;
 
@@ -667,7 +738,7 @@ margin-left: 50px;
   margin-left: 512px;
 }
 .labelHouse{
-  margin-left: 205px;
+  margin-left: 200px;
 }
 
 .date1{
@@ -677,7 +748,12 @@ margin-left: 50px;
   margin-left: 200px;
 
 }
-
+.mar250{
+  margin-left: 250px;
+}
+.labelBuilding1{
+  margin-left: 205px;
+}
 .year2{
   margin-left: 280px;
 }

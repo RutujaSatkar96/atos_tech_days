@@ -30,8 +30,8 @@
                                 <label class="firstNameLabel" >First Name</label>
                                 <!-- <input placeholder="first"> -->
                                 <label class="lastLabel">Last Name</label>
-                                <label class="lastLabel">Gender</label>
-                                <label class="lastLabel">Age</label>
+                                <label class="genderLabel">Gender</label>
+                                <label class="ageLabel">Age</label>
                                 <label class="dobLabel">Date of birth</label>
                                 <!-- <button (click)="show()">show data</button> -->
                         </div>
@@ -48,7 +48,7 @@
 
                                 <input class="ageInput" placeholder="Age" type="number" [(ngModel)] = "exterior.roofage" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="3" >
                                 
-                                <input class="dateInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "customerinfo.dateofbirth">
+                                <input class="dobInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "customerinfo.dateofbirth">
                                 <mat-datepicker #picker></mat-datepicker>
                                 <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                         
@@ -76,13 +76,13 @@
                                         <option value="other">Other</option>
                                 </select>
 
-                                <input class="lastNameInput new1" type="email" placeholder="Email Address" [(ngModel)] = "customerinfo.email"> 
-                                <input class="lastNameInput addedshape2"  placeholder="Telephone number" [(ngModel)] = "customerinfo.phone" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="14" > 
+                                <input class="lastNameInput new2" type="email" placeholder="Email Address" [(ngModel)] = "customerinfo.email"> 
+                                <input class="lastNameInput addedshape5"  placeholder="Telephone number" [(ngModel)] = "customerinfo.phone" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="14" > 
 
                         </div>
 
                         <div class="row4">
-                                <hr style="width:95%;margin-left:30px;margin-top: 1px; color: #333333;background-color: #333333;">
+                                <hr style="width: 95%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
                         </div>
 
                         <div class="row5">
@@ -93,7 +93,7 @@
                                 <label class="firstNameLabel">Street Address</label>
                                 <label class="unitLabel unit1">Unit Number</label>
                                 <label class="unitLabel unit2">Country</label>
-                                <label class="cityLabel">City</label>
+                                <label class="cityLabel unit5">City</label>
                                 <label class="unitLabel unit1">State</label>
                                 <label class="unitLabel unit1">Zip Code</label>
                         </div>
@@ -107,8 +107,8 @@
                         
                                 <input class="cityInput" type="text" placeholder="city"  [(ngModel)] = "customerinfo.city">
 
-                                <input class="unitInput unit3" type="text" placeholder="State"  [(ngModel)] = "customerinfo.state">
-                                <input class="unitInput unit3" type="text" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
+                                <input class="unitInput unit6" type="text" placeholder="State"  [(ngModel)] = "customerinfo.state">
+                                <input class="unitInput unit7" type="text" placeholder="Zip Code"  [(ngModel)] = "customerinfo.zip">
                         </div>
 
                         <div class="row8">
@@ -227,9 +227,9 @@
                         <label class="questionLabel">What year was the </label>
                         <label class="questionLabel labelDate">Purchase date of </label>
                         <label class="questionLabel labelPeople">Number of people</label>
-                        <label class="questionLabel labelPeople">Number of storeys</label><br/>
+                        <label class="questionLabel story">Number of storeys</label><br/>
                         <label class="questionLabel">home built?</label>
-                        <label class="questionLabel labelHome">the home</label>
+                        <label class="questionLabel labelnew1">the home</label>
                         <label class="questionLabel labelHouse">living in the household</label>
                 </div>
 
@@ -253,7 +253,7 @@
                         <label class="questionLabel">Type of foundation</label>
                         <!-- <label class="questionLabel labelDate">Building material</label> -->
                         <label class="questionLabel labelDate">Exterior wall type</label>
-                        <label class="questionLabel labelPeople2">Roof style</label>
+                        <label class="questionLabel labelRoof3">Roof style</label>
                 </div>
 
                 <div class="row7">
@@ -270,14 +270,14 @@
                         <!-- <select class="ocuupation labelBuilding" name="building" id="building" [(ngModel)] = "exterior.buildingmaterial">
                                 <option class="buildingOptions" value="solid brick">Solid brick</option>
                         </select> -->
-                        <select class="ocuupation labelBuilding" name="walltype" id="walltype" [(ngModel)] = "exterior.buildingmaterial" >
+                        <select class="ocuupation labelBuilding1" name="walltype" id="walltype" [(ngModel)] = "exterior.buildingmaterial" >
                                 <option class="walltypeOptions" value="brick stone">Brick Frame</option>
                                 <option  value="brick stone">Stucco Block</option>
                                 <option class="walltypeOptions" value="brick stone">Stucco Frame</option>
                                 <option class="walltypeOptions" value="brick stone">Wood Sliding</option>
 
                         </select>
-                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.roofshape">
+                        <select class="ocuupation roof" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.roofshape">
                                 <option class="roofstyleOptions" value="hip">Hip</option>
                                 <option value="gable">Gable</option>
                                 <option  value="flat">Flat</option>
@@ -289,9 +289,9 @@
 
                 <div class="row5">
                         <label class="questionLabel">Approximate living area</label>
-                        <label class="questionLabel labelPeople2">Type of garage</label>
+                        <label class="questionLabel labelGarrage">Type of garage</label>
                         <label class="questionLabel labelPeople2">Primary residance</label>
-                        <label class="questionLabel labelPeople2">What is the roof made of?</label>
+                        <label class="questionLabel roof">What is the roof made of?</label>
                 </div>
 
                 <div class="row9">
@@ -300,20 +300,20 @@
                         </select> -->
                         <input class="firstNameInput" placeholder="Living area" [(ngModel)] = "customerinfo.area">
 
-                        <select class="ocuupation labelPeople" name="roof" id="roof" [(ngModel)] = "exterior.typeofgarage">
+                        <select class="ocuupation labelGarrage" name="roof" id="roof" [(ngModel)] = "exterior.typeofgarage">
                                 <option class="roofOptions" value="one car">One car attached</option>
                                 <option class="roofOptions" value="two car">Two car attached</option>
                                 <option class="roofOptions" value="three car">Three car attached</option>
 
                         </select>
 
-                        <select class="ocuupation labelPeople" name="primaryresidance" id="primaryresidance" [(ngModel)] = "basicinfo.primaryresidence">
+                        <select class="ocuupation residanceLabel" name="primaryresidance" id="primaryresidance" [(ngModel)] = "basicinfo.primaryresidence">
                                 <option class="primaryresidanceOptions" value="yes">Yes</option>
                                 <option class="primaryresidanceOptions" value="no">No</option>
 
                         </select>
                         <!-- <input class="firstNameInput labelPeople" placeholder="Roof made of" [(ngModel)] = "customerinfo.firstname"> -->
-                        <select class="ocuupation labelPeople" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.roofmaterial">
+                        <select class="ocuupation residanceLabel" name="roofstyle" id="roofstyle" [(ngModel)] = "exterior.roofmaterial">
                                 <option class="roofstyleOptions" value="asphalt">Asphalt</option>
                                 <option class="roofstyleOptions" value="wood">Wood</option>
                                 <option class="roofstyleOptions" value="tile">Tile</option>
@@ -329,13 +329,13 @@
                         <label class="questionLabel labelSwimming">Is there a swimming pool on the premises?</label><br/>
                         <label>or losses in the past 7 years?</label> -->
                         <label class="questionLabel">What material is the kitchen</label>
-                        <label class="questionLabel swimmingLabel">Is there a swimming pool </label>
+                        <label class="questionLabel sLabel">Is there a swimming pool </label>
                         <label class="questionLabel homeLabel">Is your home within 1,000</label>
                         <label class="questionLabel hadLabel">Have you had any property insurance</label><br/>
                         <label class="questionLabel">counterops made of?</label>
-                        <label class="questionLabel labelStories">on the premises?</label>
-                        <label class="questionLabel labelPeople2">feet of fire hydrant</label>
-                        <label class="questionLabel labelPeople">claims or losses in past 7 years?</label>
+                        <label class="questionLabel premises">on the premises?</label>
+                        <label class="questionLabel story">feet of fire hydrant</label>
+                        <label class="questionLabel sLabel1">claims or losses in past 7 years?</label>
                 </div>
 
                 <div class="row7">
@@ -344,16 +344,16 @@
                                 <option class="kitchenOptions" value="yes">Wood</option>
                                 <option value="no">No</option>
                         </select> -->
-                        <select class="ocuupation labelBuilding" style="margin-left: 150px;" name="swimming" id="swimming" [(ngModel)] = "exterior.swimmingpool">
+                        <select class="ocuupation labelBuilding" style="margin-left: 170px;" name="swimming" id="swimming" [(ngModel)] = "exterior.swimmingpool">
                                 <option class="swimmingOptions" value="yes">Yes</option>
                                 <option value="no">No</option>
                         </select>
                         <!-- <input class="streetInput labelCriminal" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool"> -->
-                        <select class="ocuupation labelPeople" name="within" id="within" [(ngModel)] = "basicinfo.firehydrant">
+                        <select class="ocuupation sLabel1" name="within" id="within" [(ngModel)] = "basicinfo.firehydrant">
                                 <option class="withinOptions" value="yes">Yes</option>
                                 <option value="no">No</option>
                         </select>
-                        <select class="ocuupation labelPeople" name="anyproperty" id="anyproperty" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
+                        <select class="ocuupation roof" name="anyproperty" id="anyproperty" [(ngModel)] = "customerinfo.pastpropertyclaimsorlosses">
                                 <option class="anypropertyOptions" value="yes">Yes</option>
                                 <option value="no">No</option>
                         </select>
@@ -521,6 +521,8 @@
         </mat-tab> -->
     </mat-tab-group>
 </div>
-<div class="footer"> Copyright @ 2020 Atos-Syntel. All rights reserved</div>
+<div class="footer"> 
+       <div style="text-align: center; margin-top: 7px;">Copyright @ 2020 Atos-Syntel. All rights reserved</div> 
+</div>
 
 </div>

@@ -92,6 +92,14 @@ export class CustomerInfoComponent implements OnInit {
       console.log(this.workQuote)
      // this._router.navigate(['app-customer-summary-edit']);
 
+     if(this.basicinfo.yearbuilt == undefined || this.basicinfo.purchasedate == undefined || this.basicinfo.noofstories == undefined
+      || this.interior.foundationtype == undefined || this.exterior.buildingmaterial == undefined || this.exterior.roofshape == undefined
+      || this.customerinfo.area == undefined || this.exterior.typeofgarage == undefined || this.basicinfo.primaryresidence == undefined
+      || this.exterior.roofmaterial == undefined || this.interior.kitchencountertops == undefined || this.exterior.swimmingpool == undefined
+      || this.basicinfo.firehydrant == undefined || this.customerinfo.pastpropertyclaimsorlosses == undefined){
+       alert('Please enter all field. All fields are mandatory')
+     }
+     else{
       this.restApi.createQuote(this.workQuote).subscribe((data: {}) => {
         console.log(data)
         this.workQuote = <WorkQuote>(data);
@@ -102,6 +110,8 @@ export class CustomerInfoComponent implements OnInit {
           alert('Something went to wrong please try again later.')
         }
       })
+     }
+      
 
     
   }
@@ -110,8 +120,18 @@ export class CustomerInfoComponent implements OnInit {
   
   navigateToPropertyInfo(){
    
-
+    if(this.customerinfo.firstname == undefined || this.customerinfo.lastname == undefined  
+      || this.customerinfo.street == undefined || this.customerinfo.unit == undefined || this.customerinfo.city == undefined 
+      || this.customerinfo.state == undefined || this.customerinfo.zip == undefined || this.customerinfo.effectiveDate == undefined
+      || this.customerinfo.currentlyproissues == undefined || this.customerinfo.businessfromhome == undefined || this.customerinfo.criminalconvictions == undefined
+      || this.customerinfo.smokerstatus == undefined || this.customerinfo.petsathome == undefined || this.customerinfo.cancelpolicy == undefined
+      || this.customerinfo.nameofinsurer == undefined || this.customerinfo.cancelationyear == undefined || this.customerinfo.cancelationreason == undefined){
+      alert('Please enter all field. All fields are mandatory');
+    }
+    else{
       (<HTMLElement>document.querySelectorAll('.mat-tab-label')[1]).click();
+
+    }
 
     
   }
