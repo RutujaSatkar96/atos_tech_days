@@ -3,9 +3,9 @@
 
 
     <div class="detailsrow1">
-      <label class="detail_one">Name:</label>
-      <label class="detail_two">Quote No:</label>
-      <label class="detail_two">Home Built in:</label>
+      <label class="detail_one margintopclass">Name:</label>
+      <label class="detail_two margintopclass">Quote No:</label>
+      <label class="detail_two margintopclass">Home Built in:</label>
     </div>
 
     <div class="detailsrow1">
@@ -79,7 +79,7 @@
   <div class="detailsrow1">
     <label class="whole_two dataFontSize">{{workQuote.basicinfo.firealarm}}</label>
     <label class="whole_one_value dataFontSize" style="margin-left: 2px;">{{workQuote.basicinfo.emergencybackupgenerator}}</label>
-    <label class="whole_one_value dataFontSize">{{workQuote.basicinfo.firehydrant}}</label>
+    <label class="whole_one_value dataFontSize" style="margin-left: -85px;">{{workQuote.basicinfo.firehydrant}}</label>
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
   <div class="basicInfo1">
@@ -96,7 +96,7 @@
   <label class="whole_two dataFontSize">{{workQuote.exterior.buildingmaterial}}</label>
   <label class="whole_two dataFontSize" style="margin-left: 2px;">{{workQuote.exterior.typeofgarage}}</label>
   <label class="bAlarm dataFontSize" style="margin-left: 1px;">{{workQuote.exterior.roofshape}}</label>
-  <label class="bAlarm dataFontSize" style="margin-left: 2px;">{{workQuote.exterior.swimmingpool}}</label>
+  <label class="bAlarm dataFontSize" style="margin-left: -20px;">{{workQuote.exterior.swimmingpool}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 10px;">
   <label class="whole_one">Roof made of:</label>
@@ -150,7 +150,7 @@
 <div class="detailsrow1">
 <label class="whole_two dataFontSize">{{workQuote.exterior.roofage}}</label>
 <label class="whole_two dataFontSize">{{workQuote.customerinfo.smokerstatus}}</label>
-<label class="whole_one_value dataFontSize">{{workQuote.customerinfo.pastpropertyclaimsorlosses}}</label>
+<label class="whole_one_value dataFontSize" style="margin-left: -5px;">{{workQuote.customerinfo.pastpropertyclaimsorlosses}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
 <label class="whole_one">Marital Status:</label>
@@ -171,9 +171,9 @@
   <label class="detail_one basicFont">Summary Coverages</label>
 </div>
 <div class="detailsrow1" style="margin-top: -10px;">
-<label class="emercency">Dwelling Protection:</label>
-<label class="emercency">Protect Personal Property Against: </label>
-<label class="emercency">Additional Living expenses:</label>
+<label class="emercency_new">Dwelling Protection:</label>
+<label class="emercency_new1">Protect Personal Property Against: </label>
+<label class="emercency_new1">Additional Living expenses:</label>
 </div>
 
 <div style="margin-top: 4px;">
@@ -183,9 +183,9 @@
 <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.coverages.additionallivingexpenses">
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
-<label class="emercency">Other Structures:</label>
-<label class="emercency">Personal Property Protection:</label>
-<label class="emercency">Family Liability Protection:</label>
+<label class="emercency_new">Other Structures:</label>
+<label class="emercency_new1" style="margin-left: 70px;">Personal Property Protection:</label>
+<label class="emercency_new1" style="margin-left: 80px;">Family Liability Protection:</label>
 </div>
 
 <div style="margin-top: 4px;">

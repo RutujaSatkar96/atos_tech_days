@@ -81,7 +81,7 @@
     margin-bottom: 14px;
 }
 .whole_one{
-    width:  207px;
+    width:  180px;
     font-family: verdana;
     font-weight: medium;
     font-size: 14px;
@@ -89,7 +89,7 @@
 }
 
 .whole_two{
-    min-width: 207px;
+    min-width: 187px;
     font-family: verdana;
     margin-left: 8px;
     /* font-size: 13px; */
@@ -106,6 +106,22 @@
     font-weight: medium;
     font-size: 14px;
     margin-left: 8px;
+}
+
+.emercency_new{
+    /* width:  300px; */
+    font-family: verdana;
+    font-weight: medium;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.emercency_new1{
+    /* width:  300px; */
+    font-family: verdana;
+    font-weight: medium;
+    font-size: 14px;
+    margin-left: 50px;
 }
 .windstorm{
     width:  336px;
@@ -276,4 +292,7 @@
     text-align: center;
     font-size: 14px;
     border: none;
+}
+.margintopclass{
+    margin-top: 10px;
 }
