@@ -119,7 +119,7 @@ select{
   fill: #fff;
   font-family: Verdana;
   font-weight: 14px;
-  margin-left: 80px;
+  margin-left: 55px;
   border: 1px solid rgba(0, 0, 0, .5);
 
 }
@@ -136,7 +136,7 @@ select{
 .dobInput{
   width: 130px;
   height: 36px;
-  margin-left: 70px;
+  margin-left: 85px;
   border-radius: 6px;
   border: 1px solid rgba(0, 0, 0, .5);
 }

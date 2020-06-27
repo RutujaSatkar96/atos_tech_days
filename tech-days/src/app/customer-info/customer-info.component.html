@@ -31,9 +31,9 @@
                                 <!-- <input placeholder="first"> -->
                                 <label class="lastLabel">Last Name</label>
                                 <label class="genderLabel">Gender</label>
-                                <label class="ageLabel">Age</label>
-                                <label class="dobLabel">Date of birth</label>
-                                <!-- <button (click)="show()">show data</button> -->
+                                <label class="ageLabel">Date of birth</label>
+                                <label class="dobLabel">Age</label>
+                                <!-- <button (click)="show()">show data</button>ageLabel -->
                         </div>
                         <div class="row2">
                                 <input class="form-control firstNameInput" type="text" placeholder="First Name" [(ngModel)] = "customerinfo.firstname"  required >
@@ -46,12 +46,13 @@
                                         <option value="female">Female</option>
                                 </select>
 
-                                <input class="ageInput" placeholder="Age" type="number" [(ngModel)] = "exterior.roofage" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="3" >
                                 
                                 <input class="dobInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "customerinfo.dateofbirth" (dateChange)="calculateDate()">
                                 <mat-datepicker #picker></mat-datepicker>
                                 <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
-                        
+                                
+                                <input class="ageInput" placeholder="Age" type="number" [(ngModel)] = "exterior.roofage" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="3" >
+
                         </div>
                         <div class="row3">
                                 <label class="firstNameLabel">Marital Status</label>
