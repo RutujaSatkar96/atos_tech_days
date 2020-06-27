@@ -249,16 +249,31 @@
     background: #ffffff;
 }
 .button_colour {
-    height: 55px;
-    width: 245px;
+    height: 45px;
+    width: 225px;
     font-family: Verdana;
     font-weight: bold;
     color: #fcdccf;
     background-color: #fa6119;
     border-radius: 6px;
     margin-top: 19px;
-    margin-left: 12px;
+    margin-left: 10px;
     text-align: center;
     font-size: 14px;
-border: none;
+    border: none;
+}
+
+.button_new{
+    height: 45px;
+    width: 225px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: #fcdccf;
+    background-color: #fa6119;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
 }

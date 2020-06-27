@@ -230,15 +230,15 @@
     background: #ffffff;
 }
 .button_colour {
-    height: 55px;
-    width: 245px;
+    height: 45px;
+    width: 225px;
     font-family: Verdana;
     font-weight: bold;
     color: #fcdccf;
     background-color: #fa6119;
     border-radius: 5px;
     margin-top: 19px;
-    margin-left: 2px;
+    margin-left: 15px;
     text-align: center;
     font-size: 14px;
     border: none;
