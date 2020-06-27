@@ -18,7 +18,7 @@ export class CustomerInfoComponent implements OnInit {
 
   // constructor(private _router: Router) { }
   min = new Date();
-  maxDate = new Date().setDate(new Date().getDate() + 30);
+  maxDate = new Date().setDate(new Date().getDate() - 30);
   max = new Date(this.maxDate);
   customerForm: FormGroup;
 
