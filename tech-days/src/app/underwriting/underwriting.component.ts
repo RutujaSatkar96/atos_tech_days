@@ -73,7 +73,7 @@ propertyRequest(){
 }
 
 finalRequest(){
-  this.dialog.open(ReportsComponent, {position: {top: '7%', left: '0%', bottom: '10%'}})
+  this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
 }
 
 
