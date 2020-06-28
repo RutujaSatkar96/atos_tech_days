@@ -239,7 +239,7 @@
                         <input class="dateInput date1" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "workQuote.purchasedate">
                         <mat-datepicker #picker2></mat-datepicker>
                         <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
-                        <input  class="unitInput " placeholder="People" >
+                        <input  class="unitInput " placeholder="People" [(ngModel)] = "workQuote.noofpeopleliving" >
                         <!-- <input class="unitInput labelStories" placeholder="Stories" > -->
                         <select class="unitInput labelStories" name="stories" id="stories" [(ngModel)] = "workQuote.noofstories">
                                 <option class="storiesOptions" value="1">1</option>
