@@ -4,6 +4,7 @@ import { RestApiService } from "../shared/rest-api.service";
 import { DataMenu } from "../shared/models/data.menu.model";
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { Dialog1Component } from '../dialog1/dialog1.component';
+import { ReportsComponent } from '../reports/reports.component';
 
 
 @Component({
@@ -117,8 +118,8 @@ export class SidebarComponent implements OnInit {
    this.accordianData[index]['collapse']=!accordianStauts;
   }else{
    if(index == 5){
-    this.dialog.open(Dialog1Component)
-   }
+    this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
+  }
   }
  }
 
