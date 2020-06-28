@@ -37,3 +37,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-dialog-container{
     background-color: #f3f3f3;
 }
+
+/* .accordian-container{
+    width: 200px;
+    color: #fff;
+    overflow: hidden;
+    height: 100% !important;
+    position: fixed !important;
+    top: 76px !important;
+}
+
+.main{
+    margin-left: 210px !important;
+} */

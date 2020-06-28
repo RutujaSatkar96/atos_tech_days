@@ -18,6 +18,7 @@ import { AgentReviewComponent } from './agent-review/agent-review.component';
 import { StandardQuoteComponent } from './standard-quote/standard-quote.component';
 import { SummaryEditComponent } from './customer-summary-edit/summary-edit.component';
 import { UnderwritingeditComponent } from './underwritingedit/underwritingedit.component';
+import { ComplexQuoteNewComponent } from './complex-quote-new/complex-quote-new.component';
 
 
 
@@ -59,6 +60,20 @@ const routes: Routes = [
      { path: '**', component: UnderwritingComponent}
    ] },
    { path: 'app-complex-quote', component: ComplexQuoteComponent,
+   children:[
+     { path: '', component: UnderwritingComponent},
+     { path: 'underwriting', component: UnderwritingComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'submissions', component: SubmissionsComponent},
+     { path: 'reports', component: ReportsComponent},
+     { path: 'viewdocuments', component: ViewDocumentsComponent},
+     { path: 'viewzelrossummary', component: ViewZelrosSummaryComponent},
+     { path: 'surveys', component: SurveysComponent},
+     { path: 'zelros', component: ZelrosComponent},
+     { path: 'app-recents', component: RecentsComponent},
+     { path: '**', component: UnderwritingComponent}
+   ] },
+   { path: 'app-complex-quote-new', component: ComplexQuoteNewComponent,
    children:[
      { path: '', component: UnderwritingComponent},
      { path: 'underwriting', component: UnderwritingComponent},

@@ -125,7 +125,10 @@ export class SidebarComponent implements OnInit {
     console.log(data)
     if(childindex == 1){
       this._router.navigate(['/app-complex-quote']);
-    }else{
+    }else if(childindex == 2){
+      this._router.navigate(['/app-complex-quote-new']);
+    }
+    else{
       this._router.navigate(['/app-standard-quote']);
     }
   }

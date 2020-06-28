@@ -32,6 +32,7 @@ import { ReportsComponent } from './reports/reports.component';
 import { from } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClaimDialogComponent } from './claim-dialog/claim-dialog.component';
+import { ComplexQuoteNewComponent } from './complex-quote-new/complex-quote-new.component';
 
 imports: [
     BrowserModule,
@@ -61,7 +62,8 @@ imports: [
     SummaryEditComponent,
     Dialog3Component,
     ReportsComponent,
-    ClaimDialogComponent
+    ClaimDialogComponent,
+    ComplexQuoteNewComponent
   ],
   entryComponents: [
     DialogComponent
