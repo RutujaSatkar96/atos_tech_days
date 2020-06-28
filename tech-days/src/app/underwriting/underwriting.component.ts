@@ -8,6 +8,7 @@ import { ViewZelrosSummaryComponent } from '../view-zelros-summary/view-zelros-s
 import { MatDialog } from '@angular/material/dialog';
 import { Dialog3Component } from '../dialog3/dialog3.component';
 import { Dialog2Component } from '../dialog2/dialog2.component';
+import { ClaimDialogComponent } from '../claim-dialog/claim-dialog.component';
 
 
 @Component({
@@ -79,5 +80,9 @@ finalRequest(){
 
 openDialog2() {
   this.dialog.open(Dialog2Component)
+}
+
+openClaimDialog(){
+  this.dialog.open(ClaimDialogComponent);
 }
 }
