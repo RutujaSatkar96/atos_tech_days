@@ -99,9 +99,27 @@ export class AgentSidebarComponent implements OnInit {
  {
    let accordianStauts=this.accordianData[index]['collapse'];
    this.accordianData.forEach(function(data,index){
+     console.log(index)
+     
      data.collapse=false;
    });
    this.accordianData[index]['collapse']=!accordianStauts;
+ }
+
+ onAccodianChildClick(data,childindex,parentindex)
+ {
+
+  console.log(data)
+  console.log(parentindex)
+  console.log(childindex)
+  if(parentindex == 1){
+    console.log(parentindex)
+
+    localStorage.setItem("quoteno",data)
+    this._router.navigate(['app-agent-review']);
+  }
+
+  
  }
 }
 

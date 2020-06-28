@@ -51,14 +51,14 @@ export class UnderwritingComponent implements OnInit {
       console.log(data)
      let quote = <WorkQuote>data;
       
-     this._router.navigate(['/app-standard-quote']);
+     //this._router.navigate(['/app-standard-quote']);
 
     
     })
     
 }
 emailRequest(){
-  this._router.navigate(['/app-complex-quote']);
+  //this._router.navigate(['/app-complex-quote']);
 }
 bindRequest(){
 

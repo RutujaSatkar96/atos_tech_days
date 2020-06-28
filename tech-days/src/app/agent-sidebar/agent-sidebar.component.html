@@ -7,7 +7,7 @@
                     [ngClass]="(accordian.collapse==true)?'fa fa-chevron-up':''"></i></span></div>
         <ng-container *ngIf='accordian.collapse'>
             <div class="child-container">
-                <div class="cust-child" *ngFor="let items of accordian.children">
+                <div class="cust-child"  *ngFor="let items of accordian.children;let j = index;" (click)="onAccodianChildClick(items.value,j,i)">
                     <span class="dot"></span>
                     <span><u>{{items.value}}</u></span>
                 </div>

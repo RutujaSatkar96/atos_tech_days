@@ -113,4 +113,23 @@ export class SidebarComponent implements OnInit {
    });
    this.accordianData[index]['collapse']=!accordianStauts;
  }
+
+ onAccodianChildClick(data,childindex,parentindex)
+ {
+
+  console.log(data)
+  console.log(parentindex)
+  console.log(childindex)
+  if(parentindex == 1){
+    localStorage.setItem("quoteno",data)
+    console.log(data)
+    if(childindex == 1){
+      this._router.navigate(['/app-complex-quote']);
+    }else{
+      this._router.navigate(['/app-standard-quote']);
+    }
+  }
+
+  
+ }
 }
