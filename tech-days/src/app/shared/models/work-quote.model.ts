@@ -136,4 +136,5 @@ export class WorkQuote {
   firesprinklers:string;
   squarefootage:string;
   medicalpayment:string;
+  homeautomation:string;
 }

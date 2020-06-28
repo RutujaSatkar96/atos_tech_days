@@ -11,7 +11,7 @@
     <div class="detailsrow1">
       <label class="detail_one_value dataFontSize">{{workQuote.name}}</label>
       <label class="detail_two_value dataFontSize marginQuote">{{quoteNo}}</label>
-      <label class="detail_two_value dataFontSize margin">{{workQuote.homebuiltin}}</label>
+      <label class="detail_two_value dataFontSize margin">{{workQuote.yearbuilt}}</label>
     </div>
 
     <div class="detailsrow1" style="margin-top: 5px;">
@@ -45,30 +45,30 @@
       <label class="detail_one basicFont">Basic Info</label>
   </div>
   <div class="detailsrow1" style="margin-top: -10px;">
-    <label class="whole_one">Year Built:</label>
+    <label class="whole_one">Primary Residence:</label>
     <label class="whole_one">Purchase Date:</label>
     <label class="whole_one">Burger Alarm:</label>
     <label class="whole_one">Number of storyes:</label>
   </div>
 
   <div class="detailsrow1">
-    <label class="whole_two dataFontSize">{{workQuote.yearbuilt}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.primaryresidence}}</label>
     <label class="whole_two dataFontSize">{{workQuote.purchasedate | date:'MM/dd/yyyy'}}</label>
     <label class="bAlarm dataFontSize">{{workQuote.burglarsalarm}}</label>
     <label class="whole_two dataFontSize" style="margin-left: -2px;">{{workQuote.noofstories}}</label>
   </div>
   <div class="detailsrow1" style="margin-top: 10px;">
-    <label class="whole_one">Square Footage:</label>
+    <label class="whole_one">Gender:</label>
     <label class="whole_one">No of people:</label>
     <label class="whole_one" style="margin-left: 2px;">Fire Spring Killers:</label>
-    <label class="whole_one" style="margin-left: 2px;">Single family:</label>
+    <label class="whole_one" style="margin-left: 2px;">Occupation:</label>
   </div>
 
   <div class="detailsrow1">
-    <label class="whole_two dataFontSize">{{workQuote.squarefootage}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.noofstories}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.gender}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.noofpeopleliving}}</label>
     <label class="bAlarm dataFontSize" style="margin-left: -5px;">{{workQuote.firesprinklers}}</label>
-    <label class="whole_two dataFontSize">{{workQuote.singlefamily}}</label>
+    <label class="whole_two dataFontSize">{{workQuote.occupation}}</label>
   </div>
   <div class="detailsrow1" style="margin-top: 10px;">
     <label class="whole_one">Fire Alarm:</label>
@@ -118,23 +118,27 @@
 </div>
 <div class="detailsrow1" style="margin-top: -10px;">
 <label class="whole_one">Foundation Type:</label>
-<label class="whole_one"> Bath Quality:</label>
-<label class="whole_one">Fire Place:</label>
+<label class="whole_one"> Pets at Home:</label>
+<label class="whole_one">Home Auomation:</label>
 </div>
 
 <div class="detailsrow1">
 <label class="whole_two dataFontSize">{{workQuote.foundationtype}}</label>
-<label class="whole_two dataFontSize">{{workQuote.kitchenquality}}</label>
-<label class="whole_two dataFontSize">{{workQuote.fireplace}}</label>
+<label class="whole_two dataFontSize">{{workQuote.pets}}</label>
+<label class="whole_two dataFontSize">{{workQuote.homeautomation}}</label>
 </div>
 <div class="detailsrow1" style="margin-top: 5px;">
-<label class="whole_one"> Kitchen Quality:</label>
+<label class="whole_one"> Kind of Pet:</label>
+<label class="whole_one"> Number & of Breeds:</label>
 <label class="whole_one"> Kitchen countertops:</label>
+
 </div>
 
 <div class="detailsrow1">
-<label class="whole_two dataFontSize">{{workQuote.kitchenquality}}</label>
+<label class="whole_two dataFontSize">{{workQuote.kindofpet}}</label>
+<label class="whole_two dataFontSize">{{workQuote.noofbreeds}}</label>
 <label class="whole_two dataFontSize">{{workQuote.kitchencountertops}}</label>
+
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
