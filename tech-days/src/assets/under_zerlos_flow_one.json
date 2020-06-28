@@ -5,7 +5,7 @@
       "valid": [
         {
           "scoreid": 2,
-          "value": "75%",
+          "value": "93%",
           "scoremessage": "Customer Seriousness Score",
           "dialog": 1
         },
@@ -17,7 +17,7 @@
         },
         {
           "scoreid": 2,
-          "value": "93%",
+          "value": "5%",
           "scoremessage": "Likelihood of standard acceptance",
           "dialog": 2
         },
