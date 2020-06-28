@@ -26,13 +26,13 @@
                 
                 <div class="firstTab" style="overflow:auto;">
                         <div>
-                                        <div class="row1">
-                                <label class="firstNameLabel" >First Name</label>
+                                <div class="row1">
+                                <label class="firstNameLabel" >First Name <span class="required">*</span></label>
                                 <!-- <input placeholder="first"> -->
-                                <label class="lastLabel">Last Name</label>
-                                <label class="genderLabel">Gender</label>
-                                <label class="ageLabel">Date of birth</label>
-                                <label class="dobLabel">Age</label>
+                                <label class="lastLabel">Last Name<span class="required">*</span></label>
+                                <label class="genderLabel">Gender<span class="required">*</span></label>
+                                <label class="ageLabel">Date of birth<span class="required">*</span></label>
+                                <label class="dobLabel">Age<span class="required">*</span></label>
                                 <!-- <button (click)="show()">show data</button>ageLabel -->
                         </div>
                         <div class="row2">
@@ -42,8 +42,8 @@
 
                         
                                 <select class="genderOptions" name="gender" id="gender" [(ngModel)] = "workQuote.gender">
-                                        <option class="genderOptions" value="male">Male</option>
-                                        <option value="female">Female</option>
+                                        <option class="genderOptions" value="Male">Male</option>
+                                        <option value="Female">Female</option>
                                 </select>
 
                                 
@@ -55,26 +55,26 @@
 
                         </div>
                         <div class="row3">
-                                <label class="firstNameLabel">Marital Status</label>
+                                <label class="firstNameLabel">Marital Status<span class="required">*</span></label>
                                 <label class="occupationLabel">Occupation</label>
-                                <label class="emailLabel">Email Address</label>
-                                <label class="emailLabel" style="margin-left: 110px;">Telephone number</label>
+                                <label class="emailLabel">Email Address<span class="required">*</span></label>
+                                <label class="emailLabel" style="margin-left: 100px;">Telephone number</label>
 
                         </div>
 
                         <div class="row3">
                               <!-- <input class="maritalInput" placeholder="Marital Status" [(ngModel)] = "customerinfo.maritalstatus"> -->
                               <select class="ocuupation new" name="maritalStatus" id="maritalStatus" [(ngModel)] = "workQuote.maritalstatus">
-                                <option class="ocuupationOptions" value="married">Married</option>
-                                <option value="single">Singel</option>
-                                <option value="divorced">Divorced</option>
-                                <option value="living with partner">Living with domestic partner</option>
+                                <option class="ocuupationOptions" value="Married">Married</option>
+                                <option value="Singel">Singel</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Living with partner">Living with domestic partner</option>
 
                         </select>
                                 <select class="ocuupation new1" name="ocuupation" id="ocuupation" [(ngModel)] = "workQuote.occupation">
-                                        <option class="ocuupationOptions" value="business">Business</option>
-                                        <option value="job">Job</option>
-                                        <option value="other">Other</option>
+                                        <option class="ocuupationOptions" value="Business">Business</option>
+                                        <option value="Job">Job</option>
+                                        <option value="Other">Other</option>
                                 </select>
 
                                 <input class="lastNameInput new2" type="email" placeholder="Email Address" [(ngModel)] = "workQuote.email"> 
@@ -91,12 +91,12 @@
                         </div>
 
                         <div class="row6">
-                                <label class="firstNameLabel">Street Address</label>
-                                <label class="unitLabel unit1">Unit Number</label>
-                                <label class="unitLabel unit2">Country</label>
-                                <label class="cityLabel unit5">City</label>
-                                <label class="unitLabel unit1">State</label>
-                                <label class="unitLabel unit1">Zip Code</label>
+                                <label class="firstNameLabel">Street Address<span class="required">*</span></label>
+                                <label class="unitLabel unit1">Unit Number<span class="required">*</span></label>
+                                <label class="unitLabel unit2">Country<span class="required">*</span></label>
+                                <label class="cityLabel unit5">City<span class="required">*</span></label>
+                                <label class="unitLabel unit1">State<span class="required">*</span></label>
+                                <label class="unitLabel unit1">Zip Code<span class="required">*</span></label>
                         </div>
 
                         <div class="row7">
@@ -113,8 +113,8 @@
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> Desired coverage start date </label>
-                                <label class="questionLabels labelMargin"> Do you currently have property insurance?</label><br/>
+                                <label class="questionLabels"> Desired coverage start date <span class="required">*</span></label>
+                                <label class="questionLabels labelMargin"> Do you currently have property insurance?<span class="required">*</span></label><br/>
                                 <label class="mandatory">(*Cannot be backdated by more than 30 days)</label>
                         </div>
                         <div class="row9">
@@ -124,8 +124,8 @@
                                 <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                 
                                 <select class="ocuupation propertyIssue" style="margin-left: 350px;" name="propertyissue" id="propertyissue" [(ngModel)] = "workQuote.propertyinsurance">
-                                        <option class="propertyissueOptions" value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option class="propertyissueOptions" value="Yes">Yes</option>
+                                        <option value="No">No</option>
                                 </select>
 
                         </div>
@@ -133,72 +133,72 @@
                         <div class="row8">
                                 <label class="questionLabels"> Do you or a family member</label> 
                                 <label class="questionLabels" style="margin-left: 315px;"> Have you or any of your family members </label><br/>
-                                <label class="questionLabels">run business from home?</label>
-                                <label class="questionLabels labelMargin labelCriminal">ever had criminal conviction?</label>
+                                <label class="questionLabels">run business from home?<span class="required">*</span></label>
+                                <label class="questionLabels labelMargin labelCriminal">ever had criminal conviction?<span class="required">*</span></label>
                         </div>
 
                         <div class="row9">
                                 
                                 <select class="ocuupation new" name="businessfromhome" id="businessfromhome" [(ngModel)] = "workQuote.runningbusinessfromhome">
-                                        <option class="businessfromhomeOptions" value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option class="businessfromhomeOptions" value="Yes">Yes</option>
+                                        <option value="No">No</option>
                                 </select>
 
                                 <select class="ocuupation selectIssue" name="criminalconvictions" id="criminalconvictions" [(ngModel)] = "workQuote.criminalconvictions">
-                                        <option class="criminalconvictionsOptions" value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option class="criminalconvictionsOptions" value="Yes">Yes</option>
+                                        <option value="No">No</option>
                                 </select>
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> Does anyone in your home smoke?</label> 
-                                <label class="questionLabels labelMargin labelHome"> Do you have any pets at home? </label><br/>
+                                <label class="questionLabels"> Does anyone in your home smoke?<span class="required">*</span></label> 
+                                <label class="questionLabels labelMargin labelHome"> Do you have any pets at home? <span class="required">*</span></label><br/>
                         </div>
 
                         <div class="row9">
                                 <select class="ocuupation new" name="smokerstatus" id="smokerstatus" [(ngModel)] = "workQuote.smokerstatus">
-                                        <option class="smokerstatusOptions" value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option class="smokerstatusOptions" value="Yes">Yes</option>
+                                        <option value="No">No</option>
                                 </select>
 
                                 <select class="ocuupation selectIssue" name="petsathome" id="petsathome" [(ngModel)] = "workQuote.pets"> 
-                                        <option class="petsathomeOptions" value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option class="petsathomeOptions" value="Yes">Yes</option>
+                                        <option value="No">No</option>
                                 </select>
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> How many smokers?</label> 
-                                <label class="questionLabels labelPet"> What kind of pet? </label>
-                                <label class="questionLabels labelBreed"> How many & breeds? </label>
+                                <label class="questionLabels"> How many smokers?<span class="required">*</span></label> 
+                                <label class="questionLabels labelPet"> What kind of pet? <span class="required">*</span></label>
+                                <label class="questionLabels labelBreed"> How many & breeds? <span class="required">*</span></label>
                         </div>
 
                         <div class="row9">
                                 <input class="streetInput smokerInput" placeholder="Smokers">
                                 <!-- <input class="streetInput petInput" placeholder="Pet"> -->
                                 <select class="ocuupation selectIssue new3" name="kindofpet" id="kindofpet" [(ngModel)] = "workQuote.kindofpet"> 
-                                        <option class="kindofpetOptions" value="dog">Dog</option>
-                                        <option value="cat">Cat</option>
-                                        <option value="other">Other</option>
+                                        <option class="kindofpetOptions" value="Dog">Dog</option>
+                                        <option value="Cat">Cat</option>
+                                        <option value="Other">Other</option>
                                 </select>
                                 <input class="streetInput breedInput" placeholder="e.g 2, Labrador" [(ngModel)] = "workQuote.noofbreeds">
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> Have you ever had a policy cancelled by a home insurer?</label> 
+                                <label class="questionLabels"> Have you ever had a policy cancelled by a home insurer?<span class="required">*</span></label> 
                         </div>
 
                         <div class="row9">
                                 <select class="ocuupation new" name="cancelpolicy" id="cancelpolicy" [(ngModel)] = "workQuote.policycancelled">
-                                        <option class="cancelpolicyOptions" value="yes">Yes</option>
-                                        <option value="no">No</option>
+                                        <option class="cancelpolicyOptions" value="Yes">Yes</option>
+                                        <option value="No">No</option>
                                 </select>
                         </div>
 
                         <div class="row8">
-                                <label class="questionLabels"> Name of Insurer</label> 
-                                <label class="questionLabels labelMargin labelHome new4"> Cancellation year </label>
-                                <label class="questionLabels labelReason"> Cancellation reason </label>
+                                <label class="questionLabels"> Name of Insurer<span class="required">*</span></label> 
+                                <label class="questionLabels labelMargin labelHome new4"> Cancellation year <span class="required">*</span></label>
+                                <label class="questionLabels labelReason"> Cancellation reason <span class="required">*</span></label>
                         </div>
 
                         <div class="row9">
@@ -229,9 +229,9 @@
                         <label class="questionLabel labelDate">Purchase date of </label>
                         <label class="questionLabel labelPeople">Number of people</label>
                         <label class="questionLabel story">Number of storeys</label><br/>
-                        <label class="questionLabel">home built?</label>
-                        <label class="questionLabel labelnew1">the home</label>
-                        <label class="questionLabel labelHouse">living in the household</label>
+                        <label class="questionLabel">home built?<span class="required">*</span></label>
+                        <label class="questionLabel labelnew1">the home<span class="required">*</span></label>
+                        <label class="questionLabel labelHouse">living in the household<span class="required">*</span></label>
                 </div>
 
                 <div class="row7">
@@ -251,48 +251,48 @@
                 </div>
 
                 <div class="row5">
-                        <label class="questionLabel">Type of foundation</label>
+                        <label class="questionLabel">Type of foundation<span class="required">*</span></label>
                         <!-- <label class="questionLabel labelDate">Building material</label> -->
-                        <label class="questionLabel labelDate">Exterior wall type</label>
-                        <label class="questionLabel labelRoof3">Roof style</label>
+                        <label class="questionLabel labelDate1">Exterior wall type<span class="required">*</span></label>
+                        <label class="questionLabel labelRoof3">Roof style<span class="required">*</span></label>
                 </div>
 
                 <div class="row7">
                         <!-- <input class="streetInput" placeholder="Date" [(ngModel)] = "basicinfo.purchasedate">
                         <input class="streetInput labelCriminal" placeholder="Living area" [(ngModel)] = "customerinfo.area"> -->
                         <select class="ocuupation new" name="foundation" id="foundation" [(ngModel)] = "workQuote.foundationtype">
-                                <option class="foundationOptions" value="basement">Basement</option>
-                                <option  value="slab at grade">Slab at Grade</option>
-                                <option  value="crawl space">Crawl Space</option>
-                                <option  value="piers">Piers</option>
-                                <option  value="with basement">Hillside with Basement</option>
-                                <option  value="without basement">Hillside without Basement</option>
+                                <option class="foundationOptions" value="Basement">Basement</option>
+                                <option  value="Slab at grade">Slab at Grade</option>
+                                <option  value="Crawl space">Crawl Space</option>
+                                <option  value="Piers">Piers</option>
+                                <option  value="Hillside with basement">Hillside with Basement</option>
+                                <option  value="Hillsidewithout basement">Hillside without Basement</option>
                         </select>
                         <!-- <select class="ocuupation labelBuilding" name="building" id="building" [(ngModel)] = "exterior.buildingmaterial">
                                 <option class="buildingOptions" value="solid brick">Solid brick</option>
                         </select> -->
                         <select class="ocuupation labelBuilding1" name="walltype" id="walltype" [(ngModel)] = "workQuote.walltype" >
-                                <option class="walltypeOptions" value="brick stone">Brick Frame</option>
-                                <option  value="brick stone">Stucco Block</option>
-                                <option class="walltypeOptions" value="brick stone">Stucco Frame</option>
-                                <option class="walltypeOptions" value="brick stone">Wood Sliding</option>
+                                <option class="walltypeOptions" value="Brick stone">Brick Frame</option>
+                                <option  value="Stucco Block">Stucco Block</option>
+                                <option class="walltypeOptions" value="Stucco Frame">Stucco Frame</option>
+                                <option class="walltypeOptions" value="Wood Sliding">Wood Sliding</option>
 
                         </select>
                         <select class="ocuupation roof" name="roofstyle" id="roofstyle" [(ngModel)] = "workQuote.roofstyle">
-                                <option class="roofstyleOptions" value="hip">Hip</option>
-                                <option value="gable">Gable</option>
-                                <option  value="flat">Flat</option>
-                                <option  value="other">Other</option>
+                                <option class="roofstyleOptions" value="Hip">Hip</option>
+                                <option value="Gable">Gable</option>
+                                <option  value="Flat">Flat</option>
+                                <option  value="Other">Other</option>
 
                         </select>
 
                 </div>
 
                 <div class="row5">
-                        <label class="questionLabel">Approximate living area</label>
-                        <label class="questionLabel labelGarrage">Type of garage</label>
-                        <label class="questionLabel labelPeople2">Primary residance</label>
-                        <label class="questionLabel roof">What is the roof made of?</label>
+                        <label class="questionLabel">Approximate living area<span class="required">*</span></label>
+                        <label class="questionLabel labelGarrage">Type of garage<span class="required">*</span></label>
+                        <label class="questionLabel labelPeople2">Primary residance<span class="required">*</span></label>
+                        <label class="questionLabel roof">What is the roof made of?<span class="required">*</span></label>
                 </div>
 
                 <div class="row9">
@@ -302,9 +302,9 @@
                         <input class="firstNameInput" placeholder="Living area" [(ngModel)] = "workQuote.area">
 
                         <select class="ocuupation labelGarrage" name="roof" id="roof" [(ngModel)] = "workQuote.typeofgarage">
-                                <option class="roofOptions" value="one car">One car attached</option>
-                                <option class="roofOptions" value="two car">Two car attached</option>
-                                <option class="roofOptions" value="three car">Three car attached</option>
+                                <option class="roofOptions" value="One car">One car attached</option>
+                                <option class="roofOptions" value="Two car">Two car attached</option>
+                                <option class="roofOptions" value="Three car">Three car attached</option>
 
                         </select>
 
@@ -315,12 +315,12 @@
                         </select>
                         <!-- <input class="firstNameInput labelPeople" placeholder="Roof made of" [(ngModel)] = "customerinfo.firstname"> -->
                         <select class="ocuupation residanceLabel" name="roofstyle" id="roofstyle" [(ngModel)] = "workQuote.roofmade">
-                                <option class="roofstyleOptions" value="asphalt">Asphalt</option>
-                                <option class="roofstyleOptions" value="wood">Wood</option>
-                                <option class="roofstyleOptions" value="tile">Tile</option>
-                                <option class="roofstyleOptions" value="metal">Metal</option>
-                                <option class="roofstyleOptions" value="slate">Slate</option>
-                                <option class="roofstyleOptions" value="other">Other</option>
+                                <option class="roofstyleOptions" value="Asphalt">Asphalt</option>
+                                <option class="roofstyleOptions" value="Wood">Wood</option>
+                                <option class="roofstyleOptions" value="Tile">Tile</option>
+                                <option class="roofstyleOptions" value="Metal">Metal</option>
+                                <option class="roofstyleOptions" value="Slate">Slate</option>
+                                <option class="roofstyleOptions" value="Other">Other</option>
 
                         </select>
                 </div>
@@ -334,9 +334,9 @@
                         <label class="questionLabel homeLabel">Is your home within 1,000</label>
                         <label class="questionLabel hadLabel">Have you had any property insurance</label><br/>
                         <label class="questionLabel">counterops made of?</label>
-                        <label class="questionLabel premises">on the premises?</label>
-                        <label class="questionLabel story">feet of fire hydrant</label>
-                        <label class="questionLabel sLabel1">claims or losses in past 7 years?</label>
+                        <label class="questionLabel premises">on the premises?<span class="required">*</span></label>
+                        <label class="questionLabel story1">feet of fire hydrant<span class="required">*</span></label>
+                        <label class="questionLabel sLabel1">claims or losses in past 7 years?<span class="required">*</span></label>
                 </div>
 
                 <div class="row7">
@@ -346,23 +346,23 @@
                                 <option value="no">No</option>
                         </select> -->
                         <select class="ocuupation labelBuilding" style="margin-left: 170px;" name="swimming" id="swimming" [(ngModel)] = "workQuote.swimmingpool">
-                                <option class="swimmingOptions" value="yes">Yes</option>
-                                <option value="no">No</option>
+                                <option class="swimmingOptions" value="Yes">Yes</option>
+                                <option value="No">No</option>
                         </select>
                         <!-- <input class="streetInput labelCriminal" placeholder="yes/no" [(ngModel)] = "exterior.swimmingpool"> -->
-                        <select class="ocuupation sLabel1" name="within" id="within" [(ngModel)] = "workQuote.firehydrant">
-                                <option class="withinOptions" value="yes">Yes</option>
-                                <option value="no">No</option>
+                        <select class="ocuupation sLabel12" name="within" id="within" [(ngModel)] = "workQuote.firehydrant">
+                                <option class="withinOptions" value="Yes">Yes</option>
+                                <option value="No">No</option>
                         </select>
                         <select class="ocuupation roof" name="anyproperty" id="anyproperty" [(ngModel)] = "workQuote.pastpropertyclaimsorlosses">
-                                <option class="anypropertyOptions" value="yes">Yes</option>
-                                <option value="no">No</option>
+                                <option class="anypropertyOptions" value="Yes">Yes</option>
+                                <option value="No">No</option>
                         </select>
                         
                 </div>
 
                 <div class="row5">
-                         <label class="questionLabel">Select a protective device installed in your home</label>
+                         <label class="questionLabel">Select a protective device installed in your home<span class="required">*</span></label>
                         <!--<label class="questionLabel labelkitchen">What material is the kitchen countertops made of?</label><br/> -->
                 </div>
 
