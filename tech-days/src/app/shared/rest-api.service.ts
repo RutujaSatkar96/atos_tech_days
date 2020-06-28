@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { WorkQuote } from '../shared/models/work-quote.model';
+import { DataMenu } from './models/data.menu.model';
 
 
 @Injectable({
@@ -28,8 +29,8 @@ export class RestApiService {
   }  
 
   // HttpClient API get() method => Fetch Quote list
-  getQuotes(id): Observable<Array<String>> {
-    return this.http.get<Array<String>>(this.apiURL + '/getQuotes?type='+id)
+  getQuotes(id): Observable<Array<DataMenu>> {
+    return this.http.get<Array<DataMenu>>(this.apiURL + '/getQuotes?type='+id)
     .pipe(
       retry(1),
       catchError(this.handleError)

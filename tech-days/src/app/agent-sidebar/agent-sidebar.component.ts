@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RestApiService } from "../shared/rest-api.service";
+import { DataMenu } from "../shared/models/data.menu.model";
+
 
 @Component({
   selector: 'app-agent-sidebar',
@@ -13,7 +15,7 @@ export class AgentSidebarComponent implements OnInit {
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
   show: boolean = false;
-  quoteList:string[]; 
+  children:Array<DataMenu>; 
   constructor(private _router: Router,public restApi: RestApiService) {
 
     let role = localStorage.getItem("typeId");
@@ -23,12 +25,20 @@ export class AgentSidebarComponent implements OnInit {
 
     this.quoteNo=localStorage.getItem("quoteno");
    
+   
     this.restApi.getQuotes("1").subscribe((data: {}) => {
       
-      this.quoteList= <string[]> data;
-      console.log(this.quoteList);
-      
-   })
+      this.children= <DataMenu[]> data;
+      console.log(this.children);
+      let val={
+        label:"MyWork List",
+        collapse:true,
+        icon:"worklist_icn",
+        children:this.children
+      }
+      this.accordianData[1] = val;
+     
+    })
 
    }
   accordianData=[
@@ -45,18 +55,6 @@ export class AgentSidebarComponent implements OnInit {
       {
        value:this.quoteNo,
        icon:"fa fa-cubes"
-      },
-      {
-       value:"H526525490",
-       icon:"fa fa-eyedropper"
-      },
-      {
-       value:"H120807569",
-       icon:"fa fa-eyedropper"
-      },
-      {
-       value:"H985673142",
-       icon:"fa fa-eyedropper"
       }
      ]
    },
@@ -93,6 +91,8 @@ export class AgentSidebarComponent implements OnInit {
  ]
 
 
+
+ 
  ngOnInit(): void {
  }
  onAccodianClick(data,index)

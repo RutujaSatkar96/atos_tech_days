@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RestApiService } from "../shared/rest-api.service";
+import { DataMenu } from "../shared/models/data.menu.model";
+
 
 @Component({
   selector: 'app-sidebar',
@@ -13,7 +15,7 @@ export class SidebarComponent implements OnInit {
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
   show: boolean = false;
-  quoteList:string[]; 
+  quoteList:Array<DataMenu>; 
   constructor(private _router: Router,public restApi: RestApiService) {
 
     let role = localStorage.getItem("typeId");
@@ -25,9 +27,19 @@ export class SidebarComponent implements OnInit {
    
     this.restApi.getQuotes("1").subscribe((data: {}) => {
       
-      this.quoteList= <string[]> data;
+      this.quoteList= <DataMenu[]> data;
+      let val={
+        label:"MyWork List",
+        collapse:true,
+        icon:"worklist_icn",
+        children:this.quoteList
+      }
       console.log(this.quoteList);
-      
+      this.accordianData.map((todo, i) => {
+        if (todo.label == val.label){
+           this.accordianData[i] = val;
+         }
+       });
    })
 
    }
@@ -45,18 +57,6 @@ export class SidebarComponent implements OnInit {
       {
        value:this.quoteNo,
        icon:"fa fa-cubes"
-      },
-      {
-       value:"H526525490",
-       icon:"fa fa-eyedropper"
-      },
-      {
-       value:"H120807569",
-       icon:"fa fa-eyedropper"
-      },
-      {
-       value:"H985673142",
-       icon:"fa fa-eyedropper"
       }
      ]
    },
