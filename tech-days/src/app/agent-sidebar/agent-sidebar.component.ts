@@ -97,13 +97,13 @@ export class AgentSidebarComponent implements OnInit {
  }
  onAccodianClick(data,index)
  {
-   let accordianStauts=this.accordianData[index]['collapse'];
-   this.accordianData.forEach(function(data,index){
-     console.log(index)
-     
-     data.collapse=false;
-   });
-   this.accordianData[index]['collapse']=!accordianStauts;
+  if(index == 1 || index ==3){
+    let accordianStauts=this.accordianData[index]['collapse'];
+    this.accordianData.forEach(function(data,index){
+      data.collapse=false;
+    });
+    this.accordianData[index]['collapse']=!accordianStauts;
+   }
  }
 
  onAccodianChildClick(data,childindex,parentindex)
