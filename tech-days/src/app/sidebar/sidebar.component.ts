@@ -89,11 +89,6 @@ export class SidebarComponent implements OnInit {
      icon:"documents_icn"
    },
    {
-     label:"Zelros Summary",
-     collapse:false,
-     icon:"summary_icn"
-   },
-   {
      label:"My Surveys",
      collapse:false,
      icon:"surveys_icn"
@@ -116,11 +111,12 @@ export class SidebarComponent implements OnInit {
      data.collapse=false;
    });
    this.accordianData[index]['collapse']=!accordianStauts;
-  }else{
-   if(index == 5){
-    this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
   }
-  }
+  // else{
+  //  if(index == 5){
+  //   this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
+  // }
+  // }
  }
 
  onAccodianChildClick(data,childindex,parentindex)
