@@ -1,0 +1,147 @@
+{
+
+    "customer_id": 23,
+
+    "firstname": "Mark",
+
+    "lastname": "Wells",
+
+    "gender": "Male",
+
+    "age": 39,
+
+    "occupation": "Job",
+
+    "unitnumber": 0,
+
+    "country": null,
+
+    "city": "Chicago",
+
+    "state": "Illinois",
+
+    "zipcode": 87645,
+
+    "propertyinsurance": "Yes",
+
+    "pets": "No",
+
+    "kindofpet": null,
+
+    "noofbreeds": null,
+
+    "policycancelled": "No",
+
+    "nameofinsurer": null,
+
+    "cancellationyear": 0,
+
+    "cancellationreason": null,
+
+    "noofpeopleliving": 3,
+
+    "name": "Mark Wells",
+
+    "effectivedate": "2020-06-28T18:30:00.000Z",
+
+    "address": "856 Miller Lane undefined Chicago ",
+
+    "phone": "401-572-6582",
+
+    "homebuiltin": 0,
+
+    "area": "1900 Sq Ft",
+
+    "email": "mark.Wells@gmail.com",
+
+    "dateofbirth": "1981-02-26T18:30:00.000Z",
+
+    "pastpropertyclaimsorlosses": "No",
+
+    "maritalstatus": "Single",
+
+    "runningbusinessfromhome": "No",
+
+    "smokerstatus": "No",
+
+    "criminalconvictions": "No",
+
+    "yearbuilt": 1985,
+
+    "purchasedate": "2015-02-20T18:30:00.000Z",
+
+    "noofstories": 2,
+
+    "primaryresidence": null,
+
+    "foundationtype": "Hillside with basement",
+
+    "walltype": "Brick stone",
+
+    "roofstyle": "Flat",
+
+    "typeofgarage": "Two car",
+
+    "roofmade": null,
+
+    "kitchencountertops": "Wood",
+
+    "kitchenquality": null,
+
+    "bathquality": null,
+
+    "swimmingpool": "No",
+
+    "firehydrant": "No",
+
+    "type": "1",
+
+    "dwellingprotection": "300,000",
+
+    "otherstructures": "30,000",
+
+    "propertyagainst": "350,000",
+
+    "propertyprotection": "150,000",
+
+    "additionallivingexpenses": "9,000",
+
+    "familyliabilityprotection": "350,000",
+
+    "newconstructiondiscount": "500",
+
+    "allperilsdeductible": "1500",
+
+    "windstormorhail": "1000",
+
+    "totalpremium": null,
+
+    "finalpremium": null,
+
+    "extrapremium": "6500",
+
+    "zelrossuggestion": "2",
+
+    "burglaralaram": "Installed",
+
+    "firealaram": "Installed",
+
+    "firesprinklers": "Installed",
+
+    "emergencybackupgenerator": "Installed",
+
+    "homeautomationsystem": "Installed",
+
+    "noneoftheabove": null,
+
+    "singlefamimly": null,
+
+    "porch": null,
+
+    "roofage": null,
+
+    "deck": null,
+
+    "medicalpayment": "1000"
+
+}
