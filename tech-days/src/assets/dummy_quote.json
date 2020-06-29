@@ -1,5 +1,4 @@
 {
-    "customer_id": 24,
     "firstname": "Janet",
     "lastname": "Evans",
     "gender": "Female",
@@ -20,7 +19,7 @@
     "cancellationreason": null,
     "noofpeopleliving": 4,
     "name": "Janet Evans",
-    "effectivedate": "2020-05-31T18:30:00.000Z",
+    "effectivedate": "01/07/2020",
     "address": "123 Main St 40 Los Angeles ",
     "phone": "123-456-7890",
     "homebuiltin": 0,
@@ -33,7 +32,7 @@
     "smokerstatus": "Yes",
     "criminalconvictions": "No",
     "yearbuilt": 2018,
-    "purchasedate": "2018-12-31T18:30:00.000Z",
+    "purchasedate": "01/01/2019",
     "noofstories": 2,
     "primaryresidence": null,
     "foundationtype": "Basement",
