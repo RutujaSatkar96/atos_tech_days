@@ -5,6 +5,7 @@ import { HttpClient } from '@angular/common/http';
 import { ZelrosResponse } from '../shared/models/zelros/zelrosresponse.model';
 import { Dialog2Component } from '../dialog2/dialog2.component';
 import { Dialog3Component } from '../dialog3/dialog3.component';
+import { ReportsComponent } from '../reports/reports.component';
 
 @Component({
   selector: 'app-complex-quote-new',
@@ -57,4 +58,8 @@ openDialog3() {
   this.dialog.open(Dialog3Component)
 }
 
+openZelrosSummary(){
+  this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
+
+}
 }

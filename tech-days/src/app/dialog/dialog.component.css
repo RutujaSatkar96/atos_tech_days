@@ -1,5 +1,7 @@
 .head{
     font-weight: bold;
+    margin-left: 20px;
+    font-size: 15px;
 }
 
 .pop{
@@ -21,4 +23,6 @@
  .crossimg{
     float: right;
   }
-  
+  .li{
+      font-size: 15px;
+  }
