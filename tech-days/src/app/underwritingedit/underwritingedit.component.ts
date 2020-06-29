@@ -43,13 +43,22 @@ export class UnderwritingeditComponent implements OnInit {
        let quote = <WorkQuote>data;
         
        this._router.navigate(['/app-standard-quote']);
+
+       if(this.workQuote.zelrossuggestion == "2"){
+        this._router.navigate(['/app-complex-quote']);
+      }else if(this.workQuote.zelrossuggestion == "3"){
+        this._router.navigate(['/app-complex-quote-new']);
+      }
+      else{
+        this._router.navigate(['/app-standard-quote']);
+      }
   
       
       })
     
 }
 emailRequest(){
-  this._router.navigate(['/app-complex-quote']);
+  //this._router.navigate(['/app-complex-quote']);
 }
 bindRequest(){
 
