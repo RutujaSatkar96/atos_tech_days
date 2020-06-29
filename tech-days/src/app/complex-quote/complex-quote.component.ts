@@ -28,6 +28,8 @@ export class ComplexQuoteComponent implements OnInit {
   
   constructor(private route: ActivatedRoute, public dialog: MatDialog,private http:HttpClient) { 
     localStorage.setItem("typeId","2");
+    localStorage.setItem("quote","2");
+
     this.quoteNo=localStorage.getItem("quoteno");
     if(this.urlId == 1){
       let response = this.http.get(this.url1);

@@ -20,6 +20,8 @@ export class StandardQuoteComponent implements OnInit {
   
   constructor(private route: ActivatedRoute,public dialog: MatDialog, private http:HttpClient) { 
     localStorage.setItem("typeId","2");
+    localStorage.setItem("quote","1");
+
     this.quoteNo=localStorage.getItem("quoteno");
     let response = this.http.get(this.url);
     response.toPromise().then(data => {

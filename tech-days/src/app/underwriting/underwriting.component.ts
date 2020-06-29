@@ -70,10 +70,27 @@ rejectRequest(){
 }
 
 propertyRequest(){
+
+  if(localStorage.get("quote")=="3"){
+//Complex new
+  }else if(localStorage.get("quote")=="2"){
+    //complex
+  }else{
+//standard
+  }
+
   this.dialog.open(Dialog2Component)
 }
 
 finalRequest(){
+
+  if(localStorage.get("quote")=="3"){
+    //Complex new
+      }else if(localStorage.get("quote")=="2"){
+        //complex
+      }else{
+    //standard
+      }
   this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
 }
 
