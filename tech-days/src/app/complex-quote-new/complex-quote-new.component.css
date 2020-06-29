@@ -219,7 +219,7 @@
   
   .row4{
       margin-top: 12px;
-      height: 175px;
+      height: 155px;
       width: 260px;
       background-color: #fff;
       /* padding: 12px; */
@@ -232,7 +232,7 @@
   .textLast{
       font-family: Roboto;
       font-size: 11px;
-      /* margin-left: 40px; */
+      margin-left: 20px;
   }
   .accept{
     font-family: Roboto;

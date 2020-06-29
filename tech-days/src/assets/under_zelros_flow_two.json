@@ -17,13 +17,13 @@
         },
         {
           "scoreid": 2,
-          "value": "33%",
+          "value": "85%",
           "scoremessage": "Likelihood of standard acceptance",
           "dialog": 2
         },
         {
           "scoreid": 2,
-          "value": "67%",
+          "value": "75%",
           "scoremessage": "Claims Risk Score",
           "dialog": 1
         }

@@ -63,27 +63,27 @@ font-size: 10px;
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 175px;
+  margin-left: 160px;
 }
 
 .genderLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 170px;
+  margin-left: 160px;
 }
 
 .ageLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 160px;
+  margin-left: 155px;
 }
 .dobLabel{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 130px;
+  margin-left: 120px;
 }
 .genderOptions{
   height: 36px;
@@ -168,7 +168,7 @@ select{
   font-family: Verdana;
   font-weight: 14px;
   color: #000;
-  margin-left: 155px;
+  margin-left: 145px;
 }
 
 .ocuupation select{
@@ -286,14 +286,14 @@ margin-left: 50px;
 }
 
 .unit1{
-  margin-left: 95px;
+  margin-left: 85px;
 }
 
 .unit2{
-  margin-left: 72px;
+  margin-left: 70px;
 }
 .unit5{
-  max-lines: 65px;
+  max-lines: 50px;
 }
 .unit3{
   margin-left: 30px;
@@ -330,7 +330,7 @@ margin-left: 50px;
   margin-left: 310px;
 }
 .labelCriminal{
-  margin-left: 330px;
+  margin-left: 320px;
 }
 .labelHome{
   margin-left: 260px;
@@ -406,7 +406,7 @@ margin-left: 50px;
 }
 
 .labelBreed{
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .breedInput{
@@ -418,10 +418,10 @@ margin-left: 50px;
 
 }
 .new4{
-  margin-left: 400px;
+  margin-left: 350px;
 }
 .labelReason{
-  margin-left: 60px;
+  margin-left: 75px;
 }
 .reasonInput{
   margin-left: 90px;
@@ -672,6 +672,10 @@ margin-left: 50px;
 .labelDate{
   margin-left: 200px;
 }
+.labelDate1{
+  margin-left: 190px;
+
+}
 .labelStories{
   margin-left: 180px;
 }
@@ -680,14 +684,14 @@ margin-left: 50px;
 }
 
 .labelnew1{
-  margin-left: 250px;
+  margin-left: 240px;
 }
 .labelPeople{
   margin-left: 150px;
 }
 
 .roof{
-  margin-left: 140px;
+  margin-left: 130px;
 
 }
 .swimmingLabel{
@@ -699,7 +703,11 @@ margin-left: 50px;
 
 }
 .sLabel1{
+  margin-left: 125px;
+}
+.sLabel12{
   margin-left: 135px;
+
 }
 .residanceLabel{
   margin-left: 135px;
@@ -709,6 +717,10 @@ margin-left: 50px;
 .story{
   margin-left: 145px;
 }
+.story1{
+  margin-left: 135px;
+
+}
 .homeLabel{
   margin-left: 86px;
 
@@ -717,18 +729,18 @@ margin-left: 50px;
   margin-left: 80px;
 }
 .labelPeople2{
-  margin-left: 160px;
+  margin-left: 150px;
 }
 
 .premises{
   margin-left: 192px;
 }
 .labelGarrage{
-  margin-left: 170px;
+  margin-left: 160px;
 
 }
 .labelRoof3{
-  margin-left: 150px;
+  margin-left: 140px;
 }
 .labelPeople3{
   margin-left: 180px;
@@ -738,7 +750,7 @@ margin-left: 50px;
   margin-left: 512px;
 }
 .labelHouse{
-  margin-left: 200px;
+  margin-left: 190px;
 }
 
 .date1{
@@ -755,7 +767,7 @@ margin-left: 50px;
   margin-left: 205px;
 }
 .year2{
-  margin-left: 280px;
+  margin-left: 290px;
 }
 
 .footer {

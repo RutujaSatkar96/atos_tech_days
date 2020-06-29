@@ -88,8 +88,7 @@ export class CustomerInfoComponent implements OnInit {
 
      if(this.workQuote.yearbuilt == undefined || this.workQuote.purchasedate == undefined || this.workQuote.noofstories == undefined
       || this.workQuote.foundationtype == undefined || this.workQuote.walltype== undefined || this.workQuote.roofstyle == undefined
-      || this.workQuote.area == undefined || this.workQuote.typeofgarage == undefined || this.workQuote.primaryresidence == undefined
-      || this.workQuote.roofmade == undefined || this.workQuote.kitchencountertops == undefined || this.workQuote.swimmingpool == undefined
+      || this.workQuote.area == undefined || this.workQuote.typeofgarage == undefined || this.workQuote.swimmingpool == undefined
       || this.workQuote.firehydrant == undefined || this.workQuote.pastpropertyclaimsorlosses == undefined){
        alert('Please enter all field. All fields are mandatory')
      }
@@ -115,11 +114,10 @@ export class CustomerInfoComponent implements OnInit {
   navigateToPropertyInfo(){
    
     if(this.workQuote.firstname == undefined || this.workQuote.lastname == undefined  
-      || this.workQuote.street == undefined || this.workQuote.unitnumber == undefined || this.workQuote.city == undefined 
+      || this.workQuote.street == undefined || this.workQuote.city == undefined 
       || this.workQuote.state == undefined || this.workQuote.zipcode == undefined || this.workQuote.effectivedate == undefined
       || this.workQuote.propertyinsurance == undefined || this.workQuote.runningbusinessfromhome == undefined || this.workQuote.criminalconvictions == undefined
-      || this.workQuote.smokerstatus == undefined || this.workQuote.pets == undefined || this.workQuote.policycancelled == undefined
-      || this.workQuote.nameofinsurer == undefined || this.workQuote.cancellationyear == undefined || this.workQuote.cancellationreason == undefined){
+      || this.workQuote.smokerstatus == undefined || this.workQuote.pets == undefined || this.workQuote.policycancelled == undefined){
       alert('Please enter all field. All fields are mandatory');
     }
     else{

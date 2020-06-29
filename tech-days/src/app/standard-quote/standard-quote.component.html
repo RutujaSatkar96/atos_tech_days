@@ -64,7 +64,7 @@
   
                   <div style="margin-top: 5px; margin-left: 5px;"> 
                    <label class="labelCustomer">Customer </label><br/>
-                   <label class="labelCustomer">seriousness score</label>
+                   <label class="labelCustomer">Seriousness Score</label>
                   </div>
                   <button  style="background: transparent; border: none; margin-left:80px; margin-bottom: 20px;"><img src="/assets/pluse_icn.png" ></button>
                   <!-- <img (click) ="openDialog()" style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png"> -->
@@ -72,15 +72,16 @@
                <div class="v2">
   
                  <div style="margin-top: 30px; font-weight: bold; padding: 16px;font-family: Roboto; font-size: 22px;">
-                     <label class="scoreValue">{{zelrosResponse.valid[1].value}}</label> <br/>
+                     <!-- <label class="scoreValue"></label> <br/> -->
                  </div>
                  
                    <div style="margin-top: 5px;">
-                       <label class="labelAccuracy">Accuracy of</label><br/>
-                       <label class="labelAccuracy">coverage</label><br/>
+                    <label class="labelAccuracy">Investing time </label><br/>
+                    <label class="labelAccuracy">may not be</label><br/>
+                    <label class="labelAccuracy">relevant.</label><br/>
                        <!-- <label class="labelAccuracy">relevent</label> -->
                    </div>
-                   <button  style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>
+                   <!-- <button  style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button> -->
    
                    <!-- <img style="margin-left:100px; margin-top: 10px;" src="/assets/pluse_icn.png" > -->
    
@@ -96,9 +97,9 @@
                      <label class="scoreValue">{{zelrosResponse.valid[2].value}}</label><br/>
                  </div>
                    <div style="margin-top: 5px; margin-left: 20px;">
-                   <label class="labelCustomer">Likelihood of</label><br/>
-                   <label class="labelCustomer">standard</label><br/>
-                   <label class="labelCustomer">acceptance</label>
+                   <label class="labelCustomer">Need for </label><br/>
+                   <label class="labelCustomer">Property</label><br/>
+                   <label class="labelCustomer">Inspection.</label>
                    </div>
                    <button  style="background: transparent; border: none; margin-left:80px;"><img src="/assets/pluse_icn.png" ></button>
    
@@ -115,7 +116,7 @@
                      <label class="scoreValue">{{zelrosResponse.valid[3].value}}</label> <br/>
                  </div>
                    <div style="margin-top: 1px;;">
-                       <label class="labelAccuracy">Claim Risk score </label><br/>
+                       <label class="labelAccuracy">Claim Risk Score </label><br/>
                        <label class="labelAccuracy"></label>
                    </div>
                    <button (click) = "openClaimDialog()" style="background: transparent; border: none; margin-left:60px;"><img src="/assets/pluse_icn.png" ></button>

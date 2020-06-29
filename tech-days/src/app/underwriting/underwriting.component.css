@@ -1,12 +1,11 @@
 .main{
-    width: 830px;
+    width: 747px;
     height: 100%;
-    /* margin: 8px; */
     background: #ffffff;
 }
 .details{
-    height: 141px;
-    background: #f2f2f2;
+    height: 154px;
+   background: #f2f2f2;
 }
 .detailsrow1{
     display: flex;
@@ -21,14 +20,22 @@
     font-family: verdana;
     font-weight: medium;
     font-size: 14px;
-    margin-left: 8px;
+    margin-left: 10px;
 }
-.basicFont{
-    font-size: 18px;
+.margintopClass{
+    margin-top: 10px;
 }
 
-.dataFontSize{
-    font-size: 16px;
+.marginleftclass{
+    margin-left: 10px;
+}
+.detail_new{
+    width:  330px;
+    font-family: verdana;
+    font-weight: medium;
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: 10px;
 }
 .detail_two{
     min-width: 254px;
@@ -36,6 +43,10 @@
     font-weight: medium;
     margin-left: 8px;
     font-size: 14px;
+}
+
+.marginQuote{
+    margin-left: 12px;
 }
 .detail_one_value{
     min-width:330px;
@@ -48,20 +59,12 @@
     min-width:240px;
     font-family: verdana;
     font-size: 16px;
-}
-
-.marginQuote{
-    margin-left: -20px;
-}
-
-.margin{
-    margin-left: 20px;
-
+    margin-left: 90px;
 }
 .address_phone{
-    height: 60px;
+    height: 65px;
     background: #e8e8e8;
-    padding-top: 8px;
+    /* padding-top: 8px; */
 }
 .basicinfo{
     min-width: 251px;
@@ -81,7 +84,7 @@
     margin-bottom: 14px;
 }
 .whole_one{
-    width:  180px;
+    width:  207px;
     font-family: verdana;
     font-weight: medium;
     font-size: 14px;
@@ -89,16 +92,10 @@
 }
 
 .whole_two{
-    min-width: 187px;
-    font-family: verdana;
-    margin-left: 8px;
-    /* font-size: 13px; */
-}
-
-.bAlarm{
     min-width: 207px;
     font-family: verdana;
-    margin-left: -5px;
+    margin-left: 8px;
+    font-size: 13px;
 }
 .emercency{
     width:  336px;
@@ -106,22 +103,6 @@
     font-weight: medium;
     font-size: 14px;
     margin-left: 8px;
-}
-
-.emercency_new{
-    /* width:  300px; */
-    font-family: verdana;
-    font-weight: medium;
-    font-size: 14px;
-    margin-left: 8px;
-}
-
-.emercency_new1{
-    /* width:  300px; */
-    font-family: verdana;
-    font-weight: medium;
-    font-size: 14px;
-    margin-left: 50px;
 }
 .windstorm{
     width:  336px;
@@ -139,14 +120,7 @@
 .whole_one_value{
     min-width:336px;
     font-family: verdana;
-    /* font-size: 13px; */
-    margin-left: 8px;
-}
-
-.backup{
-    min-width:336px;
-    font-family: verdana;
-    /* font-size: 13px; */
+    font-size: 13px;
     margin-left: 8px;
 }
 .whole_edit_one{
@@ -217,7 +191,7 @@
     font-family: verdana;
     font-size: 13px;
     margin-left: 8px;
-    margin-right: 128px;
+    /* margin-right: 128px; */
 }
 .whole_split_three_two{
     width: 200px;
@@ -236,7 +210,11 @@
     width: 150px;
     font-family: verdana;
     font-size: 13px;
-    margin-right: 103px;
+    margin-right: 91px;
+}
+
+.margin{
+    margin-left: 10px;
 }
 .whole_split_email{
     width: 160px;
@@ -266,33 +244,18 @@
 }
 .button_colour {
     height: 45px;
-    /* width: 205px; */
+    /* width: 180px; */
     font-family: Verdana;
     font-weight: bold;
     color: #fcdccf;
     background-color: #fa6119;
-    border-radius: 6px;
+    border-radius: 5px;
     margin-top: 19px;
-    margin-left: 10px;
+    margin-left: 15px;
     text-align: center;
     font-size: 14px;
     border: none;
 }
-
-.button_new{
-    height: 45px;
-    width: 225px;
-    font-family: Verdana;
-    font-weight: bold;
-    color: #fcdccf;
-    background-color: #fa6119;
-    border-radius: 6px;
-    margin-top: 20px;
-    margin-left: 10px;
-    text-align: center;
-    font-size: 14px;
-    border: none;
-}
-.margintopclass{
-    margin-top: 10px;
+.basicinfo1{
+    font-size: 18px;
 }

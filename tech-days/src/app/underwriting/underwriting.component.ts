@@ -70,7 +70,7 @@ rejectRequest(){
 }
 
 propertyRequest(){
-
+  this.dialog.open(Dialog2Component)
 }
 
 finalRequest(){

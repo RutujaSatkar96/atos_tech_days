@@ -33,6 +33,8 @@ import { from } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ClaimDialogComponent } from './claim-dialog/claim-dialog.component';
 import { ComplexQuoteNewComponent } from './complex-quote-new/complex-quote-new.component';
+import { PropertyInspctionComponent } from './property-inspction/property-inspction.component';
+import { PropertyInsNewComponent } from './property-ins-new/property-ins-new.component';
 
 imports: [
     BrowserModule,
@@ -63,7 +65,9 @@ imports: [
     Dialog3Component,
     ReportsComponent,
     ClaimDialogComponent,
-    ComplexQuoteNewComponent
+    ComplexQuoteNewComponent,
+    PropertyInspctionComponent,
+    PropertyInsNewComponent
   ],
   entryComponents: [
     DialogComponent
