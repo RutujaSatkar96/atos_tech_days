@@ -24,6 +24,7 @@ export class UnderwritingComponent implements OnInit {
   quoteNo = "H458131342";
   url = "/assets/underwriting.json"
   show: boolean = false;
+  quote ="1";
   constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService,public dialog: MatDialog){
   
     
@@ -33,6 +34,7 @@ export class UnderwritingComponent implements OnInit {
     }
 
     this.quoteNo=localStorage.getItem("quoteno");
+    this.quote = localStorage.getItem("quote");
    
     this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
       console.log(data)
@@ -71,15 +73,17 @@ rejectRequest(){
 
 propertyRequest(){
 
-  if(localStorage.get("quote")=="3"){
+  if(this.quote=="3"){
 //Complex new
-  }else if(localStorage.get("quote")=="2"){
+  }else if(this.quote=="2"){
     //complex
+    this.dialog.open(Dialog2Component)
   }else{
 //standard
+this.dialog.open(ClaimDialogComponent);
   }
 
-  this.dialog.open(Dialog2Component)
+  //this.dialog.open(Dialog2Component)
 }
 
 finalRequest(){
@@ -88,10 +92,12 @@ finalRequest(){
     //Complex new
       }else if(localStorage.get("quote")=="2"){
         //complex
+        this.dialog.open(Dialog2Component)
       }else{
     //standard
+    this.dialog.open(ClaimDialogComponent);
       }
-  this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
+  //this.dialog.open(ReportsComponent, {position: {top: '10%', left: '30%', bottom: '10%'}})
 }
 
 
