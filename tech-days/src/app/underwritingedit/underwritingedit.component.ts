@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http'
 import { Router } from '@angular/router';
 import { RestApiService } from "../shared/rest-api.service";
 import { pipe } from 'rxjs';
+import { DataMenu } from '../shared/models/data.menu.model';
 
 
 @Component({
@@ -18,6 +19,8 @@ export class UnderwritingeditComponent implements OnInit {
   quoteNo = "";
   url = "/assets/underwriting.json"
   show: boolean = false;
+  quoteList:Array<DataMenu>; 
+
   constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService){
 
     let role = localStorage.getItem("typeId");
@@ -25,10 +28,32 @@ export class UnderwritingeditComponent implements OnInit {
     if(role=="2"){
       this.show=true;
     }
-    this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
-      console.log(data)
-     this.workQuote =<WorkQuote> data;
-   })
+  //   this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
+  //     console.log(data)
+  //    this.workQuote =<WorkQuote> data;
+  //    localStorage.setItem("email",this.workQuote.email);
+  //    localStorage.setItem("dob",this.workQuote.dateofbirth);
+  //  })
+
+   this.restApi.getQuotes("1").subscribe((data: {}) => {
+    console.log(data)
+    this.quoteList= <DataMenu[]> data;
+    if(this.quoteList.length>0){
+      localStorage.setItem("quoteno",this.quoteList[0].value);
+      this.quoteNo = localStorage.getItem("quoteno");
+
+      this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
+        console.log(data)
+       this.workQuote =<WorkQuote> data;
+       localStorage.setItem("email",this.workQuote.email);
+       localStorage.setItem("dob",this.workQuote.dateofbirth);
+     })
+  
+    }else{
+      alert('No data found');
+    }
+ })
+
   }
 
   ngOnInit(): void {

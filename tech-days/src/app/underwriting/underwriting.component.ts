@@ -9,6 +9,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Dialog3Component } from '../dialog3/dialog3.component';
 import { Dialog2Component } from '../dialog2/dialog2.component';
 import { ClaimDialogComponent } from '../claim-dialog/claim-dialog.component';
+import { DataMenu } from '../shared/models/data.menu.model';
 
 
 @Component({
@@ -25,6 +26,7 @@ export class UnderwritingComponent implements OnInit {
   url = "/assets/underwriting.json"
   show: boolean = false;
   quote ="1";
+  quoteList:Array<DataMenu>; 
   constructor(private http:HttpClient,private _router: Router,public restApi: RestApiService,public dialog: MatDialog){
   
     
@@ -35,12 +37,29 @@ export class UnderwritingComponent implements OnInit {
 
     this.quoteNo=localStorage.getItem("quoteno");
     this.quote = localStorage.getItem("quote");
-   
-    this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
-      console.log(data)
-     this.workQuote =<WorkQuote> data;
+
+
+    this.restApi.getQuotes("2").subscribe((data: {}) => {
+      
+      this.quoteList= <DataMenu[]> data;
+      if(this.quoteList.length>0){
+        localStorage.setItem("quoteno",this.quoteList[0].value);
+        this.quoteNo = localStorage.getItem("quoteno");
+
+        this.restApi.getQuote("2",this.quoteNo).subscribe((data: {}) => {
+          console.log(data)
+         this.workQuote =<WorkQuote> data;
+         localStorage.setItem("email",this.workQuote.email);
+         localStorage.setItem("dob",this.workQuote.dateofbirth);
+       })
+    
+      }else{
+        alert('No data found');
+      }
    })
 
+   
+   
   
     
   }

@@ -28,7 +28,7 @@ export class SidebarComponent implements OnInit {
 
     this.quoteNo=localStorage.getItem("quoteno");
    
-    this.restApi.getQuotes("1").subscribe((data: {}) => {
+    this.restApi.getQuotes("2").subscribe((data: {}) => {
       
       this.quoteList= <DataMenu[]> data;
       let val={
