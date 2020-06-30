@@ -146,7 +146,7 @@ export class CustomerInfoComponent implements OnInit {
     var year = 1000*60*60*24*365;
     var years = Math.round(milliseconds/year)
       
-    this.workQuote.age = years;
+    this.workQuote.age = years-1;
    
   
   }

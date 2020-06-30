@@ -123,7 +123,7 @@ export class WorkQuote {
   firstname:string;
   lastname:string;
   street:string;
-  burglarsalarm:string;
+  burglaralaram:string;
   fireplace:string;
   kitchenquality:string;
   emergencybackupgenerator:string;
@@ -131,10 +131,10 @@ export class WorkQuote {
   deck:string;
   roofage:number;
   singlefamily:string;
-  firealarm:string;
+  firealaram:string;
   gender:string;
   firesprinklers:string;
   squarefootage:string;
   medicalpayment:string;
-  homeautomation:string;
+  homeautomationsystem:string;
 }
