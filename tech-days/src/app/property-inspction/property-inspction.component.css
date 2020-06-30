@@ -23,4 +23,8 @@
  .crossimg{
     float: right;
   }
+
+  li{
+      font-size: 16px;
+  }
   
