@@ -90,7 +90,7 @@ export class CustomerInfoComponent implements OnInit {
       || this.workQuote.foundationtype == undefined || this.workQuote.walltype== undefined || this.workQuote.roofstyle == undefined
       || this.workQuote.area == undefined || this.workQuote.typeofgarage == undefined || this.workQuote.swimmingpool == undefined
       || this.workQuote.firehydrant == undefined || this.workQuote.pastpropertyclaimsorlosses == undefined){
-       alert('Please enter all field. All fields are mandatory')
+       alert('Please enter mandatory fields.')
      }
      else{
       this.restApi.createQuote(this.workQuote).subscribe((data: {}) => {
@@ -118,7 +118,7 @@ export class CustomerInfoComponent implements OnInit {
       || this.workQuote.state == undefined || this.workQuote.zipcode == undefined || this.workQuote.effectivedate == undefined
       || this.workQuote.propertyinsurance == undefined || this.workQuote.runningbusinessfromhome == undefined || this.workQuote.criminalconvictions == undefined
       || this.workQuote.smokerstatus == undefined || this.workQuote.pets == undefined || this.workQuote.policycancelled == undefined){
-      alert('Please enter all field. All fields are mandatory');
+      alert('Please enter mandatory fields.');
     }
     else{
       (<HTMLElement>document.querySelectorAll('.mat-tab-label')[1]).click();
