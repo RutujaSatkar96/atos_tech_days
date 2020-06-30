@@ -35,7 +35,9 @@ export class StandardQuoteComponent implements OnInit {
   openDialog() {
     this.dialog.open(Dialog1Component)
 }
-
+openDialogMark() {
+  this.dialog.open(DialogComponent)
+}
 openClaimDialog(){
   this.dialog.open(ClaimDialogComponent);
 }

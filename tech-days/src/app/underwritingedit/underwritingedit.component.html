@@ -21,17 +21,17 @@
       </div>
   
       <div class="detailsrow1" style="margin-top: -1px;">
-        <!-- <input class="whole_split_date_one" [(ngModel)] = "workQuote.dateofbirth"> -->
-        <input style="margin-left: 10px;" class="dobInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "workQuote.dateofbirth">
+        <input class="whole_split_date_one" [(ngModel)] = "workQuote.dateofbirth">
+        <!-- <input style="margin-left: 10px;" class="dobInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "workQuote.dateofbirth">
         <mat-datepicker #picker></mat-datepicker>
-        <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
-        <!-- <input class="whole_split_date_two" style="margin-left: 80px;" [(ngModel)] = "workQuote.effectivedate"> -->
+        <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
+        <input class="whole_split_date_two" style="margin-left: -30px;" [(ngModel)] = "workQuote.effectivedate">
 
-        <input style="margin-left: 80px;" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "workQuote.effectivedate">
+        <!-- <input style="margin-left: 80px;" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "workQuote.effectivedate">
         <mat-datepicker #picker1></mat-datepicker>
-        <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
+        <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
         
-        <input class="whole_split_date_two margin" style="margin-left: 70px;" [(ngModel)] = "workQuote.area">
+        <input class="whole_split_date_two margin" style="margin-left: 15px;" [(ngModel)] = "workQuote.area">
       </div>
   
       <div class="address_phone" >
@@ -61,11 +61,11 @@
   
     <div style="margin-top: 3px;">
       <input class="whole_split_four_one" [(ngModel)] = "workQuote.primaryresidence">
-      <!-- <input class="whole_split_four_two"   [(ngModel)] = "workQuote.purchasedate"> -->
+      <input class="whole_split_four_two"   [(ngModel)] = "workQuote.purchasedate">
 
-      <input style="margin-left: 2px;" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "workQuote.purchasedate">
+      <!-- <input style="margin-left: 2px;" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "workQuote.purchasedate">
       <mat-datepicker #picker2></mat-datepicker>
-      <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
+      <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
 
       <input class="whole_split_four_three" style="margin-left: 15px;" [(ngModel)] = "workQuote.burglarsalarm">
       <input class="whole_split_four_four" style="margin-left: -35px;" [(ngModel)] = "workQuote.noofstories">
@@ -203,14 +203,14 @@
   </div>
   <div class="detailsrow1" style="margin-top: 5px;">
   <label class="emercency">Other Structures:</label>
-  <label class="emercency" style="margin-left: -48px;">Personal Property Protection Against:</label>
-  <label class="emercency">Family Liability Protection:</label>
+  <label class="emercency" style="margin-left: -125px;">Personal Property Protection Against:</label>
+  <!-- <label class="emercency">Family Liability Protection:</label> -->
   </div>
   
   <div style="margin-top: 4px;">
   <input class="whole_split_four_one"  [(ngModel)] = "workQuote.otherstructures">
   <input class="whole_split_four_one" style="margin-left: 12px;" [(ngModel)] = "workQuote.propertyprotection">
-  <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.familyliabilityprotection">
+  <!-- <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.familyliabilityprotection"> -->
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6; margin-top: 20px;">
 

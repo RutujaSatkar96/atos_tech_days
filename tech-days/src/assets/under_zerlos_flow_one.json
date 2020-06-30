@@ -1,11 +1,11 @@
 {
   
-      "name": "John",
+      "name": "Rachel",
       "validsize": 4,
       "valid": [
         {
           "scoreid": 2,
-          "value": "93%",
+          "value": "20%",
           "scoremessage": "Customer Seriousness Score",
           "dialog": 1
         },
