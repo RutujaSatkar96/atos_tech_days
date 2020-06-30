@@ -127,14 +127,21 @@ export class SidebarComponent implements OnInit {
   console.log(childindex)
   if(parentindex == 1){
     localStorage.setItem("quoteno",data)
+   
+
     console.log(data)
+    localStorage.setItem("child", childindex);
     if(this.accordianData[1].children[childindex].icon == "2"){
       this._router.navigate(['/app-complex-quote']);
+     
     }else if(this.accordianData[1].children[childindex].icon == "3"){
       this._router.navigate(['/app-complex-quote-new']);
+
     }
     else{
       this._router.navigate(['/app-standard-quote']);
+      localStorage.setItem("child","2");
+
     }
   }
 
