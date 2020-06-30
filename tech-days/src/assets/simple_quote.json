@@ -42,7 +42,7 @@
 
     "effectivedate": "29/07/2020",
 
-    "address": "856 Miller Lane undefined Chicago ",
+    "address": "856 Miller Lane Chicago ",
 
     "phone": "401-572-6582",
 
@@ -70,7 +70,7 @@
 
     "noofstories": 2,
 
-    "primaryresidence": null,
+    "primaryresidence": "Yes",
 
     "foundationtype": "Hillside with basement",
 
@@ -120,15 +120,15 @@
 
     "zelrossuggestion": "2",
 
-    "burglaralaram": "Installed",
+    "burglaralaram": "Yes",
 
-    "firealaram": "Installed",
+    "firealaram": "Yes",
 
-    "firesprinklers": "Installed",
+    "firesprinklers": "Yes",
 
-    "emergencybackupgenerator": "Installed",
+    "emergencybackupgenerator": "Yes",
 
-    "homeautomationsystem": "Installed",
+    "homeautomationsystem": "Yes",
 
     "noneoftheabove": null,
 

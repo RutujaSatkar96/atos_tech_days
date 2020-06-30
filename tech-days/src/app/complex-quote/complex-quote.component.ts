@@ -8,6 +8,7 @@ import { ZelrosResponse } from '../shared/models/zelros/zelrosresponse.model';
 import { HttpClient } from '@angular/common/http';
 import { PropertyInsNewComponent } from '../property-ins-new/property-ins-new.component';
 import { PropertyInspctionComponent } from '../property-inspction/property-inspction.component';
+import { ClaimDialogComponent } from '../claim-dialog/claim-dialog.component';
 
 @Component({
   selector: 'app-complex-quote',
@@ -64,6 +65,6 @@ openProperty1(){
 }
 
 openProperty2(){
-  this.dialog.open(PropertyInsNewComponent)
+  this.dialog.open(ClaimDialogComponent)
 }
 }

@@ -6,6 +6,8 @@ import { ZelrosResponse } from '../shared/models/zelros/zelrosresponse.model';
 import { Dialog2Component } from '../dialog2/dialog2.component';
 import { Dialog3Component } from '../dialog3/dialog3.component';
 import { ReportsComponent } from '../reports/reports.component';
+import { PropertyInsNewComponent } from '../property-ins-new/property-ins-new.component';
+import { PropertyInspctionComponent } from '../property-inspction/property-inspction.component';
 
 @Component({
   selector: 'app-complex-quote-new',
@@ -51,11 +53,11 @@ export class ComplexQuoteNewComponent implements OnInit {
   ngOnInit(): void {
   }
   openDialog() {
-    this.dialog.open(Dialog2Component)
+    this.dialog.open(PropertyInsNewComponent)
 }
 
 openDialog3() {
-  this.dialog.open(Dialog3Component)
+  this.dialog.open(PropertyInspctionComponent)
 }
 
 openZelrosSummary(){
