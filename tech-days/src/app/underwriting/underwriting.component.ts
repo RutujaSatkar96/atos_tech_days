@@ -96,12 +96,14 @@ propertyRequest(){
 
   if(this.quote=="3"){
 //Complex new
+this.dialog.open(Dialog2Component)
   }else if(this.quote=="2"){
     //complex
-    this.dialog.open(Dialog2Component)
+    //this.dialog.open(Dialog2Component)
+    this.dialog.open(ClaimDialogComponent);
   }else{
 //standard
-this.dialog.open(ClaimDialogComponent);
+//this.dialog.open(ClaimDialogComponent);
   }
 
   //this.dialog.open(Dialog2Component)
@@ -111,9 +113,10 @@ finalRequest(){
 
   if(localStorage.get("quote")=="3"){
     //Complex new
+    this.dialog.open(Dialog2Component)
       }else if(localStorage.get("quote")=="2"){
         //complex
-        this.dialog.open(Dialog2Component)
+        // this.dialog.open(Dialog2Component)
       }else{
     //standard
     this.dialog.open(ClaimDialogComponent);
