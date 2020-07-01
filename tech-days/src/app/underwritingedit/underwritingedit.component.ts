@@ -67,7 +67,7 @@ export class UnderwritingeditComponent implements OnInit {
         console.log(data)
        let quote = <WorkQuote>data;
         
-       this._router.navigate(['/app-complex-quote']);
+       //this._router.navigate(['/app-complex-quote']);
        localStorage.setItem("child","0");
 
 
