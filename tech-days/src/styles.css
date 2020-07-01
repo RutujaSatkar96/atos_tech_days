@@ -50,3 +50,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .main{
     margin-left: 210px !important;
 } */
+
+.inn-80 {
+    width: 80% !important;
+}
