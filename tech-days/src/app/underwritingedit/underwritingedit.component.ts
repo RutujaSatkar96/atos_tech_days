@@ -85,7 +85,7 @@ export class UnderwritingeditComponent implements OnInit {
           this.quoteNo = localStorage.getItem("quoteno");
           if(quoteLists[0].icon == "2"){
             this._router.navigate(['/app-complex-quote']);
-          }else if(quoteLists[0].value == "3"){
+          }else if(quoteLists[0].icon == "3"){
             this._router.navigate(['/app-complex-quote-new']);
           }
           
