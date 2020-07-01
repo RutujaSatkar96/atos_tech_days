@@ -30,7 +30,7 @@
     font-weight: 20px;
 }
 .email{
-    margin-left: 110px;
+    margin-left: 10px;
 }
 .labels3{
     font-family: Verdana;
@@ -39,25 +39,36 @@
     font-weight: 20px;
 }
 .em1{
-    margin-left: 60px;
+    margin-left: 10px;
 }
 .margin{
     margin-left: 120px;
 }
 
-.margin1{
-    margin-left: 25px;
+.surmargin{
+    margin-left: 150px;
+
 }
 
+.margin1{
+    margin-left: 45px;
+}
+.marginbb{
+    margin-left: 65px;
+
+}
+.marginaa{
+    margin-left: 55px;
+}
 .row2{
     margin-top: 5px;
 }
 
 .rating{
-    margin-left: 30px;
+    margin-left: 8px;
 }
 .rating2{
-    margin-left: 85px;
+    margin-left: 65px;
 }
 
 .mat-dialog-container{
@@ -67,10 +78,11 @@
 
 .chek{
     float: right;
-    /* height: 20px;
-    width: 20px; */
+    height: 20px;
+    width: 20px;
     margin-right: 20px;
     border-color: #e6e6e6;
+    margin-top: 10px;
 }
 
 .close{
