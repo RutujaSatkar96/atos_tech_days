@@ -71,14 +71,25 @@ export class UnderwritingeditComponent implements OnInit {
        localStorage.setItem("child","0");
 
 
-      //  if(this.workQuote.zelrossuggestion == "2"){
-      //   this._router.navigate(['/app-complex-quote']);
-      // }else if(this.workQuote.zelrossuggestion == "3"){
-      //   this._router.navigate(['/app-complex-quote-new']);
-      // }
-      // else{
-      //   this._router.navigate(['/app-standard-quote']);
-      // }
+    
+  
+
+      this.restApi.getQuotes("2").subscribe((data: {}) => {
+      
+        let child =localStorage.getItem("child");
+  
+        this.quoteList= <DataMenu[]> data;
+        if(this.quoteList.length>0){
+          localStorage.setItem("quoteno",this.quoteList[0].value);
+          this.quoteNo = localStorage.getItem("quoteno");
+          if(this.quoteList[0].icon == "2"){
+            this._router.navigate(['/app-complex-quote']);
+          }else if(this.quoteList[0].value == "3"){
+            this._router.navigate(['/app-complex-quote-new']);
+          }
+          
+        }
+     })
   
       
       })

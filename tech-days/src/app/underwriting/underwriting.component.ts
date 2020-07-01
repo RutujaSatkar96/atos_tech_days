@@ -39,14 +39,7 @@ export class UnderwritingComponent implements OnInit {
     this.quote = localStorage.getItem("quote");
 
 
-    this.restApi.getQuotes("2").subscribe((data: {}) => {
-      
-      let child =localStorage.getItem("child");
-
-      this.quoteList= <DataMenu[]> data;
-      if(this.quoteList.length>0){
-        localStorage.setItem("quoteno",this.quoteList[child].value);
-        this.quoteNo = localStorage.getItem("quoteno");
+ 
 
         this.restApi.getQuote("2",this.quoteNo).subscribe((data: {}) => {
           console.log(data)
@@ -54,11 +47,6 @@ export class UnderwritingComponent implements OnInit {
          localStorage.setItem("email",this.workQuote.email);
          localStorage.setItem("dob",this.workQuote.dateofbirth);
        })
-    
-      }else{
-        alert('No data found');
-      }
-   })
 
    
    
