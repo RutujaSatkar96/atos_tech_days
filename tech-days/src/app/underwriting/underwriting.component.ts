@@ -38,7 +38,7 @@ export class UnderwritingComponent implements OnInit {
     this.quoteNo=localStorage.getItem("quoteno");
     this.quote = localStorage.getItem("quote");
 
-
+    console.log(this.quoteNo)
  
 
         this.restApi.getQuote("2",this.quoteNo).subscribe((data: {}) => {

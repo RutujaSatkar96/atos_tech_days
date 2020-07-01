@@ -78,6 +78,8 @@ export class UnderwritingeditComponent implements OnInit {
       
         let child =localStorage.getItem("child");
          let quoteLists= <DataMenu[]> data;
+         console.log(quoteLists)
+
         if(quoteLists.length>0){
           localStorage.setItem("quoteno",quoteLists[0].value);
           this.quoteNo = localStorage.getItem("quoteno");
