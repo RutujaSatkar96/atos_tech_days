@@ -239,12 +239,12 @@
 }
 .form-group {
     display: flex;
-    float:inherit;
     background: #ffffff;
+    width: 100%;
 }
 .button_colour {
     height: 45px;
-    width: 30.21%;
+    width: 30.2%;
     font-family: Verdana;
     font-weight: bold;
     color: #fcdccf;
