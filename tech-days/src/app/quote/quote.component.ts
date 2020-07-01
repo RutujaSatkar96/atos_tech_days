@@ -8,13 +8,21 @@ import { Router } from '@angular/router';
 })
 export class QuoteComponent implements OnInit {
 
+  postalCode: string;
+
   constructor(private _router: Router) { }
 
   ngOnInit(): void {
   }
 
   navigateToCustomerInfo(){
-    this._router.navigate(['app-customer-info']);
+    if(this.postalCode == undefined){
+      alert('Please enter postal code')
+    }
+    else{
+      this._router.navigate(['app-customer-info']);
+    }
+    
       
   }
 
