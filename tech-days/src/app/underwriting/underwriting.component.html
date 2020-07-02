@@ -34,14 +34,14 @@
       <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.area" [readonly]="true">
     </div>
 
-    <div class="address_phone" style="margin-left: 1.08%" >
-      <div class="detailsrow1">
+    <div class="address_phone"  >
+      <div class="detailsrow1" style="margin-left: 1.08%">
         <label class="whole_three_new">Address:</label>
         <label class="whole_three_new" >Phone:</label>
         <label class="whole_three_new" >Email:</label>
       </div>
 
-      <div >
+      <div style="margin-left: 1.08%">
         <input class="whole_split_four_three_address_new" [(ngModel)] = "workQuote.address" [readonly]="true">
         <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.phone" [readonly]="true">
         <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.email" [readonly]="true">
@@ -254,8 +254,8 @@
 
 
   <div>
-    <div class="form-group">
-      <div>
+    <div class="form-group" style="width: 100%;">
+      <div style="width: 100%;">
           <button id="button1id" name="button1id" class="button_colour" (click)="emailRequest()">Email for additional documents</button>
           <button id="button2id" name="button2id" class="button_colour" (click)="propertyRequest()" >Request Property Inspection</button>
           <button id="button3id" name="button3id" class="button_colour" (click)="finalRequest()">Prepare Final Offer</button>
@@ -264,16 +264,8 @@
   </div>
   </div>
   
-  <ng-template #notShow>
-    <div class="form-group">
-      <div>
-          <button id="button1id" name="button1id" class="button_colour" (click)="navigateDaashboard()">Request to  Bind</button>
-          <button id="button2id" name="button2id" class="button_colour" (click)="rejectRequest()">Reject Quote</button>
-          <button id="button3id" name="button3id" class="button_colour" (click)="bindRequest()">Contact Prospect</button>
+ 
   
-        </div>
-  </div>
-  </ng-template>
 
   
 
