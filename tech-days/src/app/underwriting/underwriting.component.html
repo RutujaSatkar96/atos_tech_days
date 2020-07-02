@@ -2,7 +2,7 @@
   <div class="details">
 
 
-    <div class="detailsrow1" style="margin-left: 1.08%;margin-top: 10px;">
+    <div class="detailsrow1" style="margin-left: 1.08%;">
       <label class="whole_three_new">Name:</label>
       <label class="whole_three_new" >Quote No:</label>
       <label class="whole_three_new" >Home Built in:</label>
@@ -21,17 +21,17 @@
     </div>
 
     <div class="detailsrow1" style="margin-top: -1px;margin-left: 1.08%">
-      <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.dateofbirth">
+      <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.dateofbirth" [readonly]="true">
       <!-- <input style="margin-left: 10px;" class="dobInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "workQuote.dateofbirth">
       <mat-datepicker #picker></mat-datepicker>
       <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
-      <input class="whole_split_four_three_new"  [(ngModel)] = "workQuote.effectivedate">
+      <input class="whole_split_four_three_new"  [(ngModel)] = "workQuote.effectivedate" [readonly]="true">
 
       <!-- <input style="margin-left: 80px;" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "workQuote.effectivedate">
       <mat-datepicker #picker1></mat-datepicker>
       <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
       
-      <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.area">
+      <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.area" [readonly]="true">
     </div>
 
     <div class="address_phone" style="margin-left: 1.08%" >
@@ -42,9 +42,9 @@
       </div>
 
       <div >
-        <input class="whole_split_four_three_address_new" [(ngModel)] = "workQuote.address">
-        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.phone">
-        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.email">
+        <input class="whole_split_four_three_address_new" [(ngModel)] = "workQuote.address" [readonly]="true">
+        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.phone" [readonly]="true">
+        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.email" [readonly]="true">
       </div>
     </div>
   </div>
@@ -60,15 +60,15 @@
   </div>
 
   <div style="margin-top: 3px; margin-left: 1.08%;">
-    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.primaryresidence">
-    <input class="whole_split_four_one_new"   [(ngModel)] = "workQuote.purchasedate">
+    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.primaryresidence" [readonly]="true">
+    <input class="whole_split_four_one_new"   [(ngModel)] = "workQuote.purchasedate" [readonly]="true">
 
     <!-- <input style="margin-left: 2px;" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "workQuote.purchasedate">
     <mat-datepicker #picker2></mat-datepicker>
     <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
 
-    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.burglaralaram">
-    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.noofstories">
+    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.burglaralaram" [readonly]="true">
+    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.noofstories" [readonly]="true">
   </div>
   <div class="detailsrow1" style="margin-top: 5px; margin-left: 1.08%;">
     <label class="whole_one_new">Gender:</label>
@@ -78,10 +78,10 @@
   </div>
 
   <div style="margin-top: 3px;margin-left: 1.08%;">
-    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.gender">
-    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.noofpeopleliving">
-    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.firesprinklers">
-    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.occupation">
+    <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.gender" [readonly]="true">
+    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.noofpeopleliving" [readonly]="true">
+    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.firesprinklers" [readonly]="true">
+    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.occupation" [readonly]="true">
   </div>
   <div class="detailsrow1" style="margin-top: 10px; margin-left: 1.08%;">
     <label class="whole_one_new">Fire Alarm:</label>
@@ -90,9 +90,9 @@
   </div>
 
   <div style="margin-top: 4px;margin-left: 1.08%;">
-    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.firealaram">
-    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.emergencybackupgenerator">
-    <input class="whole_split_four_one_new" style="margin-left: 6.67%" [(ngModel)] = "workQuote.firehydrant">
+    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.firealaram" [readonly]="true">
+    <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.emergencybackupgenerator" [readonly]="true">
+    <input class="whole_split_four_one_new" style="margin-left: 6.67%" [(ngModel)] = "workQuote.firehydrant" [readonly]="true">
   </div>
   <hr style="width: 88%; margin-left: 1.33%; background-color: #e6e6e6; margin-top: 20px;">
 
@@ -107,9 +107,9 @@
 </div>
 
 <div style="margin-top: 4px;margin-left: 1.08%;">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.walltype">
-  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.typeofgarage">
-  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.roofstyle">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.walltype" [readonly]="true">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.typeofgarage" [readonly]="true">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.roofstyle" [readonly]="true">
   <!-- <input class="whole_split_four_four" style="margin-left: -30px;" [(ngModel)] = "workQuote.swimmingpool"> -->
 </div>
 <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
@@ -120,7 +120,7 @@
 </div>
 
 <div style="margin-top: 4px;" style="margin-top: 5px;margin-left: 1.08%;">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.swimmingpool">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.swimmingpool" [readonly]="true">
   <!-- <input class="whole_split_four_two" style="margin-left: -5px;"   [(ngModel)] = "workQuote.swimmingpool"> -->
   <!-- <input class="whole_split_four_three" style="margin-left: 8px;" [(ngModel)] = "workQuote.roofage">
   <input class="whole_split_four_four" style="margin-left: -30px;" [(ngModel)] = "workQuote.deck"> -->
@@ -137,9 +137,9 @@
 </div>
 
 <div style="margin-top: 4px;margin-left: 1.08%;">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.foundationtype">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.pets">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.homeautomationsystem">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.foundationtype" [readonly]="true">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.pets" [readonly]="true">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.homeautomationsystem" [readonly]="true">
 </div>
 <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
 <label class="whole_two_new"> Kind of Pets:</label>
@@ -149,9 +149,9 @@
 </div>
 
 <div style="margin-top: 4px;margin-left: 1.08%;">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.kindofpet">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.noofbreeds">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.kitchencountertops">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.kindofpet" [readonly]="true">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.noofbreeds" [readonly]="true">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.kitchencountertops" [readonly]="true">
 
 </div>
 
@@ -167,9 +167,9 @@
 </div>
 
 <div style="margin-top: 4px;margin-left: 1.08%;">
-<input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.age">
-<input class="whole_split_four_two_new" [(ngModel)] = "workQuote.smokerstatus">
-<input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.pastpropertyclaimsorlosses">
+<input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.age" [readonly]="true">
+<input class="whole_split_four_two_new" [(ngModel)] = "workQuote.smokerstatus" [readonly]="true">
+<input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.pastpropertyclaimsorlosses" [readonly]="true">
 </div>
 <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
 <label class="whole_two_new">Marital Status:</label>
@@ -178,9 +178,9 @@
 </div>
 
 <div style="margin-top: 4px;margin-left: 1.08%;">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.maritalstatus">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.criminalconvictions">
-  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.runningbusinessfromhome">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.maritalstatus" [readonly]="true">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.criminalconvictions" [readonly]="true">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.runningbusinessfromhome" [readonly]="true">
 </div>
 <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
