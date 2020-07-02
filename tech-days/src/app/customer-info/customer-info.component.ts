@@ -98,6 +98,7 @@ export class CustomerInfoComponent implements OnInit {
         this.workQuote = <WorkQuote>(data);
         if(this.workQuote.quoteno != null){
           localStorage.setItem("quoteno",this.workQuote.quoteno)
+          localStorage.setItem("typeId",this.workQuote.type);
         this._router.navigate(['app-customer-summary-edit']);
         }else{
           alert('Something went to wrong please try again later.')

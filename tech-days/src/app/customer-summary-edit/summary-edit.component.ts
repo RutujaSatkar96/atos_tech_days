@@ -17,11 +17,13 @@ export class SummaryEditComponent implements OnInit {
   title = 'HttpRequest';
   quoteNo = "H458131342";
   url = "http://localhost:8080/getQuoteDetails?type=1&quoteNo=H124052941"
+  typeID = "1";
   constructor(private http:HttpClient, private _router: Router,public restApi: RestApiService){
   
     this.quoteNo=localStorage.getItem("quoteno");
+    this.typeID = localStorage.getItem("typeId");
    
-    this.restApi.getQuote("1",this.quoteNo).subscribe((data: {}) => {
+    this.restApi.getQuote(this.typeID,this.quoteNo).subscribe((data: {}) => {
       console.log(data)
      this.workQuote =<WorkQuote> data;
      this.workQuote.quoteno = this.quoteNo;
