@@ -2,49 +2,49 @@
     <div class="details">
   
   
-      <div class="detailsrow1">
-        <label class="detail_one margintopClass">Name:</label>
-        <label class="detail_two marginQuote margintopClass" >Quote No:</label>
-        <label class="detail_two margintopClass" style="margin-right: -40px;">Home Built in:</label>
+      <div class="detailsrow1" style="margin-left: 1.08%;margin-top: 10px;">
+        <label class="whole_three_new">Name:</label>
+        <label class="whole_three_new" >Quote No:</label>
+        <label class="whole_three_new" >Home Built in:</label>
       </div>
   
-      <div class="detailsrow1">
-        <input class="whole_split_three_one" [(ngModel)] = "workQuote.name">
-        <label class="detail_two_value">{{quoteNo}}</label>
-        <input class="whole_split_date_two" style="margin-left: 22px;" [(ngModel)] = "workQuote.yearbuilt">
+      <div class="detailsrow1" style="margin-left: 1.08%;">
+        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.name">
+        <label class="whole_split_four_three_new">{{quoteNo}}</label>
+        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.yearbuilt">
       </div>
   
-      <div class="detailsrow1" style="margin-top: 5px;">
-        <label class="detail_one">Date of Birth:</label>
-        <label class="detail_two" style="margin-right: -3px;" >Desired coverage start date :</label>
-        <label class="detail_two" style="margin-right: -40px;">Area:</label>
+      <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%">
+        <label class="whole_three_new">Date of Birth:</label>
+        <label class="whole_three_new" >Desired coverage start date :</label>
+        <label class="whole_three_new">Area:</label>
       </div>
   
-      <div class="detailsrow1" style="margin-top: -1px;">
-        <input class="whole_split_date_one" [(ngModel)] = "workQuote.dateofbirth">
+      <div class="detailsrow1" style="margin-top: -1px;margin-left: 1.08%">
+        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.dateofbirth">
         <!-- <input style="margin-left: 10px;" class="dobInput" matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)] = "workQuote.dateofbirth">
         <mat-datepicker #picker></mat-datepicker>
         <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
-        <input class="whole_split_date_two" style="margin-left: -30px;" [(ngModel)] = "workQuote.effectivedate">
+        <input class="whole_split_four_three_new"  [(ngModel)] = "workQuote.effectivedate">
 
         <!-- <input style="margin-left: 80px;" matInput [matDatepicker]="picker1" placeholder="Choose a date"  [(ngModel)] = "workQuote.effectivedate">
         <mat-datepicker #picker1></mat-datepicker>
         <button mat-raised-button style="background: none; border: none;" (click)="picker1.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
         
-        <input class="whole_split_date_two margin" style="margin-left: 15px;" [(ngModel)] = "workQuote.area">
+        <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.area">
       </div>
   
-      <div class="address_phone" >
+      <div class="address_phone" style="margin-left: 1.08%" >
         <div class="detailsrow1">
-          <label class="detail_one">Address:</label>
-          <label class="detail_two" style="margin-right: -3px;">Phone:</label>
-          <label class="detail_two" style="margin-right: -40px;">Email:</label>
+          <label class="whole_three_new">Address:</label>
+          <label class="whole_three_new" >Phone:</label>
+          <label class="whole_three_new" >Email:</label>
         </div>
   
         <div >
-          <input class="whole_edit_address" style="margin-top: 2px;" [(ngModel)] = "workQuote.address">
-          <input class="whole_edit_addresstwo" style="margin-top: 2px; margin-left: -23px;" [(ngModel)] = "workQuote.phone">
-          <input class="whole_split_email" style="margin-left: 10px;"[(ngModel)] = "workQuote.email">
+          <input class="whole_split_four_three_address_new" [(ngModel)] = "workQuote.address">
+          <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.phone">
+          <input class="whole_split_four_three_new" [(ngModel)] = "workQuote.email">
         </div>
       </div>
     </div>
@@ -52,106 +52,106 @@
       <div class="basicinfo">
         <label class="detail_one basicinfo1">Basic Info</label>
     </div>
-    <div class="detailsrow1" style="margin-top: -10px;">
-      <label class="whole_one">Primary Residence:</label>
-      <label class="whole_one" style="margin-left: 26px;">Purchase Date:</label>
-      <label class="whole_one" style="margin-left: 30px;">Burglar Alarm:</label>
-      <label class="whole_one" style="margin-left: -9px;">Number of storeys:</label>
+    <div class="detailsrow1" style="margin-top: -10px; margin-left: 1.08%;">
+      <label class="whole_one_new" >Primary Residence:</label>
+      <label class="whole_one_new">Purchase Date:</label>
+      <label class="whole_one_new" >Burglar Alarm:</label>
+      <label class="whole_one_new">Number of storeys:</label>
     </div>
   
-    <div style="margin-top: 3px;">
-      <input class="whole_split_four_one" [(ngModel)] = "workQuote.primaryresidence">
-      <input class="whole_split_four_two"   [(ngModel)] = "workQuote.purchasedate">
+    <div style="margin-top: 3px; margin-left: 1.08%;">
+      <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.primaryresidence">
+      <input class="whole_split_four_one_new"   [(ngModel)] = "workQuote.purchasedate">
 
       <!-- <input style="margin-left: 2px;" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "workQuote.purchasedate">
       <mat-datepicker #picker2></mat-datepicker>
       <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button> -->
 
-      <input class="whole_split_four_three" style="margin-left: 5px;" [(ngModel)] = "workQuote.burglaralaram">
-      <input class="whole_split_four_four" style="margin-left: -35px;" [(ngModel)] = "workQuote.noofstories">
+      <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.burglaralaram">
+      <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.noofstories">
     </div>
-    <div class="detailsrow1" style="margin-top: 5px;">
-      <label class="whole_one">Gender:</label>
-      <label class="whole_one" style="margin-left: 24px;">Number of people:</label>
-      <label class="whole_one" style="margin-left: 30px;">Fire Sprinklers:</label>
-      <label class="whole_one" style="margin-left: -9px;">Occupation:</label>
+    <div class="detailsrow1" style="margin-top: 5px; margin-left: 1.08%;">
+      <label class="whole_one_new">Gender:</label>
+      <label class="whole_one_new" >Number of people:</label>
+      <label class="whole_one_new" >Fire Sprinklers:</label>
+      <label class="whole_one_new">Occupation:</label>
     </div>
   
-    <div style="margin-top: 3px;">
-      <input class="whole_split_four_one"  [(ngModel)] = "workQuote.gender">
-      <input class="whole_split_four_two" [(ngModel)] = "workQuote.noofpeopleliving">
-      <input class="whole_split_four_three" [(ngModel)] = "workQuote.firesprinklers">
-      <input class="whole_split_four_four" style="margin-left: -30px;" [(ngModel)] = "workQuote.occupation">
+    <div style="margin-top: 3px;margin-left: 1.08%;">
+      <input class="whole_split_four_one_new"  [(ngModel)] = "workQuote.gender">
+      <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.noofpeopleliving">
+      <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.firesprinklers">
+      <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.occupation">
     </div>
-    <div class="detailsrow1" style="margin-top: 10px;">
-      <label class="whole_one">Fire Alarm:</label>
+    <div class="detailsrow1" style="margin-top: 10px; margin-left: 1.08%;">
+      <label class="whole_one_new">Fire Alarm:</label>
       <label class="backup" style="margin-left: 1px;">Emergency Backup generator:</label>
       <label class="emercency" style="size: 16px;">Home within 1,000 feet of a fire hydrant?</label>
     </div>
   
-    <div style="margin-top: 4px;">
-      <input class="whole_split_four_one" [(ngModel)] = "workQuote.firealaram">
-      <input class="whole_split_four_two" [(ngModel)] = "workQuote.emergencybackupgenerator">
-      <input class="whole_split_four_five" style="margin-left: 25px;" [(ngModel)] = "workQuote.firehydrant">
+    <div style="margin-top: 4px;margin-left: 1.08%;">
+      <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.firealaram">
+      <input class="whole_split_four_one_new" [(ngModel)] = "workQuote.emergencybackupgenerator">
+      <input class="whole_split_four_one_new" style="margin-left: 6.67%" [(ngModel)] = "workQuote.firehydrant">
     </div>
-    <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6; margin-top: 20px;">
+    <hr style="width: 88%; margin-left: 1.33%; background-color: #e6e6e6; margin-top: 20px;">
 
     <div class="basicInfo1" >
       <label class="detail_one basicinfo1">Exterior</label>
   </div>
-  <div class="detailsrow1" style="margin-top: -10px;">
-    <label class="whole_one">Exterior wall type:</label>
-    <label class="whole_one" style="margin-left: -10px;">Type of garage:</label>
-    <label class="whole_one" style="margin-left: 2px;">Roof style:</label>
+  <div class="detailsrow1" style="margin-top: -10px;margin-left: 1.08%;">
+    <label class="whole_two_new">Exterior wall type:</label>
+    <label class="whole_two_new">Type of garage:</label>
+    <label class="whole_two_new">Roof style:</label>
     <!-- <label class="whole_one" style="margin-left: 12px; ">Swimming pool:</label> -->
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.walltype">
-    <input class="whole_split_four_two" style="margin-left: -5px;" [(ngModel)] = "workQuote.typeofgarage">
-    <input class="whole_split_four_three" style="margin-left: 8px;" [(ngModel)] = "workQuote.roofstyle">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.walltype">
+    <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.typeofgarage">
+    <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.roofstyle">
     <!-- <input class="whole_split_four_four" style="margin-left: -30px;" [(ngModel)] = "workQuote.swimmingpool"> -->
   </div>
-  <div class="detailsrow1" style="margin-top: 5px;">
-    <label class="whole_one">Swimming pool:</label>
+  <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
+    <label class="whole_two_new">Swimming pool:</label>
     <!-- <label class="whole_one" style="margin-left: -10px;">Swimming pool:</label> -->
     <!-- <label class="whole_one" style="margin-left: 36px;">Roof Age:</label>
     <label class="whole_one" style="margin-left: 12px;">Deck:</label> -->
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.swimmingpool">
+  <div style="margin-top: 4px;" style="margin-top: 5px;margin-left: 1.08%;">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.swimmingpool">
     <!-- <input class="whole_split_four_two" style="margin-left: -5px;"   [(ngModel)] = "workQuote.swimmingpool"> -->
     <!-- <input class="whole_split_four_three" style="margin-left: 8px;" [(ngModel)] = "workQuote.roofage">
     <input class="whole_split_four_four" style="margin-left: -30px;" [(ngModel)] = "workQuote.deck"> -->
   </div>
-  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
+  <hr style="width: 88%; margin-left: 1.33%; background-color: #e6e6e6;margin-top: 15px;">
 
   <div class="basicInfo1">
     <label class="detail_one basicinfo1">Interior </label>
   </div>
-  <div class="detailsrow1" style="margin-top: -10px;">
-  <label class="whole_one">Foundation Type:</label>
-  <label class="whole_one" style="margin-left: 2px;"> Pets at Home:</label>
-  <label class="whole_one" style="margin-left: -5px;">Home Automation:</label>
+  <div class="detailsrow1" style="margin-top: -1.33%;margin-left: 1.08%;">
+  <label class="whole_two_new">Foundation Type:</label>
+  <label class="whole_two_new" style="margin-left: 2px;"> Pets at Home:</label>
+  <label class="whole_two_new" style="margin-left: -5px;">Home Automation:</label>
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.foundationtype">
-    <input class="whole_split_four_two" style="margin-left: 10px;" [(ngModel)] = "workQuote.pets">
-    <input class="whole_split_four_three" [(ngModel)] = "workQuote.homeautomationsystem">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.foundationtype">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.pets">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.homeautomationsystem">
   </div>
-  <div class="detailsrow1" style="margin-top: 5px;">
-  <label class="whole_one"> Kind of Pets:</label>
-  <label class="whole_one" style="margin-left: 2px;"> Number of Breeds:</label>
-  <label class="whole_one" style="margin-left: -5px;"> Kitchen countertops:</label>
+  <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
+  <label class="whole_two_new"> Kind of Pets:</label>
+  <label class="whole_two_new"> Number of Breeds:</label>
+  <label class="whole_two_new" > Kitchen countertops:</label>
 
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.kindofpet">
-    <input class="whole_split_four_two" style="margin-left: 10px;" [(ngModel)] = "workQuote.noofbreeds">
-    <input class="whole_split_four_two" style="margin-left: 5px;" [(ngModel)] = "workQuote.kitchencountertops">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.kindofpet">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.noofbreeds">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.kitchencountertops">
 
   </div>
 
@@ -160,27 +160,27 @@
   <div class="basicInfo1">
     <label class="detail_one basicinfo1">Customer Info </label>
   </div>
-  <div class="detailsrow1" style="margin-top: -10px;">
-  <label class="whole_one">Age:</label>
-  <label class="whole_one" style="margin-left: 2px;">Smoker status:</label>
-  <label class="emercency" style="margin-left: -2px;">Past property claims or losses:</label>
+  <div class="detailsrow1" style="margin-top: -10px;margin-left: 1.08%;">
+  <label class="whole_two_new">Age:</label>
+  <label class="whole_two_new" >Smoker status:</label>
+  <label class="whole_two_new" >Past property claims or losses:</label>
   </div>
   
-  <div style="margin-top: 4px;">
-  <input class="whole_split_four_one"  [(ngModel)] = "workQuote.age">
-  <input class="whole_split_four_one" [(ngModel)] = "workQuote.smokerstatus">
-  <input class="whole_split_four_one" style="margin-left: -2px;" [(ngModel)] = "workQuote.pastpropertyclaimsorlosses">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.age">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.smokerstatus">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.pastpropertyclaimsorlosses">
   </div>
-  <div class="detailsrow1" style="margin-top: 5px;">
-  <label class="whole_one">Marital Status:</label>
-  <label class="whole_one" style="margin-left: 2px;">Criminal Convictions:</label>
-  <label class="emercency" style="margin-left: -2px;">Running business from home:</label>
+  <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
+  <label class="whole_two_new">Marital Status:</label>
+  <label class="whole_two_new" >Criminal Convictions:</label>
+  <label class="whole_two_new" >Running business from home:</label>
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.maritalstatus">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.criminalconvictions">
-    <input class="whole_split_four_one" style="margin-left: -2px;" [(ngModel)] = "workQuote.runningbusinessfromhome">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.maritalstatus">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.criminalconvictions">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.runningbusinessfromhome">
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
 
@@ -189,27 +189,27 @@
   <div class="basicInfo1">
     <label class="detail_one basicinfo1">Summary Coverages(in $)</label>
   </div>
-  <div class="detailsrow1" style="margin-top: -10px;">
-  <label class="emercency" >Dwelling Protection:</label>
-  <label class="emercency" style="margin-left: -48px;">Personal Liability Protection: </label>
-  <label class="emercency" >Additional Living expenses:</label>
+  <div class="detailsrow1" style="margin-top: -10px;margin-left: 1.08%;">
+  <label class="whole_two_new" >Dwelling Protection:</label>
+  <label class="whole_two_new" >Personal Liability Protection: </label>
+  <label class="whole_two_new" >Additional Living expenses:</label>
   </div>
   
-  <div style="margin-top: 4px;">
-  <input class="whole_split_four_one" [(ngModel)] = "workQuote.dwellingprotection">
-  <input class="whole_split_four_one" style="margin-left:12px;" [(ngModel)] = "workQuote.propertyprotection">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.dwellingprotection">
+  <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.propertyprotection">
   
-  <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.additionallivingexpenses">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.additionallivingexpenses">
   </div>
-  <div class="detailsrow1" style="margin-top: 5px;">
-  <label class="emercency">Other Structures:</label>
-  <label class="emercency" style="margin-left: -125px;">Personal Property Protection:</label>
+  <div class="detailsrow1" style="margin-top: 5px;margin-left: 1.08%;">
+  <label class="whole_two_new">Other Structures:</label>
+  <label class="whole_two_new" >Personal Property Protection:</label>
   <!-- <label class="emercency">Family Liability Protection:</label> -->
   </div>
   
-  <div style="margin-top: 4px;">
-  <input class="whole_split_four_one"  [(ngModel)] = "workQuote.otherstructures">
-  <input class="whole_split_four_one" style="margin-left: 12px;" [(ngModel)] = "workQuote.propertyagainst">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.otherstructures">
+  <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.propertyagainst">
   <!-- <input class="whole_split_four_one" style="margin-left: 68px;" [(ngModel)] = "workQuote.familyliabilityprotection"> -->
   </div>
   <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6; margin-top: 20px;">
@@ -217,38 +217,38 @@
   <div class="basicInfo1">
     <label class="detail_one basicinfo1">Discounts & Surcharges</label>
   </div>
-  <div class="detailsrow1" style="margin-top: -10px;">
-  <label class="emercency">New Construction Discount:</label>
+  <div class="detailsrow1" style="margin-top: -10px;margin-left: 1.08%;">
+  <label class="whole_two_new">New Construction Discount:</label>
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.newconstructiondiscount">
+  <div style="margin-top: 4px;margin-left: 1.08%;">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.newconstructiondiscount">
   </div>
 
-  <hr style="width: 88%; margin-left: 10px; background-color: #e6e6e6;margin-top: 15px;">
+  <hr style="width: 88%; margin-left: 1.33%; background-color: #e6e6e6;margin-top: 15px;">
 
   <div class="basicinfo">
     <label class="detail_one basicinfo1">Deductibles</label>
   </div>
-  <div >
-  <label class="emercency" style="margin-top: -10px;">All Perils deductible:</label>
-  <label class="windstorm">Windstorm/Hail Deductible: </label>
+  <div style="margin-top: -10px;margin-left: 1.08%">
+  <label class="whole_two_new" >All Perils deductible:</label>
+  <label class="whole_two_new">Windstorm/Hail Deductible: </label>
 
   </div>
   
-  <div style="margin-top: 4px;">
-    <input class="whole_split_four_one" [(ngModel)] = "workQuote.allperilsdeductible">
-    <input class="whole_split_four_one" style="margin-left: 75px;" [(ngModel)] = "workQuote.windstormorhail">
+  <div style="margin-top: 4px;margin-left: 1.08%">
+    <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.allperilsdeductible">
+    <input class="whole_split_four_two_new"  [(ngModel)] = "workQuote.windstormorhail">
   
     </div>
     <br>
     <br>
-    <div class="detailsrow1" >
-    <label class="emercency">FINAL PREMIUM:</label>
+    <div class="detailsrow1"  style="margin-left: 1.08%" >
+    <label class="whole_two_new">FINAL PREMIUM:</label>
     </div>
     
-    <div style="margin-top: 4px;">
-      <input class="whole_split_four_one" [(ngModel)] = "workQuote.extrapremium">
+    <div style="margin-top: 4px;margin-left: 1.08%">
+      <input class="whole_split_four_two_new" [(ngModel)] = "workQuote.extrapremium">
     </div>
     <br>
   
