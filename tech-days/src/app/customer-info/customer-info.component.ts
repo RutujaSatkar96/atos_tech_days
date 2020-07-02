@@ -7,6 +7,8 @@ import { BasicInfo } from '../shared/models/basic-info.model';
 import { Exterior } from '../shared/models/exterior.model';
 import { Interior } from '../shared/models/interior.model';
 import { RestApiService } from "../shared/rest-api.service";
+import { DatePipe } from '@angular/common';
+
 import { FormBuilder, FormGroup, Validators, ValidatorFn, FormControl, ValidationErrors } from '@angular/forms';
 
 @Component({
@@ -29,7 +31,7 @@ export class CustomerInfoComponent implements OnInit {
 
   url = "/assets/underwriting.json"
 
-  constructor(private fb: FormBuilder,public restApi: RestApiService, private http:HttpClient, private _router: Router){
+  constructor(private datePipe: DatePipe,private fb: FormBuilder,public restApi: RestApiService, private http:HttpClient, private _router: Router){
     let response = this.http.get(this.url);
     response.toPromise().then(data => {
       
@@ -85,6 +87,15 @@ export class CustomerInfoComponent implements OnInit {
 
       console.log(this.workQuote)
      // this._router.navigate(['app-customer-summary-edit']);
+
+     this.workQuote.dateofbirth= this.datePipe.transform(this.workQuote.dateofbirth,"dd/MM/yyyy")
+     this.workQuote.effectivedate= this.datePipe.transform(this.workQuote.effectivedate,"dd/MM/yyyy")
+     this.workQuote.purchasedate= this.datePipe.transform(this.workQuote.purchasedate,"dd/MM/yyyy")
+     console.log(this.workQuote.dateofbirth)
+     console.log(this.workQuote.effectivedate)
+
+     console.log(this.workQuote.purchasedate)
+
 
      if(this.workQuote.yearbuilt == undefined || this.workQuote.purchasedate == undefined || this.workQuote.noofstories == undefined
       || this.workQuote.foundationtype == undefined || this.workQuote.walltype== undefined || this.workQuote.roofstyle == undefined

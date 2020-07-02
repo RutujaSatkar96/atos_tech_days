@@ -42,7 +42,7 @@ export class WorkQuote {
 
 	 name:string;
 
-	effectivedate:String;
+	effectivedate:string;
 
 	 address:string;
 
@@ -68,7 +68,7 @@ export class WorkQuote {
 
 	yearbuilt:number;
 
-	purchasedate:String;
+	purchasedate:string;
 
 	 noofstories:number;
 
