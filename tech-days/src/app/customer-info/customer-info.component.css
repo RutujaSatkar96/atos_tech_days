@@ -786,3 +786,9 @@ margin-left: 50px;
 .required{
   color: red;
 }
+
+.quantity::-webkit-inner-spin-button, 
+.quantity::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

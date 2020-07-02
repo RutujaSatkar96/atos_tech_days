@@ -51,7 +51,7 @@
                                 <mat-datepicker #picker></mat-datepicker>
                                 <button mat-raised-button style="border: none; background: none;" (click)="picker.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
                                 
-                                <input class="ageInput" placeholder="Age" type="number" [(ngModel)] = "workQuote.age" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="3" [readonly]="true" >
+                                <input class="ageInput" placeholder="Age"  [(ngModel)] = "workQuote.age" type="number" inputmode="numeric" pattern="[0-9]*" digitOnly maxlength="3" [readonly]="true" >
 
                         </div>
                         <div class="row3">
@@ -101,7 +101,7 @@
 
                         <div class="row7">
                                 <input class="streetInput" type="text" placeholder="Street Address" [(ngModel)] = "workQuote.street">
-                                <input class="unitInput unit3" type="text" placeholder="Unit Input" [(ngModel)] = "workQuote.unitnumber">
+                                <input class="unitInput unit3 quantity" type="number"  placeholder="Unit Input" [(ngModel)] = "workQuote.unitnumber"  >
                                 <!-- ngmodel is pending for country field -->
                                 <input class="unitInput unit4" type="text" placeholder="Country">
 
@@ -109,7 +109,7 @@
                                 <input class="cityInput" type="text" placeholder="city"  [(ngModel)] = "workQuote.city">
 
                                 <input class="unitInput unit6" type="text" placeholder="State"  [(ngModel)] = "workQuote.state">
-                                <input class="unitInput unit7" type="text" placeholder="Zip Code"  [(ngModel)] = "workQuote.zipcode">
+                                <input class="unitInput unit7 quantity" type="number" placeholder="Zip Code"  [(ngModel)] = "workQuote.zipcode">
                         </div>
 
                         <div class="row8">
@@ -203,7 +203,7 @@
 
                         <div class="row9">
                                 <input class="streetInput smokerInput" placeholder="Insurer" [(ngModel)] = "workQuote.nameofinsurer">
-                                <input class="unitInput year2" placeholder="Year" [(ngModel)] = "workQuote.cancellationyear">
+                                <input class="unitInput year2 quantity" type="number" placeholder="Year" [(ngModel)] = "workQuote.cancellationyear">
                                 <input class="streetInput reasonInput" placeholder="Reason" [(ngModel)] = "workQuote.cancellationreason">
 
                         </div>
@@ -235,11 +235,11 @@
                 </div>
 
                 <div class="row7">
-                        <input class="yearInput1" type="text" placeholder="Year" [(ngModel)] = "workQuote.yearbuilt">
+                        <input class="yearInput1 quantity" type="number" placeholder="Year" [(ngModel)] = "workQuote.yearbuilt">
                         <input class="dateInput date1" matInput [matDatepicker]="picker2" placeholder="Choose a date"  [(ngModel)] = "workQuote.purchasedate">
                         <mat-datepicker #picker2></mat-datepicker>
                         <button mat-raised-button style="background: none; border: none;" (click)="picker2.open()"><img style="height: 20px; width: 20px;" src="/assets/calender_icn.png" ></button>
-                        <input  class="unitInput " placeholder="People" [(ngModel)] = "workQuote.noofpeopleliving" >
+                        <input  class="unitInput quantity" type="number" placeholder="People" [(ngModel)] = "workQuote.noofpeopleliving" >
                         <!-- <input class="unitInput labelStories" placeholder="Stories" > -->
                         <select class="unitInput labelStories" name="stories" id="stories" [(ngModel)] = "workQuote.noofstories">
                                 <option class="storiesOptions" value="1">1</option>
